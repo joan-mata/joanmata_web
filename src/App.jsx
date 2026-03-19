@@ -1,150 +1,320 @@
 import React, { useState } from 'react'
 
-const EXPERIENCE = [
-  {
-    title: 'Profesor de Universidad',
-    company: 'Universitat Autònoma de Barcelona',
-    date: '09/2025 – Presente',
-    points: [
-      'Docente en "Serveis de Telecomunicacions", liderando la formación en desarrollo web full-stack y seguridad.',
-      'Instrucción técnica en arquitecturas web completas, bases de datos y seguridad avanzada (SSL/TLS, PKI).',
-      'Docente en "Fonaments de Xarxes", enseñando protocolos IP y arquitectura cliente-servidor.',
-      'Diseño y simulación de topologías de red con protocolos de encaminamiento avanzado (VLSM).',
-      'Tutor de TFG en ciberseguridad y Data Engineering (web scraping masivo).'
-    ]
+const TRANSLATIONS = {
+  es: {
+    nav: {
+      experience: 'Experiencia',
+      projects: 'Proyectos',
+      education: 'Formación',
+      skills: 'Habilidades',
+      certificates: 'Certificados',
+      volunteering: 'Voluntariado',
+      contact: 'Contacto'
+    },
+    hero: {
+      subtitle: 'Ingeniero Informático y de Telecomunicación • Profesor Universitario • Data Scientist'
+    },
+    sections: {
+      experience: 'Experiencia Profesional',
+      projects: 'Proyectos de Ingeniería',
+      education: 'Formación Académica',
+      skills: 'Habilidades',
+      languages: 'Idiomas',
+      certificates: 'Certificados',
+      volunteering: 'Voluntariado',
+      contact: 'Contacto'
+    },
+    contact: {
+      info: 'Información de contacto',
+      social: 'Redes Profesionales'
+    }
   },
-  {
-    title: 'Técnico Superior Especialista en Investigación',
-    company: 'Universitat Autònoma de Barcelona',
-    date: '07/2022 – 07/2023',
-    points: [
-      'Diseño y desarrollo backend para una plataforma de gestión de datos (migración de Django a Flask).',
-      'Liderazgo en la transición de SQL a MongoDB para datos heterogéneos.',
-      'Automatización de pipelines para ingesta, limpieza y normalización de datos.'
-    ]
+  ca: {
+    nav: {
+      experience: 'Experiència',
+      projects: 'Projectes',
+      education: 'Formació',
+      skills: 'Habilitats',
+      certificates: 'Certificats',
+      volunteering: 'Voluntariat',
+      contact: 'Contacte'
+    },
+    hero: {
+      subtitle: 'Enginyer Informàtic i de Telecomunicació • Professor Universitari • Data Scientist'
+    },
+    sections: {
+      experience: 'Experiència Professional',
+      projects: 'Projectes d\'Enginyeria',
+      education: 'Formació Acadèmica',
+      skills: 'Habilitats',
+      languages: 'Idiomes',
+      certificates: 'Certificats',
+      volunteering: 'Voluntariat',
+      contact: 'Contacte'
+    },
+    contact: {
+      info: 'Informació de contacte',
+      social: 'Xarxes Professionals'
+    }
   },
-  {
-    title: 'Ingeniero de Ventas',
-    company: 'Cellnex Telecom',
-    date: '06/2022 – 07/2023',
-    points: [
-      'Análisis y modelado de sistemas de RF.',
-      'Gestión de alianzas estratégicas con proveedores de fibra óptica.',
-      'Coordinación integral del ciclo de vida del proyecto (End-to-End).'
-    ]
-  },
-  {
-    title: 'QA Tester',
-    company: 'Johnson Control Hitachi',
-    date: '07/2021 – 02/2022',
-    points: [
-      'Validación de sistemas de climatización con simuladores físicos.',
-      'Desarrollo de sistemas de diagnóstico con Arduino (comunicación serie).',
-      'Automatización de tests mediante scripts en Python.'
-    ]
-  },
-  {
-    title: 'Ingeniero de Hardware',
-    company: 'IMB-CNM (CSIC)',
-    date: '05/2021',
-    points: [
-      'Caracterización física y validación de circuitos integrados.',
-      'Verificación digital de hardware (RTL) mediante Testbenches en Verilog.',
-      'Liderazgo en la fase de debugging lógico del chip.'
-    ]
-  },
-  {
-    title: 'Árbitro de Fútbol',
-    company: 'Federación Catalana de Fútbol',
-    date: '10/2012 – 06/2022',
-    points: [
-      'Toma de decisiones crítica en entornos de alta presión.',
-      'Resolución de conflictos y mediación asertiva.'
-    ]
+  en: {
+    nav: {
+      experience: 'Experience',
+      projects: 'Projects',
+      education: 'Education',
+      skills: 'Skills',
+      certificates: 'Certificates',
+      volunteering: 'Volunteering',
+      contact: 'Contact'
+    },
+    hero: {
+      subtitle: 'Computer & Telecom Engineer • University Professor • Data Scientist'
+    },
+    sections: {
+      experience: 'Professional Experience',
+      projects: 'Engineering Projects',
+      education: 'Academic Background',
+      skills: 'Skills',
+      languages: 'Languages',
+      certificates: 'Certificates',
+      volunteering: 'Volunteering',
+      contact: 'Contact'
+    },
+    contact: {
+      info: 'Contact Information',
+      social: 'Professional Networks'
+    }
   }
-]
+}
 
-const PROJECTS = [
-  {
-    title: 'Editor de Documentos Inteligente con IA Local',
-    date: '2026',
-    description: 'Plataforma web con LLMs locales para edición y conversión a PDF en tiempo real, garantizando 100% de privacidad.'
+const DATA = {
+  name: "Joan Mata Pàrraga",
+  email: "joanmata.parraga@gmail.com",
+  phone: "+34 647 267 153",
+  location: "Barcelona, España",
+  linkedin: "linkedin.com/in/joan-mata",
+  github: "github.com/joan-mata",
+  profile: {
+    es: "Ingeniero con doble titulación en Ingeniería Informática y Sistemas de Telecomunicación, con un perfil híbrido que une hardware, software y ciencia de datos. Actualmente ejerzo como Profesor Universitario especializado en ciberseguridad y redes, actividad que compagino con el desarrollo de soluciones de IA local, arquitecturas cloud escalables y sistemas embebidos. Me define una profunda curiosidad técnica y una mentalidad de aprendizaje continuo, lo que me permite adaptarme rápidamente a nuevas tecnologías e integrarlas en proyectos complejos y seguros.",
+    ca: "Enginyer amb doble titulació en Enginyeria Informàtica i Sistemes de Telecomunicació, amb un perfil híbrid que uneix maquinari, programari i ciència de dades. Actualment exerceixo com a Professor Universitari especialitzat en ciberseguretat i xarxes, activitat que compagino amb el desenvolupament de solucions d'IA local, arquitectures cloud escalables i sistemes encastats. Em defineix una profunda curiositat tècnica i una mentalitat d'aprenentatge continu, la qual cosa em permet adaptar-me ràpidament a noves tecnologies i integrar-les en projectes complexos i segurs.",
+    en: "Engineer with a double degree in Computer Engineering and Telecommunication Systems, with a hybrid profile combining hardware, software, and data science. Currently serving as a University Professor specializing in cybersecurity and networks, a role complemented by the development of local AI solutions, scalable cloud architectures, and embedded systems. I am defined by a deep technical curiosity and a continuous learning mindset, allowing me to quickly adapt to new technologies and integrate them into complex and secure projects."
   },
-  {
-    title: 'Arquitectura de Ingesta y Análisis Estadístico',
-    date: '2025',
-    description: 'Ecosistema de Web Scraping masivo con AWS y PostgreSQL.'
-  },
-  {
-    title: 'Plataforma de Procesamiento y Clasificación de Datos',
-    date: '2025',
-    description: 'Microservicios con Docker para algoritmos de clasificación automatizada.'
-  },
-  {
-    title: 'Ecosistema de Aplicaciones Móviles y Educativas',
-    date: '2024',
-    description: 'Apps nativas iOS con persistencia de datos local y sincronización.'
-  }
-]
-
-const LANGUAGES = [
-  { name: 'Español', level: 'Nativo' },
-  { name: 'Catalán', level: 'Nativo' },
-  { name: 'Inglés', level: 'B2' },
-  { name: 'Francés', level: 'A2' }
-]
-
-const SKILLS = [
-  'Python', 'C++', 'Node.js', 'React', 'Java', 'Swift', 'ASM', 'Verilog',
-  'Machine Learning', 'IA Local (Ollama)', 'Web Scraping', 'Data Engineering',
-  'Django', 'Flask', 'FastAPI', 'PostgreSQL', 'MongoDB', 'AWS', 'Docker', 'Linux', 'nRF52 SDK'
-]
-
-const VOLUNTEERING = [
-  {
-    location: 'Bolivia',
-    date: '2025',
-    org: 'FASFI',
-    description: 'Apoyo educativo en programas para niños vulnerables en Cochabamba.'
-  },
-  {
-    location: 'Haití',
-    date: '2019',
-    org: 'TECHO',
-    description: 'Construcción de viviendas de emergencia en Puerto Príncipe.'
-  }
-]
-
-const CERTIFICATES = [
-  { title: 'Desarrollo con IA', issuer: 'BIG School', date: '2026' },
-  { title: 'Bluetooth Low Energy Fundamentals', issuer: 'Nordic Semiconductor', date: '2024' },
-  { title: 'nRF Connect SDK Fundamentals', issuer: 'Nordic Semiconductor', date: '2024' },
-  { title: 'Certificate of Python', issuer: 'University of Michigan', date: '2019' }
-]
-
-const CONTACT = {
-  email: 'joanmata.parraga@gmail.com',
-  phone: '+34 647 267 153',
-  location: 'Barcelona, España',
-  linkedin: 'linkedin.com/in/joan-mata',
-  github: 'github.com/joan-mata'
+  experience: [
+    {
+      company: "Universitat Autònoma de Barcelona",
+      role: { es: "Profesor de universidad", ca: "Professor d'universitat", en: "University Professor" },
+      date: "09/2025 - Present",
+      points: {
+        es: [
+          "Docente en 'Serveis de Telecomunicacions', liderando la formación práctica en desarrollo web full-stack y seguridad.",
+          "Configuración avanzada de seguridad web: SSL/TLS, PKI y gestión de infraestructuras críticas.",
+          "Docente en 'Fonaments de Xarxes', impartiendo fundamentos de comunicación IP y cliente-servidor.",
+          "Tutor de TFG en ciberseguridad (hardening) y Data Engineering (scraping masivo)."
+        ],
+        ca: [
+          "Docent en 'Serveis de Telecomunicacions', liderant la formació pràctica en desenvolupament web full-stack i seguretat.",
+          "Configuració avançada de seguretat web: SSL/TLS, PKI i gestió d'infraestructures crítiques.",
+          "Docent en 'Fonaments de Xarxes', impartint fonaments de comunicació IP i client-servidor.",
+          "Tutor de TFG en ciberseguretat (hardening) i Data Engineering (scraping massiu)."
+        ],
+        en: [
+          "Professor in 'Telecommunication Services', leading practical training in full-stack web development and security.",
+          "Advanced web security configuration: SSL/TLS, PKI, and critical infrastructure management.",
+          "Professor in 'Network Fundamentals', teaching IP communication and client-server architecture.",
+          "Tutor for final projects in cybersecurity (hardening) and Data Engineering (massive scraping)."
+        ]
+      }
+    },
+    {
+      company: "FlexiiC",
+      role: { es: "Diseñador de Circuitos Integrados", ca: "Dissenyador de Circuits Integrats", en: "IC Designer" },
+      date: "09/2024 - 11/2025",
+      points: {
+        es: [
+          "Desarrollo de conectividad inalámbrica con nRF52840 y Bluetooth Low Energy (BLE).",
+          "Diseño integral de PCBs y validación con sistemas embebidos.",
+          "Verificación digital de hardware (RTL) en Verilog y optimización en ASM.",
+          "Liderazgo en debugging lógico del chip para fase de producción."
+        ],
+        ca: [
+          "Desenvolupament de connectivitat sense fils amb nRF52840 i Bluetooth Low Energy (BLE).",
+          "Disseny integral de PCBs i validació amb sistemes encastats.",
+          "Verificació digital de maquinari (RTL) en Verilog i optimització en ASM.",
+          "Lideratge en debugging lògic del xip per a fase de producció."
+        ],
+        en: [
+          "Wireless connectivity development using nRF52840 and Bluetooth Low Energy (BLE).",
+          "Integral PCB design and validation with embedded systems.",
+          "Hardware digital verification (RTL) in Verilog and ASM optimization.",
+          "Leading role in logial debugging for the production phase."
+        ]
+      }
+    },
+    {
+      company: "Universitat Autònoma de Barcelona",
+      role: { es: "Técnico Especialista en Investigación", ca: "Tècnic Especialista en Investigació", en: "Research Specialist" },
+      date: "07/2022 - 07/2023",
+      points: {
+        es: [
+          "Diseño de arquitectura backend migrando de Django a Flask.",
+          "Liderazgo en transición de SQL a NoSQL (MongoDB) para datos heterogéneos.",
+          "Automatización de pipelines de datos en tiempo real."
+        ],
+        ca: [
+          "Disseny d'arquitectura backend migrant de Django a Flask.",
+          "Lideratge en transició de SQL a NoSQL (MongoDB) per a dades heterogènies.",
+          "Automatització de pipelines de dades en temps real."
+        ],
+        en: [
+          "Backend architecture design migrating from Django to Flask.",
+          "Leading transition from SQL to NoSQL (MongoDB) for heterogeneous data.",
+          "Data pipeline automation for real-time processing."
+        ]
+      }
+    },
+    {
+      company: "Cellnex Telecom",
+      role: { es: "Ingeniero de Ventas", ca: "Enginyer de Vendes", en: "Sales Engineer" },
+      date: "06/2022 - 07/2023",
+      points: {
+        es: [
+          "Modelado de sistemas de RF y gestión de alianzas estratégicas.",
+          "Coordinación End-to-End del ciclo de vida del proyecto."
+        ],
+        ca: [
+          "Modelatge de sistemes d'RF i gestió d'aliances estratègiques.",
+          "Coordinació End-to-End del cicle de vida del projecte."
+        ],
+        en: [
+          "RF systems modeling and strategic alliance management.",
+          "End-to-End coordination of project lifecycle."
+        ]
+      }
+    },
+    {
+      company: "Johnson Control Hitachi",
+      role: { es: "QA Tester", ca: "QA Tester", en: "QA Tester" },
+      date: "07/2021 - 02/2022",
+      points: {
+        es: [
+          "Validación de sistemas mediante simuladores físicos y scripts en Python.",
+          "Implementación de sistema de diagnóstico con Arduino."
+        ],
+        ca: [
+          "Validació de sistemes mitjançant simuladors físics i scripts en Python.",
+          "Implementació de sistema de diagnòstic amb Arduino."
+        ],
+        en: [
+          "System validation using physical simulators and Python scripts.",
+          "Diagnosis system implementation with Arduino."
+        ]
+      }
+    },
+    {
+      company: "Federació Catalana de Futbol",
+      role: { es: "Árbitro de fútbol", ca: "Àrbitre de futbol", en: "Soccer Referee" },
+      date: "07/2016 - Present",
+      points: {
+        es: ["Gestión de la presión y toma de decisiones crítica."],
+        ca: ["Gestió de la pressió i presa de decisions crítica."],
+        en: ["Pressure management and critical decision making."]
+      }
+    }
+  ],
+  projects: [
+    {
+      name: "Editor de Documentos (IA Local)",
+      date: "2026",
+      tags: ["Local LLMs", "React", "PDF Engines"],
+      desc: {
+        es: "Plataforma web Privacy-First con asistentes de IA locales para edición y conversión de documentos.",
+        ca: "Plataforma web Privacy-First amb assistents d'IA locals per a edició i conversió de documents.",
+        en: "Privacy-First web platform with local AI assistants for document editing and conversion."
+      }
+    },
+    {
+      name: "Arquitectura de Ingesta (AWS)",
+      date: "2025",
+      tags: ["AWS", "PostgreSQL", "Data Engineering"],
+      desc: {
+        es: "Ecosistema de extracción masiva de dades web con escalabilidad en la nube.",
+        ca: "Ecosistema d'extracció massiva de dades web amb escalabilitat al núvol.",
+        en: "Massive web data extraction ecosystem with cloud scalability."
+      }
+    },
+    {
+      name: "Plataforma de Procesamiento (Docker)",
+      date: "2025",
+      tags: ["Docker", "Maths", "Security"],
+      desc: {
+        es: "Despliegue de microservicios para procesamiento matemático y visualización segura.",
+        ca: "Desplegament de microserveis per a processament matemàtic i visualització segura.",
+        en: "Microservices deployment for mathematical processing and secure visualization."
+      }
+    }
+  ],
+  education: [
+    {
+      title: { es: "Máster - Ciencia de Datos", ca: "Màster - Ciència de Dades", en: "Master - Data Science" },
+      school: "Universitat Oberta de Catalunya",
+      date: "2025 – Present"
+    },
+    {
+      title: { es: "Grado en Ingeniería Informática", ca: "Grau en Enginyeria Informàtica", en: "BS in Computer Engineering" },
+      school: "Universitat Autònoma de Barcelona",
+      date: "2018 – 2025"
+    },
+    {
+      title: { es: "Grado en Sistemas de Telecomunicación", ca: "Grau en Sistemes de Telecomunicació", en: "BS in Telecommunication Systems" },
+      school: "Universitat Autònoma de Barcelona",
+      date: "2018 – 2025"
+    }
+  ],
+  skills: [
+    "Python", "C++", "React", "Node.js", "Swift", "Machine Learning", "Local IA", "AWS", "Docker", "PKI/SSL", "PCB Design"
+  ],
+  volunteering: [
+    {
+      location: "Bolivia",
+      date: "2025",
+      org: "FASFI",
+      desc: { es: "Apoyo educativo en Cochabamba.", ca: "Suport educatiu a Cochabamba.", en: "Educational support in Cochabamba." }
+    },
+    {
+      location: "Haití",
+      date: "2019",
+      org: "TECHO",
+      desc: { es: "Construcción de viviendas en Puerto Príncipe.", ca: "Construcció d'habitatges a Port-au-Prince.", en: "Emergency housing construction." }
+    }
+  ]
 }
 
 function App() {
+  const [lang, setLang] = useState('es')
   const [activeTab, setActiveTab] = useState('experience')
+  const t = TRANSLATIONS[lang]
 
   return (
     <div className="container">
-      <header>
+      <div className="language-switcher">
+        <button className={lang === 'es' ? 'active' : ''} onClick={() => setLang('es')}>ES</button>
+        <button className={lang === 'ca' ? 'active' : ''} onClick={() => setLang('ca')}>CA</button>
+        <button className={lang === 'en' ? 'active' : ''} onClick={() => setLang('en')}>EN</button>
+      </div>
+
+      <header className="premium-nav">
         <div className="logo" onClick={() => setActiveTab('experience')}>JOAN MATA</div>
         <nav>
           <ul>
-            <li className={activeTab === 'experience' ? 'active' : ''} onClick={() => setActiveTab('experience')}>Experiencia</li>
-            <li className={activeTab === 'projects' ? 'active' : ''} onClick={() => setActiveTab('projects')}>Proyectos</li>
-            <li className={activeTab === 'skills' ? 'active' : ''} onClick={() => setActiveTab('skills')}>Habilidades</li>
-            <li className={activeTab === 'certificates' ? 'active' : ''} onClick={() => setActiveTab('certificates')}>Certificados</li>
-            <li className={activeTab === 'volunteering' ? 'active' : ''} onClick={() => setActiveTab('volunteering')}>Voluntariado</li>
-            <li className={activeTab === 'contact' ? 'active' : ''} onClick={() => setActiveTab('contact')}>Contacto</li>
+            {Object.keys(t.nav).map(key => (
+              <li 
+                key={key} 
+                className={activeTab === key ? 'active' : ''} 
+                onClick={() => setActiveTab(key)}
+              >
+                {t.nav[key]}
+              </li>
+            ))}
           </ul>
         </nav>
       </header>
@@ -152,24 +322,25 @@ function App() {
       <main>
         <section className="hero">
           <h1>Joan <span className="gradient-text">Mata</span> Pàrraga</h1>
-          <p>Ingeniero Informático y de Telecomunicación • Profesor Universitario • Data Scientist</p>
+          <p>{t.hero.subtitle}</p>
+          <p className="profile-text">{DATA.profile[lang]}</p>
         </section>
 
         {activeTab === 'experience' && (
-          <section id="experience">
-            <h2 className="section-title">Experiencia Profesional</h2>
+          <section>
+            <h2 className="section-title">{t.sections.experience}</h2>
             <div className="card-grid">
-              {EXPERIENCE.map((exp, i) => (
+              {DATA.experience.map((exp, i) => (
                 <div key={i} className="card">
                   <div className="card-header">
                     <div>
-                      <h3 className="card-title">{exp.title}</h3>
+                      <h3 className="card-title">{exp.role[lang]}</h3>
                       <p className="card-subtitle">{exp.company}</p>
                     </div>
                     <span className="card-date">{exp.date}</span>
                   </div>
                   <ul className="card-list">
-                    {exp.points.map((p, j) => (
+                    {exp.points[lang].map((p, j) => (
                       <li key={j}>{p}</li>
                     ))}
                   </ul>
@@ -180,16 +351,40 @@ function App() {
         )}
 
         {activeTab === 'projects' && (
-          <section id="projects">
-            <h2 className="section-title">Proyectos de Ingeniería</h2>
-            <div className="card-grid" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(400px, 1fr))' }}>
-              {PROJECTS.map((proj, i) => (
+          <section>
+            <h2 className="section-title">{t.sections.projects}</h2>
+            <div className="card-grid" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))' }}>
+              {DATA.projects.map((proj, i) => (
                 <div key={i} className="card">
                   <div className="card-header">
-                    <h3 className="card-title">{proj.title}</h3>
+                    <h3 className="card-title">{proj.name}</h3>
                     <span className="card-date">{proj.date}</span>
                   </div>
-                  <p className="card-content">{proj.description}</p>
+                  <p className="card-content">{proj.desc[lang]}</p>
+                  <div className="badge-container" style={{ marginTop: '1rem' }}>
+                    {proj.tags.map((tag, j) => (
+                      <span key={j} className="badge">{tag}</span>
+                    ))}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </section>
+        )}
+
+        {activeTab === 'education' && (
+          <section>
+            <h2 className="section-title">{t.sections.education}</h2>
+            <div className="card-grid">
+              {DATA.education.map((edu, i) => (
+                <div key={i} className="card">
+                  <div className="card-header">
+                    <div>
+                      <h3 className="card-title">{edu.title[lang]}</h3>
+                      <p className="card-subtitle">{edu.school}</p>
+                    </div>
+                    <span className="card-date">{edu.date}</span>
+                  </div>
                 </div>
               ))}
             </div>
@@ -197,33 +392,28 @@ function App() {
         )}
 
         {activeTab === 'skills' && (
-          <section id="skills">
-            <h2 className="section-title">Habilidades y Tecnologías</h2>
+          <section>
+            <h2 className="section-title">{t.sections.skills}</h2>
             <div className="card">
               <div className="badge-container">
-                {SKILLS.map((skill, i) => (
+                {DATA.skills.map((skill, i) => (
                   <span key={i} className="badge">{skill}</span>
                 ))}
               </div>
-            </div>
-            
-            <h2 className="section-title" style={{ marginTop: '4rem' }}>Idiomas</h2>
-            <div className="card-grid" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))' }}>
-              {LANGUAGES.map((lang, i) => (
-                <div key={i} className="card" style={{ textAlign: 'center' }}>
-                  <h3 className="card-title">{lang.name}</h3>
-                  <p className="card-subtitle" style={{ color: 'var(--text-dim)' }}>{lang.level}</p>
-                </div>
-              ))}
             </div>
           </section>
         )}
 
         {activeTab === 'certificates' && (
           <section id="certificates">
-            <h2 className="section-title">Certificados</h2>
+            <h2 className="section-title">{t.sections.certificates}</h2>
             <div className="card-grid" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))' }}>
-              {CERTIFICATES.map((cert, i) => (
+              {[
+                { title: 'Desarrollo con IA', issuer: 'BIG School', date: '2026' },
+                { title: 'Bluetooth Low Energy Fundamentals', issuer: 'Nordic Semiconductor', date: '2024' },
+                { title: 'nRF Connect SDK Fundamentals', issuer: 'Nordic Semiconductor', date: '2024' },
+                { title: 'Certificate of Python', issuer: 'University of Michigan', date: '2019' }
+              ].map((cert, i) => (
                 <div key={i} className="card">
                   <div className="card-header">
                     <div>
@@ -239,10 +429,10 @@ function App() {
         )}
 
         {activeTab === 'volunteering' && (
-          <section id="volunteering">
-            <h2 className="section-title">Voluntariado</h2>
+          <section>
+            <h2 className="section-title">{t.sections.volunteering}</h2>
             <div className="card-grid">
-              {VOLUNTEERING.map((v, i) => (
+              {DATA.volunteering.map((v, i) => (
                 <div key={i} className="card">
                   <div className="card-header">
                     <div>
@@ -251,7 +441,7 @@ function App() {
                     </div>
                     <span className="card-date">{v.date}</span>
                   </div>
-                  <p className="card-content">{v.description}</p>
+                  <p className="card-content">{v.desc[lang]}</p>
                 </div>
               ))}
             </div>
@@ -259,19 +449,19 @@ function App() {
         )}
 
         {activeTab === 'contact' && (
-          <section id="contact">
-            <h2 className="section-title">Contacto</h2>
+          <section>
+            <h2 className="section-title">{t.sections.contact}</h2>
             <div className="card-grid" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))' }}>
               <div className="card" style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-                <h3 className="card-title">Información de contacto</h3>
-                <p className="card-content">📧 {CONTACT.email}</p>
-                <p className="card-content">📱 {CONTACT.phone}</p>
-                <p className="card-content">📍 {CONTACT.location}</p>
+                <h3 className="card-title">{t.contact.info}</h3>
+                <p className="card-content">📧 {DATA.email}</p>
+                <p className="card-content">📱 {DATA.phone}</p>
+                <p className="card-content">📍 {DATA.location}</p>
               </div>
               <div className="card" style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-                <h3 className="card-title">Redes Profesionales</h3>
-                <p className="card-content">🔗 <a href={`https://${CONTACT.linkedin}`} target="_blank" rel="noreferrer">LinkedIn</a></p>
-                <p className="card-content">💻 <a href={`https://${CONTACT.github}`} target="_blank" rel="noreferrer">GitHub</a></p>
+                <h3 className="card-title">{t.contact.social}</h3>
+                <p className="card-content">🔗 <a href={`https://${DATA.linkedin}`} target="_blank" rel="noreferrer">LinkedIn</a></p>
+                <p className="card-content">💻 <a href={`https://${DATA.github}`} target="_blank" rel="noreferrer">GitHub</a></p>
               </div>
             </div>
           </section>
@@ -279,8 +469,8 @@ function App() {
       </main>
 
       <footer className="footer">
-        <p>&copy; 2026 Joan Mata Pàrraga. Creado con React y Vite.</p>
-        <p style={{ marginTop: '0.5rem' }}>Barcelona, España • joanmata.parraga@gmail.com</p>
+        <p>&copy; 2026 {DATA.name}. Built with React & Vite.</p>
+        <p style={{ marginTop: '0.5rem' }}>Barcelona • {DATA.email}</p>
       </footer>
     </div>
   )
