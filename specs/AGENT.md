@@ -1,25 +1,39 @@
-# 🤖 JOAN MATA Personal Portfolio / CV - AGENT STEERING v1
+# AGENT.MD: Portfolio Manager (SSD Protocol)
 
-## PERFIL
-Actúas como un Senior Web Architect & Branding Expert. Tu objetivo es `cv.joanmata.com`.
-Sigues la filosofía de "Tony Stark (Usuario) y Jarvis (Agente)".
+Este documento define el comportamiento y las responsabilidades del Agente para este proyecto específico.
 
-## REGLAS DE MEMORIA (SSD Style)
-- **Regla de Sincronización Inmediata**: ANTES de implementar cualquier cambio funcional, actualiza `specs/plan.md` y `specs/product.md`.
-- **Regla de Documentación**: TRAS cada éxito, documenta el cambio en `specs/plan.md` (marcando como hecho) y, si procede, en la descripción técnica correspondiente.
-- **Mantener la "Single Prompt" Rebuildability**: Todas las rutas, dependencias y arquitectura deben estar reflejadas en las specs para que el proyecto se pueda reconstruir desde cero en una sola interacción si fuera necesario.
+## Contexto del Proyecto
+Este es el portal profesional de Joan Mata, diseñado bajo arquitectura MVC para máxima escalabilidad. Combina hardware, software y ciencia de datos.
 
-## REGLAS DE ARQUITECTURA (MVC)
-- **Models**: Todos los datos estáticos en `src/models/cvData.js`. No admitas datos "sueltos" en los componentes.
-- **Views**: Componentes puros en `src/components/`. Evita lógica de negocio pesada dentro de JSX.
-- **Styling**: Aesthetics First. Usa el sistema de variables de `src/index.css`. No ensucies el código con estilos inline innecesarios.
+## Protocolo de Sincronización (OBLIGATORIO)
 
-## SEGURIDAD Y PRIVACIDAD
-- **Cloudflare First**: Siempre asume que el tráfico pasa por Cloudflare Tunnel. No expongas puertos locales si no es necesario.
-- **No Secrets**: Nunca incluyas claves de API o tokens en los archivos de specs o código fuente. Usa `.env` si es necesario.
+### 1. Sincronización de Especificaciones (SSD)
+- **Antes de cada cambio funcional**, consulta `specs/plan.md`.
+- **Después de cada cambio funcional**, actualiza `specs/plan.md` con el estado actual.
+- Mantén `specs/product.md` alineado con las funcionalidades disponibles (incluyendo Modo Admin y Descarga CV).
 
-## RECOMENDACIÓN PARA EL USUARIO (Joan)
-Para un "Spec-Driven Development" exitoso:
-- **Define el 'Qué' en `product.md`**: Solo dime qué quieres añadir o cambiar.
-- **Yo redactaré el 'Cómo' en la spec correspondiente**: Antes de codear, definiré las reglas técnicas allí.
-- **Estado del Proyecto**: Consulta siempre `specs/plan.md` para ver por dónde vamos.
+### 2. Sincronización de Datos (Modo Administrador)
+- Los cambios realizados a través del editor interactivo se reflejan en el estado local de la sesión.
+- Cualquier adición persistente de datos en `cvData.js` o `translations.js` debe seguir el formato estructurado: 
+  * Multilingüe (es, ca, en).
+  * Soporte para `links` (github, live).
+  * Soporte para `security` y `techStack`.
+
+### 3. Protocolo de Git
+- Tras cada cambio sustancial (ej: nueva sección, corrección UI), realiza un **commit descriptivo**. 
+- Sigue el formato `feat: ...`, `fix: ...`, `chore: ...`.
+
+### 4. Modo Administrador
+- Acceso: `admin123` (configurado en `.env`).
+- Funcionalidad: Edición visual sin código.
+- **Regla de Auto-Traducción**: El Agente debe facilitar o emular la traducción automática ES -> EN/CA siempre que se modifique texto en español.
+
+## Reglas de Diseño Premium
+- Mantener Glassmorphism en todos los nuevos componentes (`Card`, `Modal`, `AdminPanel`).
+- Usar variables CSS globales (`index.css`) para colores y desenfoques.
+- Asegurar que los botones de descarga han de ser visibles e informativos.
+
+## Verificación de Despliegue
+- El entorno local Corre en `localhost:5173` para desarrollo.
+- El despliegue final está en `joanmata.com`. 
+- El Agente **debe** verificar que los cambios no rompen la accesibilidad del portal principal.

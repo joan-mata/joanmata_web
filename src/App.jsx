@@ -17,14 +17,26 @@ import Certificates from './components/sections/Certificates';
 import Volunteering from './components/sections/Volunteering';
 import Contact from './components/sections/Contact';
 
+// Admin components
+import AdminEntry from './components/admin/AdminEntry';
+import AdminDashboard from './components/admin/AdminDashboard';
+
 function App() {
   const [lang, setLang] = useState('es');
   const [activeTab, setActiveTab] = useState('experience');
+  const [currentData, setCurrentData] = useState(DATA);
+  const [isAdminMode, setIsAdminMode] = useState(false);
+  const [isAdminLoggedIn, setIsAdminLoggedIn] = useState(false);
 
   const translations = TRANSLATIONS[lang];
 
+  const handleAdminUpdate = (newData) => {
+    setCurrentData(newData);
+    setIsAdminMode(false);
+  };
+
   return (
-    <div className="container">
+    <div className={`container ${isAdminMode ? 'admin-active' : ''}`}>
       <LanguageSwitcher lang={lang} onLangChange={setLang} />
 
       <Header 
@@ -34,75 +46,97 @@ function App() {
       />
 
       <main>
-        {/* BUG FIX: Hero section only appears on the first tab */}
-        {activeTab === 'experience' && (
-          <Hero 
-            name={DATA.name} 
-            subtitle={translations.hero.subtitle} 
-            profileText={DATA.profile[lang]} 
-            translations={translations}
-          />
-        )}
+        {isAdminMode ? (
+          !isAdminLoggedIn ? (
+            <AdminEntry 
+              onLogin={() => setIsAdminLoggedIn(true)} 
+              translations={translations}
+            />
+          ) : (
+            <AdminDashboard 
+              data={currentData} 
+              onSave={handleAdminUpdate} 
+              onCancel={() => setIsAdminMode(false)}
+              translations={translations}
+              lang={lang}
+            />
+          )
+        ) : (
+          <>
+            {activeTab === 'experience' && (
+              <Hero 
+                name={currentData.name} 
+                subtitle={translations.hero.subtitle} 
+                profileText={currentData.profile[lang]} 
+                translations={translations}
+              />
+            )}
 
-        {activeTab === 'experience' && (
-          <Experience 
-            title={translations.sections.experience} 
-            data={DATA.experience} 
-            lang={lang} 
-          />
-        )}
+            {activeTab === 'experience' && (
+              <Experience 
+                title={translations.sections.experience} 
+                data={currentData.experience} 
+                lang={lang} 
+              />
+            )}
 
-        {activeTab === 'projects' && (
-          <Projects 
-            title={translations.sections.projects} 
-            data={DATA.projects} 
-            lang={lang} 
-            translations={translations}
-          />
-        )}
+            {activeTab === 'projects' && (
+              <Projects 
+                title={translations.sections.projects} 
+                data={currentData.projects} 
+                lang={lang} 
+                translations={translations}
+              />
+            )}
 
-        {activeTab === 'education' && (
-          <Education 
-            title={translations.sections.education} 
-            data={DATA.education} 
-            lang={lang} 
-          />
-        )}
+            {activeTab === 'education' && (
+              <Education 
+                title={translations.sections.education} 
+                data={currentData.education} 
+                lang={lang} 
+              />
+            )}
 
-        {activeTab === 'skills' && (
-          <Skills 
-            title={translations.sections.skills} 
-            data={DATA.skills} 
-          />
-        )}
+            {activeTab === 'skills' && (
+              <Skills 
+                title={translations.sections.skills} 
+                data={currentData.skills} 
+              />
+            )}
 
-        {activeTab === 'certificates' && (
-          <Certificates 
-            title={translations.sections.certificates} 
-            data={DATA.certificates} 
-          />
-        )}
+            {activeTab === 'certificates' && (
+              <Certificates 
+                title={translations.sections.certificates} 
+                data={currentData.certificates} 
+              />
+            )}
 
-        {activeTab === 'volunteering' && (
-          <Volunteering 
-            title={translations.sections.volunteering} 
-            data={DATA.volunteering} 
-            lang={lang} 
-          />
-        )}
+            {activeTab === 'volunteering' && (
+              <Volunteering 
+                title={translations.sections.volunteering} 
+                data={currentData.volunteering} 
+                lang={lang} 
+              />
+            )}
 
-        {activeTab === 'contact' && (
-          <Contact 
-            title={translations.sections.contact} 
-            infoLabel={translations.contact.info}
-            socialLabel={translations.contact.social}
-            data={DATA} 
-            translations={translations}
-          />
+            {activeTab === 'contact' && (
+              <Contact 
+                title={translations.sections.contact} 
+                infoLabel={translations.contact.info}
+                socialLabel={translations.contact.social}
+                data={currentData} 
+                translations={translations}
+              />
+            )}
+          </>
         )}
       </main>
 
-      <Footer name={DATA.name} email={DATA.email} />
+      <Footer 
+        name={currentData.name} 
+        email={currentData.email} 
+        onAdminClick={() => setIsAdminMode(true)}
+      />
     </div>
   );
 }

@@ -1,28 +1,29 @@
 # Project Plan: JOAN MATA Personal Portfolio / CV
 
-## Current State: Ready to Scale
-The project has been refactored to a modern MVC architecture and the core features are implemented. The projects section is now interactive and detailed.
+## Current State: Robust & Managed
+The project has been refactored to a modern MVC architecture, includes a password-protected interactive Admin Editor with auto-translation, and features a redundant CV download system.
 
 ## Completed Tasks (`[x]`)
 - [x] **Arquitectura MVC**: Separación de Modelos, Vistas y Controlador.
 - [x] **Multilingüe**: Soporte para ES, CA, EN sin dependencias.
-- [x] **Bug Fix**: Hero visible solo en la pestaña principal.
-- [x] **Expansión de Proyectos**: Tarjetas con puntos clave y modal de detalle premium.
-- [x] **Actualización de Entorno**: Node 25 e instalación de NVM.
-- [x] **Implementación de SSD (Spec-Driven Development)**: Estructura de `/specs`.
+- [x] **Restauración de Datos**: Recuperación de los 3 proyectos originales (AI Editor, AWS Pipeline, Docker Video).
+- [x] **Modo Administrador**: Panel de edición interactivo protegido por contraseña (admin123 en .env) con **Auto-Traducción** ES -> EN/CA.
+- [x] **UI de Proyectos**: Rediseño de tarjetas con botón "WEB/URL" independiente y eliminación de sufijos técnicos en títulos.
+- [x] **Descarga de CV**: Integración de botón de descarga PDF con popup de error si el archivo no existe.
+- [x] **Corrección de Typos**: Ajuste de "Data Scientist" y sus variantes multilingües.
+- [ ] **Dockerización**: (Próximo paso tras estabilizar contenido).
 
 ## Upcoming Features (`[ ]`)
 - [ ] **Dockerización**: Crear `Dockerfile` y `docker-compose.yml` para despliegue productivo.
 - [ ] **Animaciones de Transición**: Añadir Framer Motion o transiciones CSS más suaves entre tabs.
+- [ ] **Formación Detallada**: Expandir sección de educación con tarjetas modales.
 - [ ] **SEO & Meta**: Optimización de tags para mejor indexación.
-- [ ] **Pestaña de Formación Detallada**: Al igual que Proyectos, expandir con detalles de asignaturas.
-- [ ] **Integración de Blog/Feed**: Notificaciones automáticas de nuevos proyectos en Github.
 
-## Roadmap Phase 1: Infrastructure (In Progress)
-1. Completar la documentación en `/specs` (Done).
-2. Refactorizar CSS para variables de diseño más consistentes (Done).
-3. Preparar el entorno Docker para el servidor local.
+## Roadmap Phase 1: Interactive CMS (Done)
+1. Implementar el Modo Administrador para edición sin código (Done).
+2. Sincronizar traducciones automáticas (Done).
+3. Asegurar la integridad de todos los proyectos históricos (Done).
 
-## Roadmap Phase 2: Content Expansion
-1. Añadir más proyectos del historial de UAB.
-2. Integrar certificados interactivos con visualización de PDF.
+## Roadmap Phase 2: Deployment & Devops
+1. Configurar entorno Docker para el servidor joanmata.com local.
+2. Optimizar tiempos de carga mediante Vite y compresión de assets.

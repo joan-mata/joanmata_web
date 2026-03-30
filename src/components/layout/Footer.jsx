@@ -1,10 +1,17 @@
 import React from 'react';
 
-const Footer = ({ name, email }) => {
+const Footer = ({ name, email, onAdminClick }) => {
   return (
-    <footer className="footer">
-      <p>&copy; 2026 {name}. Built with React & Vite.</p>
-      <p style={{ marginTop: '0.5rem' }}>Barcelona • {email}</p>
+    <footer className="footer section-top-divider">
+      <div className="footer-content">
+        <p>&copy; {new Date().getFullYear()} {name}</p>
+        <div className="footer-links">
+          <a href={`mailto:${email}`}>{email}</a>
+          <button className="admin-link-btn" onClick={onAdminClick}>
+            Admin Portal
+          </button>
+        </div>
+      </div>
     </footer>
   );
 };
