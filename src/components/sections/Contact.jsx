@@ -1,24 +1,44 @@
 import React from 'react';
-import Card from '../common/Card';
 
-const Contact = ({ title, infoLabel, socialLabel, data }) => {
+const Contact = ({ title, infoLabel, socialLabel, data, translations }) => {
+  const handleDownload = () => {
+    const cvUrl = '/assets/cv-joan-mata.pdf';
+    fetch(cvUrl, { method: 'HEAD' })
+      .then(res => {
+        if (res.ok) {
+          window.open(cvUrl, '_blank');
+        } else {
+          alert(translations?.alerts?.pdfNotFound || 'PDF Not Found');
+        }
+      })
+      .catch(() => {
+        alert(translations?.alerts?.pdfNotFound || 'PDF Not Found');
+      });
+  };
+
   return (
     <section>
       <h2 className="section-title">{title}</h2>
-      <div className="card-grid" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))' }}>
-        <Card title={infoLabel} className="contact-card">
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-            <p className="card-content">📧 {data.email}</p>
-            <p className="card-content">📱 {data.phone}</p>
-            <p className="card-content">📍 {data.location}</p>
+      
+      <div className="contact-grid">
+        <div className="contact-card">
+          <h3 className="modal-subtitle">{infoLabel}</h3>
+          <p className="contact-item">📧 {data.email}</p>
+          <p className="contact-item">📱 {data.phone}</p>
+          <p className="contact-item">📍 {data.location}</p>
+          
+          <div className="contact-actions" style={{ marginTop: '2rem' }}>
+            <button className="cta-button" onClick={handleDownload}>
+              {translations?.hero?.downloadCV || 'Download CV (PDF)'}
+            </button>
           </div>
-        </Card>
-        <Card title={socialLabel} className="contact-card">
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-            <p className="card-content">🔗 <a href={`https://${data.linkedin}`} target="_blank" rel="noreferrer">LinkedIn</a></p>
-            <p className="card-content">💻 <a href={`https://${data.github}`} target="_blank" rel="noreferrer">GitHub</a></p>
-          </div>
-        </Card>
+        </div>
+
+        <div className="contact-card">
+          <h3 className="modal-subtitle">{socialLabel}</h3>
+          <a href={`https://${data.linkedin}`} target="_blank" rel="noreferrer" className="social-link">LinkedIn</a>
+          <a href={`https://${data.github}`} target="_blank" rel="noreferrer" className="social-link">GitHub</a>
+        </div>
       </div>
     </section>
   );

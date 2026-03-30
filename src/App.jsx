@@ -40,6 +40,7 @@ function App() {
             name={DATA.name} 
             subtitle={translations.hero.subtitle} 
             profileText={DATA.profile[lang]} 
+            translations={translations}
           />
         )}
 
@@ -96,6 +97,7 @@ function App() {
             infoLabel={translations.contact.info}
             socialLabel={translations.contact.social}
             data={DATA} 
+            translations={translations}
           />
         )}
       </main>
