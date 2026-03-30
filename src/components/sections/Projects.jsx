@@ -8,12 +8,12 @@ const Projects = ({ title, data, lang, translations }) => {
 
   const openModal = (project) => {
     setSelectedProject(project);
-    document.body.style.overflow = 'hidden'; // Prevent scrolling
+    document.body.style.overflow = 'hidden'; 
   };
 
   const closeModal = () => {
     setSelectedProject(null);
-    document.body.style.overflow = 'auto'; // Re-enable scrolling
+    document.body.style.overflow = 'auto'; 
   };
 
   return (
@@ -27,6 +27,8 @@ const Projects = ({ title, data, lang, translations }) => {
             title={proj.name}
             date={proj.date}
             onClick={() => openModal(proj)}
+            links={proj.links}
+            translations={translations}
             className="project-card"
           >
             <p className="card-content" style={{ marginBottom: '1.5rem' }}>{proj.desc[lang]}</p>

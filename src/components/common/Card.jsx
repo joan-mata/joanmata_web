@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Card = ({ title, subtitle, date, children, className = '', onClick }) => {
+const Card = ({ title, subtitle, date, children, className = '', onClick, links, translations }) => {
   const isClickable = !!onClick;
 
   return (
@@ -9,11 +9,25 @@ const Card = ({ title, subtitle, date, children, className = '', onClick }) => {
       onClick={onClick}
     >
       <div className="card-header">
-        <div>
+        <div className="header-main-info">
           {title && <h3 className="card-title">{title}</h3>}
           {subtitle && <p className="card-subtitle">{subtitle}</p>}
         </div>
-        {date && <span className="card-date">{date}</span>}
+        
+        <div className="card-header-actions">
+          {links?.live && (
+            <a 
+              href={`https://${links.live}`} 
+              target="_blank" 
+              rel="noreferrer" 
+              className="card-action-btn"
+              onClick={(e) => e.stopPropagation()}
+            >
+              {translations?.projects?.visit || 'WEB'}
+            </a>
+          )}
+          {date && <span className="card-date">{date}</span>}
+        </div>
       </div>
       <div className="card-body">
         {children}
