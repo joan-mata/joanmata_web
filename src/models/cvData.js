@@ -1,0 +1,464 @@
+export const DATA = {
+  name: "Joan Mata Pàrraga",
+  email: "joanmata.parraga@gmail.com",
+  phone: "+34 647 267 153",
+  location: "Barcelona, España",
+  linkedin: "linkedin.com/in/joan-mata",
+  github: "github.com/joan-mata",
+  profile: {
+    es: "Ingeniero con doble titulación en Ingeniería Informática y Sistemas de Telecomunicación, con un perfil híbrido que une hardware, software y ciencia de datos. Actualmente ejerzo como Profesor Universitario especializado en ciberseguridad y redes, actividad que compagino con el desarrollo de soluciones de IA local, arquitecturas cloud escalables y sistemas embebidos. Me define una profunda curiosidad técnica y una mentalidad de aprendizaje continuo, lo que me permite adaptarme rápidamente a nuevas tecnologías e integrarlas en proyectos complejos y seguros.",
+    ca: "Enginyer amb doble titulació en Enginyeria Informàtica i Sistemes de Telecomunicació, amb un perfil híbrid que uneix maquinari, programari i ciència de dades. Actualment exerceixo com a Professor Universitari especialitzat en ciberseguretat i xarxes, activitat que compagino amb el desenvolupament de solucions d'IA local, arquitectures cloud escalables i sistemes encastats. Em defineix una profunda curiositat tècnica i una mentalidad de aprenentatge continu, la qual cosa em permet adaptar-me ràpidament a noves tecnologies i integrar-les en projectes complexos i segurs.",
+    en: "Engineer with a double degree in Computer Engineering and Telecommunication Systems, with a hybrid profile combining hardware, software, and data science. Currently serving as a University Professor specializing in cybersecurity and networks, a role complemented by the development of local AI solutions, scalable cloud architectures, and embedded systems. I am defined by a deep technical curiosity and a continuous learning mindset, allowing me to quickly adapt to new technologies and integrate them into complex and secure projects."
+  },
+  experience: [
+    {
+      company: "Universitat Autònoma de Barcelona",
+      role: { es: "Profesor de universidad", ca: "Professor d'universitat", en: "University Professor" },
+      date: "09/2025 - Present",
+      points: {
+        es: [
+          "Docente en 'Serveis de Telecomunicacions', liderando la formación práctica en desarrollo web full-stack y seguridad.",
+          "Configuración avanzada de seguridad web: SSL/TLS, PKI y gestión de infraestructuras críticas.",
+          "Docente en 'Fonaments de Xarxes', impartiendo fundamentos de comunicación IP y cliente-servidor.",
+          "Tutor de TFG en ciberseguridad (hardening) y Data Engineering (scraping masivo)."
+        ],
+        ca: [
+          "Docent en 'Serveis de Telecomunicacions', liderant la formació pràctica en desenvolupament web full-stack i seguretat.",
+          "Configuració avançada de seguretat web: SSL/TLS, PKI i gestió d'infraestructures crítiques.",
+          "Docent en 'Fonaments de Xarxes', impartint fonaments de comunicació IP i client-servidor.",
+          "Tutor de TFG en ciberseguretat (hardening) i Data Engineering (scraping massiu)."
+        ],
+        en: [
+          "Professor in 'Telecommunication Services', leading practical training in full-stack web development and security.",
+          "Advanced web security configuration: SSL/TLS, PKI, and critical infrastructure management.",
+          "Professor in 'Network Fundamentals', teaching IP communication and client-server architecture.",
+          "Tutor for final projects in cybersecurity (hardening) and Data Engineering (massive scraping)."
+        ]
+      }
+    },
+    {
+      company: "FlexiiC",
+      role: { es: "Diseñador de Circuitos Integrados", ca: "Dissenyador de Circuits Integrats", en: "IC Designer" },
+      date: "09/2024 - 11/2025",
+      points: {
+        es: [
+          "Desarrollo de conectividad inalámbrica con nRF52840 y Bluetooth Low Energy (BLE).",
+          "Diseño integral de PCBs y validación con sistemas embebidos.",
+          "Verificación digital de hardware (RTL) en Verilog y optimización en ASM.",
+          "Liderazgo en debugging lógico del chip para fase de producción."
+        ],
+        ca: [
+          "Desenvolupament de connectivitat sense fils amb nRF52840 i Bluetooth Low Energy (BLE).",
+          "Disseny integral de PCBs i validació amb sistemes encastats.",
+          "Verificació digital de maquinari (RTL) en Verilog i optimització en ASM.",
+          "Lideratge en debugging lògic del xip per a fase de producció."
+        ],
+        en: [
+          "Wireless connectivity development using nRF52840 and Bluetooth Low Energy (BLE).",
+          "Integral PCB design and validation with embedded systems.",
+          "Hardware digital verification (RTL) in Verilog and ASM optimization.",
+          "Leading role in logial debugging for the production phase."
+        ]
+      }
+    },
+    {
+      company: "Universitat Autònoma de Barcelona",
+      role: { es: "Técnico Especialista en Investigación", ca: "Tècnic Especialista en Investigació", en: "Research Specialist" },
+      date: "07/2022 - 07/2023",
+      points: {
+        es: [
+          "Diseño de arquitectura backend migrando de Django a Flask.",
+          "Liderazgo en transición de SQL a NoSQL (MongoDB) para datos heterogéneos.",
+          "Automatización de pipelines de datos en tiempo real."
+        ],
+        ca: [
+          "Disseny d'arquitectura backend migrant de Django a Flask.",
+          "Lideratge en transició de SQL a NoSQL (MongoDB) per a dades heterogènies.",
+          "Automatització de pipelines de dades en temps real."
+        ],
+        en: [
+          "Backend architecture design migrating from Django to Flask.",
+          "Leading transition from SQL to NoSQL (MongoDB) for heterogeneous data.",
+          "Data pipeline automation for real-time processing."
+        ]
+      }
+    },
+    {
+      company: "Cellnex Telecom",
+      role: { es: "Ingeniero de Ventas", ca: "Enginyer de Vendes", en: "Sales Engineer" },
+      date: "06/2022 - 07/2023",
+      points: {
+        es: [
+          "Modelado de sistemas de RF y gestión de alianzas estratégicas.",
+          "Coordinación End-to-End del ciclo de vida del proyecto."
+        ],
+        ca: [
+          "Modelatge de sistemes d'RF i gestió d'aliances estratègiques.",
+          "Coordinació End-to-End del cicle de vida del projecte."
+        ],
+        en: [
+          "RF systems modeling and strategic alliance management.",
+          "End-to-End coordination of project lifecycle."
+        ]
+      }
+    },
+    {
+      company: "Johnson Control Hitachi",
+      role: { es: "QA Tester", ca: "QA Tester", en: "QA Tester" },
+      date: "07/2021 - 02/2022",
+      points: {
+        es: [
+          "Validación de sistemas mediante simuladores físicos y scripts en Python.",
+          "Implementación de sistema de diagnóstico con Arduino."
+        ],
+        ca: [
+          "Validació de sistemes mitjançant simuladors físics i scripts en Python.",
+          "Implementació de sistema de diagnòstic amb Arduino."
+        ],
+        en: [
+          "System validation using physical simulators and Python scripts.",
+          "Diagnosis system implementation with Arduino."
+        ]
+      }
+    },
+    {
+      company: "Federació Catalana de Futbol",
+      role: { es: "Árbitro de fútbol", ca: "Àrbitre de futbol", en: "Soccer Referee" },
+      date: "07/2016 - Present",
+      points: {
+        es: ["Gestión de la presión y toma de decisiones crítica."],
+        ca: ["Gestió de la pressió i presa de decisions crítica."],
+        en: ["Pressure management and critical decision making."]
+      }
+    }
+  ],
+  projects: [
+    {
+      id: "ai-resumes",
+      name: "AI Interactive Resume Editor",
+      date: "2026",
+      tags: ["Next.js", "OpenAI", "React", "TRPC"],
+      desc: {
+        es: "Plataforma de optimización de CVs mediante IA que adapta el perfil a descripciones de empleo específicas.",
+        ca: "Plataforma d'optimització de CVs mitjançant IA que adapta el perfil a descripcions de feina específiques.",
+        en: "AI resume optimization platform that tailors profiles to specific job descriptions."
+      },
+      points: {
+        es: [
+          "Integración avanzada con OpenAI API para sugerencias de contenido.",
+          "Sistema de edición en tiempo real con vista previa interactiva.",
+          "Arquitectura escalable usando TRPC y Next.js.",
+          "Optimización de ATS (Applicant Tracking Systems).",
+          "Interfaz dinámica con TailWind CSS."
+        ],
+        ca: [
+          "Integració avançada amb OpenAI API per a suggeriments de contingut.",
+          "Sistema d'edició en temps real amb vista prèvia interactiva.",
+          "Arquitectura escalable usant TRPC i Next.js.",
+          "Optimització d'ATS (Applicant Tracking Systems).",
+          "Interfície dinàmica amb TailWind CSS."
+        ],
+        en: [
+          "Advanced OpenAI API integration for content suggestions.",
+          "Real-time editing system with interactive preview.",
+          "Scalable architecture using TRPC and Next.js.",
+          "ATS (Applicant Tracking Systems) optimization.",
+          "Dynamic UI with TailWind CSS."
+        ]
+      },
+      techStack: ["React 19", "Next.js", "OpenAI SDK", "TRPC", "TailWind"],
+      security: {
+        es: "Cifrado de datos de usuario y gestión segura de API Keys.",
+        ca: "Xifrat de dades d'usuari i gestió segura d'API Keys.",
+        en: "User data encryption and secure API Key management."
+      },
+      links: { github: "github.com/joan-mata/ai-cv-editor", live: "cv-editor.joanmata.com" }
+    },
+    {
+      id: "aws-pipeline",
+      name: "AWS Data Ingestion Pipeline",
+      date: "2025",
+      tags: ["AWS", "Python", "ETL", "Big Data"],
+      desc: {
+        es: "Pipeline de ingesta de datos a gran escala automatizado en infraestructura cloud de AWS.",
+        ca: "Pipeline d'ingesta de dades a gran escala automatitzat en infraestructura cloud d'AWS.",
+        en: "Large-scale automated data ingestion pipeline on AWS cloud infrastructure."
+      },
+      points: {
+        es: [
+          "Procesamiento asíncrono mediante AWS Lambda y S3.",
+          "Implementación de colas de mensajes con Kinesis Data Streams.",
+          "Automatización de procesos ETL con Python3.",
+          "Escalabilidad horizontal para petabytes de información.",
+          "Monitorización completa con CloudWatch."
+        ],
+        ca: [
+          "Processament assíncron mitjançant AWS Lambda i S3.",
+          "Implementació de cues de missatges amb Kinesis Data Streams.",
+          "Automatització de processos ETL amb Python3.",
+          "Escalabilitat horitzontal per a petabytes d'informació.",
+          "Monitorització completa amb CloudWatch."
+        ],
+        en: [
+          "Asynchronous processing via AWS Lambda and S3.",
+          "Message queue implementation with Kinesis Data Streams.",
+          "ETL process automation with Python3.",
+          "Horizontal scalability for petabytes of information.",
+          "Full monitoring with CloudWatch."
+        ]
+      },
+      techStack: ["Python", "AWS Lambda", "Boto3", "Kinesis", "S3"],
+      security: {
+        es: "Gestión de roles IAM y cifrado en reposo con KMS.",
+        ca: "Gestió de rols IAM i xifrat en repòs amb KMS.",
+        en: "IAM role management and encryption at rest with KMS."
+      },
+      links: { github: "github.com/joan-mata/aws-pipeline", live: null }
+    },
+    {
+      id: "docker-video",
+      name: "Dockerized Video Processing Suite",
+      date: "2024",
+      tags: ["Docker", "FFmpeg", "Node.js", "Redis"],
+      desc: {
+        es: "Sistema distribuido de procesamiento y transcodificación de vídeo basado en microservicios dockerizados.",
+        ca: "Sistema distribuït de processament i transcodificació de vídeo basat en microserveis dockeritzats.",
+        en: "Distributed video processing and transcoding system based on dockerized microservices."
+      },
+      points: {
+        es: [
+          "Transcodificación acelerada mediante FFmpeg y aceleración hardware.",
+          "Orquestración de contenedores para carga balanceada.",
+          "Gestión de tareas de larga ejecución mediante Redis Queue.",
+          "Optimización de consumo de recursos en entornos Linux.",
+          "Soporte para múltiples formatos de entrada y salida."
+        ],
+        ca: [
+          "Transcodificació accelerada mitjançant FFmpeg i acceleració maquinari.",
+          "Orquestració de contenidors per a càrrega balancejada.",
+          "Gestió de tasques de llarga execució mitjançant Redis Queue.",
+          "Optimització de consum de recursos en entorns Linux.",
+          "Suport per a múltiples formats d'entrada i sortida."
+        ],
+        en: [
+          "Accelerated transcoding using FFmpeg and hardware acceleration.",
+          "Container orchestration for balanced loading.",
+          "Long-running task management via Redis Queue.",
+          "Resource consumption optimization in Linux environments.",
+          "Support for multiple input and output formats."
+        ]
+      },
+      techStack: ["Docker", "FFmpeg", "Node.js", "Redis", "Bash"],
+      security: {
+        es: "Aislamiento de procesos en contenedores y control de recursos cgroups.",
+        ca: "Aïllament de processos en contenidors i control de recursos cgroups.",
+        en: "Process isolation in containers and cgroups resource control."
+      },
+      links: { github: "github.com/joan-mata/docker-video", live: null }
+    },
+    {
+      id: "main-server",
+      name: "Infraestructura Cloud Local (joanmata.com)",
+      date: "2025 - 2026",
+      tags: ["Docker", "Networking", "Self-Hosting", "Cloudflare"],
+      desc: {
+        es: "Servidor web doméstico de alto rendimiento que aloja todo mi ecosistema digital mediante túneles seguros y contenedores.",
+        ca: "Servidor web domèstic d'alt rendiment que allotja tot el meu ecosistema digital mitjançant túnels segurs i contenidors.",
+        en: "High-performance home web server hosting my entire digital ecosystem through secure tunnels and containers."
+      },
+      points: {
+        es: [
+          "Despliegue de infraestructura completa utilizando Docker y Docker Compose.",
+          "Configuración de túneles Cloudflare para exposición segura sin apertura de puertos.",
+          "Gestión de certificados SSL/TLS y seguridad perimetral.",
+          "Monitorización en tiempo real y alta disponibilidad local.",
+          "Arquitectura escalable para nuevos microservicios."
+        ],
+        ca: [
+          "Desplegament d'infraestructura completa utilitzant Docker i Docker Compose.",
+          "Configuració de túnels Cloudflare per a exposició segura sense obertura de ports.",
+          "Gestió de certificats SSL/TLS i seguretat perimetral.",
+          "Monitorització en temps real i alta disponibilitat local.",
+          "Arquitectura escalable per a nous microserveis."
+        ],
+        en: [
+          "Full infrastructure deployment using Docker and Docker Compose.",
+          "Cloudflare Tunnel configuration for secure exposure without port forwarding.",
+          "SSL/TLS certificate management and perimeter security.",
+          "Real-time monitoring and local high availability.",
+          "Scalable architecture for new microservices."
+        ]
+      },
+      techStack: ["Docker", "Linux (macOS 기반)", "Cloudflare Tunnel", "Nginx", "Reverse Proxy"],
+      security: {
+        es: "Cifrado End-to-End, DNS SEC, Firewall mediante Zero Trust de Cloudflare.",
+        ca: "Xifrat End-to-End, DNS SEC, Firewall mitjançant Zero Trust de Cloudflare.",
+        en: "End-to-End encryption, DNS SEC, Firewall through Cloudflare Zero Trust."
+      },
+      links: { github: "github.com/joan-mata/server-config", live: "joanmata.com" }
+    },
+    {
+      id: "ref-notes",
+      name: "RefereeNotes (refnotes.joanmata.com)",
+      date: "2025",
+      tags: ["Python", "Flask", "Data Processing"],
+      desc: {
+        es: "Sistema automatizado de gestión y resolución de conflictos para informes arbitrales del futbol catalán.",
+        ca: "Sistema automatitzat de gestió i resolució de conflictes per a informes arbitrals del futbol català.",
+        en: "Automated management and conflict resolution system for Catalan football referee reports."
+      },
+      points: {
+        es: [
+          "Procesamiento avanzado de datos para detectar discrepancias en informes.",
+          "Backend robusto capaz de gestionar un gran volumen de actas.",
+          "Integración con bases de datos SQL para persistencia de datos históricos.",
+          "Interfaz intuitiva para la resolución manual de colisiones de datos.",
+          "Automatización de limpieza de perfiles duplicados mediante algoritmos de matching."
+        ],
+        ca: [
+          "Processament avançat de dades per detectar discrepàncies en informes.",
+          "Backend robust capaç de gestionar un gran volum d'actes.",
+          "Integració amb bases de dades SQL per a persistència de dades històriques.",
+          "Interfície intuïtiva per a la resolució manual de col·lisions de dades.",
+          "Automatització de neteja de perfils duplicats mitjançant algoritmes de matching."
+        ],
+        en: [
+          "Advanced data processing to detect discrepancies in reports.",
+          "Robust backend capable of managing high volumes of reports.",
+          "SQL database integration for historical data persistence.",
+          "Intuitive UI for manual resolution of data collisions.",
+          "Automated duplicate profile cleaning via matching algorithms."
+        ]
+      },
+      techStack: ["Python", "Flask", "PostgreSQL", "Docker", "REST API"],
+      security: {
+        es: "Autenticación de usuarios, gestión de roles y cifrado de datos sensibles.",
+        ca: "Autenticació d'usuaris, gestió de rols i xifrat de dades sensibles.",
+        en: "User authentication, role management, and sensitive data encryption."
+      },
+      links: { github: "github.com/joan-mata/referee-notes", live: "refnotes.joanmata.com" }
+    },
+    {
+      id: "f1-archive",
+      name: "F1 Archive & Schedule (f1.joanmata.com)",
+      date: "2026",
+      tags: ["React", "High-Performance Video", "JSON API"],
+      desc: {
+        es: "Plataforma de visualización y calendario de la F1 2026 con carga concurrente de vídeo de alta definición.",
+        ca: "Plataforma de visualització i calendari de la F1 2026 amb càrrega concurrent de vídeo d'alta definició.",
+        en: "F1 2026 visualization and schedule platform with high-definition concurrent video loading."
+      },
+      points: {
+        es: [
+          "Optimización de carga de vídeo concurrente para una experiencia sin interrupciones.",
+          "Generación Dinámica de calendarios JSON para la temporada 2026.",
+          "Reproductor inteligente con reanudación automática de playback.",
+          "Seguridad 'On Play' para proteger el acceso al contenido.",
+          "Interfaz fluida para seguimiento de sesiones en tiempo real."
+        ],
+        ca: [
+          "Optimització de càrrega de vídeo concurrent per a una experiència sense interrupcions.",
+          "Generació Dinàmica de calendaris JSON per a la temporada 2026.",
+          "Reproductor intel·ligent amb represa automàtica de playback.",
+          "Seguretat 'On Play' per protegir l'accés al contingut.",
+          "Interfície fluida per a seguiment de sessions en temps real."
+        ],
+        en: [
+          "Concurrent video loading optimization for a seamless experience.",
+          "Dynamic JSON calendar generation for the 2026 season.",
+          "Smart player with automatic playback resumption.",
+          "'On Play' security to protect content access.",
+          "Fluid UI for real-time session tracking."
+        ]
+      },
+      techStack: ["React", "Vite", "JSON Data", "Custom Video Engine", "Concurrent JS"],
+      security: {
+        es: "Control de acceso a niveles de sesión y cifrado de flujos de vídeo.",
+        ca: "Control d'accés a nivells de sessió i xifrat de fluxos de vídeo.",
+        en: "Session-level access control and video stream encryption."
+      },
+      links: { github: "github.com/joan-mata/f1-archive", live: "f1.joanmata.com" }
+    },
+    {
+      id: "cv-web",
+      name: "CV Interactivo (cv.joanmata.com)",
+      date: "2026",
+      tags: ["React", "MVC", "Architecture"],
+      desc: {
+        es: "Mi tarjeta de presentación digital, diseñada con arquitectura limpia MVC para máxima escalabilidad.",
+        ca: "La meva targeta de presentació digital, dissenyada amb arquitectura neta MVC per a màxima escalabilitat.",
+        en: "My digital presentation card, designed with clean MVC architecture for maximum scalability."
+      },
+      points: {
+        es: [
+          "Refactorización completa de monolito a arquitectura MVC (Model-View-Controller).",
+          "Separación estricta de lógica de datos y componentes UI.",
+          "Diseño Premium con micro-animaciones y glassmorphism.",
+          "Soporte multilingüe completo (ES, CA, EN) sin dependencias externas.",
+          "Optimización de rendimiento y carga mediante Vite."
+        ],
+        ca: [
+          "Refactorització completa de monòlit a arquitectura MVC (Model-View-Controller).",
+          "Separació estricta de lògica de dades i components UI.",
+          "Disseny Premium amb micro-animacions i glassmorphism.",
+          "Suport multilingüe complet (ES, CA, EN) sense dependències externes.",
+          "Optimització de rendiment i càrrega mitjançant Vite."
+        ],
+        en: [
+          "Complete refactor from monolith to MVC (Model-View-Controller) architecture.",
+          "Strict separation of data logic and UI components.",
+          "Premium Design with micro-animations and glassmorphism.",
+          "Full multilingual support (ES, CA, EN) without external dependencies.",
+          "Performance and load optimization via Vite."
+        ]
+      },
+      techStack: ["React", "Vite", "Vanilla CSS", "MVC Pattern"],
+      security: {
+        es: "Certificado SSL dedicado y protección perimetral Cloudflare.",
+        ca: "Certificat SSL dedicat i protecció perimetral Cloudflare.",
+        en: "Dedicated SSL certificate and Cloudflare perimeter protection."
+      },
+      links: { github: "github.com/joan-mata/joanmata_web", live: "cv.joanmata.com" }
+    }
+  ],
+  education: [
+    {
+      title: { es: "Máster - Ciencia de Datos", ca: "Màster - Ciència de Dades", en: "Master - Data Science" },
+      school: "Universitat Oberta de Catalunya",
+      date: "2025 – Present"
+    },
+    {
+      title: { es: "Grado en Ingeniería Informática", ca: "Grau en Enginyeria Informàtica", en: "BS in Computer Engineering" },
+      school: "Universitat Autònoma de Barcelona",
+      date: "2018 – 2025"
+    },
+    {
+      title: { es: "Grado en Sistemas de Telecomunicación", ca: "Grau en Sistemes de Telecomunicació", en: "BS in Telecommunication Systems" },
+      school: "Universitat Autònoma de Barcelona",
+      date: "2018 – 2025"
+    }
+  ],
+  certificates: [
+    { title: 'Desarrollo con IA', issuer: 'BIG School', date: '2026' },
+    { title: 'Bluetooth Low Energy Fundamentals', issuer: 'Nordic Semiconductor', date: '2024' },
+    { title: 'nRF Connect SDK Fundamentals', issuer: 'Nordic Semiconductor', date: '2024' },
+    { title: 'Certificate of Python', issuer: 'University of Michigan', date: '2019' }
+  ],
+  skills: [
+    "Python", "C++", "React", "Node.js", "Swift", "Machine Learning", "Local IA", "AWS", "Docker", "PKI/SSL", "PCB Design"
+  ],
+  volunteering: [
+    {
+      location: "Bolivia",
+      date: "2025",
+      org: "FASFI",
+      desc: { es: "Apoyo educativo en Cochabamba.", ca: "Suport educatiu a Cochabamba.", en: "Educational support in Cochabamba." }
+    },
+    {
+      location: "Haití",
+      date: "2019",
+      org: "TECHO",
+      desc: { es: "Construcción de viviendas en Puerto Príncipe.", ca: "Construcció d'habitatges a Port-au-Prince.", en: "Emergency housing construction." }
+    }
+  ]
+}
