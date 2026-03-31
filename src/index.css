@@ -295,6 +295,17 @@ nav ul {
   width: 100%;
 }
 
+.cta-btn.disabled-btn {
+  cursor: default;
+  opacity: 0.8;
+}
+
+.cta-btn.disabled-btn:hover {
+  transform: none;
+  background: var(--glass);
+  color: var(--text-primary);
+}
+
 .card-list {
   list-style: none;
   margin-top: auto;
@@ -462,6 +473,118 @@ nav ul {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+}
+
+/* Contact Page Styles */
+.contact-page {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+  padding-top: 8rem;
+  text-align: center;
+}
+
+.contact-hero {
+  margin-bottom: 5rem;
+}
+
+.contact-intro {
+  font-size: 1.2rem;
+  color: var(--text-dim);
+  max-width: 600px;
+  margin: 0.5rem auto 0;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2.5rem;
+  margin-bottom: 5rem;
+}
+
+.contact-feature-card {
+  background: var(--bg-card);
+  border: 1px solid var(--glass-border);
+  border-radius: 30px;
+  padding: 3rem 2rem;
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  backdrop-filter: blur(15px);
+}
+
+.contact-feature-card:hover {
+  transform: translateY(-10px);
+  border-color: var(--accent-primary);
+  box-shadow: 0 20px 40px rgba(99, 102, 241, 0.1);
+}
+
+.card-icon {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  background: var(--glass);
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  border: 1px solid var(--glass-border);
+}
+
+.card-label {
+  font-size: 1rem;
+  font-weight: 800;
+  color: var(--text-dim);
+  margin-bottom: 2rem;
+  letter-spacing: 2px;
+}
+
+.card-actions-box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-footer-action {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.cv-download-box {
+  padding: 3rem;
+  border-radius: 30px;
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.05), rgba(168, 85, 247, 0.05));
+  border: 1px solid var(--glass-border);
+  max-width: 500px;
+  width: 100%;
+}
+
+.cv-download-box h3 {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  color: var(--text-primary);
+}
+
+.cta-button {
+  background: linear-gradient(to right, var(--accent-primary), var(--accent-secondary));
+  color: white;
+  border: none;
+  padding: 1rem 2.5rem;
+  border-radius: 14px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(99, 102, 241, 0.3);
+  transition: var(--transition);
+}
+
+.cta-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(99, 102, 241, 0.4);
 }
 
 /* Footer */
@@ -638,4 +761,7 @@ nav ul {
   .detail-grid-layout { grid-template-columns: 1fr; gap: 1.5rem; }
   .detail-top-nav { flex-direction: column; align-items: stretch; }
   .edit-details-btn { width: 100%; }
+
+  .contact-grid { grid-template-columns: 1fr; }
+  .cv-download-box { padding: 2rem 1.5rem; }
 }

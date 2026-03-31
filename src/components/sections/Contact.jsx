@@ -17,29 +17,47 @@ const Contact = ({ title, infoLabel, socialLabel, data, translations }) => {
   };
 
   return (
-    <section>
-      <h2 className="section-title">{title}</h2>
-      
+    <section className="contact-page">
+      <header className="contact-hero">
+        <span className="detail-category">{translations.nav.contact.toUpperCase()}</span>
+        <h1 className="detail-main-title gradient-text">{title}</h1>
+        <p className="contact-intro">{translations.contact.info}</p>
+      </header>
+
       <div className="contact-grid">
-        <div className="contact-card">
-          <div className="contact-list-horizontal">
-            <a href={`mailto:${data.email}`} className="cta-btn secondary">📧 {data.email}</a>
-            <span className="cta-btn secondary">📱 {data.phone}</span>
-          </div>
-          
-          <div className="contact-actions" style={{ marginTop: '2rem' }}>
-            <button className="cta-button" onClick={handleDownload}>
-              {translations?.hero?.downloadCV?.toUpperCase() || 'DESCARGAR CV (PDF)'}
-            </button>
+        <div className="contact-feature-card glass">
+          <div className="card-icon">✉️</div>
+          <h3 className="card-label">{infoLabel || 'CONTACTO DIRECTO'}</h3>
+          <div className="card-actions-box">
+            <a href={`mailto:${data.email}`} className="cta-btn secondary full-width">
+              {data.email}
+            </a>
+            <div className="cta-btn secondary full-width disabled-btn">
+              📱 {data.phone}
+            </div>
           </div>
         </div>
 
-        <div className="contact-card">
-          <h3 className="modal-subtitle">{socialLabel || 'REDES'}</h3>
-          <div className="contact-list-horizontal">
-            <a href={`https://${data.linkedin}`} target="_blank" rel="noreferrer" className="cta-btn">LINKEDIN</a>
-            <a href={`https://${data.github}`} target="_blank" rel="noreferrer" className="cta-btn">GITHUB</a>
+        <div className="contact-feature-card glass">
+          <div className="card-icon">🌐</div>
+          <h3 className="card-label">{socialLabel || 'REDES PROFESIONALES'}</h3>
+          <div className="card-actions-box">
+            <a href={`https://${data.linkedin}`} target="_blank" rel="noreferrer" className="cta-btn full-width">
+              LINKEDIN
+            </a>
+            <a href={`https://${data.github}`} target="_blank" rel="noreferrer" className="cta-btn secondary full-width">
+              GITHUB
+            </a>
           </div>
+        </div>
+      </div>
+
+      <div className="contact-footer-action">
+        <div className="cv-download-box glass">
+          <h3>🚀 {translations?.hero?.downloadCV || 'Download CV'}</h3>
+          <button className="cta-button" onClick={handleDownload}>
+            PDF DOWNLOAD
+          </button>
         </div>
       </div>
     </section>
