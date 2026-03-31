@@ -5,7 +5,7 @@ const Card = ({ title, subtitle, date, children, className = '', onClick, links,
 
   return (
     <div 
-      className={`card ${className} ${isClickable ? 'clickable-card' : ''}`}
+      className={`premium-card ${className} ${isClickable ? 'clickable-card' : ''}`}
       onClick={onClick}
     >
       <div className="card-header">

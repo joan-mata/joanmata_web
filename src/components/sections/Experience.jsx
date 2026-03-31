@@ -1,21 +1,26 @@
 import React from 'react';
 import Card from '../common/Card';
 
-const Experience = ({ title, data, lang }) => {
+const Experience = ({ title, data, lang, isAdmin, onEdit, onAdd }) => {
   return (
-    <section>
-      <h2 className="section-title">{title}</h2>
+    <section id="experience">
+      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+        <h2 className="section-title">{title}</h2>
+        {isAdmin && <button className="admin-icon" onClick={onAdd}>+</button>}
+      </div>
+      
       <div className="card-grid">
-        {data.map((exp, i) => (
+        {data.map((exp, idx) => (
           <Card 
-            key={i}
-            title={exp.role[lang]}
-            subtitle={exp.company}
+            key={idx}
+            title={exp.company}
+            subtitle={exp.role[lang]}
             date={exp.date}
           >
+            {isAdmin && <button className="admin-icon entry-edit-btn" onClick={() => onEdit(idx)}>✎</button>}
             <ul className="card-list">
-              {exp.points[lang].map((p, j) => (
-                <li key={j}>{p}</li>
+              {exp.points[lang].map((point, i) => (
+                <li key={i}>{point}</li>
               ))}
             </ul>
           </Card>

@@ -1,36 +1,46 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import Card from '../common/Card';
 import Badge from '../common/Badge';
-import ProjectModal from './ProjectModal';
 
-const Projects = ({ title, data, lang, translations }) => {
-  const [selectedProject, setSelectedProject] = useState(null);
+const Projects = ({ title, data, lang, translations, isAdmin, onEdit, onAdd }) => {
+  const navigate = useNavigate();
 
-  const openModal = (project) => {
-    setSelectedProject(project);
-    document.body.style.overflow = 'hidden'; 
-  };
-
-  const closeModal = () => {
-    setSelectedProject(null);
-    document.body.style.overflow = 'auto'; 
+  const handleProjectClick = (id) => {
+    navigate(`/projects/${id}`);
   };
 
   return (
     <section>
-      <h2 className="section-title">{title}</h2>
+      <div className="section-header-admin">
+        <h2 className="section-title">{title}</h2>
+        {isAdmin && (
+          <div className="admin-actions-inline">
+            <button className="admin-icon" onClick={onAdd}>+</button>
+          </div>
+        )}
+      </div>
       
-      <div className="card-grid" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(400px, 1fr))' }}>
-        {data.map((proj) => (
+      <div className="card-grid">
+        {data.map((proj, idx) => (
           <Card 
             key={proj.id}
             title={proj.name}
             date={proj.date}
-            onClick={() => openModal(proj)}
+            onClick={() => handleProjectClick(proj.id)}
             links={proj.links}
             translations={translations}
             className="project-card"
           >
+            {isAdmin && (
+              <button 
+                className="admin-icon entry-edit-btn" 
+                onClick={(e) => { e.stopPropagation(); onEdit(idx); }}
+              >
+                ✎
+              </button>
+            )}
+
             <p className="card-content" style={{ marginBottom: '1.5rem' }}>{proj.desc[lang]}</p>
             
             <ul className="card-list" style={{ marginBottom: '1.5rem' }}>
@@ -47,15 +57,6 @@ const Projects = ({ title, data, lang, translations }) => {
           </Card>
         ))}
       </div>
-
-      {selectedProject && (
-        <ProjectModal 
-          project={selectedProject} 
-          onClose={closeModal} 
-          lang={lang} 
-          translations={translations}
-        />
-      )}
     </section>
   );
 };
