@@ -45,12 +45,12 @@ const Header = ({ translations, isAdmin, onLogout, currentData }) => {
       </nav>
       {isAdmin && (
         <div className="admin-toolbar">
-          <label className="admin-tool-btn">
-            📥 IMPORT JSON
+          <label className="admin-tool-btn" title="Import JSON">
+            📥
             <input type="file" onChange={importData} style={{display:'none'}}/>
           </label>
-          <button onClick={exportData} className="admin-tool-btn">💾 EXPORT JSON</button>
-          <button onClick={onLogout} className="admin-tool-btn">✖ EXIT ADMIN</button>
+          <button onClick={exportData} className="admin-tool-btn" title="Export JSON">💾</button>
+          <button onClick={onLogout} className="admin-tool-btn" title="Exit Admin">🚪</button>
         </div>
       )}
     </header>
