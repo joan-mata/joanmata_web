@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Hero = ({ name, subtitle, profileText, translations }) => {
+const Hero = ({ name, subtitle, profileText, translations, isAdmin, onEdit }) => {
   const handleDownload = () => {
     const cvUrl = '/assets/cv-joan-mata.pdf';
     fetch(cvUrl, { method: 'HEAD' })
@@ -21,7 +21,8 @@ const Hero = ({ name, subtitle, profileText, translations }) => {
       <h1 className="gradient-text">{name}</h1>
       <p>{subtitle}</p>
       
-      <div className="profile-text">
+      <div className="profile-text" style={{ position: 'relative' }}>
+        {isAdmin && <button className="admin-icon" onClick={onEdit} style={{ top: '-1rem', right: '-1rem', opacity: 1 }}>✎</button>}
         {profileText}
       </div>
       

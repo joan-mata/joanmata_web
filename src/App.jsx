@@ -29,6 +29,7 @@ export default function App() {
     const { context, itemIndex, type } = showModal;
     const next = { ...currentData };
     if (type === 'skills') next.skills = item;
+    else if (type === 'profile') next.profile = item;
     else if (itemIndex !== undefined) next[context][itemIndex] = item;
     else next[context].push({ ...item, id: Date.now().toString() });
     setCurrentData(next);
@@ -49,7 +50,7 @@ export default function App() {
         <Header translations={t} isAdmin={isAdmin} onLogout={() => {setIsAdmin(false); sessionStorage.removeItem('isAdmin');}} currentData={currentData} />
         <main>
           <Routes>
-            <Route path="/" element={<><Hero name={currentData.name} profileText={currentData.profile[lang]} translations={t} /><Experience title={t.sections.experience} data={currentData.experience} lang={lang} {...adminProps('experience')} /></>} />
+            <Route path="/" element={<><Hero name={currentData.name} profileText={currentData.profile[lang]} translations={t} isAdmin={isAdmin} onEdit={() => setShowModal({ type: 'profile', context: 'profile', data: currentData.profile })} /><Experience title={t.sections.experience} data={currentData.experience} lang={lang} {...adminProps('experience')} /></>} />
             <Route path="/projects" element={<Projects title={t.sections.projects} data={currentData.projects} lang={lang} translations={t} {...adminProps('projects', 'project')} />} />
             <Route path="/projects/:id" element={<ProjectDetailsPage data={currentData.projects} lang={lang} translations={t} isAdmin={isAdmin} onEdit={(id) => setShowModal({ type: 'project', context: 'projects', itemIndex: currentData.projects.findIndex(p => p.id === id), data: currentData.projects.find(p => p.id === id) })} />} />
             <Route path="/education" element={<Education title={t.sections.education} data={currentData.education} lang={lang} {...adminProps('education')} />} />

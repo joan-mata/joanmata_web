@@ -97,6 +97,23 @@ const AdminModal = ({ type, initialData, onSave, onCancel, translations }) => {
     </>
   );
 
+  const renderProfileForm = () => (
+    <>
+      <div className="form-group">
+        <label>Descripción / Bio (ES)</label>
+        <textarea className="admin-textarea" style={{height:'120px'}} value={formData.es || ''} onChange={(e) => setFormData({...formData, es: e.target.value})} />
+      </div>
+      <div className="form-group">
+        <label>Descripció / Bio (CA)</label>
+        <textarea className="admin-textarea" style={{height:'120px'}} value={formData.ca || ''} onChange={(e) => setFormData({...formData, ca: e.target.value})} />
+      </div>
+      <div className="form-group">
+        <label>Description / Bio (EN)</label>
+        <textarea className="admin-textarea" style={{height:'120px'}} value={formData.en || ''} onChange={(e) => setFormData({...formData, en: e.target.value})} />
+      </div>
+    </>
+  );
+
   return (
     <div className="admin-modal-overlay">
       <div className="admin-modal-container glass">
@@ -106,7 +123,7 @@ const AdminModal = ({ type, initialData, onSave, onCancel, translations }) => {
         </div>
         
         <div className="modal-body">
-          {type === 'project' || formData.desc ? renderProjectForm() : renderExperienceForm()}
+          {type === 'profile' ? renderProfileForm() : (type === 'project' || formData.desc ? renderProjectForm() : renderExperienceForm())}
         </div>
 
         <div className="modal-footer">
