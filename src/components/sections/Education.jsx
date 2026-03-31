@@ -5,7 +5,7 @@ const Education = ({ title, data, lang, isAdmin, onEdit, onAdd }) => (
   <section className="container">
     <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
       <h2 className="section-title">{title}</h2>
-      {isAdmin && <button className="admin-icon" onClick={onAdd} title={`Add ${title}`}>+</button>}
+        {isAdmin && <button className="admin-icon static" onClick={onAdd} title={`Add ${title}`}>+</button>}
     </div>
     <div className="card-grid">
       {data.map((edu, idx) => (

@@ -22,7 +22,7 @@ const Hero = ({ name, subtitle, profileText, translations, isAdmin, onEdit }) =>
       <p>{subtitle}</p>
       
       <div className="profile-text" style={{ position: 'relative' }}>
-        {isAdmin && <button className="admin-icon" onClick={onEdit} style={{ top: '-1rem', right: '-1rem', opacity: 1 }}>✎</button>}
+        {isAdmin && <button className="admin-icon static" onClick={onEdit} style={{ top: '-1rem', right: '-1rem' }}>✎</button>}
         {profileText}
       </div>
       

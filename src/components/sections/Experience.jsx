@@ -6,7 +6,7 @@ const Experience = ({ title, data, lang, isAdmin, onEdit, onAdd }) => {
     <section id="experience">
       <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
         <h2 className="section-title">{title}</h2>
-        {isAdmin && <button className="admin-icon" onClick={onAdd}>+</button>}
+        {isAdmin && <button className="admin-icon static" onClick={onAdd}>+</button>}
       </div>
       
       <div className="card-grid">
