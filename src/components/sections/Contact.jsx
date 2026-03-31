@@ -22,22 +22,24 @@ const Contact = ({ title, infoLabel, socialLabel, data, translations }) => {
       
       <div className="contact-grid">
         <div className="contact-card">
-          <h3 className="modal-subtitle">{infoLabel}</h3>
-          <p className="contact-item">📧 {data.email}</p>
-          <p className="contact-item">📱 {data.phone}</p>
-          <p className="contact-item">📍 {data.location}</p>
+          <div className="contact-list-horizontal">
+            <a href={`mailto:${data.email}`} className="cta-btn secondary">📧 {data.email}</a>
+            <span className="cta-btn secondary">📱 {data.phone}</span>
+          </div>
           
           <div className="contact-actions" style={{ marginTop: '2rem' }}>
             <button className="cta-button" onClick={handleDownload}>
-              {translations?.hero?.downloadCV || 'Download CV (PDF)'}
+              {translations?.hero?.downloadCV?.toUpperCase() || 'DESCARGAR CV (PDF)'}
             </button>
           </div>
         </div>
 
         <div className="contact-card">
-          <h3 className="modal-subtitle">{socialLabel}</h3>
-          <a href={`https://${data.linkedin}`} target="_blank" rel="noreferrer" className="social-link">LinkedIn</a>
-          <a href={`https://${data.github}`} target="_blank" rel="noreferrer" className="social-link">GitHub</a>
+          <h3 className="modal-subtitle">{socialLabel || 'REDES'}</h3>
+          <div className="contact-list-horizontal">
+            <a href={`https://${data.linkedin}`} target="_blank" rel="noreferrer" className="cta-btn">LINKEDIN</a>
+            <a href={`https://${data.github}`} target="_blank" rel="noreferrer" className="cta-btn">GITHUB</a>
+          </div>
         </div>
       </div>
     </section>

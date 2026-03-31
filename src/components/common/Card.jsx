@@ -23,7 +23,7 @@ const Card = ({ title, subtitle, date, children, className = '', onClick, links,
               className="card-action-btn"
               onClick={(e) => e.stopPropagation()}
             >
-              {translations?.projects?.visit || 'WEB'}
+              {translations?.projects?.visit?.toUpperCase() || 'VISITAR WEB'}
             </a>
           )}
           {date && <span className="card-date">{date}</span>}

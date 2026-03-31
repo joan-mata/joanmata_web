@@ -33,8 +33,11 @@ const Header = ({ translations, isAdmin, onLogout, currentData }) => {
         <ul>
           {Object.keys(translations.nav).map(key => (
             <li key={key}>
-              <NavLink to={key === 'home' ? '/' : `/${key}`}>
-                {translations.nav[key]}
+              <NavLink 
+                to={key === 'home' ? '/' : `/${key}`}
+                className={({ isActive }) => `nav-btn ${isActive ? 'active' : ''}`}
+              >
+                {translations.nav[key].toUpperCase()}
               </NavLink>
             </li>
           ))}
