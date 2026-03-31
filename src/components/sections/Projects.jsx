@@ -12,13 +12,9 @@ const Projects = ({ title, data, lang, translations, isAdmin, onEdit, onAdd }) =
 
   return (
     <section>
-      <div className="section-header-admin">
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
         <h2 className="section-title">{title}</h2>
-        {isAdmin && (
-          <div className="admin-actions-inline">
-            <button className="admin-icon" onClick={onAdd}>+</button>
-          </div>
-        )}
+        {isAdmin && <button className="admin-icon" onClick={onAdd} title={`Add ${title}`}>+</button>}
       </div>
       
       <div className="card-grid">
