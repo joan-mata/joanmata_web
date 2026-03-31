@@ -1,29 +1,38 @@
-# Tech Stack: JOAN MATA Personal Portfolio / CV
+# Tech Stack Specification: JOAN MATA Portfolio
 
-## Core Framework
-- **React 19**: Modern functional components with hooks.
-- **Vite 8**: High-speed build tool and dev server.
+Este documento detalla la infraestructura tecnológica y las herramientas utilizadas.
 
-## Architecture (MVC)
-The project follows a **Model-View-Controller** pattern for clean code and separation of concerns:
-- **Models** (`src/models/`): Static data (`cvData.js`) and UI strings (`translations.js`).
-- **Views** (`src/components/`): 
-    - `layout/`: Global elements (Header, Footer).
-    - `sections/`: Individual CV parts (Experience, Projects, Hero).
-    - `common/`: Reusable UI primitives (Card, Badge).
-- **Controllers** (`src/App.jsx`): Main logic orchestrator.
+## Tecnologías Principales
 
-## Styling
-- **Vanilla CSS**: Optimized, custom styling in `src/index.css`.
-- **Variables**: Global CSS tokens for colors, animations, and transitions.
-- **Glassmorphism**: Extensive use of `backdrop-filter: blur(12px)` and semi-transparent backgrounds.
+- **Runtime**: Node.js (Vite)
+- **Framework**: React 18+ (Hooks: useState, useEffect, useMemo)
+- **Enrutador**: `react-router-dom` (HashRouter para portabilidad local)
+- **Estilos**: Vanilla CSS con Sistema de Variables de Diseño.
 
-## Environment
-- **Node.js 25+**: Latest performance and standard compliance.
-- **NVM**: Node Version Manager for environment stability.
-- **Package Manager**: npm.
+## Arquitectura de Aplicación
 
-## Infrastructure & Security
-- **Cloudflare Tunnel**: Secure local server exposition to `cv.joanmata.com`.
-- **SSL/TLS**: Mandatory encryption for all subdomains.
-- **Docker**: Containerized deployment planned for full environment parity.
+### Diseño del Sistema (Infinity Luxury)
+- **Variables Globales**: Definidas en `:root` de `index.css`.
+  - `--bg-dark`: #0a0a0c
+  - `--glass`: rgba(255, 255, 255, 0.05)
+  - `--accent-primary`: #6366f1 (Indigo)
+  - `--accent-secondary`: #a855f7 (Violet)
+- **Componentes de Cristal**: Uso sistemático de `backdrop-filter: blur(25px)` y `border: 1px solid rgba(255, 255, 255, 0.1)`.
+
+### Motor de Administración y Traducción
+- **Traducción Automática**: API `https://translate.googleapis.com/translate_a/single?client=gtx`.
+- **Lógica de Sincronización**: Algoritmo asíncrono en `AdminModal.jsx` que procesa listas y campos antes del guardado final (`handleFinalSave`).
+
+### Persistencia y Seguridad
+- **Datos Personales**: `src/models/cvData.js`. Formato JSON multilingüe.
+- **Almacenamiento Local**: `localStorage` para cambios en tiempo real.
+- **Auth de Sesión**: `sessionStorage` para mantener el estado de administrador durante la navegación.
+
+## Estructura de Proyecto (SSD MVC)
+- `/src/models`: Datos crudos y traducciones.
+- `/src/components`:
+  - `/admin`: Formularios modales y entrada.
+  - `/common`: Componentes reutilizables (Card, Badge).
+  - `/layout`: Header (Nav central), Footer.
+  - `/sections`: Secciones principales del CV.
+- `/specs`: Documentación de especificaciones de diseño y lógica.
