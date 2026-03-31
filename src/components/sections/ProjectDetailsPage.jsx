@@ -22,44 +22,52 @@ const ProjectDetailsPage = ({ data, lang, translations, isAdmin, onEdit }) => {
   return (
     <div className="project-detail-page">
       <div className="detail-top-nav">
-        <Link to="/projects" className="back-link">
-          &larr; {translations.projects.close}
+        <Link to="/projects" className="back-link-btn">
+          <span className="arrow">←</span> {translations.projects.close}
         </Link>
         {isAdmin && (
-          <button className="admin-icon" onClick={() => onEdit(id)}>
+          <button className="cta-btn secondary edit-details-btn" onClick={() => onEdit(id)}>
             ✎ EDITAR DETALLES
           </button>
         )}
       </div>
 
-      <div className="detail-content-box">
-        <div className="detail-info-main">
-          <header className="detail-header">
-            <h1 className="detail-title gradient-text">{project.name}</h1>
+      <header className="detail-hero">
+        <div className="detail-hero-content">
+          <span className="detail-category">{translations.sections.projects.toUpperCase()}</span>
+          <h1 className="detail-main-title gradient-text">{project.name}</h1>
+          <div className="detail-meta">
             <span className="card-date">{project.date}</span>
-          </header>
+          </div>
+        </div>
+      </header>
 
-          <section className="detail-info-section">
-            <p className="detail-description" style={{ fontSize: '1.2rem', marginBottom: '3rem', opacity: 0.9 }}>
+      <div className="detail-grid-layout">
+        <div className="detail-main-column">
+          <section className="detail-glass-card">
+            <h2 className="detail-section-title">{translations.projects.details}</h2>
+            <p className="detail-long-description">
               {project.desc[lang]}
             </p>
-
-            <h3>{translations.projects.details}</h3>
-            <ul className="detail-list">
+            <ul className="detail-feature-list">
               {project.points[lang].map((point, i) => (
                 <li key={i}>{point}</li>
               ))}
             </ul>
-
-            <h3 style={{ marginTop: '3rem' }}>{translations.projects.security}</h3>
-            <p style={{ opacity: 0.85 }}>{project.security[lang]}</p>
           </section>
+
+          {project.security && project.security[lang] && (
+            <section className="detail-glass-card">
+              <h2 className="detail-section-title">{translations.projects.security}</h2>
+              <p className="detail-security-text">{project.security[lang]}</p>
+            </section>
+          )}
         </div>
 
-        <div className="sidebar">
-          <div className="sidebar-box">
-            <h3>{translations.projects.techStack}</h3>
-            <div className="badge-container">
+        <aside className="detail-sidebar-column">
+          <div className="detail-glass-card">
+            <h2 className="detail-section-title">{translations.projects.techStack}</h2>
+            <div className="detail-badge-cloud">
               {project.techStack.map((tech, i) => (
                 <Badge key={i} text={tech} />
               ))}
@@ -67,23 +75,23 @@ const ProjectDetailsPage = ({ data, lang, translations, isAdmin, onEdit }) => {
           </div>
 
           {project.links && (
-            <div className="sidebar-box" style={{ marginTop: '3rem' }}>
-              <h3>{translations.projects.links}</h3>
-              <div className="detail-links-grid" style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+            <div className="detail-glass-card">
+              <h2 className="detail-section-title">{translations.projects.links}</h2>
+              <div className="detail-actions-vertical">
                 {project.links.github && (
-                  <a href={`https://${project.links.github}`} target="_blank" rel="noreferrer" className="card-action-btn">
-                    {translations.projects.github}
+                  <a href={`https://${project.links.github}`} target="_blank" rel="noreferrer" className="cta-btn secondary full-width">
+                    {translations.projects.github.toUpperCase()}
                   </a>
                 )}
                 {project.links.live && (
-                  <a href={`https://${project.links.live}`} target="_blank" rel="noreferrer" className="card-action-btn" style={{ background: 'var(--accent-secondary)' }}>
-                    {translations.projects.visit}
+                  <a href={`https://${project.links.live}`} target="_blank" rel="noreferrer" className="cta-btn full-width">
+                    {translations.projects.miniVisit} WEB
                   </a>
                 )}
               </div>
             </div>
           )}
-        </div>
+        </aside>
       </div>
     </div>
   );
