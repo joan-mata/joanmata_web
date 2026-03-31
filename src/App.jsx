@@ -36,6 +36,28 @@ export default function App() {
     setShowModal(null);
   };
 
+  const exportData = () => {
+    const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(currentData, null, 2));
+    const dl = document.createElement('a');
+    dl.setAttribute("href", dataStr);
+    dl.setAttribute("download", "cvData.json");
+    dl.click();
+  };
+
+  const importData = (e) => {
+    const file = e.target.files[0];
+    if (file) {
+      const reader = new FileReader();
+      reader.onload = (re) => {
+        try {
+          localStorage.setItem('curcv_data', re.target.result);
+          window.location.reload();
+        } catch (err) { alert("Error"); }
+      };
+      reader.readAsText(file);
+    }
+  };
+
   const t = TRANSLATIONS[lang];
   const adminProps = (ctx, tCode) => ({
     isAdmin,
@@ -47,7 +69,20 @@ export default function App() {
     <HashRouter>
       <div className={`container ${isAdmin ? 'is-admin' : ''}`}>
         <LanguageSwitcher lang={lang} onLangChange={setLang} />
-        <Header translations={t} isAdmin={isAdmin} onLogout={() => {setIsAdmin(false); sessionStorage.removeItem('isAdmin');}} currentData={currentData} />
+        
+        {isAdmin && (
+          <div className="admin-toolbar">
+            <label className="admin-tool-btn" title="Import JSON">
+              📥
+              <input type="file" onChange={importData} style={{display:'none'}}/>
+            </label>
+            <button onClick={exportData} className="admin-tool-btn" title="Export JSON">💾</button>
+            <button onClick={() => {setIsAdmin(false); sessionStorage.removeItem('isAdmin');}} className="admin-tool-btn" title="Exit Admin">🚪</button>
+          </div>
+        )}
+
+        <Header translations={t} isAdmin={isAdmin} currentData={currentData} />
+        
         <main>
           <Routes>
             <Route path="/" element={<><Hero name={currentData.name} profileText={currentData.profile[lang]} translations={t} isAdmin={isAdmin} onEdit={() => setShowModal({ type: 'profile', context: 'profile', data: currentData.profile })} /><Experience title={t.sections.experience} data={currentData.experience} lang={lang} {...adminProps('experience', 'experience')} /></>} />
