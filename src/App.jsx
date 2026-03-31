@@ -37,10 +37,10 @@ export default function App() {
   };
 
   const t = TRANSLATIONS[lang];
-  const adminProps = (ctx, type='generic') => ({
+  const adminProps = (ctx, tCode) => ({
     isAdmin,
-    onEdit: (idx) => setShowModal({ type, context: ctx, itemIndex: idx, data: currentData[ctx][idx] }),
-    onAdd: () => setShowModal({ type, context: ctx })
+    onEdit: (idx) => setShowModal({ type: tCode || ctx, context: ctx, itemIndex: idx, data: currentData[ctx][idx] }),
+    onAdd: () => setShowModal({ type: tCode || ctx, context: ctx })
   });
 
   return (
@@ -50,13 +50,13 @@ export default function App() {
         <Header translations={t} isAdmin={isAdmin} onLogout={() => {setIsAdmin(false); sessionStorage.removeItem('isAdmin');}} currentData={currentData} />
         <main>
           <Routes>
-            <Route path="/" element={<><Hero name={currentData.name} profileText={currentData.profile[lang]} translations={t} isAdmin={isAdmin} onEdit={() => setShowModal({ type: 'profile', context: 'profile', data: currentData.profile })} /><Experience title={t.sections.experience} data={currentData.experience} lang={lang} {...adminProps('experience')} /></>} />
+            <Route path="/" element={<><Hero name={currentData.name} profileText={currentData.profile[lang]} translations={t} isAdmin={isAdmin} onEdit={() => setShowModal({ type: 'profile', context: 'profile', data: currentData.profile })} /><Experience title={t.sections.experience} data={currentData.experience} lang={lang} {...adminProps('experience', 'experience')} /></>} />
             <Route path="/projects" element={<Projects title={t.sections.projects} data={currentData.projects} lang={lang} translations={t} {...adminProps('projects', 'project')} />} />
             <Route path="/projects/:id" element={<ProjectDetailsPage data={currentData.projects} lang={lang} translations={t} isAdmin={isAdmin} onEdit={(id) => setShowModal({ type: 'project', context: 'projects', itemIndex: currentData.projects.findIndex(p => p.id === id), data: currentData.projects.find(p => p.id === id) })} />} />
-            <Route path="/education" element={<Education title={t.sections.education} data={currentData.education} lang={lang} {...adminProps('education')} />} />
-            <Route path="/skills" element={<Skills title={t.sections.skills} data={currentData.skills} isAdmin={isAdmin} onEdit={() => setShowModal({ type: 'skills', context: 'skills', data: currentData.skills })} />} />
-            <Route path="/certificates" element={<Certificates title={t.sections.certificates} data={currentData.certificates} lang={lang} {...adminProps('certificates')} />} />
-            <Route path="/volunteering" element={<Volunteering title={t.sections.volunteering} data={currentData.volunteering} lang={lang} {...adminProps('volunteering')} />} />
+            <Route path="/education" element={<Education title={t.sections.education} data={currentData.education} lang={lang} {...adminProps('education', 'education')} />} />
+            <Route path="/skills" element={<Skills title={t.sections.skills} data={currentData.skills} isAdmin={isAdmin} onEdit={() => setShowModal({ type: 'skills', context: 'skills', data: currentData.skills })} onAdd={() => setShowModal({ type: 'skills', context: 'skills' })} />} />
+            <Route path="/certificates" element={<Certificates title={t.sections.certificates} data={currentData.certificates} lang={lang} {...adminProps('certificates', 'certificate')} />} />
+            <Route path="/volunteering" element={<Volunteering title={t.sections.volunteering} data={currentData.volunteering} lang={lang} {...adminProps('volunteering', 'volunteering')} />} />
             <Route path="/contact" element={<Contact title={t.sections.contact} data={currentData} translations={t} />} />
             <Route path="/admin" element={isAdmin ? <Navigate to="/" /> : <AdminEntry onLogin={() => {setIsAdmin(true); sessionStorage.setItem('isAdmin', 'true');}} translations={t} />} />
             <Route path="*" element={<Navigate to="/" />} />

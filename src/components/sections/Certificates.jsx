@@ -9,7 +9,7 @@ const Certificates = ({ title, data, lang, isAdmin, onEdit, onAdd }) => (
     </div>
     <div className="card-grid">
       {data.map((cert, idx) => (
-        <Card key={idx} title={cert.title[lang]} subtitle={cert.issuer} date={cert.date}>
+        <Card key={idx} title={cert.title} subtitle={cert.issuer} date={cert.date}>
           {isAdmin && <button className="admin-icon" onClick={() => onEdit(idx)}>✎</button>}
         </Card>
       ))}

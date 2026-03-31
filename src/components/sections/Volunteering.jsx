@@ -9,8 +9,9 @@ const Volunteering = ({ title, data, lang, isAdmin, onAdd, onEdit }) => (
     </div>
     <div className="card-grid">
       {data.map((vol, idx) => (
-        <Card key={idx} title={vol.role[lang]} subtitle={vol.organization} date={vol.date}>
+        <Card key={idx} title={vol.org} subtitle={vol.location} date={vol.date}>
           {isAdmin && <button className="admin-icon" onClick={() => onEdit(idx)}>✎</button>}
+          {vol.desc && <p className="card-content">{vol.desc[lang]}</p>}
         </Card>
       ))}
     </div>
