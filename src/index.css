@@ -490,6 +490,15 @@ nav ul {
   box-shadow: 0 4px 12px rgba(99, 102, 241, 0.4);
 }
 
+/* Card-specific admin icons */
+.card .admin-icon {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  opacity: 0;
+  z-index: 50;
+}
+
 .card:hover .admin-icon { opacity: 1; }
 .admin-icon.static { position: relative; opacity: 1; }
 
