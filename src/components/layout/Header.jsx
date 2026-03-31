@@ -25,13 +25,20 @@ const Header = ({ translations, isAdmin, onLogout, currentData }) => {
   };
 
   return (
-    <header className="container">
+    <header className="premium-nav">
+      <div className="logo" onClick={() => window.location.hash = '#/'}>
+        JOAN MATA
+      </div>
       <nav>
-        {Object.keys(translations.nav).map(key => (
-          <NavLink key={key} to={key === 'home' ? '/' : `/${key}`}>
-            {translations.nav[key]}
-          </NavLink>
-        ))}
+        <ul>
+          {Object.keys(translations.nav).map(key => (
+            <li key={key}>
+              <NavLink to={key === 'home' ? '/' : `/${key}`}>
+                {translations.nav[key]}
+              </NavLink>
+            </li>
+          ))}
+        </ul>
       </nav>
       {isAdmin && (
         <div className="admin-toolbar">

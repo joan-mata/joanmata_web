@@ -17,20 +17,18 @@ const Hero = ({ name, subtitle, profileText, translations }) => {
   };
 
   return (
-    <section className="hero-section hero-centered">
-      <div className="hero-content">
-        <h1 className="hero-name">{name}</h1>
-        <p className="hero-subtitle">{subtitle}</p>
-        
-        <div className="hero-profile-box glass">
-          <p className="hero-profile">{profileText}</p>
-        </div>
-        
-        <div className="hero-actions">
-          <button className="cta-button" onClick={handleDownload}>
-            {translations?.hero?.downloadCV || 'Download CV (PDF)'}
-          </button>
-        </div>
+    <section className="hero">
+      <h1 className="gradient-text">{name}</h1>
+      <p>{subtitle}</p>
+      
+      <div className="profile-text">
+        {profileText}
+      </div>
+      
+      <div className="hero-actions" style={{ marginTop: '3rem' }}>
+        <button className="cta-button" onClick={handleDownload}>
+          {translations?.hero?.downloadCV || 'Download CV (PDF)'}
+        </button>
       </div>
     </section>
   );

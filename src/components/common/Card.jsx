@@ -5,7 +5,7 @@ const Card = ({ title, subtitle, date, children, className = '', onClick, links,
 
   return (
     <div 
-      className={`premium-card ${className} ${isClickable ? 'clickable-card' : ''}`}
+      className={`card ${className} ${isClickable ? 'clickable-card' : ''}`}
       onClick={onClick}
     >
       <div className="card-header">
@@ -29,7 +29,7 @@ const Card = ({ title, subtitle, date, children, className = '', onClick, links,
           {date && <span className="card-date">{date}</span>}
         </div>
       </div>
-      <div className="card-body">
+      <div className="card-content">
         {children}
       </div>
     </div>
