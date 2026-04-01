@@ -173,7 +173,7 @@ export const DATA = {
           ca: "Desenvolupament i Implementació de Sistemes de Modulació Direccional i Posicional en Python",
           en: "Development and Implementation of Directional and Positional Modulation Systems in Python"
         },
-        grade: "9.5",
+        grade: "8.5",
         description: {
           es: "Mejora de la seguridad en radiocomunicaciones mediante modulación en la capa física. Se diseñan sistemas que focalizan la señal en direcciones específicas y coordenadas geográficas precisas, impidiendo la interceptación de información sensible por parte de receptores no autorizados mediante simulaciones dinámicas en Python.",
           ca: "Millora de la seguretat en radiocomunicacions mitjançant modulació a la capa física. Es dissenyen sistemes que focalitzen el senyal en direccions específiques i coordenades geogràfiques precises, impedint la interceptació d'informació sensible per part de receptors no autoritzats mitjançant simulacions dinàmiques en Python.",

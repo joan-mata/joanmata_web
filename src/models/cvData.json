@@ -13,7 +13,11 @@
   "experience": [
     {
       "company": "Universitat Autònoma de Barcelona",
-      "role": { "es": "Profesor de universidad", "ca": "Professor d'universitat", "en": "University Professor" },
+      "role": {
+        "es": "Profesor de universidad",
+        "ca": "Professor d'universitat",
+        "en": "University Professor"
+      },
       "date": "09/2025 - Present",
       "points": {
         "es": [
@@ -38,7 +42,11 @@
     },
     {
       "company": "FlexiiC",
-      "role": { "es": "Diseñador de Circuits Integrats", "ca": "Dissenyador de Circuits Integrats", "en": "IC Designer" },
+      "role": {
+        "es": "Diseñador de Circuits Integrats",
+        "ca": "Dissenyador de Circuits Integrats",
+        "en": "IC Designer"
+      },
       "date": "09/2024 - 11/2025",
       "points": {
         "es": [
@@ -63,7 +71,11 @@
     },
     {
       "company": "Universitat Autònoma de Barcelona",
-      "role": { "es": "Técnico Especialista en Investigación", "ca": "Tècnic Especialista en Investigació", "en": "Research Specialist" },
+      "role": {
+        "es": "Técnico Especialista en Investigación",
+        "ca": "Tècnic Especialista en Investigació",
+        "en": "Research Specialist"
+      },
       "date": "07/2022 - 07/2023",
       "points": {
         "es": [
@@ -85,32 +97,68 @@
     },
     {
       "company": "Cellnex Telecom",
-      "role": { "es": "Ingeniero de Ventas", "ca": "Enginyer de Vendes", "en": "Sales Engineer" },
+      "role": {
+        "es": "Ingeniero de Ventas",
+        "ca": "Enginyer de Vendes",
+        "en": "Sales Engineer"
+      },
       "date": "06/2022 - 07/2023",
       "points": {
-        "es": ["Modelado de sistemas de RF y gestión de alianzas estratégicas.", "Coordinación End-to-End del ciclo de vida del proyecto."],
-        "ca": ["Modelatge de sistemes d'RF i gestió d'aliances estratègiques.", "Coordinació End-to-End del cicle de vida del projecte."],
-        "en": ["RF systems modeling and strategic alliance management.", "End-to-End coordination of project lifecycle."]
+        "es": [
+          "Modelado de sistemas de RF y gestión de alianzas estratégicas.",
+          "Coordinación End-to-End del ciclo de vida del proyecto."
+        ],
+        "ca": [
+          "Modelatge de sistemes d'RF i gestió d'aliances estratègiques.",
+          "Coordinació End-to-End del cicle de vida del projecte."
+        ],
+        "en": [
+          "RF systems modeling and strategic alliance management.",
+          "End-to-End coordination of project lifecycle."
+        ]
       }
     },
     {
       "company": "Johnson Control Hitachi",
-      "role": { "es": "QA Tester", "ca": "QA Tester", "en": "QA Tester" },
+      "role": {
+        "es": "QA Tester",
+        "ca": "QA Tester",
+        "en": "QA Tester"
+      },
       "date": "07/2021 - 02/2022",
       "points": {
-        "es": ["Validación de sistemas mediante simuladores físicos and scripts en Python.", "Implementación de sistema de diagnóstico con Arduino."],
-        "ca": ["Validació de sistemes mitjançant simuladors físics i scripts en Python.", "Implementació de sistema de diagnòstic amb Arduino."],
-        "en": ["System validation using physical simulators and Python scripts.", "Diagnosis system implementation with Arduino."]
+        "es": [
+          "Validación de sistemas mediante simuladores físicos and scripts en Python.",
+          "Implementación de sistema de diagnóstico con Arduino."
+        ],
+        "ca": [
+          "Validació de sistemes mitjançant simuladors físics i scripts en Python.",
+          "Implementació de sistema de diagnòstic amb Arduino."
+        ],
+        "en": [
+          "System validation using physical simulators and Python scripts.",
+          "Diagnosis system implementation with Arduino."
+        ]
       }
     },
     {
       "company": "Federació Catalana de Futbol",
-      "role": { "es": "Árbitro de fútbol", "ca": "Àrbitre de futbol", "en": "Soccer Referee" },
+      "role": {
+        "es": "Árbitro de fútbol",
+        "ca": "Àrbitre de futbol",
+        "en": "Soccer Referee"
+      },
       "date": "07/2016 - Present",
       "points": {
-        "es": ["Gestión de la presión y toma de decisiones crítica."],
-        "ca": ["Gestió de l'estrès i presa de decisions crítica."],
-        "en": ["Pressure management and critical decision making."]
+        "es": [
+          "Gestión de la presión y toma de decisiones crítica."
+        ],
+        "ca": [
+          "Gestió de l'estrès i presa de decisions crítica."
+        ],
+        "en": [
+          "Pressure management and critical decision making."
+        ]
       }
     }
   ],
@@ -119,7 +167,12 @@
       "id": "cv-web",
       "name": "CV Interactivo",
       "date": "2026",
-      "tags": ["React", "MVC", "Architecture", "Full-Stack"],
+      "tags": [
+        "React",
+        "MVC",
+        "Architecture",
+        "Full-Stack"
+      ],
       "desc": {
         "es": "Mi tarjeta de presentación digital, diseñada con arquitectura limpia MVC para máxima escalabilidad.",
         "ca": "La meva targeta de presentació digital, dissenyada amb arquitectura neta MVC per a màxima escalabilitat.",
@@ -148,7 +201,13 @@
           "Component optimization for high-performance loading and premium user experience (UX)."
         ]
       },
-      "techStack": ["React", "Vite", "Vanilla CSS", "JS MVC", "JSON Persistence"],
+      "techStack": [
+        "React",
+        "Vite",
+        "Vanilla CSS",
+        "JS MVC",
+        "JSON Persistence"
+      ],
       "security": {
         "es": [
           "Arquitectura de rutas protegidas mediante aislamiento de componentes y guardias de navegación de React Router, impidiendo accesos no autorizados a las vistas administrativas mediante validación de estado en tiempo real.",
@@ -166,13 +225,21 @@
           "Deployment optimization via automated CI/CD pipelines, integrating strict HTTP security headers (HSTS, CSP) and automated SSL/TLS certificate management for guaranteed end-to-point encryption."
         ]
       },
-      "links": { "github": "github.com/joan-mata/Create_CVs", "live": "cv.joanmata.com" }
+      "links": {
+        "github": "github.com/joan-mata/Create_CVs",
+        "live": "cv.joanmata.com"
+      }
     },
     {
       "id": "ai-resumes",
       "name": "AI Interactive Resume Editor",
       "date": "2026",
-      "tags": ["React", "Local AI", "LaTeX-Style", "MVC"],
+      "tags": [
+        "React",
+        "Local AI",
+        "LaTeX-Style",
+        "MVC"
+      ],
       "desc": {
         "es": "Editor de CV interactivo 'side-by-side' con IA local.",
         "ca": "Editor de CV interactiu 'side-by-side' amb IA local.",
@@ -201,7 +268,12 @@
           "Serverless data persistence using local storage and structured JSON export."
         ]
       },
-      "techStack": ["React", "Vite", "Local AI (DeepSeek/Mistral)", "LaTeX Engine"],
+      "techStack": [
+        "React",
+        "Vite",
+        "Local AI (DeepSeek/Mistral)",
+        "LaTeX Engine"
+      ],
       "security": {
         "es": [
           "Seguridad 100% 'Offline-First' con procesamiento de IA íntegramente en el cliente, eliminando la necesidad de enviar datos sensibles a servicios de terceros o servidores externos para su procesamiento lingüístico.",
@@ -219,13 +291,21 @@
           "Decentralized persistence based on encrypted local storage schemas, granting users absolute sovereignty and control over the privacy of their professional data without cloud dependencies."
         ]
       },
-      "links": { "github": "github.com/joan-mata/Create_CVs", "live": "cv.joanmata.com" }
+      "links": {
+        "github": "github.com/joan-mata/Create_CVs",
+        "live": "cv.joanmata.com"
+      }
     },
     {
       "id": "ref-stats",
       "name": "RefStats: Analítica & Scraping Engine",
       "date": "2026",
-      "tags": ["Python", "Web Scraping", "Sports Analytics", "Full-Stack"],
+      "tags": [
+        "Python",
+        "Web Scraping",
+        "Sports Analytics",
+        "Full-Stack"
+      ],
       "desc": {
         "es": "Plataforma de analítica deportiva con Web Scraping.",
         "ca": "Plataforma d'analítica esportiva amb Web Scraping.",
@@ -254,7 +334,13 @@
           "Historical data persistence in a local database to enable seasonal comparative analysis."
         ]
       },
-      "techStack": ["Python", "BeautifulSoup/Scrapy", "React", "Node.js", "Local Storage"],
+      "techStack": [
+        "Python",
+        "BeautifulSoup/Scrapy",
+        "React",
+        "Node.js",
+        "Local Storage"
+      ],
       "security": {
         "es": [
           "Técnicas de scraping ético mediante la implementación de rotación de User-Agents y gestión inteligente de tiempos de espera para evitar bloqueos por IP y garantizar la sostenibilidad técnica del motor.",
@@ -272,13 +358,21 @@
           "Proactive latency monitoring and error handling within massive data ingestion pipelines, automatically normalizing NoSQL schemas to maintain a resilient and high-performance sports database."
         ]
       },
-      "links": { "github": "github.com/joan-mata/RefStats", "live": null }
+      "links": {
+        "github": "github.com/joan-mata/RefStats",
+        "live": null
+      }
     },
     {
       "id": "f1-archive",
       "name": "F1 Personal Vault",
       "date": "2026",
-      "tags": ["Full-Stack", "Streaming", "RBAC", "Video Engine"],
+      "tags": [
+        "Full-Stack",
+        "Streaming",
+        "RBAC",
+        "Video Engine"
+      ],
       "desc": {
         "es": "Repositorio personal de vídeo HD con gestión de roles.",
         "ca": "Repositori personal de vídeo HD amb gestió de rols.",
@@ -307,7 +401,13 @@
           "Dockerized infrastructure to allow for seamless scaling of storage and streaming servers."
         ]
       },
-      "techStack": ["React", "Node.js", "Express", "Docker", "Nginx"],
+      "techStack": [
+        "React",
+        "Node.js",
+        "Express",
+        "Docker",
+        "Nginx"
+      ],
       "security": {
         "es": [
           "Autenticación robusta basada en tokens de sesión (JWT) con gestión granular de permisos mediante roles (RBAC/PBAC), asegurando que solo los usuarios autorizados tengan visibilidad sobre activos privados.",
@@ -325,13 +425,21 @@
           "Local network perimeter hardening via Cloudflare Tunnels and secure NAT Traversal routing, eliminating the requirement for ISP port forwarding and ensuring point-to-point video traffic encryption."
         ]
       },
-      "links": { "github": "github.com/joan-mata/f1_archive", "live": "f1.joanmata.com" }
+      "links": {
+        "github": "github.com/joan-mata/f1_archive",
+        "live": "f1.joanmata.com"
+      }
     },
     {
       "id": "ref-notes",
       "name": "Referee Performance Analytics",
       "date": "2025",
-      "tags": ["Analytics", "Data Viz", "Private Portal", "GIS"],
+      "tags": [
+        "Analytics",
+        "Data Viz",
+        "Private Portal",
+        "GIS"
+      ],
       "desc": {
         "es": "Portal privado de analítica arbitral avanzada.",
         "ca": "Portal privat d'analítica arbitral avançada.",
@@ -360,7 +468,13 @@
           "Travel pattern detection and geographical assignment optimization for evaluation committees."
         ]
       },
-      "techStack": ["Python", "Flask", "PostgreSQL", "D3.js", "Geology/Mapping APIs"],
+      "techStack": [
+        "Python",
+        "Flask",
+        "PostgreSQL",
+        "D3.js",
+        "Geology/Mapping APIs"
+      ],
       "security": {
         "es": [
           "Entorno de alta confidencialidad mediante la implementación de autenticación de doble factor (2FA) y cifrado de base de datos PostgreSQL en reposo para proteger la integridad de los resultados arbitrales externos.",
@@ -378,13 +492,21 @@
           "Granular access control for geographical and personal data, applying data anonymization logic to evaluation profiles to protect evaluator privacy and ensure compliance with strict data protection standards."
         ]
       },
-      "links": { "github": "github.com/joan-mata/RefereeNotes", "live": "refnotes.joanmata.com" }
+      "links": {
+        "github": "github.com/joan-mata/RefereeNotes",
+        "live": "refnotes.joanmata.com"
+      }
     },
     {
       "id": "main-server",
       "name": "Infraestructura Cloud Local",
       "date": "2025 - 2026",
-      "tags": ["Docker", "DevOps", "Cloudflare", "Infrastructure"],
+      "tags": [
+        "Docker",
+        "DevOps",
+        "Cloudflare",
+        "Infrastructure"
+      ],
       "desc": {
         "es": "Infraestructura local escalable basada en Docker.",
         "ca": "Infraestructura local escalable basada en Docker.",
@@ -413,7 +535,13 @@
           "Zero Trust perimeter security hardening to protect access to critical services."
         ]
       },
-      "techStack": ["Docker", "Linux (macOS)", "Cloudflare Tunnel", "Nginx", "Reverse Proxy"],
+      "techStack": [
+        "Docker",
+        "Linux (macOS)",
+        "Cloudflare Tunnel",
+        "Nginx",
+        "Reverse Proxy"
+      ],
       "security": {
         "es": [
           "Implementación de un perímetro de seguridad Zero Trust basado en Cloudflare Tunnels (NAT Traversal), eliminando por completo la necesidad de apertura de puertos en el router ISP y anulando ataques de escaneo de IP.",
@@ -431,13 +559,21 @@
           "Automated SSL/TLS certificate management and edge hardening via perimeter Firewall with geolocation-based IP filtering to block fraudulent access attempts from unauthorized regions or blacklisted IPs."
         ]
       },
-      "links": { "github": null, "live": null }
+      "links": {
+        "github": null,
+        "live": null
+      }
     },
     {
       "id": "aws-pipeline",
       "name": "AWS Data Ingestion Pipeline",
       "date": "2025",
-      "tags": ["AWS", "Python", "ETL", "Big Data"],
+      "tags": [
+        "AWS",
+        "Python",
+        "ETL",
+        "Big Data"
+      ],
       "desc": {
         "es": "Pipeline de ingesta de datos a gran escala automatizado en infraestructura cloud de AWS.",
         "ca": "Pipeline d'ingesta de dades a gran escala automatitzat en infraestructura cloud d'AWS.",
@@ -466,7 +602,13 @@
           "Proactive monitoring and critical error alerts via CloudWatch."
         ]
       },
-      "techStack": ["Python", "AWS Lambda", "Boto3", "Kinesis", "S3"],
+      "techStack": [
+        "Python",
+        "AWS Lambda",
+        "Boto3",
+        "Kinesis",
+        "S3"
+      ],
       "security": {
         "es": [
           "Gestión granular de identidades y accesos (IAM) aplicando estrictamente el principio de mínimo privilegio para limitar los permisos de las funciones Lambda y servicios a solo lo estrictamente necesario para su ejecución.",
@@ -484,13 +626,21 @@
           "Serverless architecture featuring proactive security monitoring via CloudWatch Logs and CloudTrail integration, automating real-time alerts for any anomalous access attempts to the critical Big Data resources."
         ]
       },
-      "links": { "github": null, "live": null }
+      "links": {
+        "github": null,
+        "live": null
+      }
     },
     {
       "id": "web-exams",
       "name": "WebExams: Interactive Assessment Platform",
       "date": "2025",
-      "tags": ["React", "E-learning", "Community", "Monetization"],
+      "tags": [
+        "React",
+        "E-learning",
+        "Community",
+        "Monetization"
+      ],
       "desc": {
         "es": "Plataforma de exámenes interactivos con feedback.",
         "ca": "Plataforma d'exàmens interactius amb feedback.",
@@ -522,7 +672,13 @@
           "Personal dashboard for tracking historical results and continuous academic performance improvement."
         ]
       },
-      "techStack": ["React", "Vite", "Firebase/Node.js", "Google Adsense", "CSS Grid"],
+      "techStack": [
+        "React",
+        "Vite",
+        "Firebase/Node.js",
+        "Google Adsense",
+        "CSS Grid"
+      ],
       "security": {
         "es": [
           "Protección contra fraude en exámenes mediante el desarrollo de lógica de temporización sincronizada estrictamente en el lado del servidor, eliminando posibles manipulaciones de tiempo desde el cliente.",
@@ -540,13 +696,21 @@
           "Persistence optimization and serverless infrastructure deployment with continuous performance monitoring, guaranteeing high scalability during peak traffic and simultaneous exam sessions across the platform."
         ]
       },
-      "links": { "github": "github.com/joan-mata/WebExams", "live": null }
+      "links": {
+        "github": "github.com/joan-mata/WebExams",
+        "live": null
+      }
     },
     {
       "id": "docu-life",
       "name": "DocuLife: Bóveda Digital Segura",
       "date": "2025",
-      "tags": ["Mobile", "Security", "Privacy", "Vault"],
+      "tags": [
+        "Mobile",
+        "Security",
+        "Privacy",
+        "Vault"
+      ],
       "desc": {
         "es": "Bóveda digital móvil para documentos críticos.",
         "ca": "Volta digital mòbil per a documents crítics.",
@@ -578,7 +742,12 @@
           "Dynamic expiry date management for automated notification alerts regarding official document renewals."
         ]
       },
-      "techStack": ["React Native/Flutter", "AES-256 Encryption", "SQLite/Realm", "Biometric Auth"],
+      "techStack": [
+        "React Native/Flutter",
+        "AES-256 Encryption",
+        "SQLite/Realm",
+        "Biometric Auth"
+      ],
       "security": {
         "es": [
           "Cifrado nativo de grado militar (AES-256) gestionado en el enclave seguro del dispositivo móvil, garantizando que los archivos críticos permanezcan ilegibles incluso en caso de robo o compromiso físico del terminal.",
@@ -596,14 +765,25 @@
           "Cloud synchronization architecture based on asymmetric encryption schemas entirely controlled by the user, ensuring that only the owner possesses the decryption master keys even for off-device backups."
         ]
       },
-      "links": { "github": "github.com/joan-mata/DocuLife", "live": null }
+      "links": {
+        "github": "github.com/joan-mata/DocuLife",
+        "live": null
+      }
     }
   ],
   "education": [
     {
       "id": "master-ds",
-      "category": { "es": "Máster", "ca": "Màster", "en": "Master" },
-      "title": { "es": "Ciencia de Datos", "ca": "Ciència de Dades", "en": "Data Science" },
+      "category": {
+        "es": "Máster",
+        "ca": "Màster",
+        "en": "Master"
+      },
+      "title": {
+        "es": "Ciencia de Datos",
+        "ca": "Ciència de Dades",
+        "en": "Data Science"
+      },
       "school": "Universitat Oberta de Catalunya",
       "date": "2025 – Present",
       "grade": "En curso",
@@ -615,8 +795,16 @@
     },
     {
       "id": "gei",
-      "category": { "es": "Grado", "ca": "Grau", "en": "BS" },
-      "title": { "es": "Ingeniería Informática", "ca": "Enginyeria Informàtica", "en": "Computer Engineering" },
+      "category": {
+        "es": "Grado",
+        "ca": "Grau",
+        "en": "BS"
+      },
+      "title": {
+        "es": "Ingeniería Informática",
+        "ca": "Enginyeria Informàtica",
+        "en": "Computer Engineering"
+      },
       "school": "Universitat Autònoma de Barcelona",
       "date": "2018 – 2025",
       "grade": "Graduado",
@@ -642,8 +830,16 @@
     },
     {
       "id": "gst",
-      "category": { "es": "Grado", "ca": "Grau", "en": "BS" },
-      "title": { "es": "Ingeniería en Sistemas de Telecomunicación", "ca": "Enginyeria en Sistemes de Telecomunicació", "en": "Telecommunication Systems Engineering" },
+      "category": {
+        "es": "Grado",
+        "ca": "Grau",
+        "en": "BS"
+      },
+      "title": {
+        "es": "Ingeniería en Sistemas de Telecomunicación",
+        "ca": "Enginyeria en Sistemes de Telecomunicació",
+        "en": "Telecommunication Systems Engineering"
+      },
       "school": "Universitat Autònoma de Barcelona",
       "date": "2018 – 2025",
       "grade": "Graduado",
@@ -658,7 +854,7 @@
           "ca": "Desenvolupament i Implementació de Sistemes de Modulació Direccional i Posicional en Python",
           "en": "Development and Implementation of Directional and Positional Modulation Systems in Python"
         },
-        "grade": "9.5",
+        "grade": "8.5",
         "description": {
           "es": "Mejora de la seguridad en radiocomunicaciones mediante modulación en la capa física. Se diseñan sistemas que focalizan la señal en direcciones específicas y coordenadas geográficas precisas, impidiendo la interceptación de información sensible por parte de receptores no autorizados mediante simulaciones dinámicas en Python.",
           "ca": "Millora de la seguretat en radiocomunicacions mitjançant modulació a la capa física. Es dissenyen sistemes que focalitzen el senyal en direccions específiques i coordenades geogràfiques precises, impedint la interceptació d'informació sensible per part de receptors no autoritzats mitjançant simulacions dinàmiques en Python.",
@@ -669,26 +865,60 @@
     }
   ],
   "certificates": [
-    { "title": "Desarrollo con IA", "issuer": "BIG School", "date": "2026" },
-    { "title": "Bluetooth Low Energy Fundamentals", "issuer": "Nordic Semiconductor", "date": "2024" },
-    { "title": "nRF Connect SDK Fundamentals", "issuer": "Nordic Semiconductor", "date": "2024" },
-    { "title": "Certificate of Python", "issuer": "University of Michigan", "date": "2019" }
+    {
+      "title": "Desarrollo con IA",
+      "issuer": "BIG School",
+      "date": "2026"
+    },
+    {
+      "title": "Bluetooth Low Energy Fundamentals",
+      "issuer": "Nordic Semiconductor",
+      "date": "2024"
+    },
+    {
+      "title": "nRF Connect SDK Fundamentals",
+      "issuer": "Nordic Semiconductor",
+      "date": "2024"
+    },
+    {
+      "title": "Certificate of Python",
+      "issuer": "University of Michigan",
+      "date": "2019"
+    }
   ],
   "skills": [
-    "Python", "C++", "React", "Node.js", "Swift", "Machine Learning", "Local IA", "AWS", "Docker", "PKI/SSL", "PCB Design"
+    "Python",
+    "C++",
+    "React",
+    "Node.js",
+    "Swift",
+    "Machine Learning",
+    "Local IA",
+    "AWS",
+    "Docker",
+    "PKI/SSL",
+    "PCB Design"
   ],
   "volunteering": [
     {
       "location": "Bolivia",
       "date": "2025",
       "org": "FASFI",
-      "desc": { "es": "Apoyo educativo en Cochabamba.", "ca": "Suport educatiu a Cochabamba.", "en": "Educational support in Cochabamba." }
+      "desc": {
+        "es": "Apoyo educativo en Cochabamba.",
+        "ca": "Suport educatiu a Cochabamba.",
+        "en": "Educational support in Cochabamba."
+      }
     },
     {
       "location": "Haití",
       "date": "2019",
       "org": "TECHO",
-      "desc": { "es": "Construcción de viviendas en Puerto Príncipe.", "ca": "Construcció d'habitatges a Port-au-Prince.", "en": "Emergency housing construction." }
+      "desc": {
+        "es": "Construcción de viviendas en Puerto Príncipe.",
+        "ca": "Construcció d'habitatges a Port-au-Prince.",
+        "en": "Emergency housing construction."
+      }
     }
   ]
 }

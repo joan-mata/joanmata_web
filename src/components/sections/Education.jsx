@@ -13,12 +13,14 @@ const Education = ({ title, data, lang, isAdmin, onEdit, onAdd, translations }) 
         {isAdmin && <button className="admin-icon static" onClick={onAdd} title={`Add ${title}`}>+</button>}
       </div>
       
+      <div className="card-grid">
         {data.map((edu, idx) => {
           const eduId = edu.id || `edu-${idx}`;
           return (
             <Card 
               key={eduId}
               title={edu.title[lang]}
+              subtitle={edu.school}
               date={edu.date}
               translations={translations}
             >
@@ -51,6 +53,7 @@ const Education = ({ title, data, lang, isAdmin, onEdit, onAdd, translations }) 
             </Card>
           );
         })}
+      </div>
     </section>
   );
 };
