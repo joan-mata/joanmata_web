@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { HashRouter, Routes, Route, Navigate } from 'react-router-dom';
-import yaml from 'js-yaml';
+import * as yaml from 'js-yaml';
 import { TRANSLATIONS } from './models/translations';
 import { DATA } from './models/cvData';
 import Header from './components/layout/Header';
