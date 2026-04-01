@@ -293,6 +293,24 @@
       }
     }
   ],
+  "certificates": [
+    {
+      "id": "ai-big",
+      "description": "Certificació avançada en el desenvolupament de solucions d'Intel·ligència Artificial aplicada, enfocada en arquitectures modernes i models generatius."
+    },
+    {
+      "id": "ble-nordic",
+      "description": "Formació tècnica sobre els fonaments del protocol Bluetooth Low Energy (BLE), cobrint arquitectura de perfils, serveis i optimització d'energia."
+    },
+    {
+      "id": "sdk-nordic",
+      "description": "Especialització en l'ús del nRF Connect SDK per al desenvolupament d'aplicacions encastades professionals sobre maquinari de Nordic Semiconductor."
+    },
+    {
+      "id": "python-michigan",
+      "description": "Curs integral de programació en Python, abastant des d'estructures de dades fins a programació orientada a objectes i manipulació de fitxers."
+    }
+  ],
   "volunteering": [
     {
       "location": "Bolivia",

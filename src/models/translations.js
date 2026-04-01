@@ -44,6 +44,13 @@ export const TRANSLATIONS = {
       closeViewer: 'Cerrar Visor',
       editEducation: 'Editar Educación'
     },
+    certificates: {
+      viewCert: 'Visualizar Certificado',
+      closeViewer: 'Cerrar Visor',
+      issuer: 'Emisor',
+      dateTitle: 'Fecha de Expedición',
+      detailsTitle: 'Descripción del Certificado'
+    },
     contact: {
       info: 'Información de contacto',
       social: 'Redes Profesionales'
@@ -115,6 +122,13 @@ export const TRANSLATIONS = {
       closeViewer: 'Tancar Visor',
       editEducation: 'Editar Educació'
     },
+    certificates: {
+      viewCert: 'Visualitzar Certificat',
+      closeViewer: 'Tancar Visor',
+      issuer: 'Emissor',
+      dateTitle: 'Data d\'Expedició',
+      detailsTitle: 'Descripció del Certificat'
+    },
     contact: {
       info: 'Informació de contacte',
       social: 'Xarxes Professionals'
@@ -185,6 +199,13 @@ export const TRANSLATIONS = {
       viewTfg: 'View TFG',
       closeViewer: 'Close Viewer',
       editEducation: 'Edit Education'
+    },
+    certificates: {
+      viewCert: 'View Certificate',
+      closeViewer: 'Close Viewer',
+      issuer: 'Issuer',
+      dateTitle: 'Date of Issue',
+      detailsTitle: 'Certificate Description'
     },
     contact: {
       info: 'Contact Information',

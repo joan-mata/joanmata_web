@@ -293,6 +293,24 @@
       }
     }
   ],
+  "certificates": [
+    {
+      "id": "ai-big",
+      "description": "Advanced certification in the development of applied Artificial Intelligence solutions, focusing on modern architectures and generative models."
+    },
+    {
+      "id": "ble-nordic",
+      "description": "Technical training on the fundamentals of the Bluetooth Low Energy (BLE) protocol, covering profiling architecture, services, and power optimization."
+    },
+    {
+      "id": "sdk-nordic",
+      "description": "Specialization in using the nRF Connect SDK for professional embedded application development on Nordic Semiconductor hardware."
+    },
+    {
+      "id": "python-michigan",
+      "description": "Comprehensive Python programming course, ranging from basic data structures to object-oriented programming and file manipulation."
+    }
+  ],
   "volunteering": [
     {
       "location": "Bolivia",

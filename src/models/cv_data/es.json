@@ -293,6 +293,24 @@
       }
     }
   ],
+  "certificates": [
+    {
+      "id": "ai-big",
+      "description": "Certificación avanzada en el desarrollo de soluciones de Inteligencia Artificial aplicada, enfocada en arquitecturas modernas y modelos generativos."
+    },
+    {
+      "id": "ble-nordic",
+      "description": "Formación técnica sobre los fundamentos del protocolo Bluetooth Low Energy (BLE), cubriendo arquitectura de perfiles, servicios y optimización de energía."
+    },
+    {
+      "id": "sdk-nordic",
+      "description": "Especialización en el uso del nRF Connect SDK para el desarrollo de aplicaciones embebidas profesionales sobre hardware de Nordic Semiconductor."
+    },
+    {
+      "id": "python-michigan",
+      "description": "Curso integral de programación en Python, abarcando desde estructuras de datos hasta programación orientada a objetos y manipulación de archivos."
+    }
+  ],
   "volunteering": [
     {
       "location": "Bolivia",

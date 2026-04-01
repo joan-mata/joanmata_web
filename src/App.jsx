@@ -13,6 +13,7 @@ import Education from './components/sections/Education';
 import EducationDetailsPage from './components/sections/EducationDetailsPage';
 import Skills from './components/sections/Skills';
 import Certificates from './components/sections/Certificates';
+import CertificateDetailsPage from './components/sections/CertificateDetailsPage';
 import Volunteering from './components/sections/Volunteering';
 import Contact from './components/sections/Contact';
 import AdminEntry from './components/admin/AdminEntry';
@@ -92,7 +93,8 @@ export default function App() {
             <Route path="/education" element={<Education title={t.sections.education} data={currentData.education} lang={lang} translations={t} {...adminProps('education', 'education')} />} />
             <Route path="/education/:id" element={<EducationDetailsPage data={currentData.education} lang={lang} translations={t} isAdmin={isAdmin} onEdit={(id) => setShowModal({ type: 'education', context: 'education', itemIndex: currentData.education.findIndex(e => e.id === id), data: currentData.education.find(e => e.id === id) })} />} />
             <Route path="/skills" element={<Skills title={t.sections.skills} data={currentData.skills} isAdmin={isAdmin} onEdit={() => setShowModal({ type: 'skills', context: 'skills', data: currentData.skills })} onAdd={() => setShowModal({ type: 'skills', context: 'skills' })} translations={t} />} />
-            <Route path="/certificates" element={<Certificates title={t.sections.certificates} data={currentData.certificates} lang={lang} {...adminProps('certificates', 'certificate')} />} />
+            <Route path="/certificates" element={<Certificates title={t.sections.certificates} data={currentData.certificates} lang={lang} translations={t} {...adminProps('certificates', 'certificate')} />} />
+            <Route path="/certificates/:id" element={<CertificateDetailsPage data={currentData.certificates} lang={lang} translations={t} isAdmin={isAdmin} onEdit={(id) => setShowModal({ type: 'certificates', context: 'certificates', itemIndex: currentData.certificates.findIndex(c => c.id === id), data: currentData.certificates.find(c => c.id === id) })} />} />
             <Route path="/volunteering" element={<Volunteering title={t.sections.volunteering} data={currentData.volunteering} lang={lang} {...adminProps('volunteering', 'volunteering')} />} />
             <Route path="/contact" element={<Contact title={t.sections.contact} data={currentData} translations={t} />} />
             <Route path="/admin" element={isAdmin ? <Navigate to="/" /> : <AdminEntry onLogin={() => {setIsAdmin(true); sessionStorage.setItem('isAdmin', 'true');}} translations={t} />} />

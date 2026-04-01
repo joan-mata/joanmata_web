@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Card from '../common/Card';
 
 const Certificates = ({ title, data, lang, isAdmin, onEdit, onAdd }) => (
@@ -10,7 +11,10 @@ const Certificates = ({ title, data, lang, isAdmin, onEdit, onAdd }) => (
     <div className="card-grid">
       {data.map((cert, idx) => (
         <Card key={idx} title={cert.title} subtitle={cert.issuer} date={cert.date}>
-          {isAdmin && <button className="admin-icon" onClick={() => onEdit(idx)}>✎</button>}
+          <div style={{ display: 'flex', gap: '0.5rem', marginTop: '1rem' }}>
+            <Link to={`/certificates/${cert.id}`} className="cta-btn secondary mini">{translations.projects.details}</Link>
+            {isAdmin && <button className="admin-icon" onClick={() => onEdit(idx)}>✎</button>}
+          </div>
         </Card>
       ))}
     </div>
