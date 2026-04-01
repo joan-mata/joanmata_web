@@ -399,6 +399,20 @@ nav ul {
   border-top: 1px solid var(--glass-border);
 }
 
+.card-desc-home {
+  font-size: 0.95rem;
+  color: var(--text-dim);
+  line-height: 1.6;
+  margin-bottom: 1.2rem;
+}
+
+.card-tags-home {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem; /* Gap before the separator line */
+}
+
 .card-details-btn, .card-web-btn {
   background: var(--glass);
   padding: 0.6rem 1.4rem;

@@ -25,7 +25,7 @@ const Experience = ({ title, data, lang, isAdmin, onEdit, onAdd, translations })
           >
             {isAdmin && <button className="admin-icon entry-edit-btn" onClick={() => onEdit(idx)}>✎</button>}
             <p className="card-desc-home">{exp.desc[lang]}</p>
-            <div className="card-tags-home" style={{ marginTop: '0.8rem', display: 'flex', flexWrap: 'wrap', gap: '0.4rem' }}>
+            <div className="card-tags-home">
               {exp.tags && exp.tags.slice(0, 4).map((tag, i) => (
                 <Badge key={i} text={tag} />
               ))}
