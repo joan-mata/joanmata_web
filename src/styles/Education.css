@@ -1,88 +1,7 @@
 /* src/styles/Education.css */
 
-.education-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 2.5rem;
-}
+/* Special Education Page Specifics - NOT overlapping with Card.css */
 
-.education-card-compact {
-  padding: 2.5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  min-height: 250px;
-  border-radius: 30px;
-  background: var(--bg-card);
-  border: 1px solid var(--glass-border);
-  backdrop-filter: blur(15px);
-  transition: var(--transition);
-  position: relative;
-}
-
-.education-card-compact:hover {
-  transform: translateY(-8px);
-  border-color: var(--accent-primary);
-  box-shadow: 0 15px 30px rgba(99, 102, 241, 0.1);
-}
-
-.edu-card-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin-bottom: 2rem;
-  gap: 1rem;
-}
-
-.edu-category-tag {
-  background: rgba(99, 102, 241, 0.1);
-  color: var(--accent-primary);
-  padding: 0.5rem 1.25rem;
-  border-radius: 12px;
-  font-size: 0.75rem;
-  font-weight: 800;
-  border: 1px solid rgba(99, 102, 241, 0.2);
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-.edu-year-box {
-  background: var(--glass);
-  color: var(--text-dim);
-  padding: 0.5rem 1rem;
-  border-radius: 12px;
-  font-size: 0.8rem;
-  font-weight: 700;
-  border: 1px solid var(--glass-border);
-}
-
-.edu-card-title {
-  font-size: 1.5rem;
-  font-weight: 900;
-  line-height: 1.4;
-  color: var(--text-primary);
-  margin-bottom: 1.5rem;
-  background: linear-gradient(135deg, #fff, rgba(255,255,255,0.7));
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.edu-card-actions {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: auto;
-  padding-top: 1.5rem;
-  border-top: 1px solid var(--glass-border);
-}
-
-.small-btn {
-  padding: 0.5rem 1.25rem !important;
-  font-size: 0.75rem !important;
-}
-
-/* Education Detail Specifics */
 .edu-school-name {
   font-size: 1.8rem;
   font-weight: 800;
@@ -133,14 +52,4 @@
 
 .tfg-download-btn {
   width: 100%;
-}
-
-.admin-edit-btn {
-  background: var(--accent-primary);
-  border: none;
-  color: white;
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  cursor: pointer;
 }

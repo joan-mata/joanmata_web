@@ -1,45 +1,53 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import '../../styles/Education.css';
+import Card from '../common/Card';
+import Badge from '../common/Badge';
 
 const Education = ({ title, data, lang, isAdmin, onEdit, onAdd, translations }) => {
   const navigate = useNavigate();
 
   return (
-    <section className="container education-section">
-      <div className="section-header">
+    <section className="container">
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
         <h2 className="section-title">{title}</h2>
         {isAdmin && <button className="admin-icon static" onClick={onAdd} title={`Add ${title}`}>+</button>}
       </div>
       
-      <div className="card-grid education-grid">
+      <div className="card-grid">
         {data.map((edu, idx) => (
-          <div key={idx} className="glass-card education-card-compact">
-            <div className="edu-card-content">
-              <div className="edu-card-header">
-                <span className="edu-category-tag">{edu.school}</span>
-                <span className="edu-year-box">{edu.date}</span>
+          <Card 
+            key={edu.id}
+            title={edu.title[lang]}
+            date={edu.date}
+            translations={translations}
+          >
+            {isAdmin && (
+              <button 
+                className="admin-icon entry-edit-btn" 
+                onClick={(e) => { e.stopPropagation(); onEdit(idx); }}
+              >
+                ✎
+              </button>
+            )}
+
+            <div className="card-content" style={{ marginBottom: '2rem' }}>
+              <div className="edu-school-highlight" style={{ fontSize: '1.2rem', fontWeight: '800', color: 'var(--accent-primary)', marginBottom: '1rem' }}>
+                {edu.school}
               </div>
-              <h3 className="edu-card-title">{edu.title[lang]}</h3>
+              <p style={{ color: 'var(--text-dim)', lineHeight: '1.6' }}>
+                {edu.explanation?.[lang] || ""}
+              </p>
             </div>
             
-            <div className="edu-card-actions">
+            <div className="card-footer-actions">
               <button 
-                className="cta-btn secondary small-btn" 
-                onClick={() => navigate(`/education/${edu.id}`)}
+                className="card-details-btn"
+                onClick={(e) => { e.stopPropagation(); navigate(`/education/${edu.id}`); }}
               >
-                VER DETALLES
+                {translations.projects.details}
               </button>
-              {isAdmin && (
-                <button 
-                  className="admin-edit-btn" 
-                  onClick={(e) => { e.stopPropagation(); onEdit(idx); }}
-                >
-                  ✎
-                </button>
-              )}
             </div>
-          </div>
+          </Card>
         ))}
       </div>
     </section>
