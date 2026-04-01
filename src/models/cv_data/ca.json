@@ -261,7 +261,7 @@
       "explanation": "Màster enfocat en mètodes d'aprenentatge automàtic, mineria de dades i arquitectures escalables de Big Data.",
       "school": "Universitat Oberta de Catalunya",
       "date": "2025 – Present",
-      "grade": "En curso"
+      "grade": "En curs"
     },
     {
       "id": "gei",
@@ -270,7 +270,7 @@
       "explanation": "Formació especialitzada en enginyeria de programari, algoritmes i sistemes operatius amb menció en Enginyeria del Software.",
       "school": "Universitat Autònoma de Barcelona",
       "date": "2018 – 2025",
-      "grade": "Graduado",
+      "grade": "Graduat",
       "tfg": {
         "title": "Compressibilitat de les Imatges",
         "description": "Investigació sobre l'eficiència de compressió mitjançant mètriques bidimensionals i gramàtiques 2D. Es proposen mètodes innovadors per transformar imatges en fluxos de dades optimitzats, validant els resultats amb biblioteques avançades de Python sobre conjunts de dades naturals i mèdiques.",
@@ -285,7 +285,7 @@
       "explanation": "Formació integral en sistemes de transmissió, xarxes de dades, propagació de senyal i serveis de telecomunicacions.",
       "school": "Universitat Autònoma de Barcelona",
       "date": "2018 – 2025",
-      "grade": "Graduado",
+      "grade": "Graduat",
       "tfg": {
         "title": "Desenvolupament i Implementació de Sistemes de Modulació Direccional i Posicional en Python",
         "description": "Millora de la seguretat en radiocomunicacions mitjançant modulació a la capa física. Es dissenyen sistemes que focalitzen el senyal en direccions específiques i coordenades geogràfiques precises, impedint la interceptació d'informació sensible per part de receptors no autoritzats mitjançant simulacions dinàmiques en Python.",

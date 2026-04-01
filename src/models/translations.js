@@ -58,6 +58,12 @@ export const TRANSLATIONS = {
       cancel: 'Cancelar',
       autoTranslate: 'Auto-traducir al escribir'
     },
+    skills: {
+      software: 'Software & Web',
+      ai: 'IA & Ciencia de Datos',
+      infrastructure: 'Infraestructura & DevOps',
+      hardware: 'Hardware & Sistemas'
+    },
     alerts: {
       pdfNotFound: 'Archivo PDF no encontrado en el servidor. Por favor, contacta directamente.'
     }
@@ -121,6 +127,12 @@ export const TRANSLATIONS = {
       cancel: 'Cancel·lar',
       autoTranslate: 'Auto-traduir en escriure'
     },
+    skills: {
+      software: 'Programari i Web',
+      ai: 'IA i Ciència de Dades',
+      infrastructure: 'Infraestructura i DevOps',
+      hardware: 'Maquinari i Sistemes'
+    },
     alerts: {
       pdfNotFound: 'Arxiu PDF no trobat al servidor. Si us plau, contacta directament.'
     }
@@ -183,6 +195,12 @@ export const TRANSLATIONS = {
       save: 'Save Changes',
       cancel: 'Cancel',
       autoTranslate: 'Auto-translate while typing'
+    },
+    skills: {
+      software: 'Software & Web Development',
+      ai: 'AI & Data Science',
+      infrastructure: 'Infrastructure & DevOps',
+      hardware: 'Hardware & Systems'
     },
     alerts: {
       pdfNotFound: 'PDF file not found on the server. Please contact me directly.'

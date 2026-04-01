@@ -261,7 +261,7 @@
       "explanation": "Master's degree focused on machine learning methods, data mining, and scalable Big Data architectures.",
       "school": "Universitat Oberta de Catalunya",
       "date": "2025 – Present",
-      "grade": "En curso"
+      "grade": "Ongoing"
     },
     {
       "id": "gei",
@@ -270,7 +270,7 @@
       "explanation": "Specialized training in software engineering, algorithms, and operating systems with a mention in Software Engineering.",
       "school": "Universitat Autònoma de Barcelona",
       "date": "2018 – 2025",
-      "grade": "Graduado",
+      "grade": "Graduated",
       "tfg": {
         "title": "Image Compressibility",
         "description": "Research on compression efficiency using two-dimensional metrics and 2D grammars. Innovative methods are proposed to transform images into optimized data streams, validating the results with advanced Python libraries on natural and medical datasets.",
@@ -285,7 +285,7 @@
       "explanation": "Comprehensive training in transmission systems, data networks, signal propagation, and telecommunication services.",
       "school": "Universitat Autònoma de Barcelona",
       "date": "2018 – 2025",
-      "grade": "Graduado",
+      "grade": "Graduated",
       "tfg": {
         "title": "Development and Implementation of Directional and Positional Modulation Systems in Python",
         "description": "Enhancement of radiocommunications security through physical layer modulation. Systems are designed to focus signals in specific directions and precise geographic coordinates, preventing unauthorized interception of sensitive information through dynamic Python simulations.",

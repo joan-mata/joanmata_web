@@ -107,7 +107,7 @@ const EducationDetailsPage = ({ data, lang, translations, isAdmin, onEdit }) => 
             <h2 className="detail-section-title">{translations.education.academicSummary}</h2>
             <div className="edu-stat-item">
               <span className="stat-label">{translations.education.status}: </span>
-              <span className="stat-value">{edu.grade}</span>
+              <span className="stat-value">{edu.grade[lang]}</span>
             </div>
           </div>
         </aside>

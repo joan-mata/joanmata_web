@@ -31,7 +31,11 @@ export const DATA = {
     id: es.education[i].id,
     school: es.education[i].school,
     date: es.education[i].date,
-    grade: es.education[i].grade,
+    grade: {
+      es: es.education[i].grade,
+      ca: ca.education[i].grade,
+      en: en.education[i].grade
+    },
     category: {
       es: es.education[i].category,
       ca: ca.education[i].category,
