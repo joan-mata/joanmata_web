@@ -33,6 +33,17 @@ export const TRANSLATIONS = {
       details: 'Detalles del Proyecto',
       close: 'Cerrar'
     },
+    education: {
+      university: 'Universidad / Institución',
+      description: 'Descripción y Objetivos',
+      tfgTitle: 'Trabajo de Fin de Grado (TFG)',
+      grade: 'Nota',
+      status: 'Estado',
+      academicSummary: 'Resumen Académico',
+      viewTfg: 'Visualizar TFG',
+      closeViewer: 'Cerrar Visor',
+      editEducation: 'Editar Educación'
+    },
     contact: {
       info: 'Información de contacto',
       social: 'Redes Profesionales'
@@ -85,6 +96,17 @@ export const TRANSLATIONS = {
       details: 'Detalls del Projecte',
       close: 'Tancar'
     },
+    education: {
+      university: 'Universitat / Institució',
+      description: 'Descripció i Objectius',
+      tfgTitle: 'Treball de Fi de Grau (TFG)',
+      grade: 'Nota',
+      status: 'Estat',
+      academicSummary: 'Resum Acadèmic',
+      viewTfg: 'Visualitzar TFG',
+      closeViewer: 'Tancar Visor',
+      editEducation: 'Editar Educació'
+    },
     contact: {
       info: 'Informació de contacte',
       social: 'Xarxes Professionals'
@@ -136,6 +158,17 @@ export const TRANSLATIONS = {
       miniVisit: 'Visit Web',
       details: 'Project Details',
       close: 'Close'
+    },
+    education: {
+      university: 'University / Institution',
+      description: 'Description and Objectives',
+      tfgTitle: 'Final Year Project (TFG)',
+      grade: 'Grade',
+      status: 'Status',
+      academicSummary: 'Academic Summary',
+      viewTfg: 'View TFG',
+      closeViewer: 'Close Viewer',
+      editEducation: 'Edit Education'
     },
     contact: {
       info: 'Contact Information',

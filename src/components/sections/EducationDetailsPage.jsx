@@ -28,14 +28,14 @@ const EducationDetailsPage = ({ data, lang, translations, isAdmin, onEdit }) => 
         </Link>
         {isAdmin && (
           <button className="cta-btn secondary edit-details-btn" onClick={() => onEdit(id)}>
-            ✎ EDITAR EDUCACIÓN
+            ✎ {translations.education.editEducation.toUpperCase()}
           </button>
         )}
       </div>
 
       <header className="detail-hero">
         <div className="detail-hero-content">
-          <span className="detail-category">{translations.sections.education.toUpperCase()}</span>
+          <span className="detail-category">{translations.nav.education.toUpperCase()}</span>
           <h1 className="detail-main-title gradient-text">{edu.title[lang]}</h1>
           <div className="detail-meta">
             <span className="card-date">{edu.date}</span>
@@ -46,12 +46,12 @@ const EducationDetailsPage = ({ data, lang, translations, isAdmin, onEdit }) => 
       <div className="detail-grid-layout">
         <div className="detail-main-column">
           <section className="detail-glass-card">
-            <h2 className="detail-section-title">Universidad / Institución</h2>
+            <h2 className="detail-section-title">{translations.education.university}</h2>
             <div className="edu-school-name">{edu.school}</div>
           </section>
 
           <section className="detail-glass-card">
-            <h2 className="detail-section-title">Descripción y Objetivos</h2>
+            <h2 className="detail-section-title">{translations.education.description}</h2>
             <p className="detail-long-description">
               {edu.explanation[lang]}
             </p>
@@ -59,13 +59,13 @@ const EducationDetailsPage = ({ data, lang, translations, isAdmin, onEdit }) => 
 
           {edu.tfg && edu.tfg.title && (
             <section className="detail-glass-card">
-              <h2 className="detail-section-title">Trabajo de Fin de Grado (TFG)</h2>
+              <h2 className="detail-section-title">{translations.education.tfgTitle}</h2>
               <div className="tfg-container">
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '1rem' }}>
                   <div style={{ flex: 1, minWidth: '300px' }}>
                     <h3 className="tfg-title">{edu.tfg.title[lang]}</h3>
                     <div className="tfg-meta" style={{ marginTop: '0.5rem' }}>
-                      <span className="tfg-grade-label">Nota: </span>
+                      <span className="tfg-grade-label">{translations.education.grade}: </span>
                       <span className="tfg-grade-value">{edu.tfg.grade}</span>
                     </div>
                   </div>
@@ -75,7 +75,7 @@ const EducationDetailsPage = ({ data, lang, translations, isAdmin, onEdit }) => 
                       className={`cta-btn ${showViewer ? 'secondary' : 'primary'}`}
                       onClick={() => setShowViewer(!showViewer)}
                     >
-                      {showViewer ? '✖ CERRAR VISOR' : '👁 VISUALIZAR TFG'}
+                      {showViewer ? `✖ ${translations.education.closeViewer.toUpperCase()}` : `👁 ${translations.education.viewTfg.toUpperCase()}`}
                     </button>
                   )}
                 </div>
@@ -104,9 +104,9 @@ const EducationDetailsPage = ({ data, lang, translations, isAdmin, onEdit }) => 
 
         <aside className="detail-sidebar-column">
           <div className="detail-glass-card">
-            <h2 className="detail-section-title">Resumen Académico</h2>
+            <h2 className="detail-section-title">{translations.education.academicSummary}</h2>
             <div className="edu-stat-item">
-              <span className="stat-label">Estado: </span>
+              <span className="stat-label">{translations.education.status}: </span>
               <span className="stat-value">{edu.grade}</span>
             </div>
           </div>
