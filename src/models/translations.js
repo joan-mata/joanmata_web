@@ -11,7 +11,9 @@ export const TRANSLATIONS = {
     },
     hero: {
       subtitle: 'Ingeniero Informático y de Telecomunicación • Profesor Universitario • Científico de Datos',
-      downloadCV: 'Descargar CV (PDF)'
+      downloadCV: 'Descargar CV (PDF)',
+      downloadES: 'Descargar CV (ES)',
+      downloadEN: 'Download CV (EN)'
     },
     sections: {
       experience: 'Experiencia Profesional',
@@ -89,7 +91,9 @@ export const TRANSLATIONS = {
     },
     hero: {
       subtitle: 'Enginyer Informàtic i de Telecomunicació • Professor Universitari • Científic de Dades',
-      downloadCV: 'Descarregar CV (PDF)'
+      downloadCV: 'Descarregar CV (PDF)',
+      downloadES: 'Descarregar CV (ES)',
+      downloadEN: 'Download CV (EN)'
     },
     sections: {
       experience: 'Experiència Professional',
@@ -167,7 +171,9 @@ export const TRANSLATIONS = {
     },
     hero: {
       subtitle: 'Computer & Telecom Engineer • University Professor • Data Scientist',
-      downloadCV: 'Download CV (PDF)'
+      downloadCV: 'Download CV (PDF)',
+      downloadES: 'Download CV (ES)',
+      downloadEN: 'Download CV (EN)'
     },
     sections: {
       experience: 'Professional Experience',

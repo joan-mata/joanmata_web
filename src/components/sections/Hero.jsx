@@ -1,8 +1,8 @@
 import React from 'react';
 
 const Hero = ({ name, subtitle, profileText, translations, isAdmin, onEdit }) => {
-  const handleDownload = () => {
-    const cvUrl = '/assets/cv-joan-mata.pdf';
+  const handleDownload = (type) => {
+    const cvUrl = type === 'es' ? '/docs/cv/cv_joanmata_espanol.pdf' : '/docs/cv/cv_joanmata_english.pdf';
     fetch(cvUrl, { method: 'HEAD' })
       .then(res => {
         if (res.ok) {
@@ -26,9 +26,12 @@ const Hero = ({ name, subtitle, profileText, translations, isAdmin, onEdit }) =>
         {profileText}
       </div>
       
-      <div className="hero-actions" style={{ marginTop: '3rem' }}>
-        <button className="cta-button" onClick={handleDownload}>
-          {translations?.hero?.downloadCV || 'Download CV (PDF)'}
+      <div className="hero-actions" style={{ marginTop: '3rem', display: 'flex', gap: '1.5rem', justifyContent: 'center', flexWrap: 'wrap' }}>
+        <button className="cta-button" onClick={() => handleDownload('es')}>
+          {translations?.hero?.downloadES || 'Descargar CV (ES)'}
+        </button>
+        <button className="cta-button" onClick={() => handleDownload('en')}>
+          {translations?.hero?.downloadEN || 'Download CV (EN)'}
         </button>
       </div>
     </section>

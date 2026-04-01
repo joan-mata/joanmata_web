@@ -1,8 +1,8 @@
 import React from 'react';
 
 const Contact = ({ title, infoLabel, socialLabel, data, translations }) => {
-  const handleDownload = () => {
-    const cvUrl = '/assets/cv-joan-mata.pdf';
+  const handleDownload = (type) => {
+    const cvUrl = type === 'es' ? '/docs/cv/cv_joanmata_espanol.pdf' : '/docs/cv/cv_joanmata_english.pdf';
     fetch(cvUrl, { method: 'HEAD' })
       .then(res => {
         if (res.ok) {
@@ -53,11 +53,16 @@ const Contact = ({ title, infoLabel, socialLabel, data, translations }) => {
       </div>
 
       <div className="contact-footer-action">
-        <div className="cv-download-box glass">
+        <div className="cv-download-box glass" style={{ maxWidth: '600px' }}>
           <h3>🚀 {translations?.hero?.downloadCV || 'Download CV'}</h3>
-          <button className="cta-button" onClick={handleDownload}>
-            PDF DOWNLOAD
-          </button>
+          <div style={{ display: 'flex', gap: '1rem', marginTop: '2rem', justifyContent: 'center', flexWrap: 'wrap' }}>
+            <button className="cta-button" onClick={() => handleDownload('es')}>
+              {translations?.hero?.downloadES.toUpperCase()}
+            </button>
+            <button className="cta-button" onClick={() => handleDownload('en')}>
+              {translations?.hero?.downloadEN.toUpperCase()}
+            </button>
+          </div>
         </div>
       </div>
     </section>
