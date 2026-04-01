@@ -1,5 +1,6 @@
 {
-  "profile": "Enginyer amb doble titulació en Enginyeria Informàtica i Sistemes de Telecomunicació, amb un perfil híbrid que uneix maquinari, programari i ciència de dades. Actualment exerceixo com a Professor Universitari especialitzat en ciberseguretat i xarxes, activitat que compagino amb el desenvolupament de solucions d'IA local, arquitectures cloud escalables i sistemes encastats. Em defineix una profunda curiositat tècnica i una mentalidad de aprenentatge continu, la qual cosa em permet adaptar-me ràpidament a noves tecnologies i integrar-les en projectes complexos i seg  "experience": [
+  "profile": "Enginyer amb doble titulació en Enginyeria Informàtica i Sistemes de Telecomunicació, amb un perfil híbrid que uneix maquinari, programari i ciència de dades. Actualment exerceixo com a Professor Universitari especialitzat en ciberseguretat i xarxes, activitat que compagino amb el desenvolupament de solucions d'IA local, arquitectures cloud escalables i sistemes encastats. Em defineix una profunda curiositat tècnica i una mentalitat de aprenentatge continu, la qual cosa em permet adaptar-me ràpidament a noves tecnologies i integrar-les en projectes complexos i segurs.",
+  "experience": [
     {
       "company": "Universitat Autònoma de Barcelona",
       "role": "Professor d'universitat",
@@ -78,11 +79,6 @@
       "points": [
         "Gestió de la pressió i presa de decisions crítica en entorns competitius d'alta exigència.",
         "Aplicació de reglamentació complexa i mediació en conflictes sota condicions d'estrès temporal."
-      ],
-      "date": "07/2016 - Actualitat"
-    }
-  ],
-en conflictes sota condicions d'estrès temporal."
       ],
       "date": "07/2016 - Actualitat"
     }
