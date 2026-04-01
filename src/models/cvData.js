@@ -26,6 +26,7 @@ export const DATA = {
     en: en.profile
   },
   experience: es.experience.map((_, i) => ({
+    id: `job-${es.experience[i].company.toLowerCase().replace(/[^a-z0-9]/g, '-').substring(0, 10)}-${i}`,
     company: es.experience[i].company,
     date: es.experience[i].date,
     role: {

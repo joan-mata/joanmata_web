@@ -25,6 +25,10 @@ export const TRANSLATIONS = {
       volunteering: 'Voluntariado',
       contact: 'Contacto'
     },
+    experience: {
+      close: 'Volver a Experiencia',
+      details: 'Detalles del Puesto'
+    },
     projects: {
       techStack: 'Stack Tecnológico',
       security: 'Seguridad y DevOps',
@@ -105,6 +109,10 @@ export const TRANSLATIONS = {
       volunteering: 'Voluntariat',
       contact: 'Contacte'
     },
+    experience: {
+      close: 'Tornar a Experiència',
+      details: 'Detalls del Lloc'
+    },
     projects: {
       techStack: 'Stack Tecnològic',
       security: 'Seguretat i DevOps',
@@ -184,6 +192,10 @@ export const TRANSLATIONS = {
       certificates: 'Certificates',
       volunteering: 'Volunteering',
       contact: 'Contact'
+    },
+    experience: {
+      close: 'Back to Experience',
+      details: 'Role Details'
     },
     projects: {
       techStack: 'Tech Stack',

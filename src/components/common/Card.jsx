@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Card = ({ title, subtitle, date, children, className = '', onClick, links, translations }) => {
+const Card = ({ title, subtitle, date, children, className = '', onClick, links, translations, footer }) => {
   const isClickable = !!onClick;
 
   return (
@@ -21,6 +21,11 @@ const Card = ({ title, subtitle, date, children, className = '', onClick, links,
       <div className="card-content">
         {children}
       </div>
+      {footer && (
+        <div className="card-footer-actions">
+          {footer}
+        </div>
+      )}
     </div>
   );
 };
