@@ -10,9 +10,15 @@ const Certificates = ({ title, data, lang, isAdmin, onEdit, onAdd, translations 
     </div>
     <div className="card-grid">
       {data.map((cert, idx) => (
-        <Card key={idx} title={cert.title} subtitle={cert.issuer} date={cert.date}>
-          <div style={{ display: 'flex', gap: '0.5rem', marginTop: '1rem' }}>
-            <Link to={`/certificates/${cert.id}`} className="cta-btn secondary mini">{translations.projects.details}</Link>
+        <Card key={cert.id} title={cert.title} subtitle={cert.issuer} date={cert.date}>
+          <p className="card-content" style={{ marginBottom: '1.5rem', color: 'var(--text-dim)', fontSize: '1.05rem', lineHeight: '1.6' }}>
+            {cert.description[lang]}
+          </p>
+          
+          <div className="card-footer-actions">
+            <Link to={`/certificates/${cert.id}`} className="card-details-btn">
+              {translations.projects.details}
+            </Link>
             {isAdmin && <button className="admin-icon" onClick={() => onEdit(idx)}>✎</button>}
           </div>
         </Card>
