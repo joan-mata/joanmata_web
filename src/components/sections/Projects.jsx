@@ -23,7 +23,6 @@ const Projects = ({ title, data, lang, translations, isAdmin, onEdit, onAdd }) =
             key={proj.id}
             title={proj.name}
             date={proj.date}
-            onClick={() => handleProjectClick(proj.id)}
             links={proj.links}
             translations={translations}
             className="project-card"
