@@ -1,0 +1,148 @@
+nombre: "Joan Mata Pàrraga"
+email: "joanmata.parraga@gmail.com"
+telefono: "+34 647 267 153"
+ubicacion: "Barcelona, España"
+
+perfil:
+  texto: "Ingeniero con doble titulación en Ingeniería Informática y Sistemas de Telecomunicación, con un perfil híbrido que une hardware, software y ciencia de datos. Actualmente ejerzo como Profesor Universitario especializado en ciberseguridad y redes, actividad que compagino con el desarrollo de soluciones de IA local, arquitecturas cloud escalables y sistemas embebidos. Me define una profunda curiosidad técnica y una mentalidad de aprendizaje continuo, lo que me permite adaptarme rápidamente a nuevas tecnologías e integrarlas en proyectos complejos y seguros."
+experiencia:
+  - empresa: "Universitat Autònoma de Barcelona"
+    puesto: "Profesor de universidad"
+    fecha: "09/2025 - Presente"
+    descripcion: |
+      - Docente en la asignatura 'Serveis de Telecomunicacions', liderando la formación práctica en desarrollo web full-stack y seguridad en redes.
+          - Instrucción técnica en desarrollo Full-stack, capacitando en el diseño de arquitecturas web completas y la administración de bases de datos.
+          - Configuración avanzada de seguridad en servicios web: servidores y VirtualHosts, gestión de infraestructura de clave públicas mediante certificados y aseguramiento de tráfico con protocolos SSL/TLS.
+      - Docente en 'Fonaments de Xarxes', impartiendo fundamentos de comunicación cliente-servidor y arquitectura de red basada en el protocolo IP.
+          - Diseño y simulación de topologías de red complejas, supervisando la configuración de sistemas operativos de red, protocolos de encaminamiento estático y gestión de gateways.
+          - Especialista en planificación de direccionamiento de red avanzado (VLSM), segmentación de redes y despliegue de servicios críticos de infraestructura como DHCP y DNS.
+      - Tutor de Trabajos de Fin de Grado (TFG), supervisando la arquitectura técnica y el cumplimiento de hitos en proyectos de ingeniería informática y de datos:
+          - Ciberseguridad: Supervisión del desarrollo de una herramienta CLI para auditoría de hardening web.
+          - Data Engineering: Dirección de un sistema de Web Scraping para la extracción y normalización de datos masivos.
+          - Data Science: Mentoría en el diseño de modelos predictivos de Machine Learning.
+  - empresa: "FlexiiC - Flexible Integrated Circuits"
+    puesto: "Diseñador de Circuitos Integrados"
+    fecha: "09/2024 - 11/2025"
+    descripcion: |
+      - Desarrollo e implementación de soluciones de conectividad inalámbrica mediante el SoC nRF52840 y protocolos Bluetooth Low Energy (BLE), logrando la integración multiplataforma entre sensores, dongles y aplicaciones móviles.
+      - Diseño integral de PCBs desde la fase de esquemáticos hasta la gestión de fabricación, garantizando la interoperabilidad con sistemas embebidos y validando la conectividad física de los prototipos.
+      - Caracterización física y validación funcional de circuitos integrados mediante instrumentación avanzada de laboratorio, analizando señales y métricas de rendimiento para la elaboración de informes técnicos de certificación.
+      - Verificación digital de hardware (RTL) mediante el desarrollo de entornos de testeo (Testbenches) en Verilog y optimización de rutinas en ASM (Assembly) para una arquitectura de procesador propietaria de la compañía.
+      - Liderazgo en la fase de debugging lógica del chip, identificando errores críticos mediante documentación interna y facilitando el paso del proyecto a la fase final de producción.
+  - empresa: "Universitat Autònoma de Barcelona"
+    puesto: "Técnico Superior Especialista en Investigación"
+    fecha: "07/2022 - 07/2023"
+    descripcion: |
+      - Diseño y desarrollo integral de la arquitectura backend para una plataforma de gestión de datos de investigación, migrando con éxito de Django a Flask para optimizar la flexibilidad de la API REST.
+      - Liderazgo en la transición de una arquitectura de base de datos relacional (SQL) a una no relacional (NoSQL/MongoDB) para gestionar eficientemente esquemas de datos heterogéneos y dinámicos provenientes de múltiples fuentes.
+      - Automatización del ciclo de vida de los datos mediante el desarrollo de pipelines para la ingesta, limpieza y normalización de información heterogénea, eliminando procesos manuales y asegurando la integridad de los registros en tiempo real.
+      - Creación y mantenimiento de una API estructurada para el servicio de datos en formato JSON, colaborando estrechamente con el equipo de Frontend para la visualización e integración de resultados.
+  - empresa: "Cellnex Telecom"
+    puesto: "Ingeniero de Ventas"
+    fecha: "06/2022 - 07/2023"
+    descripcion: 
+      - Realización de análisis teóricos y modelado de sistemas de RF para su introducción en el mercado, garantizando la viabilidad técnica y el cumplimiento de estándares.
+      - Gestión de alianzas estratégicas con proveedores de fibra óptica y partners tecnológicos para integrar soluciones de conectividad externas, mejorando la competitividad económica y técnica del servicio final.
+      - Coordinación integral del ciclo de vida del proyecto (End-to-End), desde el diseño conceptual hasta la instalación final y puesta en marcha.
+      - Comunicación estratégica con clientes clave para la gestión de riesgos, desviaciones presupuestarias o ajustes en la viabilidad de los despliegues.
+  - empresa: "Johnson Control Hitachi"
+    puesto: "QA Tester"
+    fecha: "07/2021 - 02/2022"
+    descripcion: |
+      - Evaluación de rendimiento y validación de sistemas de climatización mediante el uso de simuladores físicos, garantizando los estándares de calidad en condiciones críticas de operación.
+      - Implementación de un sistema de diagnóstico basado en Arduino para la monitorización y análisis del protocolo de comunicación serie entre unidades interiores y exteriores (indoor/outdoor).
+      - Desarrollo de scripts en Python para la automatización de procesos de testeo, logrando una transición eficiente desde métodos manuales hacia un entorno de validación más rápido y preciso.
+      - Responsable de la configuración, mantenimiento y optimización de la infraestructura física de los bancos de prueba (cableado, conexionado y empalme de precisión).
+      - Elaboración de informes técnicos detallados y documentación de resultados para el soporte directo a los equipos de diseño y desarrollo de producto.
+  - empresa: "Federació Catalana de Futbol"
+    puesto: "Árbitro de fútbol"
+    fecha: "07/2016 - Presente"
+
+proyectos_ingenieria:
+  - nombre: "Editor de Documentos Inteligente con IA Local (Privacy-First)"
+    fecha: "2026"
+    tecnologias: ["Local LLMs", "Real-time PDF Engines", "Private AI API", "Full-stack"]
+    descripcion: |
+      - Desarrollo de una plataforma web para la edición y conversión de texto a PDF en tiempo real, con un asistente de IA integrado para la optimización de contenido.
+      - Implementación de un ecosistema de IA totalmente privado mediante el uso de APIs locales, permitiendo la interacción, corrección y generación de texto sin salida de datos a la nube.
+      - Diseño de una interfaz reactiva que permite el co-authoring entre el usuario y el modelo de lenguaje, con previsualización dinámica del documento final.
+      - Configuración de servidores locales para el despliegue del modelo de IA, garantizando latencia mínima y total confidencialidad de la información.
+  - nombre: "Arquitectura de Ingesta y Análisis Estadístico (Web Scraping)"
+    fecha: "2025"
+    tecnologias: ["AWS", "PostgreSQL", "Web Scraping", "Data Engineering"]
+    descripcion: |
+      - Desarrollo de un ecosistema de extracción masiva de datos web con almacenamiento optimizado en PostgreSQL y lógica de reorganización estadística.
+      - Gestión de infraestructura Cloud en AWS, configurando servidores y bases de datos para asegurar la disponibilidad y scalabilidad del sistema.
+      - Implementación de herramientas de exportación de datos y dashboards de visualización de KPIs.
+  - nombre: "Plataforma de Procesamiento y Clasificación de Datos (Web)"
+    fecha: "2025"
+    tecnologias: ["Docker", "Architecture Design", "Matemática Aplicada", "Security"]
+    descripcion: |
+      - Diseño y despliegue de una plataforma web para el procesamiento matemático y visualización de datos, incluyendo algoritmos de clasificación automatizada.
+      - Implementación de una arquitectura escalable mediante contenedores Docker, garantizando la portabilidad y facilidad de despliegue.
+      - Gestión integral de la seguridad mediante sistemas de autenticación privada y administración de infraestructura de red (dominios y certificados).
+  - nombre: "Ecosistema de Aplicaciones Móviles y Educativas"
+    fecha: "2024"
+    tecnologias: ["iOS Development", "Data Persistence", "Full-stack"]
+    descripcion: |
+      - Desarrollo de aplicaciones nativas para iOS con persistencia de datos local y sincronización de estados.
+      - Creación de plataformas educativas para la gestión de exámenes y soluciones, cubriendo desde el diseño de la base de datos hasta el lanzamiento a producción y gestión de dominios.
+
+formacion:
+  - titulo: "Máster - Ciencia de Datos"
+    centro: "Universitat Oberta de Catalunya"
+    fecha: "09/2025 – Presente"
+  - titulo: "Grado en Ingeniería Informática"
+    centro: "Universitat Autònoma de Barcelona"
+    fecha: "09/2018 – 06/2025"
+  - titulo: "Grado en Sistemas de Telecomunicación"
+    centro: "Universitat Autònoma de Barcelona"
+    fecha: "09/2018 – 06/2025"
+
+voluntariado:
+  - organizacion: "FASFI"
+    puesto: "Voluntariado en Bolivia"
+    fecha: "10/2025 - 11/2025"
+    descripcion: "Apoyo integral en programas educativos y de asistencia diaria para niños en situación de vulnerabilidad, colaborando en la impartición de clases y en la gestión operativa del centro en Cochabamba."
+  - organizacion: "TECHO Haití"
+    puesto: "Voluntariado en Haití"
+    fecha: "07/2019 - 08/2019"
+    descripcion: "Participación activa en proyectos de infraestructura social y construcción de viviendas de emergencia en Puerto Príncipe, coordinando tareas logísticas y de apoyo organizativo sobre el terreno."
+
+habilidades:
+  tecnicas: 
+    - "Programación: Python, C++, Node.js, React, Java, Swift (iOS), ASM, Verilog."
+    - "Datos e IA: Machine Learning, IA Local (Ollama), Web Scraping (Selenium/BS4), Data Engineering."
+    - "Web y Backend: Django, Flask, FastAPI, REST APIs, SQL (PostgreSQL/MySQL), NoSQL (MongoDB)."
+    - "Infraestructura: AWS, Docker, Linux (Administración de Servidores), Zephyr RTOS, PKI/SSL, VLSM."
+    - "Hardware: Diseño de PCBs, Análisis de RF, nRF52 SDK, Arduino, Instrumentación de Laboratorio."
+  competencias: 
+    - "Curiosidad técnica y vocación de aprendizaje continuo ante nuevos desafíos."
+    - "Liderazgo, tutoría y mentoría de equipos técnicos y estudiantes."
+    - "Toma de decisiones crítica y gestión de la presión."
+    - "Gestión de conflictos, comunicación asertiva y mediación."
+    - "Capacidad analítica para la resolución metódica de problemas complejos."
+    - "Adaptabilidad técnica en entornos multidisciplinares de alta exigencia."
+  idiomas:
+    - "Español (nativo)"
+    - "Catalán (nativo)"
+    - "Inglés (B2)"
+    - "Francés (A2)"
+
+certificados:
+  - nombre: "Desarrollo con IA"
+    emisor: "BIG School"
+    fecha: "2026"
+    descripcion: "Especialización en la integración de modelos generativos y herramientas de IA para la optimización de flujos de trabajo de ingeniería y desarrollo de software inteligente."
+  - nombre: "Bluetooth Low Energy Fundamentals"
+    emisor: "Nordic Semiconductor"
+    fecha: "2024"
+    descripcion: "Formación profunda en la arquitectura del protocolo BLE, gestión de perfiles GATT, optimización de consumo energético y seguridad en comunicaciones inalámbricas."
+  - nombre: "nRF Connect SDK Fundamentals"
+    emisor: "Nordic Semiconductor"
+    fecha: "2024"
+    descripcion: "Dominio del entorno de desarrollo basado en Zephyr RTOS, configuración de periféricos y desarrollo de firmware robusto para la serie nRF52."
+  - nombre: "Certificate of Python"
+    emisor: "University of Michigan"
+    fecha: "2019"
+    descripcion: "Fundamentos de programación, estructuras de datos y procesamiento de información utilizando Python para la resolución de problemas lógicos."

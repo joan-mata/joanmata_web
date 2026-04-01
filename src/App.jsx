@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { HashRouter, Routes, Route, Navigate } from 'react-router-dom';
+import yaml from 'js-yaml';
 import { TRANSLATIONS } from './models/translations';
 import { DATA } from './models/cvData';
 import Header from './components/layout/Header';
@@ -46,6 +47,73 @@ export default function App() {
     dl.click();
   };
 
+  const exportYaml = () => {
+    const d = currentData;
+    const l = lang;
+
+    // Transform to AI-Ready YAML structure (Matching cvData_es.yaml)
+    const aiReady = {
+      nombre: d.name,
+      email: d.email,
+      telefono: d.phone,
+      ubicacion: d.location,
+      perfil: {
+        texto: d.profile[l]
+      },
+      experiencia: d.experience.map(exp => ({
+        empresa: exp.company,
+        puesto: exp.role[l],
+        fecha: exp.date,
+        descripcion: exp.points[l] ? exp.points[l].map(p => `- ${p}`).join('\n') : ''
+      })),
+      proyectos_ingenieria: d.projects.map(p => ({
+        nombre: p.name[l],
+        fecha: p.date,
+        tecnologias: p.techStack,
+        descripcion: p.points[l] ? p.points[l].map(pt => `- ${pt}`).join('\n') : (p.desc[l] || '')
+      })),
+      formacion: d.education.map(edu => ({
+        titulo: edu.title[l],
+        centro: edu.school,
+        fecha: edu.date
+      })),
+      voluntariado: d.volunteering.map(v => ({
+        organizacion: v.org,
+        puesto: v.location,
+        fecha: v.date,
+        descripcion: v.desc[l]
+      })),
+      habilidades: {
+        tecnicas: [
+          `Programación: ${d.skills.software.join(', ')}.`,
+          `Datos e IA: ${d.skills.ai.join(', ')}.`,
+          `Web & Scraping: ${d.skills.scraping.join(', ')}.`,
+          `Infraestructura: ${d.skills.infrastructure.join(', ')}.`
+        ],
+        competencias: d.skills.leadership,
+        idiomas: [
+          "Español (nativo)",
+          "Catalán (nativo)",
+          "Inglés (B2)",
+          "Francés (A2)"
+        ]
+      },
+      certificados: d.certificates.map(c => ({
+        nombre: c.title,
+        emisor: c.issuer,
+        fecha: c.date,
+        descripcion: c.description[l]
+      }))
+    };
+
+    const yamlStr = yaml.dump(aiReady, { lineWidth: -1, quotingType: '"' });
+    const blob = new Blob([yamlStr], { type: 'text/yaml;charset=utf-8' });
+    const dl = document.createElement('a');
+    dl.href = URL.createObjectURL(blob);
+    dl.download = `cvData_${l}.yaml`;
+    dl.click();
+  };
+
   const importData = (e) => {
     const file = e.target.files[0];
     if (file) {
@@ -79,6 +147,7 @@ export default function App() {
               <input type="file" onChange={importData} style={{display:'none'}}/>
             </label>
             <button onClick={exportData} className="admin-tool-btn" title="Export JSON">💾</button>
+            <button onClick={exportYaml} className="admin-tool-btn" title="Export to AI (YAML)">🤖</button>
             <button onClick={() => {setIsAdmin(false); sessionStorage.removeItem('isAdmin');}} className="admin-tool-btn" title="Exit Admin">🚪</button>
           </div>
         )}
