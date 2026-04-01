@@ -38,7 +38,7 @@ export const DATA = {
     },
     {
       company: "FlexiiC",
-      role: { es: "Diseñador de Circuitos Integrados", ca: "Dissenyador de Circuits Integrats", en: "IC Designer" },
+      role: { es: "Diseñador de Circuits Integrats", ca: "Dissenyador de Circuits Integrats", en: "IC Designer" },
       date: "09/2024 - 11/2025",
       points: {
         es: [
@@ -88,18 +88,9 @@ export const DATA = {
       role: { es: "Ingeniero de Ventas", ca: "Enginyer de Vendes", en: "Sales Engineer" },
       date: "06/2022 - 07/2023",
       points: {
-        es: [
-          "Modelado de sistemas de RF y gestión de alianzas estratégicas.",
-          "Coordinación End-to-End del ciclo de vida del proyecto."
-        ],
-        ca: [
-          "Modelatge de sistemes d'RF i gestió d'aliances estratègiques.",
-          "Coordinació End-to-End del cicle de vida del projecte."
-        ],
-        en: [
-          "RF systems modeling and strategic alliance management.",
-          "End-to-End coordination of project lifecycle."
-        ]
+        es: ["Modelado de sistemas de RF y gestión de alianzas estratégicas.", "Coordinación End-to-End del ciclo de vida del proyecto."],
+        ca: ["Modelatge de sistemes d'RF i gestió d'aliances estratègiques.", "Coordinació End-to-End del cicle de vida del projecte."],
+        en: ["RF systems modeling and strategic alliance management.", "End-to-End coordination of project lifecycle."]
       }
     },
     {
@@ -107,18 +98,9 @@ export const DATA = {
       role: { es: "QA Tester", ca: "QA Tester", en: "QA Tester" },
       date: "07/2021 - 02/2022",
       points: {
-        es: [
-          "Validación de sistemas mediante simuladores físicos y scripts en Python.",
-          "Implementación de sistema de diagnóstico con Arduino."
-        ],
-        ca: [
-          "Validació de sistemes mitjançant simuladors físics i scripts en Python.",
-          "Implementació de sistema de diagnòstic amb Arduino."
-        ],
-        en: [
-          "System validation using physical simulators and Python scripts.",
-          "Diagnosis system implementation with Arduino."
-        ]
+        es: ["Validación de sistemas mediante simuladores físicos y scripts en Python.", "Implementación de sistema de diagnóstico con Arduino."],
+        ca: ["Validació de sistemes mitjançant simuladors físics i scripts en Python.", "Implementació de sistema de diagnòstic amb Arduino."],
+        en: ["System validation using physical simulators and Python scripts.", "Diagnosis system implementation with Arduino."]
       }
     },
     {
@@ -127,52 +109,329 @@ export const DATA = {
       date: "07/2016 - Present",
       points: {
         es: ["Gestión de la presión y toma de decisiones crítica."],
-        ca: ["Gestió de la pressió i presa de decisions crítica."],
+        ca: ["Gestió de l'estrès i presa de decisions crítica."],
         en: ["Pressure management and critical decision making."]
       }
     }
   ],
   projects: [
     {
+      id: "cv-web",
+      name: "CV Interactivo",
+      date: "2026",
+      tags: ["React", "MVC", "Architecture", "Full-Stack"],
+      desc: {
+        es: "Mi tarjeta de presentación digital, diseñada con arquitectura limpia MVC para máxima escalabilidad.",
+        ca: "La meva targeta de presentació digital, dissenyada amb arquitectura neta MVC per a màxima escalabilitat.",
+        en: "My digital presentation card, designed with clean MVC architecture for maximum scalability."
+      },
+      points: {
+          es: [
+            "Desarrollo integral del portal desde cero empleando React y Vanilla CSS para un diseño fluido y ligero.",
+            "Implementación de arquitectura MVC (Model-View-Controller) para la separación estricta de lógica de datos y UI.",
+            "Diseño de un motor de persistencia sobre JSON y LocalStorage para la gestión dinámica del CV.",
+            "Panel de Administración interactivo con guardado en tiempo real y carga de traducciones automáticas.",
+            "Optimización de componentes para una carga de alto rendimiento y una experiencia de usuario premium (UX)."
+          ],
+          ca: [
+            "Desenvolupament integral del portal des de zero emprant React i Vanilla CSS per a un disseny fluid i lleuger.",
+            "Implementació darquitectura MVC (Model-View-Controller) per a la separació estricta de lògica de dades i UI.",
+            "Disseny dun motor de persistència sobre JSON i LocalStorage per a la gestió dinàmica del CV.",
+            "Panell d'administració interactiu amb desament en temps real i càrrega de traduccions automàtiques.",
+            "Optimització de components per a una càrrega dʻalt rendiment i una experiència dʻusuari premium (UX)."
+          ],
+          en: [
+            "Comprehensive development of the portal from scratch using React and Vanilla CSS for a fluid and light design.",
+            "Implementation of MVC (Model-View-Controller) architecture for strict separation of data logic and UI.",
+            "Design of a persistence engine on JSON and LocalStorage for dynamic CV management.",
+            "Interactive Administration Panel with real-time saving and loading of automatic translations.",
+            "Component optimization for high-performance loading and premium user experience (UX)."
+          ]
+      },
+      techStack: ["React", "Vite", "Vanilla CSS", "JS MVC", "JSON Persistence"],
+      security: {
+          es: [
+            "Arquitectura de rutas protegidas mediante aislamiento de componentes y guardias de navegación.",
+            "Cifrado de persistencia local (AES-256) y validación de integridad de datos JSON.",
+            "Optimización de despliegue mediante CI/CD automatizado para entornos productivos."
+          ],
+          ca: [
+            "Arquitectura de rutes protegides mitjançant aïllament de components i guàrdies de navegació.",
+            "Xifrat de persistència local (AES-256) i validació d'integritat de dades JSON.",
+            "Optimització de desplegament mitjançant CI/CD automatitzat per a entorns productius."
+          ],
+          en: [
+            "Protected route architecture through component isolation and navigation guards.",
+            "Local persistence encryption (AES-256) and JSON data integrity validation.",
+            "Deployment optimization using automated CI/CD pipelines for production environments."
+          ]
+      },
+      links: { github: "github.com/joan-mata/Create_CVs", live: "cv.joanmata.com" }
+    },
+    {
       id: "ai-resumes",
       name: "AI Interactive Resume Editor",
       date: "2026",
-      tags: ["Next.js", "OpenAI", "React", "TRPC"],
+      tags: ["React", "Local AI", "LaTeX-Style", "MVC"],
       desc: {
-        es: "Plataforma de optimización de CVs mediante IA que adapta el perfil a descripciones de empleo específicas.",
-        ca: "Plataforma d'optimització de CVs mitjançant IA que adapta el perfil a descripcions de feina específiques.",
-        en: "AI resume optimization platform that tailors profiles to specific job descriptions."
+        es: "Editor de CV interactivo 'side-by-side' con IA local.",
+        ca: "Editor de CV interactiu 'side-by-side' amb IA local.",
+        en: "Interactive side-by-side CV editor with local AI."
       },
       points: {
-        es: [
-          "Integración avanzada con OpenAI API para sugerencias de contenido.",
-          "Sistema de edición en tiempo real con vista previa interactiva.",
-          "Arquitectura escalable usando TRPC y Next.js.",
-          "Optimización de ATS (Applicant Tracking Systems).",
-          "Interfaz dinámica con TailWind CSS."
-        ],
-        ca: [
-          "Integració avançada amb OpenAI API per a suggeriments de contingut.",
-          "Sistema d'edició en temps real amb vista prèvia interactiva.",
-          "Arquitectura escalable usant TRPC i Next.js.",
-          "Optimització d'ATS (Applicant Tracking Systems).",
-          "Interfície dinàmica amb TailWind CSS."
-        ],
-        en: [
-          "Advanced OpenAI API integration for content suggestions.",
-          "Real-time editing system with interactive preview.",
-          "Scalable architecture using TRPC and Next.js.",
-          "ATS (Applicant Tracking Systems) optimization.",
-          "Dynamic UI with TailWind CSS."
-        ]
+          es: [
+            "Interfaz de edición interactiva con vista previa en tiempo real en paralelo (side-by-side).",
+            "Integración de IA Local para la optimización de la estructura y corrección avanzada de sintaxis.",
+            "Módulo de adaptación inteligente para ajustar el CV automáticamente a ofertas de empleo específicas.",
+            "Motor de renderizado dinámico que permite cambiar la visualización y temas en un clic.",
+            "Persistencia de datos sin servidor mediante almacenamiento local y exportación JSON estructurada."
+          ],
+          ca: [
+            "Interfície d'edició interactiva amb vista prèvia en temps real en paral·lel (side-by-side).",
+            "Integració d'IA Local per a l'optimització de l'estructura i la correcció avançada de sintaxi.",
+            "Mòdul d'adaptació intel·ligent per ajustar el CV automàticament a ofertes d'ocupació específiques.",
+            "Motor de renderitzat dinàmic que permet canviar la visualització i temes a un clic.",
+            "Persistència de dades sense servidor mitjançant emmagatzematge local i exportació JSON estructurada."
+          ],
+          en: [
+            "Interactive editing interface with real-time side-by-side preview.",
+            "Local AI integration for structure optimization and advanced syntax correction.",
+            "Intelligent adaptation module to automatically adjust the CV to specific job offers.",
+            "Dynamic rendering engine that allows you to change the display and themes in one click.",
+            "Serverless data persistence using local storage and structured JSON export."
+          ]
       },
-      techStack: ["React 19", "Next.js", "OpenAI SDK", "TRPC", "TailWind"],
+      techStack: ["React", "Vite", "Local AI (DeepSeek/Mistral)", "LaTeX Engine"],
       security: {
-        es: "Cifrado de datos de usuario y gestión segura de API Keys.",
-        ca: "Xifrat de dades d'usuari i gestió segura d'API Keys.",
-        en: "User data encryption and secure API Key management."
+          es: [
+            "Seguridad 100% 'Offline-First' con procesamiento de IA íntegramente en el cliente, sin envío de datos al exterior.",
+            "Sanitización de entradas de texto para prevenir inyecciones de código durante el renderizado directo.",
+            "Persistencia descentralizada mediante almacenamiento local cifrado para el control total del usuario."
+          ],
+          ca: [
+            "Seguretat 100% 'Offline-First' amb processament d'IA íntegrament en el client, sense enviament de dades a l'exterior.",
+            "Sanitització d'entrades de text per prevenir injeccions de codi durant el renderitzat directe.",
+            "Persistència descentralitzada mitjançant emmagatzematge local xifrat pel control total de l'usuari."
+          ],
+          en: [
+            "100% 'Offline-First' security with AI processing handled entirely on the client side, ensuring no data leaves the browser.",
+            "Text input sanitization to prevent code injection during direct document rendering.",
+            "Decentralized persistence using encrypted local storage for total user data sovereignty."
+          ]
       },
-      links: { github: "github.com/joan-mata/ai-cv-editor", live: "cv-editor.joanmata.com" }
+      links: { github: "github.com/joan-mata/Create_CVs", live: "cv.joanmata.com" }
+    },
+    {
+      id: "ref-stats",
+      name: "RefStats: Analítica & Scraping Engine",
+      date: "2026",
+      tags: ["Python", "Web Scraping", "Sports Analytics", "Full-Stack"],
+      desc: {
+        es: "Plataforma de analítica deportiva con Web Scraping.",
+        ca: "Plataforma d'analítica esportiva amb Web Scraping.",
+        en: "Sports analytics platform with Web Scraping engine."
+      },
+      points: {
+          es: [
+            "Desarrollo de un motor de Web Scraping especializado para la recolección masiva de resultados y actas en tiempo real.",
+            "Implementación de scripts de automatización alojados en servidor local para la extracción continua de datos deportivos.",
+            "Diseño de un pipeline de procesamiento que transforma datos brutos en estadísticas detalladas por equipo, jornada y partido.",
+            "Interfaz Frontend personalizada para la visualización fluida de clasificaciones y métricas de rendimiento.",
+            "Persistencia de datos históricos en base de datos local para el análisis comparativo de temporadas."
+          ],
+          ca: [
+            "Desenvolupament d'un motor de Web Scraping especialitzat per a l'escombrat massiva de resultats i actes en temps real.",
+            "Implementació de scripts d'automatització allotjats en servidor local per a l'extracció contínua de dades esportives.",
+            "Disseny d'un pipeline de processament que transforma dades brutes en estadístiques detallades per equip, jornada i partit.",
+            "Interfície Frontend personalitzada per a la visualització fluida de classificacions i mètriques de rendiment.",
+            "Persistència de dades històriques en base de dades local per a l'anàlisi comparatiu de temporades."
+          ],
+          en: [
+            "Developed a specialized Web Scraping engine for the massive collection of real-time match results and reports.",
+            "Implementation of automation scripts hosted on a local server for continuous sports data extraction.",
+            "Designed a processing pipeline that transforms raw data into detailed statistics per team, match, and round.",
+            "Custom Frontend interface for smooth visualization of rankings and performance metrics.",
+            "Historical data persistence in a local database to enable seasonal comparative analysis."
+          ]
+      },
+      techStack: ["Python", "BeautifulSoup/Scrapy", "React", "Node.js", "Local Storage"],
+      security: {
+          es: [
+            "Técnicas de scraping ético con rotación de user-agents y gestión inteligente de errores para evitar bloqueos.",
+            "Infraestructura de almacenamiento redundante en servidor local con scripts de limpieza automatizada.",
+            "Monitorización de latencia en la ingesta masiva de datos y normalización de esquemas NoSQL."
+          ],
+          ca: [
+            "Tècniques de scraping ètic amb rotació d'user-agents i gestió intel·ligent d'errors per evitar bloquejos.",
+            "Infraestructura d'emmagatzematge redundant en servidor local amb scripts de neteja automatitzada.",
+            "Monitorització de latència en la ingesta massiva de dades i normalització d'esquemes NoSQL."
+          ],
+          en: [
+            "Ethical scraping techniques with user-agent rotation and smart error management to prevent blocks.",
+            "Redundant local storage infrastructure with automated data cleaning scripts.",
+            "Latency monitoring for massive data ingestion and NoSQL schema normalization."
+          ]
+      },
+      links: { github: "github.com/joan-mata/RefStats", live: null }
+    },
+    {
+      id: "f1-archive",
+      name: "F1 Personal Vault",
+      date: "2026",
+      tags: ["Full-Stack", "Streaming", "RBAC", "Video Engine"],
+      desc: {
+        es: "Repositorio personal de vídeo HD con gestión de roles.",
+        ca: "Repositori personal de vídeo HD amb gestió de rols.",
+        en: "Personal HD video repository with role-based access."
+      },
+      points: {
+          es: [
+            "Sistema de visibilidad basada en roles (PBAC) para diferenciar contenido público de privado.",
+            "Panel de administración personalizado para la carga y gestión masiva de activos de vídeo de alta definición.",
+            "Optimización de persistencia y manejo de carga pesada durante el streaming y la subida de archivos.",
+            "Estructura de metadatos dinámica para la clasificación y búsqueda rápida de sesiones históricas.",
+            "Infraestructura dockenizada para el escalado del almacenamiento y servidores de streaming."
+          ],
+          ca: [
+            "Sistema de visibilitat basada en rols (PBAC) per diferenciar contingut públic de privat.",
+            "Panell d'administració personalitzat per a la càrrega i gestió massiva d'actius de vídeo d'alta definició.",
+            "Optimització de persistència i maneig de càrrega pesada durant l'streaming i la pujada de fitxers.",
+            "Estructura de metadades dinàmica per a la classificació i cerca ràpida de sessions històriques.",
+            "Infraestructura dockenitzada per l'escalat de l'emmagatzematge i servidors d'streaming."
+          ],
+          en: [
+            "Role-based visibility system (PBAC) to differentiate between public and private content.",
+            "Custom administrative dashboard for bulk uploading and managing high-definition video assets.",
+            "Persistence optimization and heavy-load handling for both streaming and concurrent uploads.",
+            "Dynamic metadata structure for rapid classification and search of historical racing sessions.",
+            "Dockerized infrastructure to allow for seamless scaling of storage and streaming servers."
+          ]
+      },
+      techStack: ["React", "Node.js", "Express", "Docker", "Nginx"],
+      security: {
+          es: [
+            "Autenticación robusta basada en tokens de sesión (JWT) con gestión de visibilidad basada en roles (RBAC).",
+            "Balanceo de carga y optimización de streaming de vídeo HD mediante orquestación de contenedores Docker.",
+            "Perímetro de red securizado con NAT Traversal y cifrado de tráfico punto a punto mediante Cloudflare."
+          ],
+          ca: [
+            "Autenticació robusta basada en tokens de sessió (JWT) amb gestió de visibilitat basada en rols (RBAC).",
+            "Balanceig de càrrega i optimització de l'streaming de vídeo HD mitjançant orquestració de contenidors Docker.",
+            "Perímetre de xarxa securitzat amb NAT Traversal i xifrat de trànsit punt a punt mitjançant Cloudflare."
+          ],
+          en: [
+            "Robust authentication based on session tokens (JWT) with role-based visibility management (RBAC).",
+            "Load balancing and HD video streaming optimization through Docker container orchestration.",
+            "Secured network perimeter using NAT Traversal and point-to-point traffic encryption via Cloudflare."
+          ]
+      },
+      links: { github: "github.com/joan-mata/f1_archive", live: "f1.joanmata.com" }
+    },
+    {
+      id: "ref-notes",
+      name: "Referee Performance Analytics",
+      date: "2025",
+      tags: ["Analytics", "Data Viz", "Private Portal", "GIS"],
+      desc: {
+        es: "Portal privado de analítica arbitral avanzada.",
+        ca: "Portal privat d'analítica arbitral avançada.",
+        en: "Private advanced referee analytics portal."
+      },
+      points: {
+          es: [
+            "Entorno 100% privado con clasificación avanzada basada en notas y evaluaciones cruzadas.",
+            "Módulo de analítica masiva para el recuento y comparación entre evaluadores y participantes.",
+            "Generación de perfiles de evaluadores (Persona Profiling) para detectar sesgos y tendencias de evaluación.",
+            "Mapas de calor geográficos para analizar zonas con mayor propensión a evaluaciones frecuentes.",
+            "Detección de patrones de viaje y asignación geográfica para optimizar los comités de evaluación."
+          ],
+          ca: [
+            "Entorn 100% privat amb classificació avançada basada en notes i avaluacions creuades.",
+            "Mòdul d'analítica massiva per al recompte i comparació entre avaluadors i participants.",
+            "Generació de perfils d'avaluadors (Persona Profiling) per detectar biaixos i tendències d'avaluació.",
+            "Mapes de calor geogràfics per analitzar zones amb major propensió a avaluacions freqüents.",
+            "Detecció de patrons de viatge i assignació geogràfica per optimitzar els comitès d'avaluació."
+          ],
+          en: [
+            "100% private environment with advanced classification based on ratings and cross-evaluations.",
+            "Massive analytics module for counting and comparing data between evaluators and participants.",
+            "Evaluator Persona Profiling to identify evaluation biases and behavioral trends.",
+            "Geographic heatmaps to analyze zones with higher propensities for frequent evaluations.",
+            "Travel pattern detection and geographical assignment optimization for evaluation committees."
+          ]
+      },
+      techStack: ["Python", "Flask", "PostgreSQL", "D3.js", "Geology/Mapping APIs"],
+      security: {
+          es: [
+            "Entorno de alta privacidad con autenticación de doble factor y cifrado de base de datos en reposo.",
+            "Arquitectura aislada del servidor principal mediante proxies inversos y segmentación de redes internas.",
+            "Control granular de acceso a datos geográficos sensibles para proteger la privacidad de los evaluadores."
+          ],
+          ca: [
+            "Entorn d'alta privadesa amb autenticació de doble factor i xifrat de base de dades en repòs.",
+            "Arquitectura aïllada del servidor principal mitjançant proxies inversos i segmentació de xarxes internes.",
+            "Control granular d'accés a dades geogràfiques sensibles per protegir la privadesa dels avaluadors."
+          ],
+          en: [
+            "High-privacy environment featuring dual-factor authentication and data-at-rest encryption.",
+            "Isolated server architecture using reverse proxies and internal network segmentation.",
+            "Granular access control for sensitive geographical data to protect evaluator privacy."
+          ]
+      },
+      links: { github: "github.com/joan-mata/RefereeNotes", live: "refnotes.joanmata.com" }
+    },
+    {
+      id: "main-server",
+      name: "Infraestructura Cloud Local",
+      date: "2025 - 2026",
+      tags: ["Docker", "DevOps", "Cloudflare", "Infrastructure"],
+      desc: {
+        es: "Infraestructura local escalable basada en Docker.",
+        ca: "Infraestructura local escalable basada en Docker.",
+        en: "Scalable local infrastructure based on Docker."
+      },
+      points: {
+          es: [
+            "Orquestación de más de 10 contenedores independientes (Nginx, Portainer, etc.) mediante Docker Compose.",
+            "Configuración multihosting sobre hardware local dedicado para alojar diversas aplicaciones web de producción.",
+            "Gestión integral de dominios, subdominios y enrutamiento seguro mediante túneles Cloudflare (NAT Traversal).",
+            "Monitorización centralizada y copias de seguridad automatizadas para garantizar la persistencia de datos.",
+            "Hardening de seguridad perimetral Zero Trust para proteger el acceso a servicios críticos."
+          ],
+          ca: [
+            "Orquestració de més de 10 contenidors independents (Nginx, Portainer, etc.) mitjançant Docker Compose.",
+            "Configuració multihosting sobre maquinari local dedicat per a allotjar diverses aplicacions web de producció.",
+            "Gestió integral de dominis, subdominis i enrutament segur mitjançant túnels Cloudflare (NAT Traversal).",
+            "Monitorització centralitzada i còpies de seguretat automatitzades per garantir la persistència de dades.",
+            "Hardening de seguretat perimetral Zero Trust per protegir l'accés a serveis crítics."
+          ],
+          en: [
+            "Orchestrated more than 10 independent containers (Nginx, Portainer, etc.) using Docker Compose.",
+            "Multi-hosting configuration on dedicated local hardware to host various production-grade web applications.",
+            "Comprehensive management of domains, subdomains, and secure routing via Cloudflare Tunnels (NAT Traversal).",
+            "Centralized monitoring and automated backups to ensure data persistence.",
+            "Zero Trust perimeter security hardening to protect access to critical services."
+          ]
+      },
+      techStack: ["Docker", "Linux (macOS)", "Cloudflare Tunnel", "Nginx", "Reverse Proxy"],
+      security: {
+          es: [
+            "Perímetro Zero Trust mediante Cloudflare Tunnels (NAT Traversal) eliminando la necesidad de abrir puertos ISP.",
+            "Orquestación de infraestructura resiliente mediante Docker Compose con monitorización centralizada de logs.",
+            "Gestión de certificados SSL automatizada y Firewall perimetral con filtrado de IPs por geolocalización."
+          ],
+          ca: [
+            "Perímetre Zero Trust mitjançant Cloudflare Tunnels (NAT Traversal) eliminant la necessitat d'obrir ports ISP.",
+            "Orquestració d'infraestructura resilient mitjançant Docker Compose amb monitorització centralitzada de logs.",
+            "Gestió de certificats SSL automatitzada i Firewall perimetral amb filtratge d'IPs per geolocalització."
+          ],
+          en: [
+            "Zero Trust perimeter via Cloudflare Tunnels (NAT Traversal) removing the need for ISP port forwarding.",
+            "Resilient infrastructure orchestration using Docker Compose with centralized log monitoring.",
+            "Automated SSL certificate management and perimeter firewall with geolocation IP filtering."
+          ]
+      },
+      links: { github: null, live: null }
     },
     {
       id: "aws-pipeline",
@@ -185,240 +444,159 @@ export const DATA = {
         en: "Large-scale automated data ingestion pipeline on AWS cloud infrastructure."
       },
       points: {
-        es: [
-          "Procesamiento asíncrono mediante AWS Lambda y S3.",
-          "Implementación de colas de mensajes con Kinesis Data Streams.",
-          "Automatización de procesos ETL con Python3.",
-          "Escalabilidad horizontal para petabytes de información.",
-          "Monitorización completa con CloudWatch."
-        ],
-        ca: [
-          "Processament assíncron mitjançant AWS Lambda i S3.",
-          "Implementació de cues de missatges amb Kinesis Data Streams.",
-          "Automatització de processos ETL amb Python3.",
-          "Escalabilitat horitzontal per a petabytes d'informació.",
-          "Monitorització completa amb CloudWatch."
-        ],
-        en: [
-          "Asynchronous processing via AWS Lambda and S3.",
-          "Message queue implementation with Kinesis Data Streams.",
-          "ETL process automation with Python3.",
-          "Horizontal scalability for petabytes of information.",
-          "Full monitoring with CloudWatch."
-        ]
+          es: [
+            "Diseño de orquestación asíncrona mediante servicios serverless (AWS Lambda).",
+            "Gestión de flujos de datos masivos con Kinesis Data Streams.",
+            "Automatización de procesos ETL complejos utilizando Python y Boto3.",
+            "Almacenamiento escalable en S3 con políticas de ciclo de vida inteligente.",
+            "Monitorización proactiva y alertas de errores críticas mediante CloudWatch."
+          ],
+          ca: [
+            "Disseny d'orquestració assíncrona mitjançant serveis serverless (AWS Lambda).",
+            "Gestió de fluxos de dades massius amb Kinesis Data Streams.",
+            "Automatització de processos ETL complexos utilitzant Python i Boto3.",
+            "Emmagatzematge escalable en S3 amb polítiques de cicle de vida intel·ligent.",
+            "Monitorització proactiva i alertes d'errors crítiques mitjançant CloudWatch."
+          ],
+          en: [
+            "Asynchronous orchestration design using serverless services (AWS Lambda).",
+            "Massive data flow management with Kinesis Data Streams.",
+            "Complex ETL process automation using Python and Boto3.",
+            "Scalable storage in S3 with smart lifecycle policies.",
+            "Proactive monitoring and critical error alerts via CloudWatch."
+          ]
       },
       techStack: ["Python", "AWS Lambda", "Boto3", "Kinesis", "S3"],
       security: {
-        es: "Gestión de roles IAM y cifrado en reposo con KMS.",
-        ca: "Gestió de rols IAM i xifrat en repòs amb KMS.",
-        en: "IAM role management and encryption at rest with KMS."
+          es: [
+            "Gestión granular de identidades (IAM) aplicando el principio de mínimo privilegio para todos los servicios cloud.",
+            "Cifrado de datos en reposo en S3 mediante KMS y protección de flujos Kinesis con TLS 1.2.",
+            "Monitoreo proactivo de costos y seguridad mediante CloudWatch Logs y CloudTrail automatizados."
+          ],
+          ca: [
+            "Gestió granular d'identitats (IAM) aplicant el principi de mínim privilegi per a tots els serveis cloud.",
+            "Xifrat de dades en repòs a S3 mitjançant KMS i protecció de fluxos Kinesis amb TLS 1.2.",
+            "Monitoratge proactiu de costos i seguretat mitjançant CloudWatch Logs i CloudTrail automatitzats."
+          ],
+          en: [
+            "Granular identity management (IAM) applying the principle of least privilege across all cloud services.",
+            "Data-at-rest encryption on S3 using KMS and Kinesis stream protection with TLS 1.2.",
+            "Proactive cost and security monitoring using automated CloudWatch Logs and CloudTrail auditing."
+          ]
       },
-      links: { github: "github.com/joan-mata/aws-pipeline", live: null }
+      links: { github: null, live: null }
     },
     {
-      id: "docker-video",
-      name: "Dockerized Video Processing Suite",
-      date: "2024",
-      tags: ["Docker", "FFmpeg", "Node.js", "Redis"],
-      desc: {
-        es: "Sistema distribuido de procesamiento y transcodificación de vídeo basado en microservicios dockerizados.",
-        ca: "Sistema distribuït de processament i transcodificació de vídeo basat en microserveis dockeritzats.",
-        en: "Distributed video processing and transcoding system based on dockerized microservices."
-      },
-      points: {
-        es: [
-          "Transcodificación acelerada mediante FFmpeg y aceleración hardware.",
-          "Orquestración de contenedores para carga balanceada.",
-          "Gestión de tareas de larga ejecución mediante Redis Queue.",
-          "Optimización de consumo de recursos en entornos Linux.",
-          "Soporte para múltiples formatos de entrada y salida."
-        ],
-        ca: [
-          "Transcodificació accelerada mitjançant FFmpeg i acceleració maquinari.",
-          "Orquestració de contenidors per a càrrega balancejada.",
-          "Gestió de tasques de llarga execució mitjançant Redis Queue.",
-          "Optimització de consum de recursos en entorns Linux.",
-          "Suport per a múltiples formats d'entrada i sortida."
-        ],
-        en: [
-          "Accelerated transcoding using FFmpeg and hardware acceleration.",
-          "Container orchestration for balanced loading.",
-          "Long-running task management via Redis Queue.",
-          "Resource consumption optimization in Linux environments.",
-          "Support for multiple input and output formats."
-        ]
-      },
-      techStack: ["Docker", "FFmpeg", "Node.js", "Redis", "Bash"],
-      security: {
-        es: "Aislamiento de procesos en contenedores y control de recursos cgroups.",
-        ca: "Aïllament de processos en contenidors i control de recursos cgroups.",
-        en: "Process isolation in containers and cgroups resource control."
-      },
-      links: { github: "github.com/joan-mata/docker-video", live: null }
-    },
-    {
-      id: "main-server",
-      name: "Infraestructura Cloud Local (joanmata.com)",
-      date: "2025 - 2026",
-      tags: ["Docker", "Networking", "Self-Hosting", "Cloudflare"],
-      desc: {
-        es: "Servidor web doméstico de alto rendimiento que aloja todo mi ecosistema digital mediante túneles seguros y contenedores.",
-        ca: "Servidor web domèstic d'alt rendiment que allotja tot el meu ecosistema digital mitjançant túnels segurs i contenidors.",
-        en: "High-performance home web server hosting my entire digital ecosystem through secure tunnels and containers."
-      },
-      points: {
-        es: [
-          "Despliegue de infraestructura completa utilizando Docker y Docker Compose.",
-          "Configuración de túneles Cloudflare para exposición segura sin apertura de puertos.",
-          "Gestión de certificados SSL/TLS y seguridad perimetral.",
-          "Monitorización en tiempo real y alta disponibilidad local.",
-          "Arquitectura escalable para nuevos microservicios."
-        ],
-        ca: [
-          "Desplegament d'infraestructura completa utilitzant Docker i Docker Compose.",
-          "Configuració de túnels Cloudflare per a exposició segura sense obertura de ports.",
-          "Gestió de certificats SSL/TLS i seguretat perimetral.",
-          "Monitorització en temps real i alta disponibilitat local.",
-          "Arquitectura escalable per a nous microserveis."
-        ],
-        en: [
-          "Full infrastructure deployment using Docker and Docker Compose.",
-          "Cloudflare Tunnel configuration for secure exposure without port forwarding.",
-          "SSL/TLS certificate management and perimeter security.",
-          "Real-time monitoring and local high availability.",
-          "Scalable architecture for new microservices."
-        ]
-      },
-      techStack: ["Docker", "Linux (macOS 기반)", "Cloudflare Tunnel", "Nginx", "Reverse Proxy"],
-      security: {
-        es: "Cifrado End-to-End, DNS SEC, Firewall mediante Zero Trust de Cloudflare.",
-        ca: "Xifrat End-to-End, DNS SEC, Firewall mitjançant Zero Trust de Cloudflare.",
-        en: "End-to-End encryption, DNS SEC, Firewall through Cloudflare Zero Trust."
-      },
-      links: { github: "github.com/joan-mata/server-config", live: "joanmata.com" }
-    },
-    {
-      id: "ref-notes",
-      name: "RefereeNotes (refnotes.joanmata.com)",
+      id: "web-exams",
+      name: "WebExams: Interactive Assessment Platform",
       date: "2025",
-      tags: ["Python", "Flask", "Data Processing"],
+      tags: ["React", "E-learning", "Community", "Monetization"],
       desc: {
-        es: "Sistema automatizado de gestión y resolución de conflictos para informes arbitrales del futbol catalán.",
-        ca: "Sistema automatitzat de gestió i resolució de conflictes per a informes arbitrals del futbol català.",
-        en: "Automated management and conflict resolution system for Catalan football referee reports."
+        es: "Plataforma de exámenes interactivos con feedback.",
+        ca: "Plataforma d'exàmens interactius amb feedback.",
+        en: "Interactive assessment platform with feedback."
       },
       points: {
-        es: [
-          "Procesamiento avanzado de datos para detectar discrepancias en informes.",
-          "Backend robusto capaz de gestionar un gran volumen de actas.",
-          "Integración con bases de datos SQL para persistencia de datos históricos.",
-          "Interfaz intuitiva para la resolución manual de colisiones de datos.",
-          "Automatización de limpieza de perfiles duplicados mediante algoritmos de matching."
-        ],
-        ca: [
-          "Processament avançat de dades per detectar discrepàncies en informes.",
-          "Backend robust capaç de gestionar un gran volum d'actes.",
-          "Integració amb bases de dades SQL per a persistència de dades històriques.",
-          "Interfície intuïtiva per a la resolució manual de col·lisions de dades.",
-          "Automatització de neteja de perfils duplicats mitjançant algoritmes de matching."
-        ],
-        en: [
-          "Advanced data processing to detect discrepancies in reports.",
-          "Robust backend capable of managing high volumes of reports.",
-          "SQL database integration for historical data persistence.",
-          "Intuitive UI for manual resolution of data collisions.",
-          "Automated duplicate profile cleaning via matching algorithms."
-        ]
+          es: [
+            "Generación dinámica de exámenes con niveles de dificultad personalizables para adaptarse al progreso del alumno.",
+            "Implementación de temporizadores configurables para simular con precisión entornos de examen oficiales.",
+            "Sistema de revisión interactiva que permite a los usuarios validar respuestas y reportar errores en tiempo real.",
+            "Entorno colaborativo donde los alumnos pueden intercambiar feedback, mejorando la calidad de las preguntas.",
+            "Integración estratégica con Google Ads para la monetización y sostenibilidad del portal.",
+            "Cuadro de mando personal para el seguimiento de resultados y mejora continua del rendimiento académico."
+          ],
+          ca: [
+            "Generació dinàmica d'exàmens amb nivells de dificultat personalitzables per adaptar-se al progrés de l'alumne.",
+            "Implementació de temporitzadors configurables per simular amb precisió entorns d'examen oficials.",
+            "Sistema de revisió interactiva que permet als usuaris validar respostes i reportar errors en temps real.",
+            "Entorn col·laboratiu on els alumnes poden intercanviar feedback, millorant la qualitat de les preguntes.",
+            "Integració estratègica amb Google Ads per a la monetització i sostenibilitat del portal.",
+            "Quadre de comandament personal per al seguiment de resultats i millora contínua del rendiment acadèmic."
+          ],
+          en: [
+            "Dynamic exam generation featuring customizable difficulty levels tailored to the student's learning progress.",
+            "Implementation of configurable timers designed to accurately simulate official testing environments.",
+            "Interactive review system allowing users to validate answers and report errors in real-time.",
+            "Collaborative space where students can exchange feedback, continuously improving the quality of assessment items.",
+            "Strategic integration with Google Ads for platform monetization and long-term sustainability.",
+            "Personal dashboard for tracking historical results and continuous academic performance improvement."
+          ]
       },
-      techStack: ["Python", "Flask", "PostgreSQL", "Docker", "REST API"],
+      techStack: ["React", "Vite", "Firebase/Node.js", "Google Adsense", "CSS Grid"],
       security: {
-        es: "Autenticación de usuarios, gestión de roles y cifrado de datos sensibles.",
-        ca: "Autenticació d'usuaris, gestió de rols i xifrat de dades sensibles.",
-        en: "User authentication, role management, and sensitive data encryption."
+          es: [
+            "Protección contra fraude en exámenes mediante lógica de temporización sincronizada en el servidor.",
+            "Validación estricta de esquemas de entrada para prevenir inyecciones NoSQL y ataques de denegación de servicio.",
+            "Optimización de concurrencia y despliegue sobre infraestructura serverless con monitorización de rendimiento."
+          ],
+          ca: [
+            "Protecció contra frau en exàmens mitjançant lògica de temporització sincronitzada al servidor.",
+            "Validació estricta d'esquemes d'entrada per prevenir injeccions NoSQL i atacs de denegació de servei.",
+            "Optimització de concurrència i desplegament sobre infraestructura serverless amb monitorització de rendiment."
+          ],
+          en: [
+            "Exam anti-fraud protection featuring server-synchronized timing logic.",
+            "Strict input schema validation to prevent NoSQL injection and denial-of-service attacks.",
+            "Concurrency optimization and serverless infrastructure deployment with real-time performance monitoring."
+          ]
       },
-      links: { github: "github.com/joan-mata/referee-notes", live: "refnotes.joanmata.com" }
+      links: { github: "github.com/joan-mata/WebExams", live: null }
     },
     {
-      id: "f1-archive",
-      name: "F1 Archive & Schedule (f1.joanmata.com)",
-      date: "2026",
-      tags: ["React", "High-Performance Video", "JSON API"],
+      id: "docu-life",
+      name: "DocuLife: Bóveda Digital Segura",
+      date: "2025",
+      tags: ["Mobile", "Security", "Privacy", "Vault"],
       desc: {
-        es: "Plataforma de visualización y calendario de la F1 2026 con carga concurrente de vídeo de alta definición.",
-        ca: "Plataforma de visualització i calendari de la F1 2026 amb càrrega concurrent de vídeo d'alta definició.",
-        en: "F1 2026 visualization and schedule platform with high-definition concurrent video loading."
+        es: "Bóveda digital móvil para documentos críticos.",
+        ca: "Volta digital mòbil per a documents crítics.",
+        en: "Mobile digital vault for critical documents."
       },
       points: {
-        es: [
-          "Optimización de carga de vídeo concurrente para una experiencia sin interrupciones.",
-          "Generación Dinámica de calendarios JSON para la temporada 2026.",
-          "Reproductor inteligente con reanudación automática de playback.",
-          "Seguridad 'On Play' para proteger el acceso al contenido.",
-          "Interfaz fluida para seguimiento de sesiones en tiempo real."
-        ],
-        ca: [
-          "Optimització de càrrega de vídeo concurrent per a una experiència sense interrupcions.",
-          "Generació Dinàmica de calendaris JSON per a la temporada 2026.",
-          "Reproductor intel·ligent amb represa automàtica de playback.",
-          "Seguretat 'On Play' per protegir l'accés al contingut.",
-          "Interfície fluida per a seguiment de sessions en temps real."
-        ],
-        en: [
-          "Concurrent video loading optimization for a seamless experience.",
-          "Dynamic JSON calendar generation for the 2026 season.",
-          "Smart player with automatic playback resumption.",
-          "'On Play' security to protect content access.",
-          "Fluid UI for real-time session tracking."
-        ]
+          es: [
+            "Desarrollo de un entorno digital blindado para el almacenamiento seguro de documentos sensibles (DNI, Pasaportes, Escrituras).",
+            "Implementación de protocolos de cifrado de extremo a extremo para garantizar la privacidad total del usuario.",
+            "Categorización inteligente de archivos para facilitar el acceso rápido a documentos médicos, financieros e inmobiliarios.",
+            "Interfaz móvil optimizada (Cross-platform) centrada en la usabilidad y la recuperación inmediata en emergencias.",
+            "Arquitectura enfocada en la soberanía de datos, permitiendo almacenamiento local y sincronización cifrada opcional.",
+            "Gestión dinámica de fechas de caducidad para alertas automáticas de renovación de documentos oficiales."
+          ],
+          ca: [
+            "Desenvolupament d'un entorn digital blindat per a l'emmagatzematge segur de documents sensibles (DNI, Passaports, Escriptures).",
+            "Implementació de protocols de xifrat d'extrem a extrem per a garantir la privadesa total de l'usuari.",
+            "Categorització intel·ligent de fitxers per facilitar l'accés ràpid a documents mèdics, financers i immobiliaris.",
+            "Interfície mòbil optimitzada (Cross-platform) centrada en l'usabilitat i la recuperació immediata en emergències.",
+            "Arquitectura enfocada en la sobirania de dades, permetent emmagatzematge local i sincronització xifrada opcional.",
+            "Gestió dinàmica de dates de caducitat per a alertes automàtiques de renovació de documents oficials."
+          ],
+          en: [
+            "Developed a hardened digital environment for the highly secure storage of sensitive documents (ID cards, Passports, Deeds).",
+            "Implementation of end-to-end encryption protocols to ensure total user data privacy and integrity.",
+            "Smart file categorization logic to facilitate rapid access to medical, financial, and real estate documentation.",
+            "Cross-platform mobile optimization focused on high usability and immediate document retrieval in emergency situations.",
+            "Data-sovereignty focused architecture allowing local-only storage and optional encrypted cloud synchronization.",
+            "Dynamic expiry date management for automated notification alerts regarding official document renewals."
+          ]
       },
-      techStack: ["React", "Vite", "JSON Data", "Custom Video Engine", "Concurrent JS"],
+      techStack: ["React Native/Flutter", "AES-256 Encryption", "SQLite/Realm", "Biometric Auth"],
       security: {
-        es: "Control de acceso a niveles de sesión y cifrado de flujos de vídeo.",
-        ca: "Control d'accés a nivells de sessió i xifrat de fluxos de vídeo.",
-        en: "Session-level access control and video stream encryption."
+          es: [
+            "Cifrado nativo de grado militar (AES-256) para el almacenamiento de archivos críticos íntegramente en el dispositivo.",
+            "Integración obligatoria de autenticación biométrica (Huella/FaceID) como capa primaria de acceso.",
+            "Infraestructura de sincronización en la nube basada en esquemas de cifrado asimétrico controlado por el usuario."
+          ],
+          ca: [
+            "Xifrat natiu de grau militar (AES-256) per a l'emmagatzematge de fitxers crítics íntegrament en el dispositiu.",
+            "Integració obligatòria d'autenticació biomètrica (Petjada/FaceID) com a capa primària d'accés.",
+            "Infraestructura de sincronització al núvol basada en esquemes de xifrat asimètric controlat per l'usuari."
+          ],
+          en: [
+            "Native military-grade encryption (AES-256) for critical file storage handled entirely on the device.",
+            "Mandatory biometric authentication (Fingerprint/FaceID) integration as a primary access layer.",
+            "Cloud synchronization infrastructure based on user-controlled asymmetric encryption schemas."
+          ]
       },
-      links: { github: "github.com/joan-mata/f1-archive", live: "f1.joanmata.com" }
-    },
-    {
-      id: "cv-web",
-      name: "CV Interactivo (cv.joanmata.com)",
-      date: "2026",
-      tags: ["React", "MVC", "Architecture"],
-      desc: {
-        es: "Mi tarjeta de presentación digital, diseñada con arquitectura limpia MVC para máxima escalabilidad.",
-        ca: "La meva targeta de presentació digital, dissenyada amb arquitectura neta MVC per a màxima escalabilitat.",
-        en: "My digital presentation card, designed with clean MVC architecture for maximum scalability."
-      },
-      points: {
-        es: [
-          "Refactorización completa de monolito a arquitectura MVC (Model-View-Controller).",
-          "Separación estricta de lógica de datos y componentes UI.",
-          "Diseño Premium con micro-animaciones y glassmorphism.",
-          "Soporte multilingüe completo (ES, CA, EN) sin dependencias externas.",
-          "Optimización de rendimiento y carga mediante Vite."
-        ],
-        ca: [
-          "Refactorització completa de monòlit a arquitectura MVC (Model-View-Controller).",
-          "Separació estricta de lògica de dades i components UI.",
-          "Disseny Premium amb micro-animacions i glassmorphism.",
-          "Suport multilingüe complet (ES, CA, EN) sense dependències externes.",
-          "Optimització de rendiment i càrrega mitjançant Vite."
-        ],
-        en: [
-          "Complete refactor from monolith to MVC (Model-View-Controller) architecture.",
-          "Strict separation of data logic and UI components.",
-          "Premium Design with micro-animations and glassmorphism.",
-          "Full multilingual support (ES, CA, EN) without external dependencies.",
-          "Performance and load optimization via Vite."
-        ]
-      },
-      techStack: ["React", "Vite", "Vanilla CSS", "MVC Pattern"],
-      security: {
-        es: "Certificado SSL dedicado y protección perimetral Cloudflare.",
-        ca: "Certificat SSL dedicat i protecció perimetral Cloudflare.",
-        en: "Dedicated SSL certificate and Cloudflare perimeter protection."
-      },
-      links: { github: "github.com/joan-mata/joanmata_web", live: "cv.joanmata.com" }
+      links: { github: "github.com/joan-mata/DocuLife", live: null }
     }
   ],
   education: [

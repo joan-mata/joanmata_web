@@ -284,7 +284,7 @@
         ],
         "ca": [
           "Seguretat 100% 'Offline-First' amb processament d'IA íntegrament en el client, sense enviament de dades a l'exterior.",
-          "Sanitització d'entrades de text per prevenir injeccions de codi durant el rentat directe.",
+          "Sanitització d'entrades de text per prevenir injeccions de codi durant el renderitzat directe.",
           "Persistència descentralitzada mitjançant emmagatzematge local xifrat pel control total de l'usuari."
         ],
         "en": [
