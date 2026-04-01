@@ -99,7 +99,7 @@
   "projects": [
     {
       "id": "joanmata-web",
-      "name": "Portal Profesional joanmata.com",
+      "name": "Portal Web Profesional",
       "date": "2026",
       "tags": [
         "React",
@@ -108,9 +108,9 @@
         "Full-Stack"
       ],
       "desc": {
-        "es": "Portal profesional Full-Stack diseñado con arquitectura MVC, con motor de datos multilingüe y CMS administrativo integrado.",
-        "ca": "Portal professional Full-Stack dissenyat amb arquitectura MVC, amb motor de dades multilingüe i CMS administratiu integrat.",
-        "en": "Professional Full-Stack portal designed with MVC architecture, featuring a multilingual data engine and integrated administrative CMS."
+        "es": "Portal profesional Full-Stack con CMS interactivo.",
+        "ca": "Portal professional Full-Stack amb CMS interactiu.",
+        "en": "Professional Full-Stack portal with interactive CMS."
       },
       "points": {
         "es": [
@@ -122,17 +122,17 @@
         ],
         "ca": [
           "Desenvolupament integral del portal des de zero emprant React i Vanilla CSS per a un disseny fluid i lleuger.",
-          "Implementació d'arquitectura MVC (Model-View-Controller) per a la separació estricta de lògica de dades i UI.",
-          "Disseny d'un motor de persistència sobre JSON i LocalStorage per a la gestió dinàmica del CV.",
-          "Panell d'Administració interactiu amb guardat en temps real i càrrega de traduccions automàtiques.",
-          "Optimització de components per a una càrrega d'alt rendiment i una experiència d'usuari premium (UX)."
+          "Implementació darquitectura MVC (Model-View-Controller) per a la separació estricta de lògica de dades i UI.",
+          "Disseny dun motor de persistència sobre JSON i LocalStorage per a la gestió dinàmica del CV.",
+          "Panell d'administració interactiu amb desament en temps real i càrrega de traduccions automàtiques.",
+          "Optimització de components per a una càrrega dʻalt rendiment i una experiència dʻusuari premium (UX)."
         ],
         "en": [
-          "End-to-end portal development from scratch using React and Vanilla CSS for a smooth and lightweight design.",
+          "Comprehensive development of the portal from scratch using React and Vanilla CSS for a fluid and light design.",
           "Implementation of MVC (Model-View-Controller) architecture for strict separation of data logic and UI.",
-          "Design of a JSON and LocalStorage-based persistence engine for dynamic CV management.",
-          "Interactive Admin Panel with real-time saving and automated translation loading.",
-          "Component optimization for high-performance loading and a premium user experience (UX)."
+          "Design of a persistence engine on JSON and LocalStorage for dynamic CV management.",
+          "Interactive Administration Panel with real-time saving and loading of automatic translations.",
+          "Component optimization for high-performance loading and premium user experience (UX)."
         ]
       },
       "techStack": [
@@ -163,9 +163,9 @@
         "Full-Stack"
       ],
       "desc": {
-        "es": "Plataforma avanzada de analítica deportiva con motor de recolección automatizada mediante Web Scraping y visualización interactiva.",
-        "ca": "Plataforma avançada d'analítica esportiva amb motor de recol·lecció automatitzada mitjançant Web Scraping i visualització interactiva.",
-        "en": "Advanced sports analytics platform featuring an automated web scraping collection engine and interactive visualization."
+        "es": "Plataforma de analítica deportiva con Web Scraping.",
+        "ca": "Plataforma d'analítica esportiva amb Web Scraping.",
+        "en": "Sports analytics platform with Web Scraping engine."
       },
       "points": {
         "es": [
@@ -209,7 +209,7 @@
     },
     {
       "id": "cv-editor",
-      "name": "CV Interactivo & IA Local (cv.joanmata.com)",
+      "name": "CV Interactivo & IA Local",
       "date": "2026",
       "tags": [
         "React",
@@ -218,9 +218,9 @@
         "MVC"
       ],
       "desc": {
-        "es": "Editor de CV interactivo 'side-by-side' estilo LaTeX, con IA local integrada para optimización de contenido.",
-        "ca": "Editor de CV interactiu 'side-by-side' estil LaTeX, amb IA local integrada per a optimització de contingut.",
-        "en": "Interactive side-by-side CV editor (LaTeX-style) with integrated Local AI for content optimization."
+        "es": "Editor de CV interactivo 'side-by-side' con IA local.",
+        "ca": "Editor de CV interactiu 'side-by-side' amb IA local.",
+        "en": "Interactive side-by-side CV editor with local AI."
       },
       "points": {
         "es": [
@@ -232,17 +232,17 @@
         ],
         "ca": [
           "Interfície d'edició interactiva amb vista prèvia en temps real en paral·lel (side-by-side).",
-          "Integració d'IA Local per a l'optimització de l'estructura i correcció avançada de sintaxi.",
-          "Mòdul d'adaptació intel·ligent per ajustar el CV automàticament a ofertes de feina específiques.",
-          "Motor de renderitzat dinàmic que permet canviar la visualització i temes en un clic.",
+          "Integració d'IA Local per a l'optimització de l'estructura i la correcció avançada de sintaxi.",
+          "Mòdul d'adaptació intel·ligent per ajustar el CV automàticament a ofertes d'ocupació específiques.",
+          "Motor de renderitzat dinàmic que permet canviar la visualització i temes a un clic.",
           "Persistència de dades sense servidor mitjançant emmagatzematge local i exportació JSON estructurada."
         ],
         "en": [
-          "Interactive editing interface with real-time side-by-side preview functionality.",
-          "Integrated Local AI for structural optimization and high-level syntax correction.",
-          "Smart adaptation module designed to automatically tailor the resume to specific job offers.",
-          "Dynamic rendering engine allowing the user to switch between visual themes instantly.",
-          "Serverless data persistence through local storage and structured JSON export capabilities."
+          "Interactive editing interface with real-time side-by-side preview.",
+          "Local AI integration for structure optimization and advanced syntax correction.",
+          "Intelligent adaptation module to automatically adjust the CV to specific job offers.",
+          "Dynamic rendering engine that allows you to change the display and themes in one click.",
+          "Serverless data persistence using local storage and structured JSON export."
         ]
       },
       "techStack": [
@@ -273,9 +273,9 @@
         "Video Engine"
       ],
       "desc": {
-        "es": "Repositorio personal full-stack para gestión de vídeo HD con visibilidad granular y panel de administración.",
-        "ca": "Repositori personal full-stack per a gestió de vídeo HD amb visibilitat granular i panell d'administració.",
-        "en": "Full-stack personal repository for HD video management with granular visibility and admin dashboard."
+        "es": "Repositorio personal de vídeo HD con gestión de roles.",
+        "ca": "Repositori personal de vídeo HD amb gestió de rols.",
+        "en": "Personal HD video repository with role-based access."
       },
       "points": {
         "es": [
@@ -328,9 +328,9 @@
         "GIS"
       ],
       "desc": {
-        "es": "Plataforma analítica privada para la evaluación de desempeño arbitral mediante perfiles conductuales y geográficos.",
-        "ca": "Plataforma analítica privada per a l'avaluació de l'acompliment arbitral mitjançant perfils conductuals i geogràfics.",
-        "en": "Private analytics platform for referee performance evaluation using behavioral and geographical profiling."
+        "es": "Portal privado de analítica arbitral avanzada.",
+        "ca": "Portal privat d'analítica arbitral avançada.",
+        "en": "Private advanced referee analytics portal."
       },
       "points": {
         "es": [
@@ -383,9 +383,9 @@
         "Infrastructure"
       ],
       "desc": {
-        "es": "Infraestructura de sistemas escalable basada en orquestación Docker para el alojamiento seguro de múltiples servicios y dominios.",
-        "ca": "Infraestructura de sistemes escalable basada en orquestració Docker per a l'allotjament segur de múltiples serveis i dominis.",
-        "en": "Scalable systems infrastructure based on Docker orchestration for secure hosting of multiple services and domains."
+        "es": "Infraestructura local escalable basada en Docker.",
+        "ca": "Infraestructura local escalable basada en Docker.",
+        "en": "Scalable local infrastructure based on Docker."
       },
       "points": {
         "es": [
@@ -438,9 +438,9 @@
         "Cloud"
       ],
       "desc": {
-        "es": "Pipeline de ingesta de datos a gran escala automatizado en infraestructura cloud de AWS.",
-        "ca": "Pipeline d'ingesta de dades a gran escala automatitzat en infraestructura cloud d'AWS.",
-        "en": "Large-scale automated data ingestion pipeline on AWS cloud infrastructure."
+        "es": "Pipeline asíncrono de Big Data en la nube (AWS).",
+        "ca": "Pipeline assíncron de Big Data al núvol (AWS).",
+        "en": "Asynchronous Big Data pipeline on the cloud (AWS)."
       },
       "points": {
         "es": [
@@ -493,9 +493,9 @@
         "Monetization"
       ],
       "desc": {
-        "es": "Plataforma completa de e-learning para la creación y realización de exámenes tipo test con dificultad ajustable y feedback comunitario.",
-        "ca": "Plataforma completa d'e-learning per a la creació i realització d'exàmens tipus test amb dificultat ajustable i feedback comunitari.",
-        "en": "Comprehensive e-learning platform specifically designed for creating and taking multiple-choice tests with adjustable difficulty and community feedback."
+        "es": "Plataforma de exámenes interactivos con feedback.",
+        "ca": "Plataforma d'exàmens interactius amb feedback.",
+        "en": "Interactive assessment platform with feedback."
       },
       "points": {
         "es": [
@@ -551,9 +551,9 @@
         "Vault"
       ],
       "desc": {
-        "es": "Bóveda digital segura en formato de aplicación móvil para la gestión y almacenamiento de documentación personal crítica.",
-        "ca": "Volta digital segura en format d'aplicació mòbil per a la gestió i emmagatzematge de documentació personal crítica.",
-        "en": "Secure mobile digital vault designed for the management and high-security storage of sensitive personal documentation."
+        "es": "Bóveda digital móvil para documentos críticos.",
+        "ca": "Volta digital mòbil per a documents crítics.",
+        "en": "Mobile digital vault for critical documents."
       },
       "points": {
         "es": [

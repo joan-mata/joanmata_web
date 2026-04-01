@@ -37,19 +37,22 @@ const Projects = ({ title, data, lang, translations, isAdmin, onEdit, onAdd }) =
               </button>
             )}
 
-            <p className="card-content" style={{ marginBottom: '1.5rem' }}>{proj.desc[lang]}</p>
+            <p className="card-content" style={{ marginBottom: '1.5rem', color: 'var(--text-dim)', fontSize: '1.05rem', lineHeight: '1.6' }}>
+              {proj.desc[lang]}
+            </p>
             
-            <ul className="card-list" style={{ marginBottom: '1.5rem' }}>
-              {proj.points[lang].slice(0, 5).map((point, i) => (
-                <li key={i} style={{ fontSize: '0.9rem' }}>{point}</li>
-              ))}
-            </ul>
-
-            <div className="badge-container">
+            <div className="badge-container" style={{ marginBottom: '2rem' }}>
               {proj.tags.map((tag, j) => (
                 <Badge key={j} text={tag} />
               ))}
             </div>
+
+            <button 
+              className="card-details-btn"
+              onClick={(e) => { e.stopPropagation(); handleProjectClick(proj.id); }}
+            >
+              {translations.projects.details}
+            </button>
           </Card>
         ))}
       </div>
