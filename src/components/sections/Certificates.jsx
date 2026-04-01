@@ -11,10 +11,6 @@ const Certificates = ({ title, data, lang, isAdmin, onEdit, onAdd, translations 
     <div className="card-grid">
       {data.map((cert, idx) => (
         <Card key={cert.id} title={cert.title} subtitle={cert.issuer} date={cert.date}>
-          <p className="card-content" style={{ marginBottom: '1.5rem', color: 'var(--text-dim)', fontSize: '1.05rem', lineHeight: '1.6' }}>
-            {cert.description[lang]}
-          </p>
-          
           <div className="card-footer-actions">
             <Link to={`/certificates/${cert.id}`} className="card-details-btn">
               {translations.projects.details}
