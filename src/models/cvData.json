@@ -143,9 +143,21 @@
         "JSON Persistence"
       ],
       "security": {
-        "es": "Aislamiento de rutas de administración y cifrado de persistencia local.",
-        "ca": "Aïllament de rutes d'administració i xifrat de persistència local.",
-        "en": "Admin route isolation and local persistence encryption."
+        "es": [
+          "Arquitectura de rutas protegidas mediante aislamiento de componentes y guardias de navegación.",
+          "Cifrado de persistencia local (AES-256) y validación de integridad de datos JSON.",
+          "Optimización de despliegue mediante CI/CD automatizado para entornos productivos."
+        ],
+        "ca": [
+          "Arquitectura de rutes protegides mitjançant aïllament de components i guàrdies de navegació.",
+          "Xifrat de persistència local (AES-256) i validació d'integritat de dades JSON.",
+          "Optimització de desplegament mitjançant CI/CD automatitzat per a entorns productius."
+        ],
+        "en": [
+          "Protected route architecture through component isolation and navigation guards.",
+          "Local persistence encryption (AES-256) and JSON data integrity validation.",
+          "Deployment optimization using automated CI/CD pipelines for production environments."
+        ]
       },
       "links": {
         "github": "github.com/joan-mata/joanmata_web",
@@ -198,9 +210,21 @@
         "Local Storage"
       ],
       "security": {
-        "es": "Técnicas de scraping ético, gestión de proxies y ofuscación de scripts.",
-        "ca": "Tècniques de scraping ètic, gestió de proxies i ofuscació de scripts.",
-        "en": "Ethical scraping techniques, proxy management, and script obfuscation."
+        "es": [
+          "Técnicas de scraping ético con rotación de user-agents y gestión inteligente de errores para evitar bloqueos.",
+          "Infraestructura de almacenamiento redundante en servidor local con scripts de limpieza automatizada.",
+          "Monitorización de latencia en la ingesta masiva de datos y normalización de esquemas NoSQL."
+        ],
+        "ca": [
+          "Tècniques de scraping ètic amb rotació d'user-agents i gestió intel·ligent d'errors per evitar bloquejos.",
+          "Infraestructura d'emmagatzematge redundant en servidor local amb scripts de neteja automatitzada.",
+          "Monitorització de latència en la ingesta massiva de dades i normalització d'esquemes NoSQL."
+        ],
+        "en": [
+          "Ethical scraping techniques with user-agent rotation and smart error management to prevent blocks.",
+          "Redundant local storage infrastructure with automated data cleaning scripts.",
+          "Latency monitoring for massive data ingestion and NoSQL schema normalization."
+        ]
       },
       "links": {
         "github": "github.com/joan-mata/RefStats",
@@ -253,9 +277,21 @@
         "LaTeX Engine"
       ],
       "security": {
-        "es": "Privacidad total mediante procesamiento de IA en local sin envío de datos a servidores externos.",
-        "ca": "Privadesa total mitjançant processament d'IA en local sense enviament de dades a servidors externs.",
-        "en": "Total privacy through local AI processing without sending data to external servers."
+        "es": [
+          "Seguridad 100% 'Offline-First' con procesamiento de IA íntegramente en el cliente, sin envío de datos al exterior.",
+          "Sanitización de entradas de texto para prevenir inyecciones de código durante el renderizado directo.",
+          "Persistencia descentralizada mediante almacenamiento local cifrado para el control total del usuario."
+        ],
+        "ca": [
+          "Seguretat 100% 'Offline-First' amb processament d'IA íntegrament en el client, sense enviament de dades a l'exterior.",
+          "Sanitització d'entrades de text per prevenir injeccions de codi durant el rentat directe.",
+          "Persistència descentralitzada mitjançant emmagatzematge local xifrat pel control total de l'usuari."
+        ],
+        "en": [
+          "100% 'Offline-First' security with AI processing handled entirely on the client side, ensuring no data leaves the browser.",
+          "Text input sanitization to prevent code injection during direct document rendering.",
+          "Decentralized persistence using encrypted local storage for total user data sovereignty."
+        ]
       },
       "links": {
         "github": "github.com/joan-mata/Create_CVs",
@@ -308,9 +344,21 @@
         "Nginx"
       ],
       "security": {
-        "es": "Control de acceso granular y visibilidad protegida por tokens de sesión.",
-        "ca": "Control d'accés granular i visibilitat protegida per tokens de sessió.",
-        "en": "Granular access control and visibility protected by session tokens."
+        "es": [
+          "Autenticación robusta basada en tokens de sesión (JWT) con gestión de visibilidad basada en roles (RBAC).",
+          "Balanceo de carga y optimización de streaming de vídeo HD mediante orquestación de contenedores Docker.",
+          "Perímetro de red securizado con NAT Traversal y cifrado de tráfico punto a punto mediante Cloudflare."
+        ],
+        "ca": [
+          "Autenticació robusta basada en tokens de sessió (JWT) amb gestió de visibilitat basada en rols (RBAC).",
+          "Balanceig de càrrega i optimització de l'streaming de vídeo HD mitjançant orquestració de contenidors Docker.",
+          "Perímetre de xarxa securitzat amb NAT Traversal i xifrat de trànsit punt a punt mitjançant Cloudflare."
+        ],
+        "en": [
+          "Robust authentication based on session tokens (JWT) with role-based visibility management (RBAC).",
+          "Load balancing and HD video streaming optimization through Docker container orchestration.",
+          "Secured network perimeter using NAT Traversal and point-to-point traffic encryption via Cloudflare."
+        ]
       },
       "links": {
         "github": "github.com/joan-mata/f1_archive",
@@ -363,9 +411,21 @@
         "Geology/Mapping APIs"
       ],
       "security": {
-        "es": "Portal 100% privado con autenticación de doble factor y cifrado de datos analíticos.",
-        "ca": "Portal 100% privat amb l'autenticació de doble factor i xifrat de dades analítiques.",
-        "en": "100% private portal with dual-factor authentication and analytical data encryption."
+        "es": [
+          "Entorno de alta privacidad con autenticación de doble factor y cifrado de base de datos en reposo.",
+          "Arquitectura aislada del servidor principal mediante proxies inversos y segmentación de redes internas.",
+          "Control granular de acceso a datos geográficos sensibles para proteger la privacidad de los evaluadores."
+        ],
+        "ca": [
+          "Entorn d'alta privadesa amb autenticació de doble factor i xifrat de base de dades en repòs.",
+          "Arquitectura aïllada del servidor principal mitjançant proxies inversos i segmentació de xarxes internes.",
+          "Control granular d'accés a dades geogràfiques sensibles per protegir la privadesa dels avaluadors."
+        ],
+        "en": [
+          "High-privacy environment featuring dual-factor authentication and data-at-rest encryption.",
+          "Isolated server architecture using reverse proxies and internal network segmentation.",
+          "Granular access control for sensitive geographical data to protect evaluator privacy."
+        ]
       },
       "links": {
         "github": "github.com/joan-mata/RefereeNotes",
@@ -418,9 +478,21 @@
         "DNS Management"
       ],
       "security": {
-        "es": "DNS SEC, Túneles cifrados y Firewall perimetral Zero Trust de Cloudflare.",
-        "ca": "DNS SEC, Túnels xifrats i Firewall perimetral Zero Trust de Cloudflare.",
-        "en": "DNS SEC, Encrypted Tunnels, and Cloudflare Zero Trust perimeter firewall."
+        "es": [
+          "Perímetro Zero Trust mediante Cloudflare Tunnels (NAT Traversal) eliminando la necesidad de abrir puertos ISP.",
+          "Orquestación de infraestructura resiliente mediante Docker Compose con monitorización centralizada de logs.",
+          "Gestión de certificados SSL automatizada y Firewall perimetral con filtrado de IPs por geolocalización."
+        ],
+        "ca": [
+          "Perímetre Zero Trust mitjançant Cloudflare Tunnels (NAT Traversal) eliminant la necessitat d'obrir ports ISP.",
+          "Orquestració d'infraestructura resilient mitjançant Docker Compose amb monitorització centralitzada de logs.",
+          "Gestió de certificats SSL automatitzada i Firewall perimetral amb filtratge d'IPs per geolocalització."
+        ],
+        "en": [
+          "Zero Trust perimeter via Cloudflare Tunnels (NAT Traversal) removing the need for ISP port forwarding.",
+          "Resilient infrastructure orchestration using Docker Compose with centralized log monitoring.",
+          "Automated SSL certificate management and perimeter firewall with geolocation IP filtering."
+        ]
       },
       "links": {
         "github": null,
@@ -473,9 +545,21 @@
         "CloudWatch"
       ],
       "security": {
-        "es": "Gestión granular de identidades (IAM) y cifrado de datos en reposo con KMS.",
-        "ca": "Gestió granular d'identitats (IAM) i xifrat de dades en repòs amb KMS.",
-        "en": "Granular identity management (IAM) and data encryption at rest with KMS."
+        "es": [
+          "Gestión granular de identidades (IAM) aplicando el principio de mínimo privilegio para todos los servicios cloud.",
+          "Cifrado de datos en reposo en S3 mediante KMS y protección de flujos Kinesis con TLS 1.2.",
+          "Monitoreo proactivo de costos y seguridad mediante CloudWatch Logs y CloudTrail automatizados."
+        ],
+        "ca": [
+          "Gestió granular d'identitats (IAM) aplicant el principi de mínim privilegi per a tots els serveis cloud.",
+          "Xifrat de dades en repòs a S3 mitjançant KMS i protecció de fluxos Kinesis amb TLS 1.2.",
+          "Monitoratge proactiu de costos i seguretat mitjançant CloudWatch Logs i CloudTrail automatitzats."
+        ],
+        "en": [
+          "Granular identity management (IAM) applying the principle of least privilege across all cloud services.",
+          "Data-at-rest encryption on S3 using KMS and Kinesis stream protection with TLS 1.2.",
+          "Proactive cost and security monitoring using automated CloudWatch Logs and CloudTrail auditing."
+        ]
       },
       "links": {
         "github": null,
@@ -531,9 +615,21 @@
         "CSS Grid"
       ],
       "security": {
-        "es": "Protección contra fraude en exámenes y validación de integridad de preguntas.",
-        "ca": "Protecció contra frau en exàmens i validació d'integritat de preguntes.",
-        "en": "Anti-cheat exam protection and question integrity validation."
+        "es": [
+          "Protección contra fraude en exámenes mediante lógica de temporización sincronizada en el servidor.",
+          "Validación estricta de esquemas de entrada para prevenir inyecciones NoSQL y ataques de denegación de servicio.",
+          "Optimización de concurrencia y despliegue sobre infraestructura serverless con monitorización de rendimiento."
+        ],
+        "ca": [
+          "Protecció contra frau en exàmens mitjançant lògica de temporització sincronitzada al servidor.",
+          "Validació estricta d'esquemes d'entrada per prevenir injeccions NoSQL i atacs de denegació de servei.",
+          "Optimització de concurrència i desplegament sobre infraestructura serverless amb monitorització de rendiment."
+        ],
+        "en": [
+          "Exam anti-fraud protection featuring server-synchronized timing logic.",
+          "Strict input schema validation to prevent NoSQL injection and denial-of-service attacks.",
+          "Concurrency optimization and serverless infrastructure deployment with real-time performance monitoring."
+        ]
       },
       "links": {
         "github": "github.com/joan-mata/WebExams",
@@ -589,9 +685,21 @@
         "Biometric Auth"
       ],
       "security": {
-        "es": "Cifrado de grado militar, autenticación biométrica y aislamiento total de datos sensibles.",
-        "ca": "Xifrat de grau militar, autenticació biomètrica i aïllament total de dades sensibles.",
-        "en": "Military-grade encryption, biometric authentication, and total sensitive data isolation."
+        "es": [
+          "Cifrado nativo de grado militar (AES-256) para el almacenamiento de archivos críticos íntegramente en el dispositivo.",
+          "Integración obligatoria de autenticación biométrica (Huella/FaceID) como capa primaria de acceso.",
+          "Infraestructura de sincronización en la nube basada en esquemas de cifrado asimétrico controlado por el usuario."
+        ],
+        "ca": [
+          "Xifrat natiu de grau militar (AES-256) per a l'emmagatzematge de fitxers crítics íntegrament en el dispositiu.",
+          "Integració obligatòria d'autenticació biomètrica (Petjada/FaceID) com a capa primària d'accés.",
+          "Infraestructura de sincronització al núvol basada en esquemes de xifrat asimètric controlat per l'usuari."
+        ],
+        "en": [
+          "Native military-grade encryption (AES-256) for critical file storage handled entirely on the device.",
+          "Mandatory biometric authentication (Fingerprint/FaceID) integration as a primary access layer.",
+          "Cloud synchronization infrastructure based on user-controlled asymmetric encryption schemas."
+        ]
       },
       "links": {
         "github": "github.com/joan-mata/DocuLife",

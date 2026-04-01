@@ -59,7 +59,11 @@ const ProjectDetailsPage = ({ data, lang, translations, isAdmin, onEdit }) => {
           {project.security && project.security[lang] && (
             <section className="detail-glass-card">
               <h2 className="detail-section-title">{translations.projects.security}</h2>
-              <p className="detail-security-text">{project.security[lang]}</p>
+              <ul className="detail-feature-list security-list">
+                {Array.isArray(project.security[lang]) 
+                  ? project.security[lang].map((point, i) => <li key={i}>{point}</li>)
+                  : <li className="detail-security-text">{project.security[lang]}</li>}
+              </ul>
             </section>
           )}
         </div>
