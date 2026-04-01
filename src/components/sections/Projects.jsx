@@ -60,7 +60,7 @@ const Projects = ({ title, data, lang, translations, isAdmin, onEdit, onAdd }) =
                   href={`https://${proj.links.live}`}
                   target="_blank"
                   rel="noreferrer"
-                  className="card-web-link"
+                  className="card-web-btn"
                   onClick={(e) => e.stopPropagation()}
                 >
                   {translations.projects.miniVisit}
