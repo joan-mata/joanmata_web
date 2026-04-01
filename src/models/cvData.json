@@ -2,12 +2,12 @@
   "name": "Joan Mata Pàrraga",
   "email": "joanmata.parraga@gmail.com",
   "phone": "+34 647 267 153",
-  "location: "Barcelona, España",
+  "location": "Barcelona, España",
   "linkedin": "linkedin.com/in/joan-mata",
   "github": "github.com/joan-mata",
   "profile": {
     "es": "Ingeniero con doble titulación en Ingeniería Informática y Sistemas de Telecomunicación, con un perfil híbrido que une hardware, software y ciencia de datos. Actualmente ejerzo como Profesor Universitario especializado en ciberseguridad y redes, actividad que compagino con el desarrollo de soluciones de IA local, arquitecturas cloud escalables y sistemas embebidos. Me define una profunda curiosidad técnica y una mentalidad de aprendizaje continuo, lo que me permite adaptarme rápidamente a nuevas tecnologías e integrarlas en proyectos complejos y seguros.",
-    "ca": "Enginyer amb doble titulació en Enginyeria Informàtica i Sistemes de Telecomunicació, amb un perfil híbrid que uneix maquinari, programari i ciència de dades. Actualment exerceixo com a Professor Universitari especialitzat en ciberseguretat i xarxes, activitat que compagino amb el desenvolupament de solucions d'IA local, arquitectures cloud escalables i sistemes encastats. Em defineix una profunda curiositat tècnica i una mentalidad de aprenentatge continu, la qual cosa em permet adaptar-me ràpidament a noves tecnologies i integrar-les en projectes complexos i segurs.",
+    "ca": "Enginyer amb doble titulació en Enginyeria Informàtica i Sistemes de Telecomunicació, amb un perfil híbrid que uneix maquinari, programari i ciència de dades. Actualment exerceixo com a Professor Universitari especialitzat en ciberseguretat i xarxes, activitat que compagino amb el desenvolupament de solucions d'IA local, arquitectures cloud escalables i sistemes encastats. Em defineix una profunda curiositat tècnica i una mentalidad de aprenentatge continu, la qual cosa em permet adaptar-me ràpidament a noues tecnologies i integrar-les en projectes complexos i segurs.",
     "en": "Engineer with a double degree in Computer Engineering and Telecommunication Systems, with a hybrid profile combining hardware, software, and data science. Currently serving as a University Professor specializing in cybersecurity and networks, a role complemented by the development of local AI solutions, scalable cloud architectures, and embedded systems. I am defined by a deep technical curiosity and a continuous learning mindset, allowing me to quickly adapt to new technologies and integrate them into complex and secure projects."
   },
   "experience": [
@@ -138,11 +138,11 @@
             "Implementació darquitectura MVC (Model-View-Controller) per a la separació estricta de lògica de dades i UI.",
             "Disseny dun motor de persistència sobre JSON i LocalStorage per a la gestió dinàmica del CV.",
             "Panell d'administració interactiu amb desament en temps real i càrrega de traduccions automàtiques.",
-            "Optimització de components per a una càrrega dʻalt rendiment i una experiència dʻusuari premium (UX)."
+            "Optimització de procediments per a una càrrega dʻalt rendiment i una experiència dʻusuari premium (UX)."
           ],
           "en": [
             "Comprehensive development of the portal from scratch using React and Vanilla CSS for a fluid and light design.",
-            "Implementation of MVC (Model-View-Controller) architecture for strict separation of data logic and UI.",
+            "Implementation of MVC (Model-Type-Controller) architecture for strict separation of data logic and UI.",
             "Design of a persistence engine on JSON and LocalStorage for dynamic CV management.",
             "Interactive Administration Panel with real-time saving and loading of automatic translations.",
             "Component optimization for high-performance loading and premium user experience (UX)."
@@ -158,7 +158,7 @@
           "ca": [
             "Arquitectura de rutes protegides mitjançant aïllament de components i guàrdies de navegació de React Router, impedint accessos no autoritzats a les vistes administratives mitjançant validació d'estat en temps real i seguretat de sessió.",
             "Xifrat de persistència local utilitzant algorismes AES-256 per protegir la integritat del JSON del CV, assegurant que les dades sensibles romanguin privades i protegides en el navegador de l'usuari.",
-            "Optimització de desplegament mitjançant pipelines de CI/CD automatitzats, integrant capçaleres de seguretat HTTP (HSTS, CSP) i gestió automatitzada de certificats SSL/TLS per garantir connexions xifrades punt a punt."
+            "Optimització de desplegament mitjançant pipelines de CI/CD automatitzats, integrant capçaleres de seguretat HTTP (HSTS, CSP) i gestió automatizada de certificats SSL/TLS per garantir connexions xifrades punt a punt."
           ],
           "en": [
             "Protected route architecture through component isolation and React Router navigation guards, preventing unauthorized access to administrative views via real-time technical state validation.",
@@ -211,7 +211,7 @@
           "ca": [
             "Seguretat 100% 'Offline-First' amb processament d'IA íntegrament en el client, eliminant la necessitat d'enviar dades sensibles a serveis de tercers o servidors externs per al seu processament lingüístic.",
             "Sanitització d'entrades de text mitjançant capes de validació per prevenir atacs de Cross-Site Scripting (XSS) i garantir un renderitzat segur de documents LaTeX/PDF directament al navegador.",
-            "Persistència descentralitzada basada en esquemes d'emmagatzematge local xifrat, donant a l'usuari el control absolut sobre la sobirania i privadesa de la seva informació professional sense dependències de núvol."
+            "Persistència descentralitzada basada en esquemes d'emmagatzematge local xifrat, donant a l'usuari el control absolut sobre la sobirania i privadesa de la seva informació profesional sense dependències de núvol."
           ],
           "en": [
             "100% 'Offline-First' security with AI processing handled entirely on the client-side, eliminating the need to send sensitive user data or resumes to third-party services or external cloud servers.",
@@ -476,7 +476,7 @@
           "ca": [
             "Gestió granular d'identitats i accessos (IAM) aplicant estrictament el principi de mínim privilegi per limitar els permisos de les funcions Lambda i serveis a només el que és estrictament necessari per a la seva execució.",
             "Xifrat de dades en repòs a S3 mitjançant AWS KMS (Key Management Service) i protecció integral de fluxos de dades en trànsit amb TLS 1.2, garantint que el pipeline compleixi amb estàndards d'alta seguretat cloud.",
-            "Arquitectura serverless amb monitoratge proactiu de seguretat integral mitjançant CloudWatch Logs i CloudTrail, automatitzant la generació d'alertes davant qualsevol intent d'accés anòmal als recursos de Big Data."
+            "Arquitectura serverless con monitoratge proactiu de seguretat integral mitjançant CloudWatch Logs i CloudTrail, automatitzant la generació d'alertes davant qualsevol intent d'accés anòmal als recursos de Big Data."
           ],
           "en": [
             "Granular Identity and Access Management (IAM) strictly applying the principle of least privilege to limit Lambda functions and service permissions to the absolute minimum required for reliable execution.",
@@ -509,7 +509,7 @@
             "Generació dinàmica d'exàmens amb nivells de dificultat personalitzables per adaptar-se al progrés de l'alumne.",
             "Implementació de temporitzadors configurables per simular amb precisió entorns d'examen oficials.",
             "Sistema de revisió interactiva que permet als usuaris validar respostes i reportar errors en temps real.",
-            "Entorn col·laboratiu on els alumnes poden intercanviar feedback, millorant la qualitat de les preguntes.",
+            "Entorn col·laboratiu on els alumnes poden intercanviar feedback, millorant la quilòmetres de les preguntes.",
             "Integració estratègica amb Google Ads per a la monetització i sostenibilitat del portal.",
             "Quadre de comandament personal per al seguiment de resultats i millora contínua del rendiment acadèmic."
           ],
@@ -532,7 +532,7 @@
           "ca": [
             "Protecció contra frau en exàmens mitjançant el desenvolupament de lògica de temporització sincronitzada estrictament al costat del servidor, eliminant possibles manipulacions de temps des del client de l'alumne.",
             "Validació estricta d'esquemes d'entrada i sanitització de dades massiva per prevenir injeccions NoSQL i assegurar la integritat de la base de dades davant enviaments de formularis malintencionats.",
-            "Optimització de persistència i desplegament sobre infraestructura serverless amb monitorització constant de rendiment, garantint l'escalabilitat davant pics de concurrència durant exàmens simultanis."
+            "Optimització de persistència i desplegament sobre infraestructura serverless con monitorització constant de rendiment, garantint l'escalabilitat davant pics de concurrència durant exàmens simultanis."
           ],
           "en": [
             "Anti-fraud exam protection through the development of timing logic strictly synchronized on the server-side, effectively eliminating manual timer manipulations from the end-user's browser or client-side scripts.",
@@ -583,7 +583,7 @@
           "es": [
             "Cifrado nativo de grado militar (AES-256) gestionado en el enclave seguro del dispositivo móvil, garantizando que los archivos críticos permanezcan ilegibles incluso en caso de robo o compromiso físico del terminal.",
             "Integración nativa de capas de autenticación biométrica (Huella Dactilar y FaceID) como requisito obligatorio primario antes de cualquier acceso o visualización de documentos altamente sensibles almacenados localmente.",
-            "Arquitectura de sincronización basada en esquemas de cifrado asimétrico controlado íntegramente por el usuario, asegurando que solo el propietario posea las llaves maestras de descifrado incluso en copias de seguridad."
+            "Arquitectura de sincronización basada en esquemas de cifrado asimétrico controlado íntegramente por el usuario, asegurando que solo el propietario posseeixi les claus mestres de desxifrat fins i tot en còpies de seguretat."
           ],
           "ca": [
             "Xifrat natiu de grau militar (AES-256) gestionat a l'enclavament segur del dispositiu mòbil, garantint que els fitxers crítics romanguin il·legibles fins i tot en cas de robatori o compromís físic del terminal.",
@@ -601,19 +601,53 @@
   ],
   "education": [
     {
-      "title": { "es": "Máster - Ciencia de Datos", "ca": "Màster - Ciència de Dades", "en": "Master - Data Science" },
+      "id": "master-ds",
+      "category": { "es": "Máster", "ca": "Màster", "en": "Master" },
+      "title": { "es": "Ciencia de Datos", "ca": "Ciència de Dades", "en": "Data Science" },
       "school": "Universitat Oberta de Catalunya",
-      "date": "2025 – Present"
+      "date": "2025 – Present",
+      "grade": "En curso",
+      "explanation": {
+        "es": "Máster enfocado en métodos de aprendizaje automático, minería de datos y arquitecturas escalables de Big Data.",
+        "ca": "Màster enfocat en mètodes d'aprenentatge automàtic, mineria de dades i arquitectures escalables de Big Data.",
+        "en": "Master's degree focused on machine learning methods, data mining, and scalable Big Data architectures."
+      }
     },
     {
-      "title": { "es": "Grado en Ingeniería Informática", "ca": "Grau en Enginyeria Informàtica", "en": "BS in Computer Engineering" },
+      "id": "gei",
+      "category": { "es": "Grado", "ca": "Grau", "en": "BS" },
+      "title": { "es": "Ingeniería Informática", "ca": "Enginyeria Informàtica", "en": "Computer Engineering" },
       "school": "Universitat Autònoma de Barcelona",
-      "date": "2018 – 2025"
+      "date": "2018 – 2025",
+      "grade": "Graduado",
+      "tfg": {
+        "title": { "es": "Segmentación y Tracking Automático de Objetos para Eventos Deportivos", "ca": "Segmentació i Tracking Automàtic d'Objectes per a Esdeveniments Esportius", "en": "Automatic Object Segmentation and Tracking for Sports Events" },
+        "grade": "9.5",
+        "link": "#"
+      },
+      "explanation": {
+        "es": "Formación especializada en ingeniería de software, algoritmos y sistemas operativos con mención en Ingeniería del Software.",
+        "ca": "Formació especialitzada en enginyeria de programari, algoritmes i sistemes operatius amb menció en Enginyeria del Software.",
+        "en": "Specialized training in software engineering, algorithms, and operating systems with a mention in Software Engineering."
+      }
     },
     {
-      "title": { "es": "Grado en Sistemas de Telecomunicación", "ca": "Grau en Sistemes de Telecomunicació", "en": "BS in Telecommunication Systems" },
+      "id": "gst",
+      "category": { "es": "Grado", "ca": "Grau", "en": "BS" },
+      "title": { "es": "Sistemas de Telecomunicación", "ca": "Sistemes de Telecomunicació", "en": "Telecommunication Systems" },
       "school": "Universitat Autònoma de Barcelona",
-      "date": "2018 – 2025"
+      "date": "2018 – 2025",
+      "grade": "Graduado",
+      "tfg": {
+        "title": { "es": "Diseño de Redes Críticas y Protocols de Comunicació de Baixa Latència", "ca": "Disseny de Xarxes Crítiques i Protocols de Comunicació de Baixa Latència", "en": "Critical Network Design and Low-Latency Communication Protocols" },
+        "grade": "9.2",
+        "link": "#"
+      },
+      "explanation": {
+        "es": "Formación integral en sistemas de transmisión, redes de datos, propagación de señal y servicios de telecomunicaciones.",
+        "ca": "Formació integral en sistemes de transmissió, xarxes de dades, propagació de senyal i serveis de telecomunicacions.",
+        "en": "Comprehensive training in transmission systems, data networks, signal propagation, and telecommunication services."
+      }
     }
   ],
   "certificates": [

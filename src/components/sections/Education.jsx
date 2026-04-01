@@ -13,43 +13,44 @@ const Education = ({ title, data, lang, isAdmin, onEdit, onAdd, translations }) 
         {isAdmin && <button className="admin-icon static" onClick={onAdd} title={`Add ${title}`}>+</button>}
       </div>
       
-      <div className="card-grid">
-        {data.map((edu, idx) => (
-          <Card 
-            key={edu.id}
-            title={edu.title[lang]}
-            date={edu.date}
-            translations={translations}
-          >
-            {isAdmin && (
-              <button 
-                className="admin-icon entry-edit-btn" 
-                onClick={(e) => { e.stopPropagation(); onEdit(idx); }}
-              >
-                ✎
-              </button>
-            )}
+        {data.map((edu, idx) => {
+          const eduId = edu.id || `edu-${idx}`;
+          return (
+            <Card 
+              key={eduId}
+              title={edu.title[lang]}
+              date={edu.date}
+              translations={translations}
+            >
+              {isAdmin && (
+                <button 
+                  className="admin-icon entry-edit-btn" 
+                  onClick={(e) => { e.stopPropagation(); onEdit(idx); }}
+                >
+                  ✎
+                </button>
+              )}
 
-            <div className="card-content" style={{ marginBottom: '2rem' }}>
-              <div className="edu-school-highlight" style={{ fontSize: '1.2rem', fontWeight: '800', color: 'var(--accent-primary)', marginBottom: '1rem' }}>
-                {edu.school}
+              <div className="card-content" style={{ marginBottom: '1.5rem' }}>
+                <div className="badge-container" style={{ marginBottom: '1rem' }}>
+                  <Badge text={edu.category[lang]} />
+                </div>
+                <p style={{ color: 'var(--text-dim)', fontSize: '1rem', lineHeight: '1.6' }}>
+                  {edu.explanation?.[lang] || ""}
+                </p>
               </div>
-              <p style={{ color: 'var(--text-dim)', lineHeight: '1.6' }}>
-                {edu.explanation?.[lang] || ""}
-              </p>
-            </div>
-            
-            <div className="card-footer-actions">
-              <button 
-                className="card-details-btn"
-                onClick={(e) => { e.stopPropagation(); navigate(`/education/${edu.id}`); }}
-              >
-                {translations.projects.details}
-              </button>
-            </div>
-          </Card>
-        ))}
-      </div>
+              
+              <div className="card-footer-actions">
+                <button 
+                  className="card-details-btn"
+                  onClick={(e) => { e.stopPropagation(); navigate(`/education/${eduId}`); }}
+                >
+                  {translations.projects.details}
+                </button>
+              </div>
+            </Card>
+          );
+        })}
     </section>
   );
 };
