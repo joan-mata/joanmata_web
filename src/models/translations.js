@@ -13,7 +13,7 @@ export const TRANSLATIONS = {
       subtitle: 'Ingeniero Informático y de Telecomunicación • Profesor Universitario • Científico de Datos',
       downloadCV: 'Descargar CV (PDF)',
       downloadES: 'Descargar CV (ES)',
-      downloadEN: 'Download CV (EN)'
+      downloadEN: 'Descargar CV (EN)'
     },
     sections: {
       experience: 'Experiencia Profesional',
@@ -93,7 +93,7 @@ export const TRANSLATIONS = {
       subtitle: 'Enginyer Informàtic i de Telecomunicació • Professor Universitari • Científic de Dades',
       downloadCV: 'Descarregar CV (PDF)',
       downloadES: 'Descarregar CV (ES)',
-      downloadEN: 'Download CV (EN)'
+      downloadEN: 'Descarregar CV (EN)'
     },
     sections: {
       experience: 'Experiència Professional',
