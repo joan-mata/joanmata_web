@@ -10,6 +10,7 @@ import Experience from './components/sections/Experience';
 import Projects from './components/sections/Projects';
 import ProjectDetailsPage from './components/sections/ProjectDetailsPage';
 import Education from './components/sections/Education';
+import EducationDetailsPage from './components/sections/EducationDetailsPage';
 import Skills from './components/sections/Skills';
 import Certificates from './components/sections/Certificates';
 import Volunteering from './components/sections/Volunteering';
@@ -88,7 +89,8 @@ export default function App() {
             <Route path="/" element={<><Hero name={currentData.name} profileText={currentData.profile[lang]} translations={t} isAdmin={isAdmin} onEdit={() => setShowModal({ type: 'profile', context: 'profile', data: currentData.profile })} /><Experience title={t.sections.experience} data={currentData.experience} lang={lang} {...adminProps('experience', 'experience')} /></>} />
             <Route path="/projects" element={<Projects title={t.sections.projects} data={currentData.projects} lang={lang} translations={t} {...adminProps('projects', 'project')} />} />
             <Route path="/projects/:id" element={<ProjectDetailsPage data={currentData.projects} lang={lang} translations={t} isAdmin={isAdmin} onEdit={(id) => setShowModal({ type: 'project', context: 'projects', itemIndex: currentData.projects.findIndex(p => p.id === id), data: currentData.projects.find(p => p.id === id) })} />} />
-            <Route path="/education" element={<Education title={t.sections.education} data={currentData.education} lang={lang} {...adminProps('education', 'education')} />} />
+            <Route path="/education" element={<Education title={t.sections.education} data={currentData.education} lang={lang} translations={t} {...adminProps('education', 'education')} />} />
+            <Route path="/education/:id" element={<EducationDetailsPage data={currentData.education} lang={lang} translations={t} isAdmin={isAdmin} onEdit={(id) => setShowModal({ type: 'education', context: 'education', itemIndex: currentData.education.findIndex(e => e.id === id), data: currentData.education.find(e => e.id === id) })} />} />
             <Route path="/skills" element={<Skills title={t.sections.skills} data={currentData.skills} isAdmin={isAdmin} onEdit={() => setShowModal({ type: 'skills', context: 'skills', data: currentData.skills })} onAdd={() => setShowModal({ type: 'skills', context: 'skills' })} />} />
             <Route path="/certificates" element={<Certificates title={t.sections.certificates} data={currentData.certificates} lang={lang} {...adminProps('certificates', 'certificate')} />} />
             <Route path="/volunteering" element={<Volunteering title={t.sections.volunteering} data={currentData.volunteering} lang={lang} {...adminProps('volunteering', 'volunteering')} />} />

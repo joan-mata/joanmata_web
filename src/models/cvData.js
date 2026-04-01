@@ -114,6 +114,54 @@ export const DATA = {
       }
     }
   ],
+  education: [
+    {
+      id: "master-ds",
+      title: { es: "Máster - Ciencia de Datos", ca: "Màster - Ciència de Dades", en: "Master - Data Science" },
+      school: "Universitat Oberta de Catalunya",
+      date: "2025 – Present",
+      grade: "In progress",
+      explanation: {
+        es: "Máster enfocado en métodos de aprendizaje automático, minería de datos y arquitecturas escalables de Big Data.",
+        ca: "Màster enfocat en mètodes d'aprenentatge automàtic, mineria de dades i arquitectures escalables de Big Data.",
+        en: "Master's degree focused on machine learning methods, data mining, and scalable Big Data architectures."
+      }
+    },
+    {
+      id: "gei",
+      title: { es: "Grado en Ingeniería Informática", ca: "Grau en Enginyeria Informàtica", en: "BS in Computer Engineering" },
+      school: "Universitat Autònoma de Barcelona",
+      date: "2018 – 2025",
+      grade: "Graduate",
+      tfg: {
+        title: { es: "Segmentación y Tracking Automático de Objetos para Eventos Deportivos", ca: "Segmentació i Tracking Automàtic d'Objectes per a Esdeveniments Esportius", en: "Automatic Object Segmentation and Tracking for Sports Events" },
+        grade: "9.5",
+        link: "#"
+      },
+      explanation: {
+        es: "Formación especializada en ingeniería de software, algoritmos y sistemas operativos con mención en Ingeniería del Software.",
+        ca: "Formació especialitzada en enginyeria de programari, algoritmes i sistemes operatius amb menció en Enginyeria del Software.",
+        en: "Specialized training in software engineering, algorithms, and operating systems with a mention in Software Engineering."
+      }
+    },
+    {
+      id: "gst",
+      title: { es: "Grado en Sistemas de Telecomunicación", ca: "Grau en Sistemes de Telecomunicació", en: "BS in Telecommunication Systems" },
+      school: "Universitat Autònoma de Barcelona",
+      date: "2018 – 2025",
+      grade: "Graduate",
+      tfg: {
+        title: { es: "Diseño de Redes Críticas y Protocolos de Comunicación de Baja Latencia", ca: "Disseny de Xarxes Crítiques i Protocols de Comunicació de Baixa Latència", en: "Critical Network Design and Low-Latency Communication Protocols" },
+        grade: "9.2",
+        link: "#"
+      },
+      explanation: {
+        es: "Formación integral en sistemas de transmisión, redes de datos, propagación de señal y servicios de telecomunicaciones.",
+        ca: "Formació integral en sistemes de transmissió, xarxes de dades, propagació de senyal i serveis de telecomunicacions.",
+        en: "Comprehensive training in transmission systems, data networks, signal propagation, and telecommunication services."
+      }
+    }
+  ],
   projects: [
     {
       id: "cv-web",
@@ -211,7 +259,7 @@ export const DATA = {
           ca: [
             "Seguretat 100% 'Offline-First' amb processament d'IA íntegrament en el client, eliminant la necessitat d'enviar dades sensibles a serveis de tercers o servidors externs per al seu processament lingüístic.",
             "Sanitització d'entrades de text mitjançant capes de validació per prevenir atacs de Cross-Site Scripting (XSS) i garantir un renderitzat segur de documents LaTeX/PDF directament al navegador.",
-            "Persistència descentralitzada basada en esquemes d'emmagatzematge local xifrat, donant a l'usuari el control absolut sobre la sobirania i privadesa de la seva informació professional sense dependències de núvol."
+            "Persistència descentralitzada basada en esquemes d'emmagatzematge local xifrat, donant a l'usuari el control absolut sobre la sobirania i privadesa de la seva informació profesional sense dependències de núvol."
           ],
           en: [
             "100% 'Offline-First' security with AI processing handled entirely on the client-side, eliminating the need to send sensitive user data or resumes to third-party services or external cloud servers.",
@@ -423,7 +471,7 @@ export const DATA = {
           ca: [
             "Implementació d'un perímetre de seguretat Zero Trust basat en Cloudflare Tunnels (NAT Traversal), eliminant completament la necessitat d'obertura de ports al router ISP i anulant possibles atacs d'escaneig d'IP pública.",
             "Orquestració d'infraestructura resilient mitjançant Docker Compose amb monitorització centralitzada de logs en contenidors aïllats, detectant proactivament anomalies en el trànsit intern i extern de cada servei.",
-            "Gestió automatitzada de certificats SSL/TLS i blindatge mitjançant Firewall perimetral amb filtratge d'IPs per geolocalització, bloquejant accessos fraudulents des de regions no autoritzades o IPs sospitoses."
+            "Gestió automatitzada de certificats SSL/TLS i blindatge mitjançant Firewall perimetral amb filtratge d'IPs per geolocalització, bloquejant accessos fraudulents des de regions no autoritzades o ips sospitoses."
           ],
           en: [
             "Zero Trust security perimeter implementation via Cloudflare Tunnels (NAT Traversal), completely removing the need for ISP port forwarding and neutralizing global IP scanning attacks on the local host.",
@@ -509,7 +557,7 @@ export const DATA = {
             "Generació dinàmica d'exàmens amb nivells de dificultat personalitzables per adaptar-se al progrés de l'alumne.",
             "Implementació de temporitzadors configurables per simular amb precisió entorns d'examen oficials.",
             "Sistema de revisió interactiva que permet als usuaris validar respostes i reportar errors en temps real.",
-            "Entorn col·laboratiu on els alumnes poden intercanviar feedback, millorant la qualitat de les preguntes.",
+            "Entorn col·laboratiu on els alumnes poden intercanviar feedback, millorant la quualitat de les preguntes.",
             "Integració estratègica amb Google Ads per a la monetització i sostenibilitat del portal.",
             "Quadre de comandament personal per al seguiment de resultats i millora contínua del rendiment acadèmic."
           ],
@@ -601,19 +649,146 @@ export const DATA = {
   ],
   education: [
     {
+      id: "master-ds",
       title: { es: "Máster - Ciencia de Datos", ca: "Màster - Ciència de Dades", en: "Master - Data Science" },
       school: "Universitat Oberta de Catalunya",
-      date: "2025 – Present"
+      date: "2025 – Present",
+      grade: "En curso",
+      explanation: {
+        es: "Máster enfocado en métodos de aprendizaje automático, minería de datos y arquitecturas escalables de Big Data.",
+        ca: "Màster enfocat en mètodes d'aprenentatge automàtic, mineria de dades i arquitectures escalables de Big Data.",
+        en: "Master's degree focused on machine learning methods, data mining, and scalable Big Data architectures."
+      }
     },
     {
+      id: "gei",
       title: { es: "Grado en Ingeniería Informática", ca: "Grau en Enginyeria Informàtica", en: "BS in Computer Engineering" },
       school: "Universitat Autònoma de Barcelona",
-      date: "2018 – 2025"
+      date: "2018 – 2025",
+      grade: "Graduado",
+      tfg: {
+        title: { es: "Segmentación y Tracking Automático de Objetos para Eventos Deportivos", ca: "Segmentació i Tracking Automàtic d'Objectes per a Esdeveniments Esportius", en: "Automatic Object Segmentation and Tracking for Sports Events" },
+        grade: "9.5",
+        link: "#"
+      },
+      explanation: {
+        es: "Formación especializada en ingeniería de software, algoritmos y sistemas operativos con mención en Ingeniería del Software.",
+        ca: "Formació especialitzada en enginyeria de programari, algoritmes i sistemes operatius amb menció en Enginyeria del Software.",
+        en: "Specialized training in software engineering, algorithms, and operating systems with a mention in Software Engineering."
+      }
     },
     {
+      id: "gst",
       title: { es: "Grado en Sistemas de Telecomunicación", ca: "Grau en Sistemes de Telecomunicació", en: "BS in Telecommunication Systems" },
       school: "Universitat Autònoma de Barcelona",
-      date: "2018 – 2025"
+      date: "2018 – 2025",
+      grade: "Graduado",
+      tfg: {
+        title: { es: "Diseño de Redes Críticas y Protocols de Comunicació de Baixa Latència", ca: "Disseny de Xarxes Crítiques i Protocols de Comunicació de Baixa Latència", en: "Critical Network Design and Low-Latency Communication Protocols" },
+        grade: "9.2",
+        link: "#"
+      },
+      explanation: {
+        es: "Formación integral en sistemas de transmisión, redes de datos, propagación de señal y servicios de telecomunicaciones.",
+        ca: "Formació integral en sistemes de transmissió, xarxes de dades, propagació de senyal i serveis de telecomunicacions.",
+        en: "Comprehensive training in transmission systems, data networks, signal propagation, and telecommunication services."
+      }
+    }
+  ],
+  education: [
+    {
+      id: "master-ds",
+      title: { es: "Máster - Ciencia de Datos", ca: "Màster - Ciència de Dades", en: "Master - Data Science" },
+      school: "Universitat Oberta de Catalunya",
+      date: "2025 – Present",
+      grade: "En curso",
+      explanation: {
+        es: "Máster enfocado en métodos de aprendizaje automático, minería de datos y arquitecturas escalables de Big Data.",
+        ca: "Màster enfocat en mètodes d'aprenentatge automàtic, mineria de dades i arquitectures escalables de Big Data.",
+        en: "Master's degree focused on machine learning methods, data mining, and scalable Big Data architectures."
+      }
+    },
+    {
+      id: "gei",
+      title: { es: "Grado en Ingeniería Informática", ca: "Grau en Enginyeria Informàtica", en: "BS in Computer Engineering" },
+      school: "Universitat Autònoma de Barcelona",
+      date: "2018 – 2025",
+      grade: "Graduado",
+      tfg: {
+        title: { es: "Segmentación y Tracking Automático de Objetos para Eventos Deportivos", ca: "Segmentació i Tracking Automàtic d'Objectes per a Esdeveniments Esportius", en: "Automatic Object Segmentation and Tracking for Sports Events" },
+        grade: "9.5",
+        link: "#"
+      },
+      explanation: {
+        es: "Formación especializada en ingeniería de software, algoritmos y sistemas operativos con mención en Ingeniería del Software.",
+        ca: "Formació especialitzada en enginyeria de programari, algoritmes i sistemes operatius amb menció en Enginyeria del Software.",
+        en: "Specialized training in software engineering, algorithms, and operating systems with a mention in Software Engineering."
+      }
+    },
+    {
+      id: "gst",
+      title: { es: "Grado en Sistemas de Telecomunicación", ca: "Grau en Sistemes de Telecomunicació", en: "BS in Telecommunication Systems" },
+      school: "Universitat Autònoma de Barcelona",
+      date: "2018 – 2025",
+      grade: "Graduado",
+      tfg: {
+        title: { es: "Diseño de Redes Críticas y Protocols de Comunicació de Baixa Latència", ca: "Disseny de Xarxes Crítiques i Protocols de Comunicació de Baixa Latència", en: "Critical Network Design and Low-Latency Communication Protocols" },
+        grade: "9.2",
+        link: "#"
+      },
+      explanation: {
+        es: "Formación integral en sistemas de transmisión, redes de datos, propagación de señal y servicios de telecomunicaciones.",
+        ca: "Formació integral en sistemes de transmissió, xarxes de dades, propagació de senyal i serveis de telecomunicacions.",
+        en: "Comprehensive training in transmission systems, data networks, signal propagation, and telecommunication services."
+      }
+    }
+  ],
+  education: [
+    {
+      id: "master-ds",
+      title: { es: "Máster - Ciencia de Datos", ca: "Màster - Ciència de Dades", en: "Master - Data Science" },
+      school: "Universitat Oberta de Catalunya",
+      date: "2025 – Present",
+      grade: "En curso",
+      explanation: {
+        es: "Máster enfocado en métodos de aprendizaje automático, minería de datos y arquitecturas escalables de Big Data.",
+        ca: "Màster enfocat en mètodes d'aprenentatge automàtic, mineria de dades i arquitectures escalables de Big Data.",
+        en: "Master's degree focused on machine learning methods, data mining, and scalable Big Data architectures."
+      }
+    },
+    {
+      id: "gei",
+      title: { es: "Grado en Ingeniería Informática", ca: "Grau en Enginyeria Informàtica", en: "BS in Computer Engineering" },
+      school: "Universitat Autònoma de Barcelona",
+      date: "2018 – 2025",
+      grade: "Graduado",
+      tfg: {
+        title: { es: "Segmentación y Tracking Automático de Objetos para Eventos Deportivos", ca: "Segmentació i Tracking Automàtic d'Objectes per a Esdeveniments Esportius", en: "Automatic Object Segmentation and Tracking for Sports Events" },
+        grade: "9.5",
+        link: "#"
+      },
+      explanation: {
+        es: "Formación especializada en ingeniería de software, algoritmos y sistemas operativos con mención en Ingeniería del Software.",
+        ca: "Formació especialitzada en enginyeria de programari, algoritmes i sistemes operatius amb menció en Enginyeria del Software.",
+        en: "Specialized training in software engineering, algorithms, and operating systems with a mention in Software Engineering."
+      }
+    },
+    {
+      id: "gst",
+      title: { es: "Grado en Sistemas de Telecomunicación", ca: "Grau en Sistemes de Telecomunicació", en: "BS in Telecommunication Systems" },
+      school: "Universitat Autònoma de Barcelona",
+      date: "2018 – 2025",
+      grade: "Graduado",
+      tfg: {
+        title: { es: "Diseño de Redes Críticas y Protocols de Comunicació de Baixa Latència", ca: "Disseny de Xarxes Crítiques i Protocols de Comunicació de Baixa Latència", en: "Critical Network Design and Low-Latency Communication Protocols" },
+        grade: "9.2",
+        link: "#"
+      },
+      explanation: {
+        es: "Formación integral en sistemas de transmisión, redes de datos, propagación de señal y servicios de telecomunicaciones.",
+        ca: "Formació integral en sistemes de transmissió, xarxes de dades, propagació de senyal i serveis de telecomunicacions.",
+        en: "Comprehensive training in transmission systems, data networks, signal propagation, and telecommunication services."
+      }
     }
   ],
   certificates: [
