@@ -5,31 +5,36 @@
       "company": "Universitat Autònoma de Barcelona",
       "role": "University Professor",
       "points": [
-        "Professor in 'Telecommunication Services', leading practical training in full-stack web development and security.",
-        "Advanced web security configuration: SSL/TLS, PKI, and critical infrastructure management.",
-        "Professor in 'Network Fundamentals', teaching IP communication and client-server architecture.",
-        "Tutor for final projects in cybersecurity (hardening) and Data Engineering (massive scraping)."
+        "Leading practical training in full-stack web development and network security within the 'Telecommunication Services' course.",
+        "Delivering technical instruction on full-stack architecture design, database administration, and advanced web server configuration.",
+        "Managing Public Key Infrastructure (PKI) via certificates and securing traffic using SSL/TLS protocols.",
+        "Teaching 'Network Fundamentals', covering client-server communication and IP-based network architecture.",
+        "Designing and simulating complex network topologies, overseeing static routing protocols and gateway management.",
+        "Specialist in advanced network addressing (VLSM), network segmentation, and deployment of critical services (DHCP, DNS).",
+        "Mentoring Bachelor's Thesis (TFG) in Cybersecurity (hardening), Data Engineering (massive scraping), and Data Science (Machine Learning)."
       ],
       "date": "09/2025 - Present"
     },
     {
-      "company": "FlexiiC",
-      "role": "IC Designer",
+      "company": "FlexiiC - Flexible Integrated Circuits",
+      "role": "Integrated Circuit Designer",
       "points": [
-        "Wireless connectivity development using nRF52840 and Bluetooth Low Energy (BLE).",
-        "Integral PCB design and validation with embedded systems.",
-        "Hardware digital verification (RTL) in Verilog and ASM optimization.",
-        "Leading role in logial debugging for the production phase."
+        "Developing and implementing wireless connectivity solutions using nRF52840 SoC and Bluetooth Low Energy (BLE) protocols.",
+        "End-to-end PCB design from schematic capture to fabrication management, ensuring interoperability with embedded systems.",
+        "Physical characterization and functional validation of integrated circuits using advanced lab instrumentation and performance metrics analysis.",
+        "Digital hardware verification (RTL) through the development of test environments in Verilog and ASM (Assembly) routine optimization.",
+        "Leadership in the chip's logical debugging phase, identifying critical errors and facilitating the transition to final production."
       ],
       "date": "09/2024 - 11/2025"
     },
     {
       "company": "Universitat Autònoma de Barcelona",
-      "role": "Research Specialist",
+      "role": "Senior Research Technical Specialist",
       "points": [
-        "Backend architecture design migrating from Django to Flask.",
-        "Leading transition from SQL to NoSQL (MongoDB) for heterogeneous data.",
-        "Data pipeline automation for real-time processing."
+        "End-to-end design and development of the backend architecture for research data management, migrating from Django to Flask to optimize REST API flexibility.",
+        "Led the transition from SQL (relational) to NoSQL (MongoDB) database architecture to efficiently manage heterogeneous and dynamic data schemas.",
+        "Automating data lifecycle management through the development of real-time ingestion, cleaning, and normalization pipelines.",
+        "Creating and maintaining a structured API for JSON data services, collaborating closely with the Frontend team for result integration."
       ],
       "date": "07/2022 - 07/2023"
     },
@@ -37,7 +42,10 @@
       "company": "Cellnex Telecom",
       "role": "Sales Engineer",
       "points": [
-        "RF systems modeling and strategic alliance management."
+        "Performing theoretical analysis and RF system modeling for market introduction, ensuring technical viability and compliance with standards.",
+        "Management of strategic alliances with fiber optic providers and tech partners to integrate external connectivity solutions.",
+        "End-to-end project lifecycle coordination, from conceptual design to final installation and commissioning.",
+        "Strategic communication with key clients for risk management, budget deviation control, and deployment feasibility adjustments."
       ],
       "date": "06/2022 - 07/2023"
     },
@@ -45,16 +53,20 @@
       "company": "Johnson Control Hitachi",
       "role": "QA Tester",
       "points": [
-        "System validation using physical simulators and Python scripts.",
-        "Diagnosis system implementation with Arduino."
+        "Performance evaluation and validation of HVAC systems using physical simulators under critical operating conditions.",
+        "Implementation of an Arduino-based diagnostic system for monitoring and analyzing indoor/outdoor serial communication protocols.",
+        "Developing Python scripts for test automation, significantly improving technical validation precision and efficiency.",
+        "Responsible for the maintenance and optimization of physical test bench infrastructure (precision wiring and connectivity).",
+        "Drafting detailed technical reports and result documentation for direct support to R&D design and development teams."
       ],
       "date": "07/2021 - 02/2022"
     },
     {
       "company": "Federació Catalana de Futbol",
-      "role": "Soccer Referee",
+      "role": "Referee",
       "points": [
-        "Pressure management and critical decision making."
+        "Critical pressure management and decision-making in high-demand competitive environments.",
+        "Application of complex regulations and conflict mediation under time-constrained high-stress conditions."
       ],
       "date": "07/2016 - Present"
     }

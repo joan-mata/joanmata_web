@@ -5,31 +5,36 @@
       "company": "Universitat Autònoma de Barcelona",
       "role": "Professor d'universitat",
       "points": [
-        "Docent en 'Serveis de Telecomunicacions', liderant la formació pràctica en desenvolupament web full-stack i seguretat.",
-        "Configuració avançada de seguretat web: SSL/TLS, PKI i gestió d'infraestructures crítiques.",
-        "Docent en 'Fonaments de Xarxes', impartint fonaments de comunicació IP i client-servidor.",
-        "Tutor de TFG en ciberseguretat (hardening) i Data Engineering (scraping massiu)."
+        "Docent a l'assignatura 'Serveis de Telecomunicacions', liderant la formació pràctica en desenvolupament web full-stack i seguretat en xarxes.",
+        "Capacitació en el disseny d'arquitectures web completes, administració de bases de dades i configuració avançada de servidors web.",
+        "Gestió d'infraestructura de clau pública (PKI) mitjançant certificats i assegurament de trànsit amb protocols SSL/TLS.",
+        "Docent a 'Fonaments de Xarxes', impartint fonaments de comunicació client-servidor i arquitectura de xarxa basada en IP.",
+        "Disseny i simulació de topologies de xarxa complexes, supervisant protocols d'encaminament estàtic i gestió de gateways.",
+        "Especialista en planificació de direccionament de xarxa avançat (VLSM), segmentació de xarxes i desplegament de serveis crítics (DHCP, DNS).",
+        "Tutor de Treballs de Fi de Grau (TFG) en Ciberseguretat (hardening), Data Engineering (scraping massiu) i Data Science (Machine Learning)."
       ],
-      "date": "09/2025 - Present"
+      "date": "09/2025 - Actualitat"
     },
     {
-      "company": "FlexiiC",
+      "company": "FlexiiC - Flexible Integrated Circuits",
       "role": "Dissenyador de Circuits Integrats",
       "points": [
-        "Desenvolupament de connectivitat sense fils amb nRF52840 i Bluetooth Low Energy (BLE).",
-        "Disseny integral de PCBs i validació amb sistemes encastats.",
-        "Verificació digital de maquinari (RTL) en Verilog i optimització en ASM.",
-        "Lideratge en debugging lògic del xip per a fase de producció."
+        "Desenvolupament i implementació de solucions de connectivitat inalàmbrica mitjançant el SoC nRF52840 i protocols Bluetooth Low Energy (BLE).",
+        "Disseny integral de PCBs des de la fase d'esquemàtics fins a la gestió de fabricació, garantint la interoperabilitat amb sistemes embebits.",
+        "Caracterització física i validació funcional de circuits integrats mitjançant instrumentació avançada de laboratori i anàlisi de mètriques de rendiment.",
+        "Verificació digital de hardware (RTL) mitjançant el desenvolupament d'entorns de testeig en Verilog i optimització de rutines en ASM (Assembly).",
+        "Lideratge en la fase de debugging lògica del xip, identificant errors crítics i facilitant el pas a la fase final de producció."
       ],
       "date": "09/2024 - 11/2025"
     },
     {
       "company": "Universitat Autònoma de Barcelona",
-      "role": "Tècnic Especialista en Investigació",
+      "role": "Tècnic Superior Especialista en Recerca",
       "points": [
-        "Disseny d'arquitectura backend migrant de Django a Flask.",
-        "Lideratge en transició de SQL a NoSQL (MongoDB) per a dades heterogènies.",
-        "Automatització de pipelines de dades en temps real."
+        "Disseny i desenvolupament integral de l'arquitectura backend per a la gestió de dades, migrant amb èxit de Django a Flask per optimitzar l'API REST.",
+        "Lideratge en la transició d'una arquitectura de base de dades relacional (SQL) a una no relacional (NoSQL/MongoDB) per a esquemes dinàmics.",
+        "Automatització del cicle de vida de les dades mitjançant el desenvolupament de pipelines per a la ingesta, neteja i normalització en temps real.",
+        "Creació i manteniment d'una API estructurada per al servei de dades en format JSON, col·laborant estretament amb l'equip de Frontend."
       ],
       "date": "07/2022 - 07/2023"
     },
@@ -37,7 +42,10 @@
       "company": "Cellnex Telecom",
       "role": "Enginyer de Vendes",
       "points": [
-        "Modelatge de sistemes d'RF i gestió d'aliances estratègiques."
+        "Realització d'anàlisis teòrics i modelatge de sistemes de RF per a la seva introducció al mercat, garantint estàndards de qualitat.",
+        "Gestió d'aliances estratègiques amb proveïdors de fibra òptica i partners tecnològics per integrar solucions de connectivitat externes.",
+        "Coordinació integral del cicle de vida del projecte (End-to-End), des del disseny conceptual fins a la instal·lació i posada en marxa.",
+        "Comunicació estratègica amb clients clau per a la gestió de riscos, desviacions pressupostàries i viabilitat de desplegaments."
       ],
       "date": "06/2022 - 07/2023"
     },
@@ -45,8 +53,11 @@
       "company": "Johnson Control Hitachi",
       "role": "QA Tester",
       "points": [
-        "Validació de sistemes mitjançant simuladors físics i scripts en Python.",
-        "Implementació de sistema de diagnòstic amb Arduino."
+        "Avaluació de rendiment i validació de sistemes de climatització mitjançant l'ús de simuladors físics en condicions crítiques d'operació.",
+        "Implementació d'un sistema de diagnòstic basat en Arduino per a la monitorització i anàlisi del protocol de comunicació sèrie indoor/outdoor.",
+        "Desenvolupament de scripts en Python per a l'automatització de processos de testeig, optimitzant la precisió de la validació tècnica.",
+        "Responsable del manteniment i optimització de la infraestructura física dels bancs de prova (cablejat i connexionat de precisió).",
+        "Elaboració d'informes tècnics detallats i documentació de resultats per al suport directe als equips d'R+D."
       ],
       "date": "07/2021 - 02/2022"
     },
@@ -54,9 +65,10 @@
       "company": "Federació Catalana de Futbol",
       "role": "Àrbitre de futbol",
       "points": [
-        "Gestió de l'estrès i presa de decisions crítica."
+        "Gestió de la pressió i presa de decisions crítica en entorns competitius d'alta exigència.",
+        "Aplicació de reglamentació complexa i mediació en conflictes sota condicions d'estrès temporal."
       ],
-      "date": "07/2016 - Present"
+      "date": "07/2016 - Actualitat"
     }
   ],
   "projects": [

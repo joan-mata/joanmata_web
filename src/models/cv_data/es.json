@@ -5,31 +5,36 @@
       "company": "Universitat Autònoma de Barcelona",
       "role": "Profesor de universidad",
       "points": [
-        "Docente en 'Serveis de Telecomunicacions', liderando la formación práctica en desarrollo web full-stack y seguridad.",
-        "Configuración avanzada de seguridad web: SSL/TLS, PKI y gestión de infraestructuras críticas.",
-        "Docente en 'Fonaments de Xarxes', impartiendo fundamentos de comunicación IP y cliente-servidor.",
-        "Tutor de TFG en ciberseguridad (hardening) y Data Engineering (scraping masivo)."
+        "Docente en la asignatura 'Serveis de Telecomunicacions', liderando la formación práctica en desarrollo web full-stack y seguridad en redes.",
+        "Capacitación en el diseño de arquitecturas web completas, administración de bases de datos y configuración avanzada de servidores web.",
+        "Gestión de infraestructura de clave pública (PKI) mediante certificados y aseguramiento de tráfico con protocolos SSL/TLS.",
+        "Docente en 'Fonaments de Xarxes', impartiendo fundamentos de comunicación cliente-servidor y arquitectura de red basada en IP.",
+        "Diseño y simulación de topologías de red complejas, supervisando protocolos de encaminamiento estático y gestión de gateways.",
+        "Especialista en planificación de direccionamiento de red avanzado (VLSM), segmentación de redes y despliegue de servicios críticos (DHCP, DNS).",
+        "Tutor de Trabajos de Fin de Grado (TFG) en Ciberseguridad (hardening), Data Engineering (scraping masivo) y Data Science (Machine Learning)."
       ],
-      "date": "09/2025 - Present"
+      "date": "09/2025 - Presente"
     },
     {
-      "company": "FlexiiC",
-      "role": "Diseñador de Circuits Integrats",
+      "company": "FlexiiC - Flexible Integrated Circuits",
+      "role": "Diseñador de Circuitos Integrados",
       "points": [
-        "Desarrollo de conectividad inalámbrica con nRF52840 y Bluetooth Low Energy (BLE).",
-        "Diseño integral de PCBs y validación con sistemas embebidos.",
-        "Verificación digital de hardware (RTL) en Verilog y optimización en ASM.",
-        "Liderazgo en debugging lógico del chip para fase de producción."
+        "Desarrollo e implementación de soluciones de conectividad inalámbrica mediante el SoC nRF52840 y protocolos Bluetooth Low Energy (BLE).",
+        "Diseño integral de PCBs desde la fase de esquemáticos hasta la gestión de fabricación, garantizando la interoperabilidad con sistemas embebidos.",
+        "Caracterización física y validación funcional de circuitos integrados mediante instrumentación avanzada de laboratorio y análisis de métricas de rendimiento.",
+        "Verificación digital de hardware (RTL) mediante el desarrollo de entornos de testeo en Verilog y optimización de rutinas en ASM (Assembly).",
+        "Liderazgo en la fase de debugging lógica del chip, identificando errores críticos y facilitando el paso a la fase final de producción."
       ],
       "date": "09/2024 - 11/2025"
     },
     {
       "company": "Universitat Autònoma de Barcelona",
-      "role": "Técnico Especialista en Investigación",
+      "role": "Técnico Superior Especialista en Investigación",
       "points": [
-        "Diseño de arquitectura backend migrando de Django a Flask.",
-        "Liderazgo en transición de SQL a NoSQL (MongoDB) para datos heterogéneos.",
-        "Automatización de pipelines de datos en tiempo real."
+        "Diseño y desarrollo integral de la arquitectura backend para gestión de datos, migrando con éxito de Django a Flask para optimizar la API REST.",
+        "Liderazgo en la transición de una arquitectura de base de datos relacional (SQL) a una no relacional (NoSQL/MongoDB) para esquemas dinámicos.",
+        "Automatización del ciclo de vida de los datos mediante el desarrollo de pipelines para la ingesta, limpieza y normalización en tiempo real.",
+        "Creación y mantenimiento de una API estructurada para el servicio de datos en formato JSON, colaborando estrechamente con el equipo de Frontend."
       ],
       "date": "07/2022 - 07/2023"
     },
@@ -37,7 +42,10 @@
       "company": "Cellnex Telecom",
       "role": "Ingeniero de Ventas",
       "points": [
-        "Modelado de sistemas de RF y gestión de alianzas estratégicas."
+        "Realización de análisis teóricos y modelado de sistemas de RF para su introducción en el mercado, garantizando estándares de calidad.",
+        "Gestión de alianzas estratégicas con proveedores de fibra óptica y partners tecnológicos para integrar soluciones de conectividad externas.",
+        "Coordinación integral del ciclo de vida del proyecto (End-to-End), desde el diseño conceptual hasta la instalación y puesta en marcha.",
+        "Comunicación estratégica con clientes clave para la gestión de riesgos, desviaciones presupuestarias y viabilidad de despliegues."
       ],
       "date": "06/2022 - 07/2023"
     },
@@ -45,8 +53,11 @@
       "company": "Johnson Control Hitachi",
       "role": "QA Tester",
       "points": [
-        "Validación de sistemas mediante simuladores físicos and scripts en Python.",
-        "Implementación de sistema de diagnóstico con Arduino."
+        "Evaluación de rendimiento y validación de sistemas de climatización mediante el uso de simuladores físicos en condiciones críticas de operación.",
+        "Implementación de un sistema de diagnóstico basado en Arduino para la monitorización y análisis del protocolo de comunicación serie indoor/outdoor.",
+        "Desarrollo de scripts en Python para la automatización de procesos de testeo, optimizando la precisión de la validación técnica.",
+        "Responsable del mantenimiento y optimización de la infraestructura física de los bancos de prueba (cableado y conexionado de precisión).",
+        "Elaboración de informes técnicos detalle y documentación de resultados para el soporte directo a los equipos de I+D."
       ],
       "date": "07/2021 - 02/2022"
     },
@@ -54,9 +65,10 @@
       "company": "Federació Catalana de Futbol",
       "role": "Árbitro de fútbol",
       "points": [
-        "Gestión de la presión y toma de decisiones crítica."
+        "Gestión de la presión y toma de decisiones crítica en entornos competitivos de alta exigencia.",
+        "Aplicación de reglamentación compleja y mediación en conflictos bajo condiciones de estrés temporal."
       ],
-      "date": "07/2016 - Present"
+      "date": "07/2016 - Presente"
     }
   ],
   "projects": [
