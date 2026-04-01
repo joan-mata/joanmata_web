@@ -1,11 +1,11 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useParams, useNavigate, Link } from 'react-router-dom';
-import Badge from '../common/Badge';
 import '../../styles/Education.css';
 
 const EducationDetailsPage = ({ data, lang, translations, isAdmin, onEdit }) => {
   const { id } = useParams();
   const navigate = useNavigate();
+  const [showViewer, setShowViewer] = useState(false);
   
   const edu = data.find(e => e.id === id);
 
@@ -57,19 +57,45 @@ const EducationDetailsPage = ({ data, lang, translations, isAdmin, onEdit }) => 
             </p>
           </section>
 
-          {edu.tfg && (
+          {edu.tfg && edu.tfg.title && (
             <section className="detail-glass-card">
               <h2 className="detail-section-title">Trabajo de Fin de Grado (TFG)</h2>
               <div className="tfg-container">
-                <h3 className="tfg-title">{edu.tfg.title[lang]}</h3>
-                <div className="tfg-meta">
-                  <span className="tfg-grade-label">Nota: </span>
-                  <span className="tfg-grade-value">{edu.tfg.grade}</span>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '1rem' }}>
+                  <div style={{ flex: 1, minWidth: '300px' }}>
+                    <h3 className="tfg-title">{edu.tfg.title[lang]}</h3>
+                    <div className="tfg-meta" style={{ marginTop: '0.5rem' }}>
+                      <span className="tfg-grade-label">Nota: </span>
+                      <span className="tfg-grade-value">{edu.tfg.grade}</span>
+                    </div>
+                  </div>
+                  
+                  {edu.tfg.file && (
+                    <button 
+                      className={`cta-btn ${showViewer ? 'secondary' : 'primary'}`}
+                      onClick={() => setShowViewer(!showViewer)}
+                    >
+                      {showViewer ? '✖ CERRAR VISOR' : '👁 VISUALIZAR TFG'}
+                    </button>
+                  )}
                 </div>
-                {edu.tfg.link && edu.tfg.link !== '#' && (
-                  <a href={edu.tfg.link} target="_blank" rel="noreferrer" className="cta-btn secondary tfg-download-btn">
-                    📥 VER DOCUMENTO TFG
-                  </a>
+
+                {showViewer && edu.tfg.file && (
+                  <div className="pdf-viewer-container" style={{ marginTop: '2rem', height: '600px', borderRadius: '12px', overflow: 'hidden', border: '1px solid rgba(255,255,255,0.1)' }}>
+                    <iframe 
+                      src={`${edu.tfg.file}#toolbar=0`} 
+                      width="100%" 
+                      height="100%" 
+                      title="TFG Viewer"
+                      style={{ border: 'none' }}
+                    />
+                  </div>
+                )}
+
+                {edu.tfg.description && (
+                  <div className="tfg-description" style={{ marginTop: '1.5rem', paddingTop: '1.5rem', borderTop: '1px solid rgba(255,255,255,0.1)', color: 'var(--text-dim)' }}>
+                    {edu.tfg.description[lang]}
+                  </div>
                 )}
               </div>
             </section>

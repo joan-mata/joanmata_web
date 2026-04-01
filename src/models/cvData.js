@@ -135,15 +135,24 @@ export const DATA = {
       school: "Universitat Autònoma de Barcelona",
       date: "2018 – 2025",
       grade: "Graduado",
-      tfg: {
-        title: { es: "Segmentación y Tracking Automático de Objetos para Eventos Deportivos", ca: "Segmentació i Tracking Automàtic d'Objectes per a Esdeveniments Esportius", en: "Automatic Object Segmentation and Tracking for Sports Events" },
-        grade: "9.5",
-        link: "#"
-      },
       explanation: {
         es: "Formación especializada en ingeniería de software, algoritmos y sistemas operativos con mención en Ingeniería del Software.",
         ca: "Formació especialitzada en enginyeria de programari, algoritmes i sistemes operatius amb menció en Enginyeria del Software.",
         en: "Specialized training in software engineering, algorithms, and operating systems with a mention in Software Engineering."
+      },
+      tfg: {
+        title: {
+          es: "Compresibilidad de las Imágenes",
+          ca: "Compressibilitat de les Imatges",
+          en: "Image Compressibility"
+        },
+        grade: "9.0",
+        description: {
+          es: "Investigación sobre la eficiencia de compresión mediante métricas bidimensionales y gramáticas 2D. Se proponen métodos innovadores para transformar imágenes en flujos de datos optimizados, validando los resultados con bibliotecas avanzadas de Python sobre conjuntos de datos naturales y médicos.",
+          ca: "Investigació sobre l'eficiència de compressió mitjançant mètriques bidimensionals i gramàtiques 2D. Es proposen mètodes innovadors per transformar imatges en fluxos de dades optimitzats, validant els resultats amb biblioteques avançades de Python sobre conjunts de dades naturals i mèdiques.",
+          en: "Research on compression efficiency using two-dimensional metrics and 2D grammars. Innovative methods are proposed to transform images into optimized data streams, validating the results with advanced Python libraries on natural and medical datasets."
+        },
+        file: "/docs/tfg/tfg_gei.pdf"
       }
     },
     {
@@ -153,15 +162,24 @@ export const DATA = {
       school: "Universitat Autònoma de Barcelona",
       date: "2018 – 2025",
       grade: "Graduado",
-      tfg: {
-        title: { es: "Diseño de Redes Críticas y Protocols de Comunicació de Baixa Latència", ca: "Disseny de Xarxes Crítiques i Protocols de Comunicació de Baixa Latència", en: "Critical Network Design and Low-Latency Communication Protocols" },
-        grade: "9.2",
-        link: "#"
-      },
       explanation: {
         es: "Formación integral en sistemas de transmisión, redes de datos, propagación de señal y servicios de telecomunicaciones.",
         ca: "Formació integral en sistemes de transmissió, xarxes de dades, propagació de senyal i serveis de telecomunicacions.",
         en: "Comprehensive training in transmission systems, data networks, signal propagation, and telecommunication services."
+      },
+      tfg: {
+        title: {
+          es: "Desarrollo e Implementación de Sistemas de Modulación Direccional y Posicional en Python",
+          ca: "Desenvolupament i Implementació de Sistemes de Modulació Direccional i Posicional en Python",
+          en: "Development and Implementation of Directional and Positional Modulation Systems in Python"
+        },
+        grade: "9.5",
+        description: {
+          es: "Mejora de la seguridad en radiocomunicaciones mediante modulación en la capa física. Se diseñan sistemas que focalizan la señal en direcciones específicas y coordenadas geográficas precisas, impidiendo la interceptación de información sensible por parte de receptores no autorizados mediante simulaciones dinámicas en Python.",
+          ca: "Millora de la seguretat en radiocomunicacions mitjançant modulació a la capa física. Es dissenyen sistemes que focalitzen el senyal en direccions específiques i coordenades geogràfiques precises, impedint la interceptació d'informació sensible per part de receptors no autoritzats mitjançant simulacions dinàmiques en Python.",
+          en: "Enhancement of radiocommunications security through physical layer modulation. Systems are designed to focus signals in specific directions and precise geographic coordinates, preventing unauthorized interception of sensitive information through dynamic Python simulations."
+        },
+        file: "/docs/tfg/tfg_gest.pdf"
       }
     }
   ],
@@ -193,7 +211,7 @@ export const DATA = {
         ],
         en: [
           "Comprehensive development of the portal from scratch using React and Vanilla CSS for a fluid and light design.",
-          "Implementation of MVC (Model-View-Controller) architecture for strict separation of data logic and UI.",
+          "Implementation of MVC (Model-Type-Controller) architecture for strict separation of data logic and UI.",
           "Design of a persistence engine on JSON and LocalStorage for dynamic CV management.",
           "Interactive Administration Panel with real-time saving and loading of automatic translations.",
           "Component optimization for high-performance loading and premium user experience (UX)."
@@ -203,17 +221,17 @@ export const DATA = {
       security: {
         es: [
           "Arquitectura de rutas protegidas mediante aislamiento de componentes y guardias de navegación de React Router, impidiendo accesos no autorizados a las vistas administrativas mediante validación de estado en tiempo real.",
-          "Cifrado de persistencia local utilizando algoritmos AES-256 para proteger la integridad del JSON del CV, asegurando que los datos sensibles permanezcan privados en el navegador del usuario ante posibles manipulaciones externas.",
+          "Cifrado de para proteger la integridad del JSON del CV, asegurando que los datos sensibles permanezcan privados en el navegador del usuario ante posibles manipulaciones externas.",
           "Optimización de despliegue mediante pipelines de CI/CD automatizados, integrando cabeceras de seguridad HTTP (HSTS, CSP) y gestión automatizada de certificados SSL/TLS para garantizar conexiones cifradas punto a punto."
         ],
         ca: [
           "Arquitectura de rutes protegides mitjançant aïllament de components i guàrdies de navegació de React Router, impedint accessos no autoritzats a les vistes administratives mitjançant validació d'estat en temps real i seguretat de sessió.",
-          "Xifrat de persistència local utilitzant algorismes AES-256 per protegir la integritat del JSON del CV, assegurant que les dades sensibles romanguin privades i protegides en el navegador de l'usuari.",
+          "Xifrat de persistència local per protegir la integritat del JSON del CV, assegurant que les dades sensibles romanguin privades i protegides en el navegador de l'usuari.",
           "Optimització de desplegament mitjançant pipelines de CI/CD automatitzats, integrant capçaleres de seguretat HTTP (HSTS, CSP) i gestió automatizada de certificats SSL/TLS per garantir connexions xifrades punt a punt."
         ],
         en: [
           "Protected route architecture through component isolation and React Router navigation guards, preventing unauthorized access to administrative views via real-time technical state validation.",
-          "Local persistence encryption using AES-256 algorithms to protect CV JSON integrity, ensuring sensitive user data remains private and secure within the browser environment against unauthorized changes.",
+          "Local persistence encryption to protect CV JSON integrity, ensuring sensitive user data remains private and secure within the browser environment against unauthorized changes.",
           "Deployment optimization via automated CI/CD pipelines, integrating strict HTTP security headers (HSTS, CSP) and automated SSL/TLS certificate management for guaranteed end-to-point encryption."
         ]
       },
@@ -368,7 +386,7 @@ export const DATA = {
         ca: [
           "Autenticació robusta basada en tokens de sessió (JWT) amb gestió granular de permisos mitjançant rols (RBAC/PBAC), assegurant que només els usuaris autoritzats tinguin visibilitat sobre actius de vídeo privats.",
           "Optimització de visibilitat On-Play mitjançant el balanceig de càrrega en contenidors Docker i proxies inversos de Nginx, garantint que l'streaming de vídeo HD no comprometi el rendiment del servidor principal.",
-          "Blindatge del perímetre de xarxa local utilitzant Cloudflare Tunnels i enrutament segur NAT Traversal, eliminant la necessitat d'obertura de ports crítics i xifrant tot el trànsit de vídeo de punta a punta."
+          "Blindatge del perímetre de xarxa local utilitzant Cloudflare Tunnels i enrutament segur NAT Traversal, eliminant la necessitat d'obertura de ports lliures i xifrant tot el trànsit de vídeo de punta a punta."
         ],
         en: [
           "Robust authentication based on session tokens (JWT) with granular role-based permissions (RBAC/PBAC), ensuring that only authorized users have access to private high-definition video assets.",
@@ -390,7 +408,7 @@ export const DATA = {
       },
       points: {
         es: [
-          "Entorno 100% privado con clasificación avanzada basada en notas y evaluaciones cruzadas.",
+          "Entornos 100% privados con clasificación avanzada basada en notas y evaluaciones cruzadas.",
           "Módulo de analítica masiva para el recuento y comparación entre evaluadores y participantes.",
           "Generación de perfiles de evaluadores (Persona Profiling) para detectar sesgos y tendencias de evaluación.",
           "Mapas de calor geográficos para analizar zonas con mayor propensión a evaluaciones frecuentes.",
@@ -451,7 +469,7 @@ export const DATA = {
         ],
         ca: [
           "Orquestració de més de 10 contenidors independents (Nginx, Portainer, etc.) mitjançant Docker Compose.",
-          "Configuració multihosting sobre maquinari local dedicat per a allotjar diverses aplicacions web de producció.",
+          "Configuració multihosting sobre maquinari local dedicat per a allotjar diverses aplicacions web de producción.",
           "Gestió integral de dominis, subdominis i enrutament segur mitjançant túnels Cloudflare (NAT Traversal).",
           "Monitorització centralitzada i còpies de seguretat automatitzades per garantir la persistència de dades.",
           "Hardening de seguretat perimetral Zero Trust per protegir l'accés a serveis crítics."
@@ -527,7 +545,7 @@ export const DATA = {
         ca: [
           "Gestió granular d'identitats i accessos (IAM) aplicant estrictament el principi de mínim privilegi per limitar els permisos de les funcions Lambda i serveis a només el que és estrictament necessari per a la seva execució.",
           "Xifrat de dades en repòs a S3 mitjançant AWS KMS (Key Management Service) i protecció integral de fluxos de dades en trànsit amb TLS 1.2, garantint que el pipeline compleixi amb estàndards d'alta seguretat cloud.",
-          "Arquitectura serverless amb monitoratge proactiu de seguretat integral mitjançant CloudWatch Logs i CloudTrail, automatitzant la generació d'alertes davant qualsevol intent d'accés anòmal als recursos de Big Data."
+          "Arquitectura serverless con monitoratge proactiu de seguretat integral mitjançant CloudWatch Logs i CloudTrail, automatitzant la generació d'alertes davant qualsevol intent d'accés anòmal als recursos de Big Data."
         ],
         en: [
           "Granular Identity and Access Management (IAM) strictly applying the principle of least privilege to limit Lambda functions and service permissions to the absolute minimum required for reliable execution.",
@@ -562,7 +580,7 @@ export const DATA = {
           "Sistema de revisió interactiva que permet als usuaris validar respostes i reportar errors en temps real.",
           "Entorn col·laboratiu on els alumnes poden intercanviar feedback, millorant la quilòmetres de les preguntes.",
           "Integració estratègica amb Google Ads per a la monetització i sostenibilitat del portal.",
-          "Quadre de comandament personal per al seguiment de resultats i millora contínua del rendiment acadèmic."
+          "Quadre de comandament personal per al seguent de resultats i millora contínua del rendiment acadèmic."
         ],
         en: [
           "Dynamic exam generation featuring customizable difficulty levels tailored to the student's learning progress.",
@@ -583,7 +601,7 @@ export const DATA = {
         ca: [
           "Protecció contra frau en exàmens mitjançant el desenvolupament de lògica de temporització sincronitzada estrictament al costat del servidor, eliminant possibles manipulacions de temps des del client de l'alumne.",
           "Validació estricta d'esquemes d'entrada i sanitització de dades massiva per prevenir injeccions NoSQL i assegurar la integritat de la base de dades davant enviaments de formularis malintencionats.",
-          "Optimització de persistència i desplegament sobre infraestructura serverless amb monitorització constant de rendiment, garantint l'escalabilitat davant pics de concurrència durant exàmens simultanis."
+          "Optimització de persistència i desplegament sobre infraestructura serverless con monitorització constant de rendiment, garantint l'escalabilitat davant pics de concurrència durant exàmens simultanis."
         ],
         en: [
           "Anti-fraud exam protection through the development of timing logic strictly synchronized on the server-side, effectively eliminating manual timer manipulations from the end-user's browser or client-side scripts.",
@@ -639,7 +657,7 @@ export const DATA = {
         ca: [
           "Xifrat natiu de grau militar (AES-256) gestionat a l'enclavament segur del dispositiu mòbil, garantint que els fitxers crítics romanguin il·legibles fins i tot en cas de robatori o compromís físic del terminal.",
           "Integració nativa de capes d'autenticació biomètrica (Petjada Dactilar i FaceID) com a requisit obligatori primari abans de qualsevol accés o visualització de documents altament sensibles emmagatzemats localment.",
-          "Arquitectura de sincronització basada en esquemes de xifrat asimètric controlat íntegrament per l'usuari, assegurant que només el propietari posseeixi les claus mestres de desxifrat fins i tot en còpies de seguretat."
+          "Arquitectura de sincronización basada en esquemas de xifrat asimètric controlat íntegrament per l'usuari, assegurant que només el propietari posseeixi les claus mestres de desxifrat fins i tot en còpies de seguretat."
         ],
         en: [
           "Native military-grade encryption (AES-256) managed within the mobile device's secure enclave, ensuring that critical documents remain unreadable even in cases of physical theft or local terminal compromise.",
@@ -671,33 +689,51 @@ export const DATA = {
       school: "Universitat Autònoma de Barcelona",
       date: "2018 – 2025",
       grade: "Graduado",
-      tfg: {
-        title: { es: "Segmentación y Tracking Automático de Objetos para Eventos Deportivos", ca: "Segmentació i Tracking Automàtic d'Objectes per a Esdeveniments Esportius", en: "Automatic Object Segmentation and Tracking for Sports Events" },
-        grade: "9.5",
-        link: "#"
-      },
       explanation: {
         es: "Formación especializada en ingeniería de software, algoritmos y sistemas operativos con mención en Ingeniería del Software.",
         ca: "Formació especialitzada en enginyeria de programari, algoritmes i sistemes operatius amb menció en Enginyeria del Software.",
         en: "Specialized training in software engineering, algorithms, and operating systems with a mention in Software Engineering."
+      },
+      tfg: {
+        title: {
+          es: "Compresibilidad de las Imágenes",
+          ca: "Compressibilitat de les Imatges",
+          en: "Image Compressibility"
+        },
+        grade: "9.0",
+        description: {
+          es: "Investigación sobre la eficiencia de compresión mediante métricas bidimensionales y gramáticas 2D. Se proponen métodos innovadores para transformar imágenes en flujos de datos optimizados, validando los resultados con bibliotecas avanzadas de Python sobre conjuntos de datos naturales y médicos.",
+          ca: "Investigació sobre l'eficiència de compressió mitjançant mètriques bidimensionals i gramàtiques 2D. Es proposen mètodes innovadors per transformar imatges en fluxos de dades optimitzats, validant els resultats amb biblioteques avançades de Python sobre conjunts de dades naturals i mèdiques.",
+          en: "Research on compression efficiency using two-dimensional metrics and 2D grammars. Innovative methods are proposed to transform images into optimized data streams, validating the results with advanced Python libraries on natural and medical datasets."
+        },
+        file: "/docs/tfg/tfg_gei.pdf"
       }
     },
     {
       id: "gst",
       category: { es: "Grado", ca: "Grau", en: "BS" },
-      title: { es: "Sistemas de Telecomunicación", ca: "Sistemes de Telecomunicació", en: "Telecommunication Systems" },
+      title: { es: "Ingeniería en Sistemas de Telecomunicación", ca: "Enginyeria en Sistemes de Telecomunicació", en: "Telecommunication Systems Engineering" },
       school: "Universitat Autònoma de Barcelona",
       date: "2018 – 2025",
       grade: "Graduado",
-      tfg: {
-        title: { es: "Diseño de Redes Críticas y Protocols de Comunicació de Baixa Latència", ca: "Disseny de Xarxes Crítiques i Protocols de Comunicació de Baixa Latència", en: "Critical Network Design and Low-Latency Communication Protocols" },
-        grade: "9.2",
-        link: "#"
-      },
       explanation: {
         es: "Formación integral en sistemas de transmisión, redes de datos, propagación de señal y servicios de telecomunicaciones.",
         ca: "Formació integral en sistemes de transmissió, xarxes de dades, propagació de senyal i serveis de telecomunicacions.",
         en: "Comprehensive training in transmission systems, data networks, signal propagation, and telecommunication services."
+      },
+      tfg: {
+        title: {
+          es: "Desarrollo e Implementación de Sistemas de Modulación Direccional y Posicional en Python",
+          ca: "Desenvolupament i Implementació de Sistemes de Modulació Direccional i Posicional en Python",
+          en: "Development and Implementation of Directional and Positional Modulation Systems in Python"
+        },
+        grade: "9.5",
+        description: {
+          es: "Mejora de la seguridad en radiocomunicaciones mediante modulación en la capa física. Se diseñan sistemas que focalizan la señal en direcciones específicas y coordenadas geográficas precisas, impidiendo la interceptación de información sensible por parte de receptores no autorizados mediante simulaciones dinámicas en Python.",
+          ca: "Millora de la seguretat en radiocomunicacions mitjançant modulació a la capa física. Es dissenyen sistemes que focalitzen el senyal en direccions específiques i coordenades geogràfiques precises, impedint la interceptació d'informació sensible per part de receptors no autoritzats mitjançant simulacions dinàmiques en Python.",
+          en: "Enhancement of radiocommunications security through physical layer modulation. Systems are designed to focus signals in specific directions and precise geographic coordinates, preventing unauthorized interception of sensitive information through dynamic Python simulations."
+        },
+        file: "/docs/tfg/tfg_gest.pdf"
       }
     }
   ],
