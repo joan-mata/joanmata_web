@@ -59,12 +59,12 @@ export const TRANSLATIONS = {
       autoTranslate: 'Auto-traducir al escribir'
     },
     skills: {
-      software: 'Software & Web',
-      ai: 'IA & Ciencia de Datos',
-      infrastructure: 'Infraestructura & DevOps',
-      hardware: 'Hardware & Sistemas',
-      scraping: 'Web Scraping & Data',
-      leadership: 'Liderazgo & Gestión'
+      software: 'Software y Web',
+      ai: 'IA y Ciencia de Datos',
+      infrastructure: 'Infraestructura y DevOps',
+      hardware: 'Hardware y Sistemas',
+      scraping: 'Web Scraping y Datos',
+      leadership: 'Liderazgo y Gestión'
     },
     alerts: {
       pdfNotFound: 'Archivo PDF no encontrado en el servidor. Por favor, contacta directamente.'

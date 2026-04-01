@@ -11,7 +11,7 @@
     "scraping": ["BeautifulSoup", "Scrapy", "Selenium", "Data Normalization", "Massive Ingestion", "User-Agent Rotation"],
     "infrastructure": ["AWS", "Docker", "Cloudflare", "Nginx", "Linux", "SSL/TLS", "PKI/SSH"],
     "hardware": ["PCB Design", "nRF52 / Nordic", "Bluetooth (BLE)", "Verilog / RTL", "Embedded Systems", "Arduino"],
-    "leadership": ["Liderazgo de Equipos", "Gestión de la Presión", "Toma de Decisiones", "Coordinación End-to-End", "Tutoría Académica", "Docencia Universitaria"]
+    "leadership": ["Liderazgo de Equipos", "Gestión de la Presión", "Toma de Decisiones", "Tutoría Académica", "Docencia Universitaria"]
   },
   "certificates": [
     { "title": "Desarrollo con IA", "issuer": "BIG School", "date": "2026" },
