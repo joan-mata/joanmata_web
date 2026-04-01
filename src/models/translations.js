@@ -62,7 +62,9 @@ export const TRANSLATIONS = {
       software: 'Software & Web',
       ai: 'IA & Ciencia de Datos',
       infrastructure: 'Infraestructura & DevOps',
-      hardware: 'Hardware & Sistemas'
+      hardware: 'Hardware & Sistemas',
+      scraping: 'Web Scraping & Data',
+      leadership: 'Liderazgo & Gestión'
     },
     alerts: {
       pdfNotFound: 'Archivo PDF no encontrado en el servidor. Por favor, contacta directamente.'
@@ -131,7 +133,9 @@ export const TRANSLATIONS = {
       software: 'Programari i Web',
       ai: 'IA i Ciència de Dades',
       infrastructure: 'Infraestructura i DevOps',
-      hardware: 'Maquinari i Sistemes'
+      hardware: 'Maquinari i Sistemes',
+      scraping: 'Web Scraping i Dades',
+      leadership: 'Lideratge i Gestió'
     },
     alerts: {
       pdfNotFound: 'Arxiu PDF no trobat al servidor. Si us plau, contacta directament.'
@@ -200,7 +204,9 @@ export const TRANSLATIONS = {
       software: 'Software & Web Development',
       ai: 'AI & Data Science',
       infrastructure: 'Infrastructure & DevOps',
-      hardware: 'Hardware & Systems'
+      hardware: 'Hardware & Systems',
+      scraping: 'Web Scraping & Data Engineering',
+      leadership: 'Leadership & Performance'
     },
     alerts: {
       pdfNotFound: 'PDF file not found on the server. Please contact me directly.'
