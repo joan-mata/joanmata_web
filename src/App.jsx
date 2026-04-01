@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { HashRouter, Routes, Route, Navigate } from 'react-router-dom';
-import * as yaml from 'js-yaml';
 import { TRANSLATIONS } from './models/translations';
 import { DATA } from './models/cvData';
 import Header from './components/layout/Header';
@@ -51,63 +50,75 @@ export default function App() {
     const d = currentData;
     const l = lang;
 
-    // Transform to AI-Ready YAML structure (Matching cvData_es.yaml)
-    const aiReady = {
-      nombre: d.name,
-      email: d.email,
-      telefono: d.phone,
-      ubicacion: d.location,
-      perfil: {
-        texto: d.profile[l]
-      },
-      experiencia: d.experience.map(exp => ({
-        empresa: exp.company,
-        puesto: exp.role[l],
-        fecha: exp.date,
-        descripcion: exp.points[l] ? exp.points[l].map(p => `- ${p}`).join('\n') : ''
-      })),
-      proyectos_ingenieria: d.projects.map(p => ({
-        nombre: p.name[l],
-        fecha: p.date,
-        tecnologias: p.techStack,
-        descripcion: p.points[l] ? p.points[l].map(pt => `- ${pt}`).join('\n') : (p.desc[l] || '')
-      })),
-      formacion: d.education.map(edu => ({
-        titulo: edu.title[l],
-        centro: edu.school,
-        fecha: edu.date
-      })),
-      voluntariado: d.volunteering.map(v => ({
-        organizacion: v.org,
-        puesto: v.location,
-        fecha: v.date,
-        descripcion: v.desc[l]
-      })),
-      habilidades: {
-        tecnicas: [
-          `Programación: ${d.skills.software.join(', ')}.`,
-          `Datos e IA: ${d.skills.ai.join(', ')}.`,
-          `Web & Scraping: ${d.skills.scraping.join(', ')}.`,
-          `Infraestructura: ${d.skills.infrastructure.join(', ')}.`
-        ],
-        competencias: d.skills.leadership,
-        idiomas: [
-          "Español (nativo)",
-          "Catalán (nativo)",
-          "Inglés (B2)",
-          "Francés (A2)"
-        ]
-      },
-      certificados: d.certificates.map(c => ({
-        nombre: c.title,
-        emisor: c.issuer,
-        fecha: c.date,
-        descripcion: c.description[l]
-      }))
+    // Helper to format strings with quotes if needed
+    const q = (s) => `"${(s || '').toString().replace(/"/g, '\\"')}"`;
+    
+    // Helper to format lists as multiline YAML strings with |
+    const fmtList = (list, indent) => {
+      const sp = ' '.repeat(indent);
+      if (!list || list.length === 0) return '""';
+      return '|\n' + list.map(item => `${sp}- ${item}`).join('\n');
     };
 
-    const yamlStr = yaml.dump(aiReady, { lineWidth: -1, quotingType: '"' });
-    const blob = new Blob([yamlStr], { type: 'text/yaml;charset=utf-8' });
+    // Manual YAML construction specifically for the requested AI format
+    let yaml = `nombre: ${q(d.name)}\n`;
+    yaml += `email: ${q(d.email)}\n`;
+    yaml += `telefono: ${q(d.phone)}\n`;
+    yaml += `ubicacion: ${q(d.location)}\n\n`;
+
+    yaml += `perfil:\n  texto: ${q(d.profile[l])}\n\n`;
+
+    yaml += `experiencia:\n`;
+    d.experience.forEach(exp => {
+      yaml += `  - empresa: ${q(exp.company)}\n`;
+      yaml += `    puesto: ${q(exp.role[l])}\n`;
+      yaml += `    fecha: ${q(exp.date)}\n`;
+      yaml += `    descripcion: ${fmtList(exp.points[l], 6)}\n`;
+    });
+
+    yaml += `\nproyectos_ingenieria:\n`;
+    d.projects.forEach(p => {
+      yaml += `  - nombre: ${q(p.name[l])}\n`;
+      yaml += `    fecha: ${q(p.date)}\n`;
+      yaml += `    tecnologias: [${p.techStack.map(t => q(t)).join(', ')}]\n`;
+      yaml += `    descripcion: ${fmtList(p.points[l], 6)}\n`;
+    });
+
+    yaml += `\nformacion:\n`;
+    d.education.forEach(edu => {
+      yaml += `  - titulo: ${q(edu.title[l])}\n`;
+      yaml += `    centro: ${q(edu.school)}\n`;
+      yaml += `    fecha: ${q(edu.date)}\n`;
+    });
+
+    yaml += `\nvoluntariado:\n`;
+    d.volunteering.forEach(v => {
+      yaml += `  - organizacion: ${q(v.org)}\n`;
+      yaml += `    puesto: ${q(v.location)}\n`;
+      yaml += `    fecha: ${q(v.date)}\n`;
+      yaml += `    descripcion: ${q(v.desc[l])}\n`;
+    });
+
+    yaml += `\nhabilidades:\n`;
+    yaml += `  tecnicas:\n`;
+    yaml += `    - "Programación: ${d.skills.software.join(', ')}."\n`;
+    yaml += `    - "Datos e IA: ${d.skills.ai.join(', ')}."\n`;
+    yaml += `    - "Web & Scraping: ${d.skills.scraping.join(', ')}."\n`;
+    yaml += `    - "Infraestructura: ${d.skills.infrastructure.join(', ')}."\n`;
+    yaml += `  competencias:\n`;
+    d.skills.leadership.forEach(c => { yaml += `    - ${q(c)}\n`; });
+    yaml += `  idiomas:\n`;
+    ["Español (nativo)", "Catalán (nativo)", "Inglés (B2)", "Francés (A2)"].forEach(i => { yaml += `    - ${q(i)}\n`; });
+
+    yaml += `\ncertificados:\n`;
+    d.certificates.forEach(c => {
+      yaml += `  - nombre: ${q(c.title)}\n`;
+      yaml += `    emisor: ${q(c.issuer)}\n`;
+      yaml += `    fecha: ${q(c.date)}\n`;
+      yaml += `    descripcion: ${q(c.description[l])}\n`;
+    });
+
+    const blob = new Blob([yaml], { type: 'text/yaml;charset=utf-8' });
     const dl = document.createElement('a');
     dl.href = URL.createObjectURL(blob);
     dl.download = `cvData_${l}.yaml`;
