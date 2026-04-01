@@ -1,0 +1,311 @@
+{
+  "profile": "Enginyer amb doble titulació en Enginyeria Informàtica i Sistemes de Telecomunicació, amb un perfil híbrid que uneix maquinari, programari i ciència de dades. Actualment exerceixo com a Professor Universitari especialitzat en ciberseguretat i xarxes, activitat que compagino amb el desenvolupament de solucions d'IA local, arquitectures cloud escalables i sistemes encastats. Em defineix una profunda curiositat tècnica i una mentalidad de aprenentatge continu, la qual cosa em permet adaptar-me ràpidament a noves tecnologies i integrar-les en projectes complexos i segurs.",
+  "experience": [
+    {
+      "company": "Universitat Autònoma de Barcelona",
+      "role": "Professor d'universitat",
+      "points": [
+        "Docent en 'Serveis de Telecomunicacions', liderant la formació pràctica en desenvolupament web full-stack i seguretat.",
+        "Configuració avançada de seguretat web: SSL/TLS, PKI i gestió d'infraestructures crítiques.",
+        "Docent en 'Fonaments de Xarxes', impartint fonaments de comunicació IP i client-servidor.",
+        "Tutor de TFG en ciberseguretat (hardening) i Data Engineering (scraping massiu)."
+      ],
+      "date": "09/2025 - Present"
+    },
+    {
+      "company": "FlexiiC",
+      "role": "Dissenyador de Circuits Integrats",
+      "points": [
+        "Desenvolupament de connectivitat sense fils amb nRF52840 i Bluetooth Low Energy (BLE).",
+        "Disseny integral de PCBs i validació amb sistemes encastats.",
+        "Verificació digital de maquinari (RTL) en Verilog i optimització en ASM.",
+        "Lideratge en debugging lògic del xip per a fase de producció."
+      ],
+      "date": "09/2024 - 11/2025"
+    },
+    {
+      "company": "Universitat Autònoma de Barcelona",
+      "role": "Tècnic Especialista en Investigació",
+      "points": [
+        "Disseny d'arquitectura backend migrant de Django a Flask.",
+        "Lideratge en transició de SQL a NoSQL (MongoDB) per a dades heterogènies.",
+        "Automatització de pipelines de dades en temps real."
+      ],
+      "date": "07/2022 - 07/2023"
+    },
+    {
+      "company": "Cellnex Telecom",
+      "role": "Enginyer de Vendes",
+      "points": [
+        "Modelatge de sistemes d'RF i gestió d'aliances estratègiques.",
+        "Coordinació End-to-End del cicle de vida del projecte."
+      ],
+      "date": "06/2022 - 07/2023"
+    },
+    {
+      "company": "Johnson Control Hitachi",
+      "role": "QA Tester",
+      "points": [
+        "Validació de sistemes mitjançant simuladors físics i scripts en Python.",
+        "Implementació de sistema de diagnòstic amb Arduino."
+      ],
+      "date": "07/2021 - 02/2022"
+    },
+    {
+      "company": "Federació Catalana de Futbol",
+      "role": "Àrbitre de futbol",
+      "points": [
+        "Gestió de l'estrès i presa de decisions crítica."
+      ],
+      "date": "07/2016 - Present"
+    }
+  ],
+  "projects": [
+    {
+      "id": "cv-web",
+      "name": "CV Interactivo",
+      "desc": "La meva targeta de presentació digital, dissenyada amb arquitectura neta MVC per a màxima escalabilitat.",
+      "points": [
+        "Desenvolupament integral del portal des de zero emprant React i Vanilla CSS per a un disseny fluid i lleuger.",
+        "Implementació darquitectura MVC (Model-View-Controller) per a la separació estricta de lògica de dades i UI.",
+        "Disseny dun motor de persistència sobre JSON i LocalStorage per a la gestió dinàmica del CV.",
+        "Panell d'administració interactiu amb desament en temps real i càrrega de traduccions automàtiques.",
+        "Optimització de procediments per a una càrrega dʻalt rendiment i una experiència dʻusuari premium (UX)."
+      ],
+      "techStack": ["React", "Vite", "Vanilla CSS", "JS MVC", "JSON Persistence"],
+      "security": [
+        "Arquitectura de rutes protegides mitjançant aïllament de components i guàrdies de navegació de React Router, impedint accessos no autoritzats a les vistes administratives mitjançant validació d'estat en temps real i seguretat de sessió.",
+        "Xifrat de persistència local per protegir la integritat del JSON del CV, assegurant que les dades sensibles romanguin privades i protegides en el navegador de l'usuari.",
+        "Optimització de desplegament mitjançant pipelines de CI/CD automatitzats, integrant capçaleres de seguretat HTTP (HSTS, CSP) i gestió automatizada de certificats SSL/TLS per garantir connexions xifrades punt a punt."
+      ],
+      "date": "2026",
+      "tags": ["React", "MVC", "Architecture", "Full-Stack"],
+      "links": { "github": "github.com/joan-mata/Create_CVs", "live": "cv.joanmata.com" }
+    },
+    {
+      "id": "ai-resumes",
+      "name": "AI Interactive Resume Editor",
+      "desc": "Editor de CV interactiu 'side-by-side' amb IA local.",
+      "points": [
+        "Interfície d'edició interactiva amb vista prèvia en temps real en paral·lel (side-by-side).",
+        "Integració d'IA Local per a l'optimització de l'estructura i la correcció avançada de sintaxi.",
+        "Mòdul d'adaptació intel·ligent per ajustar el CV automàticament a ofertes d'ocupació específiques.",
+        "Motor de renderitzat dinàmic que permet canviar la visualització i temes a un clic.",
+        "Persistència de dades sense servidor mitjançant emmagatzematge local i exportació JSON estructurada."
+      ],
+      "techStack": ["React", "Vite", "Local AI (DeepSeek/Mistral)", "LaTeX Engine"],
+      "security": [
+        "Seguretat 100% 'Offline-First' amb processament d'IA íntegramente en el client, eliminant la necessitat d'enviar dades sensibles a serveis de tercers o servidors externs per al seu processament lingüístic.",
+        "Sanitització d'entrades de text mitjançant capes de validació per prevenir atacs de Cross-Site Scripting (XSS) i garantir un renderitzat segur de documents LaTeX/PDF directament al navegador.",
+        "Persistència descentralitzada basada en esquemes d'emmagatzematge local xifrat, donant a l'usuari el control absolut sobre la sobirania i privadesa de la seva informació profesional sense dependències de núvol."
+      ],
+      "date": "2026",
+      "tags": ["React", "Local AI", "LaTeX-Style", "MVC"],
+      "links": { "github": "github.com/joan-mata/Create_CVs", "live": "cv.joanmata.com" }
+    },
+    {
+      "id": "ref-stats",
+      "name": "RefStats: Analítica & Scraping Engine",
+      "desc": "Plataforma d'analítica esportiva amb Web Scraping.",
+      "points": [
+        "Desenvolupament d'un motor de Web Scraping especialitzat per a l'escombrat massiva de resultats i actes en temps real.",
+        "Implementació de scripts d'automatització allotjats en servidor local per a l'extracció contínua de dades esportives.",
+        "Disseny d'un pipeline de processament que transforma dades brutes en estadístiques detallades per equip, jornada i partit.",
+        "Interfície Frontend personalitzada per a la visualització fluida de classificacions i mètriques de rendiment.",
+        "Persistència de dades històriques en base de dades local per a l'anàlisi comparatiu de temporades."
+      ],
+      "techStack": ["Python", "BeautifulSoup/Scrapy", "React", "Node.js", "Local Storage"],
+      "security": [
+        "Tècniques de scraping ètic mitjançant la implementació de rotació d'User-Agents i gestió intel·ligent de temps d'espera per evitar bloquejos per IP i garantir la sostenibilitat tècnica del motor d'extracció.",
+        "Infraestructura d'emmagatzematge redundant basada en servidors locals amb scripts de neteja automatitzada per depurar inconsistències i assegurar la integritat de les estadístiques esportives.",
+        "Monitorització proactiva de latència i gestió d'errors en la ingesta massiva, normalitzant automàticament esquemes NoSQL per mantenir una base de dades esportiva resilient i d'alt rendiment."
+      ],
+      "date": "2026",
+      "tags": ["Python", "Web Scraping", "Sports Analytics", "Full-Stack"],
+      "links": { "github": "github.com/joan-mata/RefStats", "live": null }
+    },
+    {
+      "id": "f1-archive",
+      "name": "F1 Personal Vault",
+      "desc": "Repositori personal de vídeo HD amb gestió de rols.",
+      "points": [
+        "Sistema de visibilitat basada en rols (PBAC) per diferenciar contingut públic de privat.",
+        "Panell d'administració personalitzat per a la càrrega i gestió massiva d'actius de vídeo d'alta definició.",
+        "Optimització de persistència i maneig de càrrega pesada durant l'streaming i la pujada de fitxers.",
+        "Estructura de metadades dinàmica per a la classificació i cerca ràpida de sessions històriques.",
+        "Infraestructura dockenitzada per l'escalat de l'emmagatzematge i servidors d'streaming."
+      ],
+      "techStack": ["React", "Node.js", "Express", "Docker", "Nginx"],
+      "security": [
+        "Autenticació robusta basada en tokens de sessió (JWT) amb gestió granular de permisos mitjançant rols (RBAC/PBAC), assegurant que només els usuaris autoritzats tinguin visibilitat sobre actius de vídeo privats.",
+        "Optimització de visibilitat On-Play mitjançant el balanceig de càrrega en contenidors Docker i proxies inversos de Nginx, garantint que l'streaming de vídeo HD no comprometi el rendiment del servidor principal.",
+        "Blindatge del perímetre de xarxa local utilitzant Cloudflare Tunnels i enrutament segur NAT Traversal, eliminant la necessitat d'obertura de ports lliures i xifrant tot el trànsit de vídeo de punta a punta."
+      ],
+      "date": "2026",
+      "tags": ["Full-Stack", "Streaming", "RBAC", "Video Engine"],
+      "links": { "github": "github.com/joan-mata/f1_archive", "live": "f1.joanmata.com" }
+    },
+    {
+      "id": "ref-notes",
+      "name": "Referee Performance Analytics",
+      "desc": "Portal privat d'analítica arbitral avançada.",
+      "points": [
+        "Entorn 100% privat amb classificació avançada basada en notes i avaluacions creuades.",
+        "Mòdul d'analítica massiva per al recompte i comparació entre avaluadors i participants.",
+        "Generació de perfils d'avaluadors (Persona Profiling) per detectar biaixos i tendències d'avaluació.",
+        "Mapes de calor geogràfics per analitzar zones amb major propensió a avaluacions freqüents.",
+        "Detecció de patrons de viatge i assignació geogràfica per optimitzar els comitès d'avaluació."
+      ],
+      "techStack": ["Python", "Flask", "PostgreSQL", "D3.js", "Geology/Mapping APIs"],
+      "security": [
+        "Entorn d'alta confidencialitat mitjançant la implementació d'autenticació de doble factor (2FA) i xifrat de base de dades PostgreSQL en repòs per protegir la integritat dels resultats arbitrals externs.",
+        "Seguretat arquitectònica basada en la segmentació de xarxes internes i l'ús de proxies inversos aïllats, impedint l'accés directe als serveis de dades sensibles des de la xarxa pública sense autorització prèvia.",
+        "Control granular d'accés a dades geogràfiques i personals, aplicant lògica d'anonimització en perfiles d'avaluació per protegir la privadesa dels avaluadors i complir amb normatives de protecció de dades."
+      ],
+      "date": "2025",
+      "tags": ["Analytics", "Data Viz", "Private Portal", "GIS"],
+      "links": { "github": "github.com/joan-mata/RefereeNotes", "live": "refnotes.joanmata.com" }
+    },
+    {
+      "id": "main-server",
+      "name": "Infraestructura Cloud Local",
+      "desc": "Infraestructura local escalable basada en Docker.",
+      "points": [
+        "Orquestració de més de 10 contenidors independents (Nginx, Portainer, etc.) mitjançant Docker Compose.",
+        "Configuració multihosting sobre maquinari local dedicat per a allotjar diverses aplicacions web de producción.",
+        "Gestió integral de dominis, subdominis i enrutament segur mitjançant túnels Cloudflare (NAT Traversal).",
+        "Monitorització centralitzada i còpies de seguretat automatitzades per garantir la persistència de dades.",
+        "Hardening de seguretat perimetral Zero Trust per protegir l'accés a serveis crítics."
+      ],
+      "techStack": ["Docker", "Linux (macOS)", "Cloudflare Tunnel", "Nginx", "Reverse Proxy"],
+      "security": [
+        "Implementació d'un perímetre de seguretat Zero Trust basat en Cloudflare Tunnels (NAT Traversal), eliminant completament la necessitat d'obertura de ports al router ISP i anulant possibles atacs d'escaneig d'IP pública.",
+        "Orquestració d'infraestructura resilient mitjançant Docker Compose amb monitorització centralitzada de logs en contenidors aïllats, detectando proactivamente anomalies en el trànsit intern i extern de cada servei.",
+        "Gestió automatitzada de certificats SSL/TLS i blindatge mitjançant Firewall perimetral amb filtratge d'IPs per geolocalització, bloquejant accessos fraudulents des de regions no autoritzades o ips sospitoses."
+      ],
+      "date": "2025 - 2026",
+      "tags": ["Docker", "DevOps", "Cloudflare", "Infrastructure"],
+      "links": { "github": null, "live": null }
+    },
+    {
+      "id": "aws-pipeline",
+      "name": "AWS Data Ingestion Pipeline",
+      "desc": "Pipeline d'ingesta de dades a gran escala automatitzat en infraestructura cloud d'AWS.",
+      "points": [
+        "Disseny d'orquestració assíncrona mitjançant serveis serverless (AWS Lambda).",
+        "Gestió de fluxos de dades massius amb Kinesis Data Streams.",
+        "Automatització de processos ETL complexos utilitzant Python i Boto3.",
+        "Emmagatzematge escalable en S3 amb polítiques de cicle de vida intel·ligent.",
+        "Monitorització proactiva i alertes d'errors crítiques mitjançant CloudWatch."
+      ],
+      "techStack": ["Python", "AWS Lambda", "Boto3", "Kinesis", "S3"],
+      "security": [
+        "Gestió granular d'identitats i accessos (IAM) aplicant estrictament el principi de mínim privilegi per limitar els permisos de les funcions Lambda i serveis a només el que és estrictament necessari per a la seva execució.",
+        "Xifrat de dades en repòs a S3 mitjançant AWS KMS (Key Management Service) i protecció integral de fluxos de dades en trànsit amb TLS 1.2, garantint que el pipeline compleixi amb estàndards d'alta seguretat cloud.",
+        "Arquitectura serverless con monitoratge proactiu de seguretat integral mitjançant CloudWatch Logs i CloudTrail, automatitzant la generació d'alertes davant qualsevol intent d'accés anòmal als recursos de Big Data."
+      ],
+      "date": "2025",
+      "tags": ["AWS", "Python", "ETL", "Big Data"],
+      "links": { "github": null, "live": null }
+    },
+    {
+      "id": "web-exams",
+      "name": "WebExams: Interactive Assessment Platform",
+      "desc": "Plataforma d'exàmens interactius amb feedback.",
+      "points": [
+        "Generació dinàmica d'exàmens amb nivells de dificultat personalitzables per adaptar-se al progrés de l'alumne.",
+        "Implementació de temporitzadors configurables per simular amb precisió entorns d'examen oficials.",
+        "Sistema de revisió interactiva que permet als usuaris validar respostes i reportar errors en temps real.",
+        "Entorn col·laboratiu on els alumnes poden intercanviar feedback, millorant la quilòmetres de les preguntes.",
+        "Integració estratègica amb Google Ads per a la monetització i sostenibilitat del portal.",
+        "Quadre de comandament personal per al seguent de resultats i millora contínua del rendiment acadèmic."
+      ],
+      "techStack": ["React", "Vite", "Firebase/Node.js", "Google Adsense", "CSS Grid"],
+      "security": [
+        "Protecció contra frau en exàmens mitjançant el desenvolupament de lògica de temporització sincronitzada estrictament al costat del servidor, eliminant possibles manipulacions de temps des del client de l'alumne.",
+        "Validació estricta d'esquemes d'entrada i sanitització de dades massiva per prevenir injeccions NoSQL i assegurar la integritat de la base de dades davant enviaments de formularis malintencionats.",
+        "Optimització de persistència i desplegament sobre infraestructura serverless con monitorització constant de rendiment, garantint l'escalabilitat davant pics de concurrència durant exàmens simultanis."
+      ],
+      "date": "2025",
+      "tags": ["React", "E-learning", "Community", "Monetization"],
+      "links": { "github": "github.com/joan-mata/WebExams", "live": null }
+    },
+    {
+      "id": "docu-life",
+      "name": "DocuLife: Bóveda Digital Segura",
+      "desc": "Volta digital mòbil per a documents crítics.",
+      "points": [
+        "Desenvolupament d'un entorn digital blindat per a l'emmagatzematge segur de documents sensibles (DNI, Passaports, Escriptures).",
+        "Implementació de protocols de xifrat d'extrem a extrem per a garantir la privadesa total de l'usuari.",
+        "Categorització intel·ligent de fitxers per facilitar l'accés ràpid a documents mèdics, financers i immobiliaris.",
+        "Interfície mòbil optimitzada (Cross-platform) centrada en l'usabilitat i la recuperació immediata en emergències.",
+        "Arquitectura enfocada en la sobirania de dades, permetent emmagatzematge local i sincronització xifrada opcional.",
+        "Gestió dinàmica de dates de caducitat per a alertes automàtiques de renovació de documents oficials."
+      ],
+      "techStack": ["React Native/Flutter", "AES-256 Encryption", "SQLite/Realm", "Biometric Auth"],
+      "security": [
+        "Xifrat natiu de grau militar (AES-256) gestionat a l'enclavament segur del dispositiu mòbil, garantint que els fitxers crítics romanguin il·legibles fins i tot en cas de robatori o compromís físic del terminal.",
+        "Integració nativa de capes d'autenticació biomètrica (Petjada Dactilar i FaceID) com a requisit obligatori primari abans de qualsevol accés o visualització de documents altament sensibles emmagatzemats localment.",
+        "Arquitectura de sincronización basada en esquemas de xifrat asimètric controlat íntegrament per l'usuari, assegurant que només el propietari posseeixi les claus mestres de desxifrat fins i tot en còpies de seguretat."
+      ],
+      "date": "2025",
+      "tags": ["Mobile", "Security", "Privacy", "Vault"],
+      "links": { "github": "github.com/joan-mata/DocuLife", "live": null }
+    }
+  ],
+  "education": [
+    {
+      "id": "master-ds",
+      "category": "Màster",
+      "title": "Ciència de Dades",
+      "explanation": "Màster enfocat en mètodes d'aprenentatge automàtic, mineria de dades i arquitectures escalables de Big Data.",
+      "school": "Universitat Oberta de Catalunya",
+      "date": "2025 – Present",
+      "grade": "En curso"
+    },
+    {
+      "id": "gei",
+      "category": "Grau",
+      "title": "Enginyeria Informàtica",
+      "explanation": "Formació especialitzada en enginyeria de programari, algoritmes i sistemes operatius amb menció en Enginyeria del Software.",
+      "school": "Universitat Autònoma de Barcelona",
+      "date": "2018 – 2025",
+      "grade": "Graduado",
+      "tfg": {
+        "title": "Compressibilitat de les Imatges",
+        "description": "Investigació sobre l'eficiència de compressió mitjançant mètriques bidimensionals i gramàtiques 2D. Es proposen mètodes innovadors per transformar imatges en fluxos de dades optimitzats, validant els resultats amb biblioteques avançades de Python sobre conjunts de dades naturals i mèdiques.",
+        "grade": "9.0",
+        "file": "/docs/tfg/tfg_gei.pdf"
+      }
+    },
+    {
+      "id": "gst",
+      "category": "Grau",
+      "title": "Enginyeria en Sistemes de Telecomunicació",
+      "explanation": "Formació integral en sistemes de transmissió, xarxes de dades, propagació de senyal i serveis de telecomunicacions.",
+      "school": "Universitat Autònoma de Barcelona",
+      "date": "2018 – 2025",
+      "grade": "Graduado",
+      "tfg": {
+        "title": "Desenvolupament i Implementació de Sistemes de Modulació Direccional i Posicional en Python",
+        "description": "Millora de la seguretat en radiocomunicacions mitjançant modulació a la capa física. Es dissenyen sistemes que focalitzen el senyal en direccions específiques i coordenades geogràfiques precises, impedint la interceptació d'informació sensible per part de receptors no autoritzats mitjançant simulacions dinàmiques en Python.",
+        "grade": "8.5",
+        "file": "/docs/tfg/tfg_gest.pdf"
+      }
+    }
+  ],
+  "volunteering": [
+    {
+      "location": "Bolivia",
+      "date": "2025",
+      "org": "FASFI",
+      "desc": "Suport educatiu a Cochabamba."
+    },
+    {
+      "location": "Haití",
+      "date": "2019",
+      "org": "TECHO",
+      "desc": "Construcció d'habitatges a Port-au-Prince."
+    }
+  ]
+}

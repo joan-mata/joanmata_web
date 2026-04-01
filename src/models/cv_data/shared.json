@@ -1,0 +1,17 @@
+{
+  "name": "Joan Mata Pàrraga",
+  "email": "joanmata.parraga@gmail.com",
+  "phone": "+34 647 267 153",
+  "location": "Barcelona, España",
+  "linkedin": "linkedin.com/in/joan-mata",
+  "github": "github.com/joan-mata",
+  "skills": [
+    "Python", "C++", "React", "Node.js", "Swift", "Machine Learning", "Local IA", "AWS", "Docker", "PKI/SSL", "PCB Design"
+  ],
+  "certificates": [
+    { "title": "Desarrollo con IA", "issuer": "BIG School", "date": "2026" },
+    { "title": "Bluetooth Low Energy Fundamentals", "issuer": "Nordic Semiconductor", "date": "2024" },
+    { "title": "nRF Connect SDK Fundamentals", "issuer": "Nordic Semiconductor", "date": "2024" },
+    { "title": "Certificate of Python", "issuer": "University of Michigan", "date": "2019" }
+  ]
+}

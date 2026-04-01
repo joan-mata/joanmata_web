@@ -1,0 +1,311 @@
+{
+  "profile": "Ingeniero con doble titulación en Ingeniería Informática y Sistemas de Telecomunicación, con un perfil híbrido que une hardware, software y ciencia de datos. Actualmente ejerzo como Profesor Universitario especializado en ciberseguridad y redes, actividad que compagino con el desarrollo de soluciones de IA local, arquitecturas cloud escalables y sistemas embebidos. Me define una profunda curiosidad técnica y una mentalidad de aprendizaje continuo, lo que me permite adaptarme rápidamente a nuevas tecnologías e integrarlas en proyectos complejos y seguros.",
+  "experience": [
+    {
+      "company": "Universitat Autònoma de Barcelona",
+      "role": "Profesor de universidad",
+      "points": [
+        "Docente en 'Serveis de Telecomunicacions', liderando la formación práctica en desarrollo web full-stack y seguridad.",
+        "Configuración avanzada de seguridad web: SSL/TLS, PKI y gestión de infraestructuras críticas.",
+        "Docente en 'Fonaments de Xarxes', impartiendo fundamentos de comunicación IP y cliente-servidor.",
+        "Tutor de TFG en ciberseguridad (hardening) y Data Engineering (scraping masivo)."
+      ],
+      "date": "09/2025 - Present"
+    },
+    {
+      "company": "FlexiiC",
+      "role": "Diseñador de Circuits Integrats",
+      "points": [
+        "Desarrollo de conectividad inalámbrica con nRF52840 y Bluetooth Low Energy (BLE).",
+        "Diseño integral de PCBs y validación con sistemas embebidos.",
+        "Verificación digital de hardware (RTL) en Verilog y optimización en ASM.",
+        "Liderazgo en debugging lógico del chip para fase de producción."
+      ],
+      "date": "09/2024 - 11/2025"
+    },
+    {
+      "company": "Universitat Autònoma de Barcelona",
+      "role": "Técnico Especialista en Investigación",
+      "points": [
+        "Diseño de arquitectura backend migrando de Django a Flask.",
+        "Liderazgo en transición de SQL a NoSQL (MongoDB) para datos heterogéneos.",
+        "Automatización de pipelines de datos en tiempo real."
+      ],
+      "date": "07/2022 - 07/2023"
+    },
+    {
+      "company": "Cellnex Telecom",
+      "role": "Ingeniero de Ventas",
+      "points": [
+        "Modelado de sistemas de RF y gestión de alianzas estratégicas.",
+        "Coordinación End-to-End del ciclo de vida del proyecto."
+      ],
+      "date": "06/2022 - 07/2023"
+    },
+    {
+      "company": "Johnson Control Hitachi",
+      "role": "QA Tester",
+      "points": [
+        "Validación de sistemas mediante simuladores físicos and scripts en Python.",
+        "Implementación de sistema de diagnóstico con Arduino."
+      ],
+      "date": "07/2021 - 02/2022"
+    },
+    {
+      "company": "Federació Catalana de Futbol",
+      "role": "Árbitro de fútbol",
+      "points": [
+        "Gestión de la presión y toma de decisiones crítica."
+      ],
+      "date": "07/2016 - Present"
+    }
+  ],
+  "projects": [
+    {
+      "id": "cv-web",
+      "name": "CV Interactivo",
+      "desc": "Mi tarjeta de presentación digital, diseñada con arquitectura limpia MVC para máxima escalabilidad.",
+      "points": [
+        "Desarrollo integral del portal desde cero empleando React y Vanilla CSS para un diseño fluido y ligero.",
+        "Implementación de arquitectura MVC (Model-View-Controller) para la separación estricta de lógica de datos y UI.",
+        "Diseño de un motor de persistencia sobre JSON y LocalStorage para la gestión dinámica del CV.",
+        "Panel de Administración interactivo con guardado en tiempo real y carga de traducciones automáticas.",
+        "Optimización de componentes para una carga de alto rendimiento y una experiencia de usuario premium (UX)."
+      ],
+      "techStack": ["React", "Vite", "Vanilla CSS", "JS MVC", "JSON Persistence"],
+      "security": [
+        "Arquitectura de rutas protegidas mediante aislamiento de componentes y guardias de navegación de React Router, impidiendo accesos no autorizados a las vistas administrativas mediante validación de estado en tiempo real.",
+        "Cifrado de para proteger la integridad del JSON del CV, asegurando que los datos sensibles permanezcan privados en el navegador del usuario ante posibles manipulaciones externas.",
+        "Optimización de despliegue mediante pipelines de CI/CD automatizados, integrando cabeceras de seguridad HTTP (HSTS, CSP) y gestión automatizada de certificados SSL/TLS para garantizar conexiones cifradas punto a punto."
+      ],
+      "date": "2026",
+      "tags": ["React", "MVC", "Architecture", "Full-Stack"],
+      "links": { "github": "github.com/joan-mata/Create_CVs", "live": "cv.joanmata.com" }
+    },
+    {
+      "id": "ai-resumes",
+      "name": "AI Interactive Resume Editor",
+      "desc": "Editor de CV interactivo 'side-by-side' con IA local.",
+      "points": [
+        "Interfaz de edición interactiva con vista previa en tiempo real en paralelo (side-by-side).",
+        "Integración de IA Local para la optimización de la estructura y corrección avanzada de sintaxis.",
+        "Módulo de adaptación inteligente para ajustar el CV automáticamente a ofertas de empleo específicas.",
+        "Motor de renderizado dinámico que permite cambiar la visualización y temas en un clic.",
+        "Persistencia de datos sin servidor mediante almacenamiento local y exportación JSON estructurada."
+      ],
+      "techStack": ["React", "Vite", "Local AI (DeepSeek/Mistral)", "LaTeX Engine"],
+      "security": [
+        "Seguridad 100% 'Offline-First' con procesamiento de IA íntegramente en el cliente, eliminando la necesidad de enviar datos sensibles a servicios de terceros o servidores externos para su procesamiento lingüístico.",
+        "Sanitización de entradas de texto mediante capas de validación y escapado de caracteres para prevenir ataques de Cross-Site Scripting (XSS) y garantizar un renderizado seguro de documentos LaTeX/PDF.",
+        "Persistencia descentralizada basada en esquemas de almacenamiento local cifrado, otorgando al usuario el control absoluto sobre la soberanía y privacidad de su información profesional sin dependencias cloud."
+      ],
+      "date": "2026",
+      "tags": ["React", "Local AI", "LaTeX-Style", "MVC"],
+      "links": { "github": "github.com/joan-mata/Create_CVs", "live": "cv.joanmata.com" }
+    },
+    {
+      "id": "ref-stats",
+      "name": "RefStats: Analítica & Scraping Engine",
+      "desc": "Plataforma de analítica deportiva con Web Scraping.",
+      "points": [
+        "Desarrollo de un motor de Web Scraping especializado para la recolección masiva de resultados y actas en tiempo real.",
+        "Implementación de scripts de automatización alojados en servidor local para la extracción continua de datos deportivos.",
+        "Diseño de un pipeline de procesamiento que transforma datos brutos en estadísticas detalladas por equipo, jornada y partido.",
+        "Interfaz Frontend personalizada para la visualización fluida de clasificaciones y métricas de rendimiento.",
+        "Persistencia de datos históricos en base de datos local para el análisis comparativo de temporadas."
+      ],
+      "techStack": ["Python", "BeautifulSoup/Scrapy", "React", "Node.js", "Local Storage"],
+      "security": [
+        "Técnicas de scraping ético mediante la implementación de rotación de User-Agents y gestión inteligente de tiempos de espera para evitar bloqueos por IP y garantizar la sostenibilidad técnica del motor.",
+        "Infraestructura de almacenamiento redundante basada en servidores locales con scripts de limpieza automatizada para depurar inconsistencias y asegurar la integridad de las estadísticas ingestas.",
+        "Monitorización proactiva de latencia y gestión de errores en la ingesta masiva, normalizando automáticamente esquemas NoSQL para mantener una base de datos deportiva resiliente y de alto rendimiento."
+      ],
+      "date": "2026",
+      "tags": ["Python", "Web Scraping", "Sports Analytics", "Full-Stack"],
+      "links": { "github": "github.com/joan-mata/RefStats", "live": null }
+    },
+    {
+      "id": "f1-archive",
+      "name": "F1 Personal Vault",
+      "desc": "Repositorio personal de vídeo HD con gestión de roles.",
+      "points": [
+        "Sistema de visibilidad basada en roles (PBAC) para diferenciar contenido público de privado.",
+        "Panel de administración personalizado para la carga y gestión masiva de activos de vídeo de alta definición.",
+        "Optimización de persistencia y manejo de carga pesada durante el streaming y la subida de archivos.",
+        "Estructura de metadatos dinámica para la clasificación y búsqueda rápida de sesiones históricas.",
+        "Infraestructura dockenizada para el escalado del almacenamiento y servidores de streaming."
+      ],
+      "techStack": ["React", "Node.js", "Express", "Docker", "Nginx"],
+      "security": [
+        "Autenticación robusta basada en tokens de sesión (JWT) con gestión granular de permisos mediante roles (RBAC/PBAC), asegurando que solo los usuarios autorizados tengan visibilidad sobre activos privados.",
+        "Optimización de visibilidad On-Play mediante el balanceo de carga en contenedores Docker y proxies inversos de Nginx, garantizando que el streaming de vídeo HD no comprometa el rendimiento del servidor principal.",
+        "Blindaje del perímetro de red local utilizando Cloudflare Tunnels y enrutamiento seguro NAT Traversal, eliminando la necesidad de apertura de puertos críticos y cifrando todo el tráfico de vídeo punto a punto."
+      ],
+      "date": "2026",
+      "tags": ["Full-Stack", "Streaming", "RBAC", "Video Engine"],
+      "links": { "github": "github.com/joan-mata/f1_archive", "live": "f1.joanmata.com" }
+    },
+    {
+      "id": "ref-notes",
+      "name": "Referee Performance Analytics",
+      "desc": "Portal privado de analítica arbitral avanzada.",
+      "points": [
+        "Entornos 100% privados con clasificación avanzada basada en notas y evaluaciones cruzadas.",
+        "Módulo de analítica masiva para el recuento y comparación entre evaluadores y participantes.",
+        "Generación de perfiles de evaluadores (Persona Profiling) para detectar sesgos y tendencias de evaluación.",
+        "Mapas de calor geográficos para analizar zonas con mayor propensión a evaluaciones frecuentes.",
+        "Detección de patrones de viaje y asignación geográfica para optimizar los comités de evaluación."
+      ],
+      "techStack": ["Python", "Flask", "PostgreSQL", "D3.js", "Geology/Mapping APIs"],
+      "security": [
+        "Entorno de alta confidencialidad mediante la implementación de autenticación de doble factor (2FA) y cifrado de base de datos PostgreSQL en reposo para proteger la integridad de los resultados arbitrales externos.",
+        "Seguridad arquitectónica basada en la segmentación de redes internas y el uso de proxies inversos aislados, impidiendo el acceso directo a los servicios de datos sensibles desde la red pública sin autorización previa.",
+        "Control granular de acceso a datos geográficos y personales, aplicando lógica de anonimización en perfiles de evaluación para proteger la privacidad de los evaluadores y cumplir con normativas de protección de datos."
+      ],
+      "date": "2025",
+      "tags": ["Analytics", "Data Viz", "Private Portal", "GIS"],
+      "links": { "github": "github.com/joan-mata/RefereeNotes", "live": "refnotes.joanmata.com" }
+    },
+    {
+      "id": "main-server",
+      "name": "Infraestructura Cloud Local",
+      "desc": "Infraestructura local escalable basada en Docker.",
+      "points": [
+        "Orquestación de más de 10 contenedores independientes (Nginx, Portainer, etc.) mediante Docker Compose.",
+        "Configuración multihosting sobre hardware local dedicado para alojar diversas aplicaciones web de producción.",
+        "Gestión integral de dominios, subdominios y enrutamiento seguro mediante túneles Cloudflare (NAT Traversal).",
+        "Monitorización centralizada y copias de seguridad automatizadas para garantizar la persistencia de datos.",
+        "Hardening de seguridad perimetral Zero Trust para proteger el acceso a servicios críticos."
+      ],
+      "techStack": ["Docker", "Linux (macOS)", "Cloudflare Tunnel", "Nginx", "Reverse Proxy"],
+      "security": [
+        "Implementación de un perímetro de seguridad Zero Trust basado en Cloudflare Tunnels (NAT Traversal), eliminando por completo la necesidad de apertura de puertos en el router ISP y anulando ataques de escaneo de IP.",
+        "Orquestación de infraestructura resiliente mediante Docker Compose con monitorización centralizada de logs en contenedores aislados, detectando proactivamente anomalías en el tráfico interno y externo de los servicios.",
+        "Gestión automatizada de certificados SSL/TLS y blindaje mediante Firewall perimetral con filtrado de IPs por geolocalización, bloqueando accesos fraudulentos desde regiones no autorizadas o IPs sospechosas."
+      ],
+      "date": "2025 - 2026",
+      "tags": ["Docker", "DevOps", "Cloudflare", "Infrastructure"],
+      "links": { "github": null, "live": null }
+    },
+    {
+      "id": "aws-pipeline",
+      "name": "AWS Data Ingestion Pipeline",
+      "desc": "Pipeline de ingesta de datos a gran escala automatizado en infraestructura cloud de AWS.",
+      "points": [
+        "Diseño de orquestación asíncrona mediante servicios serverless (AWS Lambda).",
+        "Gestión de flujos de datos masivos con Kinesis Data Streams.",
+        "Automatización de procesos ETL complejos utilizando Python y Boto3.",
+        "Almacenamiento escalable en S3 con políticas de ciclo de vida inteligente.",
+        "Monitorización proactiva y alertas de errores críticas mediante CloudWatch."
+      ],
+      "techStack": ["Python", "AWS Lambda", "Boto3", "Kinesis", "S3"],
+      "security": [
+        "Gestión granular de identidades y accesos (IAM) aplicando estrictamente el principio de mínimo privilegio para limitar los permisos de las funciones Lambda y servicios a solo lo estrictamente necesario para su ejecución.",
+        "Cifrado de datos en reposos en S3 mediante AWS KMS (Key Management Service) y protección integral de flujos de datos en tránsito con TLS 1.2, garantizando que el pipeline cumpla con estándares de alta seguridad cloud.",
+        "Arquitectura serverless con monitoreo proactivo de seguridad integral mediante CloudWatch Logs y CloudTrail, automatizando la generación de alertas ante cualquier intento de acceso anómalo a los recursos de Big Data."
+      ],
+      "date": "2025",
+      "tags": ["AWS", "Python", "ETL", "Big Data"],
+      "links": { "github": null, "live": null }
+    },
+    {
+      "id": "web-exams",
+      "name": "WebExams: Interactive Assessment Platform",
+      "desc": "Plataforma de exámenes interactivos con feedback.",
+      "points": [
+        "Generación dinámica de exámenes con niveles de dificultad personalizables para adaptarse al progreso del alumno.",
+        "Implementación de temporizadores configurables para simular con precisión entornos de examen oficiales.",
+        "Sistema de revisión interactiva que permite a los usuarios validar respuestas y reportar errores en tiempo real.",
+        "Entorno colaborativo donde los alumnos pueden intercambiar feedback, mejorando la calidad de las preguntas.",
+        "Integración estratégica con Google Ads para la monetización y sostenibilidad del portal.",
+        "Cuadro de mando personal para el seguimiento de resultados y mejora continua del rendimiento académico."
+      ],
+      "techStack": ["React", "Vite", "Firebase/Node.js", "Google Adsense", "CSS Grid"],
+      "security": [
+        "Protección contra fraude en exámenes mediante el desarrollo de lógica de temporización sincronizada estrictamente en el lado del servidor, eliminando posibles manipulaciones de tiempo desde el cliente.",
+        "Validación estricta de esquemas de entrada y sanitización de datos masiva para prevenir inyecciones NoSQL y asegurar la integridad de la base de datos ante envíos de formularios malintecionados o automatizados.",
+        "Optimización de persistencia y despliegue sobre infraestructura serverless con monitorización constante de rendimiento, garantizando la escalabilidad ante picos de concurrencia durante exámenes simultáneos."
+      ],
+      "date": "2025",
+      "tags": ["React", "E-learning", "Community", "Monetization"],
+      "links": { "github": "github.com/joan-mata/WebExams", "live": null }
+    },
+    {
+      "id": "docu-life",
+      "name": "DocuLife: Bóveda Digital Segura",
+      "desc": "Bóveda digital móvil para documentos críticos.",
+      "points": [
+        "Desarrollo de un entorno digital blindado para el almacenamiento seguro de documentos sensibles (DNI, Pasaportes, Escrituras).",
+        "Implementación de protocolos de cifrado de extremo a extremo para garantizar la privacidad total del usuario.",
+        "Categorización inteligente de archivos para facilitar el acceso rápido a documentos médicos, financieros e inmobiliarios.",
+        "Interfaz móvil optimizada (Cross-platform) centrada en la usabilidad y la recuperación inmediata en emergencias.",
+        "Arquitectura enfocada en la soberanía de datos, permitiendo almacenamiento local y sincronización cifrada opcional.",
+        "Gestión dinámica de fechas de caducidad para alertas automáticas de renovación de documentos oficiales."
+      ],
+      "techStack": ["React Native/Flutter", "AES-256 Encryption", "SQLite/Realm", "Biometric Auth"],
+      "security": [
+        "Cifrado nativo de grado militar (AES-256) gestionado en el enclave seguro del dispositivo móvil, garantizando que los archivos críticos permanezcan ilegibles incluso en caso de robo o compromiso físico del terminal.",
+        "Integración nativa de capas de autenticación biométrica (Huella Dactilar y FaceID) como requisito obligatorio primario antes de cualquier acceso o visualización de documentos altamente sensibles almacenados localmente.",
+        "Arquitectura de sincronización basada en esquemas de cifrado asimétrico controlado íntegramente por el usuario, asegurando que solo el propietario posea las llaves maestras de descifrado incluso en copias de seguridad."
+      ],
+      "date": "2025",
+      "tags": ["Mobile", "Security", "Privacy", "Vault"],
+      "links": { "github": "github.com/joan-mata/DocuLife", "live": null }
+    }
+  ],
+  "education": [
+    {
+      "id": "master-ds",
+      "category": "Máster",
+      "title": "Ciencia de Datos",
+      "explanation": "Máster enfocado en métodos de aprendizaje automático, minería de datos y arquitecturas escalables de Big Data.",
+      "school": "Universitat Oberta de Catalunya",
+      "date": "2025 – Present",
+      "grade": "En curso"
+    },
+    {
+      "id": "gei",
+      "category": "Grado",
+      "title": "Ingeniería Informática",
+      "explanation": "Formación especializada en ingeniería de software, algoritmos y sistemas operativos con mención en Ingeniería del Software.",
+      "school": "Universitat Autònoma de Barcelona",
+      "date": "2018 – 2025",
+      "grade": "Graduado",
+      "tfg": {
+        "title": "Compresibilidad de las Imágenes",
+        "description": "Investigación sobre la eficiencia de compresión mediante métricas bidimensionales y gramáticas 2D. Se proponen métodos innovadores para transformar imágenes en flujos de datos optimizados, validando los resultados con bibliotecas avanzadas de Python sobre conjuntos de datos naturales y médicos.",
+        "grade": "9.0",
+        "file": "/docs/tfg/tfg_gei.pdf"
+      }
+    },
+    {
+      "id": "gst",
+      "category": "Grado",
+      "title": "Ingeniería en Sistemas de Telecomunicación",
+      "explanation": "Formación integral en sistemas de transmisión, redes de datos, propagación de señal y servicios de telecomunicaciones.",
+      "school": "Universitat Autònoma de Barcelona",
+      "date": "2018 – 2025",
+      "grade": "Graduado",
+      "tfg": {
+        "title": "Desarrollo e Implementación de Sistemas de Modulación Direccional y Posicional en Python",
+        "description": "Mejora de la seguridad en radiocomunicaciones mediante modulación en la capa física. Se diseñan sistemas que focalizan la señal en direcciones específicas y coordenadas geográficas precisas, impidiendo la interceptación de información sensible por parte de receptores no autorizados mediante simulaciones dinámicas en Python.",
+        "grade": "8.5",
+        "file": "/docs/tfg/tfg_gest.pdf"
+      }
+    }
+  ],
+  "volunteering": [
+    {
+      "location": "Bolivia",
+      "date": "2025",
+      "org": "FASFI",
+      "desc": "Apoyo educativo en Cochabamba."
+    },
+    {
+      "location": "Haití",
+      "date": "2019",
+      "org": "TECHO",
+      "desc": "Construcción de viviendas en Puerto Príncipe."
+    }
+  ]
+}
