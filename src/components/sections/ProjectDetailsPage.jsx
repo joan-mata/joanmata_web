@@ -35,7 +35,7 @@ const ProjectDetailsPage = ({ data, lang, translations, isAdmin, onEdit }) => {
       <header className="detail-hero">
         <div className="detail-hero-content">
           <span className="detail-category">{translations.sections.projects.toUpperCase()}</span>
-          <h1 className="detail-main-title gradient-text">{project.name}</h1>
+          <h1 className="detail-main-title gradient-text">{project.name[lang]}</h1>
           <div className="detail-meta">
             <span className="card-date">{project.date}</span>
           </div>

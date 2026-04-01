@@ -21,7 +21,7 @@ const Projects = ({ title, data, lang, translations, isAdmin, onEdit, onAdd }) =
         {data.map((proj, idx) => (
           <Card 
             key={proj.id}
-            title={proj.name}
+            title={proj.name[lang]}
             date={proj.date}
             links={proj.links}
             translations={translations}
