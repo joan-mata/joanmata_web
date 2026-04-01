@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Card from '../common/Card';
 
-const Certificates = ({ title, data, lang, isAdmin, onEdit, onAdd }) => (
+const Certificates = ({ title, data, lang, isAdmin, onEdit, onAdd, translations }) => (
   <section className="container">
     <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
       <h2 className="section-title">{title}</h2>
