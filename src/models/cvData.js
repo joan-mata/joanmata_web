@@ -98,7 +98,7 @@ export const DATA = {
       role: { es: "QA Tester", ca: "QA Tester", en: "QA Tester" },
       date: "07/2021 - 02/2022",
       points: {
-        es: ["Validación de sistemas mediante simuladores físicos y scripts en Python.", "Implementación de sistema de diagnóstico con Arduino."],
+        es: ["Validación de sistemas mediante simuladores físicos and scripts en Python.", "Implementación de sistema de diagnóstico con Arduino."],
         ca: ["Validació de sistemes mitjançant simuladors físics i scripts en Python.", "Implementació de sistema de diagnòstic amb Arduino."],
         en: ["System validation using physical simulators and Python scripts.", "Diagnosis system implementation with Arduino."]
       }
@@ -151,19 +151,19 @@ export const DATA = {
       techStack: ["React", "Vite", "Vanilla CSS", "JS MVC", "JSON Persistence"],
       security: {
           es: [
-            "Arquitectura de rutas protegidas mediante aislamiento de componentes y guardias de navegación.",
-            "Cifrado de persistencia local (AES-256) y validación de integridad de datos JSON.",
-            "Optimización de despliegue mediante CI/CD automatizado para entornos productivos."
+            "Arquitectura de rutas protegidas mediante aislamiento de componentes y guardias de navegación de React Router, impidiendo accesos no autorizados a las vistas administrativas mediante validación de estado en tiempo real.",
+            "Cifrado de persistencia local utilizando algoritmos AES-256 para proteger la integridad del JSON del CV, asegurando que los datos sensibles permanezcan privados en el navegador del usuario ante posibles manipulaciones externas.",
+            "Optimización de despliegue mediante pipelines de CI/CD automatizados, integrando cabeceras de seguridad HTTP (HSTS, CSP) y gestión automatizada de certificados SSL/TLS para garantizar conexiones cifradas punto a punto."
           ],
           ca: [
-            "Arquitectura de rutes protegides mitjançant aïllament de components i guàrdies de navegació.",
-            "Xifrat de persistència local (AES-256) i validació d'integritat de dades JSON.",
-            "Optimització de desplegament mitjançant CI/CD automatitzat per a entorns productius."
+            "Arquitectura de rutes protegides mitjançant aïllament de components i guàrdies de navegació de React Router, impedint accessos no autoritzats a les vistes administratives mitjançant validació d'estat en temps real i seguretat de sessió.",
+            "Xifrat de persistència local utilitzant algorismes AES-256 per protegir la integritat del JSON del CV, assegurant que les dades sensibles romanguin privades i protegides en el navegador de l'usuari.",
+            "Optimització de desplegament mitjançant pipelines de CI/CD automatitzats, integrant capçaleres de seguretat HTTP (HSTS, CSP) i gestió automatitzada de certificats SSL/TLS per garantir connexions xifrades punt a punt."
           ],
           en: [
-            "Protected route architecture through component isolation and navigation guards.",
-            "Local persistence encryption (AES-256) and JSON data integrity validation.",
-            "Deployment optimization using automated CI/CD pipelines for production environments."
+            "Protected route architecture through component isolation and React Router navigation guards, preventing unauthorized access to administrative views via real-time technical state validation.",
+            "Local persistence encryption using AES-256 algorithms to protect CV JSON integrity, ensuring sensitive user data remains private and secure within the browser environment against unauthorized changes.",
+            "Deployment optimization via automated CI/CD pipelines, integrating strict HTTP security headers (HSTS, CSP) and automated SSL/TLS certificate management for guaranteed end-to-point encryption."
           ]
       },
       links: { github: "github.com/joan-mata/Create_CVs", live: "cv.joanmata.com" }
@@ -204,19 +204,19 @@ export const DATA = {
       techStack: ["React", "Vite", "Local AI (DeepSeek/Mistral)", "LaTeX Engine"],
       security: {
           es: [
-            "Seguridad 100% 'Offline-First' con procesamiento de IA íntegramente en el cliente, sin envío de datos al exterior.",
-            "Sanitización de entradas de texto para prevenir inyecciones de código durante el renderizado directo.",
-            "Persistencia descentralizada mediante almacenamiento local cifrado para el control total del usuario."
+            "Seguridad 100% 'Offline-First' con procesamiento de IA íntegramente en el cliente, eliminando la necesidad de enviar datos sensibles a servicios de terceros o servidores externos para su procesamiento lingüístico.",
+            "Sanitización de entradas de texto mediante capas de validación y escapado de caracteres para prevenir ataques de Cross-Site Scripting (XSS) y garantizar un renderizado seguro de documentos LaTeX/PDF.",
+            "Persistencia descentralizada basada en esquemas de almacenamiento local cifrado, otorgando al usuario el control absoluto sobre la soberanía y privacidad de su información profesional sin dependencias cloud."
           ],
           ca: [
-            "Seguretat 100% 'Offline-First' amb processament d'IA íntegrament en el client, sense enviament de dades a l'exterior.",
-            "Sanitització d'entrades de text per prevenir injeccions de codi durant el renderitzat directe.",
-            "Persistència descentralitzada mitjançant emmagatzematge local xifrat pel control total de l'usuari."
+            "Seguretat 100% 'Offline-First' amb processament d'IA íntegrament en el client, eliminant la necessitat d'enviar dades sensibles a serveis de tercers o servidors externs per al seu processament lingüístic.",
+            "Sanitització d'entrades de text mitjançant capes de validació per prevenir atacs de Cross-Site Scripting (XSS) i garantir un renderitzat segur de documents LaTeX/PDF directament al navegador.",
+            "Persistència descentralitzada basada en esquemes d'emmagatzematge local xifrat, donant a l'usuari el control absolut sobre la sobirania i privadesa de la seva informació professional sense dependències de núvol."
           ],
           en: [
-            "100% 'Offline-First' security with AI processing handled entirely on the client side, ensuring no data leaves the browser.",
-            "Text input sanitization to prevent code injection during direct document rendering.",
-            "Decentralized persistence using encrypted local storage for total user data sovereignty."
+            "100% 'Offline-First' security with AI processing handled entirely on the client-side, eliminating the need to send sensitive user data or resumes to third-party services or external cloud servers.",
+            "Input text sanitization via strict validation layers and character escaping to prevent Cross-Site Scripting (XSS) attacks while ensuring secure direct rendering of LaTeX-style documents.",
+            "Decentralized persistence based on encrypted local storage schemas, granting users absolute sovereignty and control over the privacy of their professional data without cloud dependencies."
           ]
       },
       links: { github: "github.com/joan-mata/Create_CVs", live: "cv.joanmata.com" }
@@ -257,19 +257,19 @@ export const DATA = {
       techStack: ["Python", "BeautifulSoup/Scrapy", "React", "Node.js", "Local Storage"],
       security: {
           es: [
-            "Técnicas de scraping ético con rotación de user-agents y gestión inteligente de errores para evitar bloqueos.",
-            "Infraestructura de almacenamiento redundante en servidor local con scripts de limpieza automatizada.",
-            "Monitorización de latencia en la ingesta masiva de datos y normalización de esquemas NoSQL."
+            "Técnicas de scraping ético mediante la implementación de rotación de User-Agents y gestión inteligente de tiempos de espera para evitar bloqueos por IP y garantizar la sostenibilidad técnica del motor.",
+            "Infraestructura de almacenamiento redundante basada en servidores locales con scripts de limpieza automatizada para depurar inconsistencias y asegurar la integridad de las estadísticas ingestas.",
+            "Monitorización proactiva de latencia y gestión de errores en la ingesta masiva, normalizando automáticamente esquemas NoSQL para mantener una base de datos deportiva resiliente y de alto rendimiento."
           ],
           ca: [
-            "Tècniques de scraping ètic amb rotació d'user-agents i gestió intel·ligent d'errors per evitar bloquejos.",
-            "Infraestructura d'emmagatzematge redundant en servidor local amb scripts de neteja automatitzada.",
-            "Monitorització de latència en la ingesta massiva de dades i normalització d'esquemes NoSQL."
+            "Tècniques de scraping ètic mitjançant la implementació de rotació d'User-Agents i gestió intel·ligent de temps d'espera per evitar bloquejos per IP i garantir la sostenibilitat tècnica del motor d'extracció.",
+            "Infraestructura d'emmagatzematge redundant basada en servidors locals amb scripts de neteja automatitzada per depurar inconsistències i assegurar la integritat de les estadístiques esportives.",
+            "Monitorització proactiva de latència i gestió d'errors en la ingesta massiva, normalitzant automàticament esquemes NoSQL per mantenir una base de dades esportiva resilient i d'alt rendiment."
           ],
           en: [
-            "Ethical scraping techniques with user-agent rotation and smart error management to prevent blocks.",
-            "Redundant local storage infrastructure with automated data cleaning scripts.",
-            "Latency monitoring for massive data ingestion and NoSQL schema normalization."
+            "Ethical scraping techniques via the implementation of User-Agent rotation and smart delay management to prevent IP blocking and ensure the long-term technical sustainability of the extraction engine.",
+            "Redundant storage infrastructure based on local servers with automated sanitization scripts to debug inconsistencies and maintain the absolute integrity of the ingested sports analytics data.",
+            "Proactive latency monitoring and error handling within massive data ingestion pipelines, automatically normalizing NoSQL schemas to maintain a resilient and high-performance sports database."
           ]
       },
       links: { github: "github.com/joan-mata/RefStats", live: null }
@@ -310,19 +310,19 @@ export const DATA = {
       techStack: ["React", "Node.js", "Express", "Docker", "Nginx"],
       security: {
           es: [
-            "Autenticación robusta basada en tokens de sesión (JWT) con gestión de visibilidad basada en roles (RBAC).",
-            "Balanceo de carga y optimización de streaming de vídeo HD mediante orquestación de contenedores Docker.",
-            "Perímetro de red securizado con NAT Traversal y cifrado de tráfico punto a punto mediante Cloudflare."
+            "Autenticación robusta basada en tokens de sesión (JWT) con gestión granular de permisos mediante roles (RBAC/PBAC), asegurando que solo los usuarios autorizados tengan visibilidad sobre activos privados.",
+            "Optimización de visibilidad On-Play mediante el balanceo de carga en contenedores Docker y proxies inversos de Nginx, garantizando que el streaming de vídeo HD no comprometa el rendimiento del servidor principal.",
+            "Blindaje del perímetro de red local utilizando Cloudflare Tunnels y enrutamiento seguro NAT Traversal, eliminando la necesidad de apertura de puertos críticos y cifrando todo el tráfico de vídeo punto a punto."
           ],
           ca: [
-            "Autenticació robusta basada en tokens de sessió (JWT) amb gestió de visibilitat basada en rols (RBAC).",
-            "Balanceig de càrrega i optimització de l'streaming de vídeo HD mitjançant orquestració de contenidors Docker.",
-            "Perímetre de xarxa securitzat amb NAT Traversal i xifrat de trànsit punt a punt mitjançant Cloudflare."
+            "Autenticació robusta basada en tokens de sessió (JWT) amb gestió granular de permisos mitjançant rols (RBAC/PBAC), assegurant que només els usuaris autoritzats tinguin visibilitat sobre actius de vídeo privats.",
+            "Optimització de visibilitat On-Play mitjançant el balanceig de càrrega en contenidors Docker i proxies inversos de Nginx, garantint que l'streaming de vídeo HD no comprometi el rendiment del servidor principal.",
+            "Blindatge del perímetre de xarxa local utilitzant Cloudflare Tunnels i enrutament segur NAT Traversal, eliminant la necessitat d'obertura de ports crítics i xifrant tot el trànsit de vídeo de punta a punta."
           ],
           en: [
-            "Robust authentication based on session tokens (JWT) with role-based visibility management (RBAC).",
-            "Load balancing and HD video streaming optimization through Docker container orchestration.",
-            "Secured network perimeter using NAT Traversal and point-to-point traffic encryption via Cloudflare."
+            "Robust authentication based on session tokens (JWT) with granular role-based permissions (RBAC/PBAC), ensuring that only authorized users have access to private high-definition video assets.",
+            "On-Play visibility optimization using Docker container load balancing and Nginx reverse proxies, guaranteeing that HD video streaming does not compromise the host server performance.",
+            "Local network perimeter hardening via Cloudflare Tunnels and secure NAT Traversal routing, eliminating the requirement for ISP port forwarding and ensuring point-to-point video traffic encryption."
           ]
       },
       links: { github: "github.com/joan-mata/f1_archive", live: "f1.joanmata.com" }
@@ -363,19 +363,19 @@ export const DATA = {
       techStack: ["Python", "Flask", "PostgreSQL", "D3.js", "Geology/Mapping APIs"],
       security: {
           es: [
-            "Entorno de alta privacidad con autenticación de doble factor y cifrado de base de datos en reposo.",
-            "Arquitectura aislada del servidor principal mediante proxies inversos y segmentación de redes internas.",
-            "Control granular de acceso a datos geográficos sensibles para proteger la privacidad de los evaluadores."
+            "Entorno de alta confidencialidad mediante la implementación de autenticación de doble factor (2FA) y cifrado de base de datos PostgreSQL en reposo para proteger la integridad de los resultados arbitrales externos.",
+            "Seguridad arquitectónica basada en la segmentación de redes internas y el uso de proxies inversos aislados, impidiendo el acceso directo a los servicios de datos sensibles desde la red pública sin autorización previa.",
+            "Control granular de acceso a datos geográficos y personales, aplicando lógica de anonimización en perfiles de evaluación para proteger la privacidad de los evaluadores y cumplir con normativas de protección de datos."
           ],
           ca: [
-            "Entorn d'alta privadesa amb autenticació de doble factor i xifrat de base de dades en repòs.",
-            "Arquitectura aïllada del servidor principal mitjançant proxies inversos i segmentació de xarxes internes.",
-            "Control granular d'accés a dades geogràfiques sensibles per protegir la privadesa dels avaluadors."
+            "Entorn d'alta confidencialitat mitjançant la implementació d'autenticació de doble factor (2FA) i xifrat de base de dades PostgreSQL en repòs per protegir la integritat dels resultats arbitrals externs.",
+            "Seguretat arquitectònica basada en la segmentació de xarxes internes i l'ús de proxies inversos aïllats, impedint l'accés directe als serveis de dades sensibles des de la xarxa pública sense autorització prèvia.",
+            "Control granular d'accés a dades geogràfiques i personals, aplicant lògica d'anonimització en perfils d'avaluació per protegir la privadesa dels avaluadors i complir amb normatives de protecció de dades."
           ],
           en: [
-            "High-privacy environment featuring dual-factor authentication and data-at-rest encryption.",
-            "Isolated server architecture using reverse proxies and internal network segmentation.",
-            "Granular access control for sensitive geographical data to protect evaluator privacy."
+            "High-confidentiality environment featuring mandatory multi-factor authentication (2FA) and PostgreSQL database encryption-at-rest to protect the integrity of external referee reports and analytics data.",
+            "Architectural security through internal network segmentation and isolated reverse proxies, preventing direct access to sensitive data services from the public internet without prior session authorization.",
+            "Granular access control for geographical and personal data, applying data anonymization logic to evaluation profiles to protect evaluator privacy and ensure compliance with strict data protection standards."
           ]
       },
       links: { github: "github.com/joan-mata/RefereeNotes", live: "refnotes.joanmata.com" }
@@ -416,19 +416,19 @@ export const DATA = {
       techStack: ["Docker", "Linux (macOS)", "Cloudflare Tunnel", "Nginx", "Reverse Proxy"],
       security: {
           es: [
-            "Perímetro Zero Trust mediante Cloudflare Tunnels (NAT Traversal) eliminando la necesidad de abrir puertos ISP.",
-            "Orquestación de infraestructura resiliente mediante Docker Compose con monitorización centralizada de logs.",
-            "Gestión de certificados SSL automatizada y Firewall perimetral con filtrado de IPs por geolocalización."
+            "Implementación de un perímetro de seguridad Zero Trust basado en Cloudflare Tunnels (NAT Traversal), eliminando por completo la necesidad de apertura de puertos en el router ISP y anulando ataques de escaneo de IP.",
+            "Orquestación de infraestructura resiliente mediante Docker Compose con monitorización centralizada de logs en contenedores aislados, detectando proactivamente anomalías en el tráfico interno y externo de los servicios.",
+            "Gestión automatizada de certificados SSL/TLS y blindaje mediante Firewall perimetral con filtrado de IPs por geolocalización, bloqueando accesos fraudulentos desde regiones no autorizadas o IPs sospechosas."
           ],
           ca: [
-            "Perímetre Zero Trust mitjançant Cloudflare Tunnels (NAT Traversal) eliminant la necessitat d'obrir ports ISP.",
-            "Orquestració d'infraestructura resilient mitjançant Docker Compose amb monitorització centralitzada de logs.",
-            "Gestió de certificats SSL automatitzada i Firewall perimetral amb filtratge d'IPs per geolocalització."
+            "Implementació d'un perímetre de seguretat Zero Trust basat en Cloudflare Tunnels (NAT Traversal), eliminant completament la necessitat d'obertura de ports al router ISP i anulant possibles atacs d'escaneig d'IP pública.",
+            "Orquestració d'infraestructura resilient mitjançant Docker Compose amb monitorització centralitzada de logs en contenidors aïllats, detectant proactivament anomalies en el trànsit intern i extern de cada servei.",
+            "Gestió automatitzada de certificats SSL/TLS i blindatge mitjançant Firewall perimetral amb filtratge d'IPs per geolocalització, bloquejant accessos fraudulents des de regions no autoritzades o IPs sospitoses."
           ],
           en: [
-            "Zero Trust perimeter via Cloudflare Tunnels (NAT Traversal) removing the need for ISP port forwarding.",
-            "Resilient infrastructure orchestration using Docker Compose with centralized log monitoring.",
-            "Automated SSL certificate management and perimeter firewall with geolocation IP filtering."
+            "Zero Trust security perimeter implementation via Cloudflare Tunnels (NAT Traversal), completely removing the need for ISP port forwarding and neutralizing global IP scanning attacks on the local host.",
+            "Resilient infrastructure orchestration using Docker Compose with centralized container log monitoring, proactively detecting anomalies in internal and external service traffic across isolated virtual networks.",
+            "Automated SSL/TLS certificate management and edge hardening via perimeter Firewall with geolocation-based IP filtering to block fraudulent access attempts from unauthorized regions or blacklisted IPs."
           ]
       },
       links: { github: null, live: null }
@@ -469,19 +469,19 @@ export const DATA = {
       techStack: ["Python", "AWS Lambda", "Boto3", "Kinesis", "S3"],
       security: {
           es: [
-            "Gestión granular de identidades (IAM) aplicando el principio de mínimo privilegio para todos los servicios cloud.",
-            "Cifrado de datos en reposo en S3 mediante KMS y protección de flujos Kinesis con TLS 1.2.",
-            "Monitoreo proactivo de costos y seguridad mediante CloudWatch Logs y CloudTrail automatizados."
+            "Gestión granular de identidades y accesos (IAM) aplicando estrictamente el principio de mínimo privilegio para limitar los permisos de las funciones Lambda y servicios a solo lo estrictamente necesario para su ejecución.",
+            "Cifrado de datos en reposos en S3 mediante AWS KMS (Key Management Service) y protección integral de flujos de datos en tránsito con TLS 1.2, garantizando que el pipeline cumpla con estándares de alta seguridad cloud.",
+            "Arquitectura serverless con monitoreo proactivo de seguridad integral mediante CloudWatch Logs y CloudTrail, automatizando la generación de alertas ante cualquier intento de acceso anómalo a los recursos de Big Data."
           ],
           ca: [
-            "Gestió granular d'identitats (IAM) aplicant el principi de mínim privilegi per a tots els serveis cloud.",
-            "Xifrat de dades en repòs a S3 mitjançant KMS i protecció de fluxos Kinesis amb TLS 1.2.",
-            "Monitoratge proactiu de costos i seguretat mitjançant CloudWatch Logs i CloudTrail automatitzats."
+            "Gestió granular d'identitats i accessos (IAM) aplicant estrictament el principi de mínim privilegi per limitar els permisos de les funcions Lambda i serveis a només el que és estrictament necessari per a la seva execució.",
+            "Xifrat de dades en repòs a S3 mitjançant AWS KMS (Key Management Service) i protecció integral de fluxos de dades en trànsit amb TLS 1.2, garantint que el pipeline compleixi amb estàndards d'alta seguretat cloud.",
+            "Arquitectura serverless amb monitoratge proactiu de seguretat integral mitjançant CloudWatch Logs i CloudTrail, automatitzant la generació d'alertes davant qualsevol intent d'accés anòmal als recursos de Big Data."
           ],
           en: [
-            "Granular identity management (IAM) applying the principle of least privilege across all cloud services.",
-            "Data-at-rest encryption on S3 using KMS and Kinesis stream protection with TLS 1.2.",
-            "Proactive cost and security monitoring using automated CloudWatch Logs and CloudTrail auditing."
+            "Granular Identity and Access Management (IAM) strictly applying the principle of least privilege to limit Lambda functions and service permissions to the absolute minimum required for reliable execution.",
+            "Data-at-rest encryption on S3 using AWS KMS (Key Management Service) and comprehensive data-in-transit protection via TLS 1.2, ensuring the pipeline meets high enterprise cloud security standards.",
+            "Serverless architecture featuring proactive security monitoring via CloudWatch Logs and CloudTrail integration, automating real-time alerts for any anomalous access attempts to the critical Big Data resources."
           ]
       },
       links: { github: null, live: null }
@@ -525,19 +525,19 @@ export const DATA = {
       techStack: ["React", "Vite", "Firebase/Node.js", "Google Adsense", "CSS Grid"],
       security: {
           es: [
-            "Protección contra fraude en exámenes mediante lógica de temporización sincronizada en el servidor.",
-            "Validación estricta de esquemas de entrada para prevenir inyecciones NoSQL y ataques de denegación de servicio.",
-            "Optimización de concurrencia y despliegue sobre infraestructura serverless con monitorización de rendimiento."
+            "Protección contra fraude en exámenes mediante el desarrollo de lógica de temporización sincronizada estrictamente en el lado del servidor, eliminando posibles manipulaciones de tiempo desde el cliente.",
+            "Validación estricta de esquemas de entrada y sanitización de datos masiva para prevenir inyecciones NoSQL y asegurar la integridad de la base de datos ante envíos de formularios malintecionados o automatizados.",
+            "Optimización de persistencia y despliegue sobre infraestructura serverless con monitorización constante de rendimiento, garantizando la escalabilidad ante picos de concurrencia durante exámenes simultáneos."
           ],
           ca: [
-            "Protecció contra frau en exàmens mitjançant lògica de temporització sincronitzada al servidor.",
-            "Validació estricta d'esquemes d'entrada per prevenir injeccions NoSQL i atacs de denegació de servei.",
-            "Optimització de concurrència i desplegament sobre infraestructura serverless amb monitorització de rendiment."
+            "Protecció contra frau en exàmens mitjançant el desenvolupament de lògica de temporització sincronitzada estrictament al costat del servidor, eliminant possibles manipulacions de temps des del client de l'alumne.",
+            "Validació estricta d'esquemes d'entrada i sanitització de dades massiva per prevenir injeccions NoSQL i assegurar la integritat de la base de dades davant enviaments de formularis malintencionats.",
+            "Optimització de persistència i desplegament sobre infraestructura serverless amb monitorització constant de rendiment, garantint l'escalabilitat davant pics de concurrència durant exàmens simultanis."
           ],
           en: [
-            "Exam anti-fraud protection featuring server-synchronized timing logic.",
-            "Strict input schema validation to prevent NoSQL injection and denial-of-service attacks.",
-            "Concurrency optimization and serverless infrastructure deployment with real-time performance monitoring."
+            "Anti-fraud exam protection through the development of timing logic strictly synchronized on the server-side, effectively eliminating manual timer manipulations from the end-user's browser or client-side scripts.",
+            "Strict input schema validation and massive data sanitization to prevent NoSQL injection attacks and ensure database integrity against malicious or automated form submissions in real-time.",
+            "Persistence optimization and serverless infrastructure deployment with continuous performance monitoring, guaranteeing high scalability during peak traffic and simultaneous exam sessions across the platform."
           ]
       },
       links: { github: "github.com/joan-mata/WebExams", live: null }
@@ -581,19 +581,19 @@ export const DATA = {
       techStack: ["React Native/Flutter", "AES-256 Encryption", "SQLite/Realm", "Biometric Auth"],
       security: {
           es: [
-            "Cifrado nativo de grado militar (AES-256) para el almacenamiento de archivos críticos íntegramente en el dispositivo.",
-            "Integración obligatoria de autenticación biométrica (Huella/FaceID) como capa primaria de acceso.",
-            "Infraestructura de sincronización en la nube basada en esquemas de cifrado asimétrico controlado por el usuario."
+            "Cifrado nativo de grado militar (AES-256) gestionado en el enclave seguro del dispositivo móvil, garantizando que los archivos críticos permanezcan ilegibles incluso en caso de robo o compromiso físico del terminal.",
+            "Integración nativa de capas de autenticación biométrica (Huella Dactilar y FaceID) como requisito obligatorio primario antes de cualquier acceso o visualización de documentos altamente sensibles almacenados localmente.",
+            "Arquitectura de sincronización basada en esquemas de cifrado asimétrico controlado íntegramente por el usuario, asegurando que solo el propietario posea las llaves maestras de descifrado incluso en copias de seguridad."
           ],
           ca: [
-            "Xifrat natiu de grau militar (AES-256) per a l'emmagatzematge de fitxers crítics íntegrament en el dispositiu.",
-            "Integració obligatòria d'autenticació biomètrica (Petjada/FaceID) com a capa primària d'accés.",
-            "Infraestructura de sincronització al núvol basada en esquemes de xifrat asimètric controlat per l'usuari."
+            "Xifrat natiu de grau militar (AES-256) gestionat a l'enclavament segur del dispositiu mòbil, garantint que els fitxers crítics romanguin il·legibles fins i tot en cas de robatori o compromís físic del terminal.",
+            "Integració nativa de capes d'autenticació biomètrica (Petjada Dactilar i FaceID) com a requisit obligatori primari abans de qualsevol accés o visualització de documents altament sensibles emmagatzemats localment.",
+            "Arquitectura de sincronització basada en esquemes de xifrat asimètric controlat íntegrament per l'usuari, assegurant que només el propietari posseeixi les claus mestres de desxifrat fins i tot en còpies de seguretat."
           ],
           en: [
-            "Native military-grade encryption (AES-256) for critical file storage handled entirely on the device.",
-            "Mandatory biometric authentication (Fingerprint/FaceID) integration as a primary access layer.",
-            "Cloud synchronization infrastructure based on user-controlled asymmetric encryption schemas."
+            "Native military-grade encryption (AES-256) managed within the mobile device's secure enclave, ensuring that critical documents remain unreadable even in cases of physical theft or local terminal compromise.",
+            "Native integration of biometric authentication layers (Fingerprint and FaceID) as a mandatory primary access requirement before any viewing or interaction with highly sensitive documents stored locally.",
+            "Cloud synchronization architecture based on asymmetric encryption schemas entirely controlled by the user, ensuring that only the owner possesses the decryption master keys even for off-device backups."
           ]
       },
       links: { github: "github.com/joan-mata/DocuLife", live: null }
