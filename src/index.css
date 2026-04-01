@@ -900,6 +900,18 @@ nav ul {
   margin-bottom: 0.5rem;
 }
 
+.translate-btn {
+  background: rgba(99, 102, 241, 0.1);
+  border: 1px solid rgba(99, 102, 241, 0.3);
+  color: var(--accent-primary);
+  padding: 4px 12px;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
 .translate-btn:hover {
   background: var(--accent-primary);
   color: white;
