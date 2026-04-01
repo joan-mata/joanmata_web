@@ -319,10 +319,18 @@ nav ul {
 
 }
 
-/* Project Card Specifics */
-.card-details-btn {
+/* Project Card Actions Bottom Row */
+.card-footer-actions {
   margin-top: auto;
-  align-self: flex-start;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--glass-border);
+}
+
+.card-details-btn {
   background: var(--glass);
   color: var(--accent-primary);
   border: 1px solid rgba(99, 102, 241, 0.3);
@@ -342,13 +350,37 @@ nav ul {
 .card-details-btn:hover {
   background: var(--accent-primary);
   color: white;
-  transform: translateX(8px);
+  transform: translateY(-2px);
   box-shadow: 0 4px 20px rgba(99, 102, 241, 0.4);
 }
 
-.card-details-btn::after {
-  content: '→';
+.card-details-btn::before {
+  content: 'ⓘ';
   font-size: 1.1rem;
+}
+
+.card-web-link {
+  color: var(--text-dim);
+  font-size: 0.8rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  transition: var(--transition);
+  padding: 0.6rem 0;
+}
+
+.card-web-link:hover {
+  color: var(--accent-primary);
+  transform: translateX(5px);
+}
+
+.card-web-link::after {
+  content: '↗';
+  font-size: 1rem;
   font-weight: 900;
 }
 

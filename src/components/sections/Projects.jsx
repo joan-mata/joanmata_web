@@ -47,12 +47,26 @@ const Projects = ({ title, data, lang, translations, isAdmin, onEdit, onAdd }) =
               ))}
             </div>
 
-            <button 
-              className="card-details-btn"
-              onClick={(e) => { e.stopPropagation(); handleProjectClick(proj.id); }}
-            >
-              {translations.projects.details}
-            </button>
+            <div className="card-footer-actions">
+              <button 
+                className="card-details-btn"
+                onClick={(e) => { e.stopPropagation(); handleProjectClick(proj.id); }}
+              >
+                {translations.projects.details}
+              </button>
+
+              {proj.links?.live && (
+                <a 
+                  href={`https://${proj.links.live}`}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="card-web-link"
+                  onClick={(e) => e.stopPropagation()}
+                >
+                  {translations.projects.miniVisit}
+                </a>
+              )}
+            </div>
           </Card>
         ))}
       </div>

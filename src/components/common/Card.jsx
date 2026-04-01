@@ -15,17 +15,6 @@ const Card = ({ title, subtitle, date, children, className = '', onClick, links,
         </div>
         
         <div className="card-header-actions">
-          {links?.live && (
-            <a 
-              href={`https://${links.live}`} 
-              target="_blank" 
-              rel="noreferrer" 
-              className="card-action-btn"
-              onClick={(e) => e.stopPropagation()}
-            >
-              {translations?.projects?.miniVisit || 'WEB'}
-            </a>
-          )}
           {date && <span className="card-date">{date}</span>}
         </div>
       </div>

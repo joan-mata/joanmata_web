@@ -29,7 +29,7 @@ export const TRANSLATIONS = {
       links: 'Enlaces',
       github: 'Repositorio GitHub',
       visit: 'Visitar Web',
-      miniVisit: 'WEB',
+      miniVisit: 'Visitar Web',
       details: 'Detalles del Proyecto',
       close: 'Cerrar'
     },
@@ -81,7 +81,7 @@ export const TRANSLATIONS = {
       links: 'Enllaços',
       github: 'Repositori GitHub',
       visit: 'Visitar Web',
-      miniVisit: 'WEB',
+      miniVisit: 'Visitar Web',
       details: 'Detalls del Projecte',
       close: 'Tancar'
     },
@@ -133,7 +133,7 @@ export const TRANSLATIONS = {
       links: 'Links',
       github: 'GitHub Repository',
       visit: 'Visit Website',
-      miniVisit: 'WEB',
+      miniVisit: 'Visit Web',
       details: 'Project Details',
       close: 'Close'
     },
