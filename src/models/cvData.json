@@ -99,7 +99,7 @@
   "projects": [
     {
       "id": "joanmata-web",
-      "name": "Portal Profesional joanmata.com (Full-Stack Software)",
+      "name": "Portal Profesional joanmata.com",
       "date": "2026",
       "tags": [
         "React",
@@ -149,7 +149,7 @@
       },
       "links": {
         "github": "github.com/joan-mata/joanmata_web",
-        "live": "cv.joanmata.com"
+        "live": "joanmata.com"
       }
     },
     {
@@ -258,13 +258,13 @@
         "en": "Total privacy through local AI processing without sending data to external servers."
       },
       "links": {
-        "github": "github.com/joan-mata/joanmata_web",
+        "github": "github.com/joan-mata/Create_CVs",
         "live": "cv.joanmata.com"
       }
     },
     {
-      "id": "f1-vault",
-      "name": "F1 Personal Vault (f1.joanmata.com)",
+      "id": "f1-archive",
+      "name": "F1 Personal Vault",
       "date": "2026",
       "tags": [
         "Full-Stack",
@@ -313,13 +313,13 @@
         "en": "Granular access control and visibility protected by session tokens."
       },
       "links": {
-        "github": "github.com/joan-mata/f1-archive",
+        "github": "github.com/joan-mata/f1_archive",
         "live": "f1.joanmata.com"
       }
     },
     {
       "id": "ref-notes",
-      "name": "Referee Performance Analytics (refnotes.joanmata.com)",
+      "name": "Referee Performance Analytics",
       "date": "2025",
       "tags": [
         "Analytics",
@@ -368,7 +368,7 @@
         "en": "100% private portal with dual-factor authentication and analytical data encryption."
       },
       "links": {
-        "github": "github.com/joan-mata/referee-notes",
+        "github": "github.com/joan-mata/RefereeNotes",
         "live": "refnotes.joanmata.com"
       }
     },
@@ -423,8 +423,8 @@
         "en": "DNS SEC, Encrypted Tunnels, and Cloudflare Zero Trust perimeter firewall."
       },
       "links": {
-        "github": "github.com/joan-mata/server-config",
-        "live": "joanmata.com"
+        "github": null,
+        "live": null
       }
     },
     {
@@ -478,7 +478,123 @@
         "en": "Granular identity management (IAM) and data encryption at rest with KMS."
       },
       "links": {
-        "github": "github.com/joan-mata/aws-pipeline",
+        "github": null,
+        "live": null
+      }
+    },
+    {
+      "id": "web-exams",
+      "name": "WebExams: Interactive Assessment Platform",
+      "date": "2025",
+      "tags": [
+        "React",
+        "E-learning",
+        "Community",
+        "Monetization"
+      ],
+      "desc": {
+        "es": "Plataforma completa de e-learning para la creación y realización de exámenes tipo test con dificultad ajustable y feedback comunitario.",
+        "ca": "Plataforma completa d'e-learning per a la creació i realització d'exàmens tipus test amb dificultat ajustable i feedback comunitari.",
+        "en": "Comprehensive e-learning platform specifically designed for creating and taking multiple-choice tests with adjustable difficulty and community feedback."
+      },
+      "points": {
+        "es": [
+          "Generación dinámica de exámenes con niveles de dificultad personalizables para adaptarse al progreso del alumno.",
+          "Implementación de temporizadores configurables para simular con precisión entornos de examen oficiales.",
+          "Sistema de revisión interactiva que permite a los usuarios validar respuestas y reportar errores en tiempo real.",
+          "Entorno colaborativo donde los alumnos pueden intercambiar feedback, mejorando la calidad de las preguntas.",
+          "Integración estratégica con Google Ads para la monetización y sostenibilidad del portal.",
+          "Cuadro de mando personal para el seguimiento de resultados y mejora continua del rendimiento académico."
+        ],
+        "ca": [
+          "Generació dinàmica d'exàmens amb nivells de dificultat personalitzables per adaptar-se al progrés de l'alumne.",
+          "Implementació de temporitzadors configurables per simular amb precisió entorns d'examen oficials.",
+          "Sistema de revisió interactiva que permet als usuaris validar respostes i reportar errors en temps real.",
+          "Entorn col·laboratiu on els alumnes poden intercanviar feedback, millorant la qualitat de les preguntes.",
+          "Integració estratègica amb Google Ads per a la monetització i sostenibilitat del portal.",
+          "Quadre de comandament personal per al seguiment de resultats i millora contínua del rendiment acadèmic."
+        ],
+        "en": [
+          "Dynamic exam generation featuring customizable difficulty levels tailored to the student's learning progress.",
+          "Implementation of configurable timers designed to accurately simulate official testing environments.",
+          "Interactive review system allowing users to validate answers and report errors in real-time.",
+          "Collaborative space where students can exchange feedback, continuously improving the quality of assessment items.",
+          "Strategic integration with Google Ads for platform monetization and long-term sustainability.",
+          "Personal dashboard for tracking historical results and continuous academic performance improvement."
+        ]
+      },
+      "techStack": [
+        "React",
+        "Vite",
+        "Firebase/Node.js",
+        "Google Adsense",
+        "CSS Grid"
+      ],
+      "security": {
+        "es": "Protección contra fraude en exámenes y validación de integridad de preguntas.",
+        "ca": "Protecció contra frau en exàmens i validació d'integritat de preguntes.",
+        "en": "Anti-cheat exam protection and question integrity validation."
+      },
+      "links": {
+        "github": "github.com/joan-mata/WebExams",
+        "live": null
+      }
+    },
+    {
+      "id": "docu-life",
+      "name": "DocuLife: Bóveda Digital Segura",
+      "date": "2025",
+      "tags": [
+        "Mobile",
+        "Security",
+        "Privacy",
+        "Vault"
+      ],
+      "desc": {
+        "es": "Bóveda digital segura en formato de aplicación móvil para la gestión y almacenamiento de documentación personal crítica.",
+        "ca": "Volta digital segura en format d'aplicació mòbil per a la gestió i emmagatzematge de documentació personal crítica.",
+        "en": "Secure mobile digital vault designed for the management and high-security storage of sensitive personal documentation."
+      },
+      "points": {
+        "es": [
+          "Desarrollo de un entorno digital blindado para el almacenamiento seguro de documentos sensibles (DNI, Pasaportes, Escrituras).",
+          "Implementación de protocolos de cifrado de extremo a extremo para garantizar la privacidad total del usuario.",
+          "Categorización inteligente de archivos para facilitar el acceso rápido a documentos médicos, financieros e inmobiliarios.",
+          "Interfaz móvil optimizada (Cross-platform) centrada en la usabilidad y la recuperación inmediata en emergencias.",
+          "Arquitectura enfocada en la soberanía de datos, permitiendo almacenamiento local y sincronización cifrada opcional.",
+          "Gestión dinámica de fechas de caducidad para alertas automáticas de renovación de documentos oficiales."
+        ],
+        "ca": [
+          "Desenvolupament d'un entorn digital blindat per a l'emmagatzematge segur de documents sensibles (DNI, Passaports, Escriptures).",
+          "Implementació de protocols de xifrat d'extrem a extrem per a garantir la privadesa total de l'usuari.",
+          "Categorització intel·ligent de fitxers per facilitar l'accés ràpid a documents mèdics, financers i immobiliaris.",
+          "Interfície mòbil optimitzada (Cross-platform) centrada en l'usabilitat i la recuperació immediata en emergències.",
+          "Arquitectura enfocada en la sobirania de dades, permetent emmagatzematge local i sincronització xifrada opcional.",
+          "Gestió dinàmica de dates de caducitat per a alertes automàtiques de renovació de documents oficials."
+        ],
+        "en": [
+          "Developed a hardened digital environment for the highly secure storage of sensitive documents (ID cards, Passports, Deeds).",
+          "Implementation of end-to-end encryption protocols to ensure total user data privacy and integrity.",
+          "Smart file categorization logic to facilitate rapid access to medical, financial, and real estate documentation.",
+          "Cross-platform mobile optimization focused on high usability and immediate document retrieval in emergency situations.",
+          "Data-sovereignty focused architecture allowing local-only storage and optional encrypted cloud synchronization.",
+          "Dynamic expiry date management for automated notification alerts regarding official document renewals."
+        ]
+      },
+      "techStack": [
+        "React Native/Flutter",
+        "AES-256 Encryption",
+        "SQLite/Realm",
+        "Cloud Sync Engine",
+        "Biometric Auth"
+      ],
+      "security": {
+        "es": "Cifrado de grado militar, autenticación biométrica y aislamiento total de datos sensibles.",
+        "ca": "Xifrat de grau militar, autenticació biomètrica i aïllament total de dades sensibles.",
+        "en": "Military-grade encryption, biometric authentication, and total sensitive data isolation."
+      },
+      "links": {
+        "github": "github.com/joan-mata/DocuLife",
         "live": null
       }
     }
