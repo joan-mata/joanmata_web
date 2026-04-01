@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import Card from '../common/Card';
+import Badge from '../common/Badge';
 
 const Experience = ({ title, data, lang, isAdmin, onEdit, onAdd, translations }) => {
   return (
@@ -23,14 +24,12 @@ const Experience = ({ title, data, lang, isAdmin, onEdit, onAdd, translations })
             }
           >
             {isAdmin && <button className="admin-icon entry-edit-btn" onClick={() => onEdit(idx)}>✎</button>}
-            <ul className="card-list">
-              {exp.points[lang].slice(0, 3).map((point, i) => (
-                <li key={i}>{point}</li>
+            <p className="card-desc-home">{exp.desc[lang]}</p>
+            <div className="card-tags-home" style={{ marginTop: '0.8rem', display: 'flex', flexWrap: 'wrap', gap: '0.4rem' }}>
+              {exp.tags && exp.tags.slice(0, 4).map((tag, i) => (
+                <Badge key={i} text={tag} />
               ))}
-              {exp.points[lang].length > 3 && (
-                <li style={{ listStyle: 'none', opacity: 0.6, fontSize: '0.85rem' }}>...</li>
-              )}
-            </ul>
+            </div>
           </Card>
         ))}
       </div>
