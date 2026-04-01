@@ -20,7 +20,6 @@ const Education = ({ title, data, lang, isAdmin, onEdit, onAdd, translations }) 
             <Card 
               key={eduId}
               title={edu.title[lang]}
-              subtitle={edu.school}
               date={edu.date}
               translations={translations}
             >
@@ -34,12 +33,9 @@ const Education = ({ title, data, lang, isAdmin, onEdit, onAdd, translations }) 
               )}
 
               <div className="card-content" style={{ marginBottom: '1.5rem' }}>
-                <div className="badge-container" style={{ marginBottom: '1rem' }}>
+                <div className="badge-container">
                   <Badge text={edu.category[lang]} />
                 </div>
-                <p style={{ color: 'var(--text-dim)', fontSize: '1rem', lineHeight: '1.6' }}>
-                  {edu.explanation?.[lang] || ""}
-                </p>
               </div>
               
               <div className="card-footer-actions">
