@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { useParams, useNavigate, Link } from 'react-router-dom';
+import Badge from '../common/Badge';
 
 const ExperienceDetailsPage = ({ data, lang, translations, isAdmin, onEdit }) => {
   const { id } = useParams();
@@ -42,10 +43,13 @@ const ExperienceDetailsPage = ({ data, lang, translations, isAdmin, onEdit }) =>
         </div>
       </header>
 
-      <div className="detail-grid-layout" style={{ gridTemplateColumns: '1fr' }}>
+      <div className="detail-grid-layout">
         <div className="detail-main-column">
           <section className="detail-glass-card">
             <h2 className="detail-section-title">{translations.experience.details}</h2>
+            <p className="detail-long-description">
+              {job.desc[lang]}
+            </p>
             <ul className="detail-feature-list">
               {job.points[lang].map((point, i) => (
                 <li key={i}>{point}</li>
@@ -53,6 +57,17 @@ const ExperienceDetailsPage = ({ data, lang, translations, isAdmin, onEdit }) =>
             </ul>
           </section>
         </div>
+
+        <aside className="detail-sidebar-column">
+          <div className="detail-glass-card">
+            <h2 className="detail-section-title">Tecnologías y Competencias</h2>
+            <div className="detail-badge-cloud">
+              {job.tags && job.tags.map((tag, i) => (
+                <Badge key={i} text={tag} />
+              ))}
+            </div>
+          </div>
+        </aside>
       </div>
     </div>
   );

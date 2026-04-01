@@ -4,6 +4,8 @@
     {
       "company": "Universitat Autònoma de Barcelona",
       "role": "University Professor",
+      "desc": "Technical training leadership in telecommunication services, web architectures, and network cybersecurity.",
+      "tags": ["Teaching", "Full-Stack", "Networking", "Cybersecurity", "PKI"],
       "points": [
         "Leading practical training in full-stack web development and network security within the 'Telecommunication Services' course.",
         "Delivering technical instruction on full-stack architecture design, database administration, and advanced web server configuration.",
@@ -18,6 +20,8 @@
     {
       "company": "FlexiiC - Flexible Integrated Circuits",
       "role": "Integrated Circuit Designer",
+      "desc": "Advanced hardware design (RTL) and validation for low-power wireless connectivity solutions.",
+      "tags": ["Embedded Systems", "PCB Design", "BLE", "Verilog", "RTL"],
       "points": [
         "Developing and implementing wireless connectivity solutions using nRF52840 SoC and Bluetooth Low Energy (BLE) protocols.",
         "End-to-end PCB design from schematic capture to fabrication management, ensuring interoperability with embedded systems.",
@@ -30,6 +34,8 @@
     {
       "company": "Universitat Autònoma de Barcelona",
       "role": "Senior Research Technical Specialist",
+      "desc": "Backend architecture, REST API design, and data pipeline automation for scientific research projects.",
+      "tags": ["Backend", "API Design", "MongoDB", "Data Pipelines", "Flask"],
       "points": [
         "End-to-end design and development of the backend architecture for research data management, migrating from Django to Flask to optimize REST API flexibility.",
         "Led the transition from SQL (relational) to NoSQL (MongoDB) database architecture to efficiently manage heterogeneous and dynamic data schemas.",
@@ -41,6 +47,8 @@
     {
       "company": "Cellnex Telecom",
       "role": "Sales Engineer",
+      "desc": "Planning and theoretical modeling of RF systems and strategic management of telecommunication infrastructures.",
+      "tags": ["RF Systems", "Telecom", "Fiber Optics", "Project Mgmt"],
       "points": [
         "Performing theoretical analysis and RF system modeling for market introduction, ensuring technical viability and compliance with standards.",
         "Management of strategic alliances with fiber optic providers and tech partners to integrate external connectivity solutions.",
@@ -52,6 +60,8 @@
     {
       "company": "Johnson Control Hitachi",
       "role": "QA Tester",
+      "desc": "Technical validation and maintenance of critical HVAC industrial test environments through Python automation.",
+      "tags": ["QA Testing", "Python", "Automation", "HVAC", "Arduino"],
       "points": [
         "Performance evaluation and validation of HVAC systems using physical simulators under critical operating conditions.",
         "Implementation of an Arduino-based diagnostic system for monitoring and analyzing indoor/outdoor serial communication protocols.",
@@ -64,6 +74,8 @@
     {
       "company": "Federació Catalana de Futbol",
       "role": "Referee",
+      "desc": "Critical decision-making and high-pressure situation management in regulated sports competitions.",
+      "tags": ["Leadership", "Decision Making", "Conflict Mgmt"],
       "points": [
         "Critical pressure management and decision-making in high-demand competitive environments.",
         "Application of complex regulations and conflict mediation under time-constrained high-stress conditions."

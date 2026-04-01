@@ -57,6 +57,7 @@ const AdminModal = ({ type, initialData, onSave, onCancel, translations: tUI }) 
 
     if (type === 'experience') {
       fieldsToTranslate.push('role');
+      fieldsToTranslate.push('desc');
       listsToTranslate.push('points');
     } else if (type === 'project') {
       fieldsToTranslate.push('desc');
@@ -210,11 +211,20 @@ const AdminModal = ({ type, initialData, onSave, onCancel, translations: tUI }) 
         <input className="admin-input" value={formData.company || ''} onChange={(e) => handleChange('company', e.target.value)} />
       </div>
       {renderLanguageInputs('Cargo', 'role')}
+      {renderLanguageInputs('Mini Resumen / Extracto', 'desc', true)}
       <div className="form-group">
         <label>Fecha</label>
         <input className="admin-input" value={formData.date || ''} onChange={(e) => handleChange('date', e.target.value)} />
       </div>
-      {renderMultilingualList('Puntos Clave', 'points')}
+      <div className="form-group">
+        <label>Tags (Separados por comas)</label>
+        <input 
+          className="admin-input" 
+          value={Array.isArray(formData.tags) ? formData.tags.join(', ') : (formData.tags || '')} 
+          onChange={(e) => handleChange('tags', e.target.value.split(',').map(t => t.trim()))} 
+        />
+      </div>
+      {renderMultilingualList('Responsabilidades y Logros', 'points')}
     </>
   );
 

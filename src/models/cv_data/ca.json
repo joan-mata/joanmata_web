@@ -1,9 +1,10 @@
 {
-  "profile": "Enginyer amb doble titulació en Enginyeria Informàtica i Sistemes de Telecomunicació, amb un perfil híbrid que uneix maquinari, programari i ciència de dades. Actualment exerceixo com a Professor Universitari especialitzat en ciberseguretat i xarxes, activitat que compagino amb el desenvolupament de solucions d'IA local, arquitectures cloud escalables i sistemes encastats. Em defineix una profunda curiositat tècnica i una mentalidad de aprenentatge continu, la qual cosa em permet adaptar-me ràpidament a noves tecnologies i integrar-les en projectes complexos i segurs.",
-  "experience": [
+  "profile": "Enginyer amb doble titulació en Enginyeria Informàtica i Sistemes de Telecomunicació, amb un perfil híbrid que uneix maquinari, programari i ciència de dades. Actualment exerceixo com a Professor Universitari especialitzat en ciberseguretat i xarxes, activitat que compagino amb el desenvolupament de solucions d'IA local, arquitectures cloud escalables i sistemes encastats. Em defineix una profunda curiositat tècnica i una mentalidad de aprenentatge continu, la qual cosa em permet adaptar-me ràpidament a noves tecnologies i integrar-les en projectes complexos i seg  "experience": [
     {
       "company": "Universitat Autònoma de Barcelona",
       "role": "Professor d'universitat",
+      "desc": "Lideratge de formació tècnica en serveis de telecomunicacions, arquitectures web i ciberseguretat en xarxes.",
+      "tags": ["Docència", "Full-Stack", "Xarxes", "Ciberseguretat", "PKI"],
       "points": [
         "Docent a l'assignatura 'Serveis de Telecomunicacions', liderant la formació pràctica en desenvolupament web full-stack i seguretat en xarxes.",
         "Capacitació en el disseny d'arquitectures web completes, administració de bases de dades i configuració avançada de servidors web.",
@@ -18,6 +19,8 @@
     {
       "company": "FlexiiC - Flexible Integrated Circuits",
       "role": "Dissenyador de Circuits Integrats",
+      "desc": "Disseny i validació de maquinari avançat (RTL) per a solucions de connectivitat inalàmbrica de baix consum.",
+      "tags": ["Embedded Systems", "PCB Design", "BLE", "Verilog", "RTL"],
       "points": [
         "Desenvolupament i implementació de solucions de connectivitat inalàmbrica mitjançant el SoC nRF52840 i protocols Bluetooth Low Energy (BLE).",
         "Disseny integral de PCBs des de la fase d'esquemàtics fins a la gestió de fabricació, garantint la interoperabilitat amb sistemes embebits.",
@@ -30,6 +33,8 @@
     {
       "company": "Universitat Autònoma de Barcelona",
       "role": "Tècnic Superior Especialista en Recerca",
+      "desc": "Arquitectura de backend, disseny d'APIs REST i automatització de pipelines de dades per a projectes científics.",
+      "tags": ["Backend", "API Design", "MongoDB", "Data Pipelines", "Flask"],
       "points": [
         "Disseny i desenvolupament integral de l'arquitectura backend per a la gestió de dades, migrant amb èxit de Django a Flask per optimitzar l'API REST.",
         "Lideratge en la transició d'una arquitectura de base de dades relacional (SQL) a una no relacional (NoSQL/MongoDB) per a esquemes dinàmics.",
@@ -41,6 +46,8 @@
     {
       "company": "Cellnex Telecom",
       "role": "Enginyer de Vendes",
+      "desc": "Planificació i modelatge teòric de sistemes de RF i gestió estratègica d'infraestructures de telecomunicació.",
+      "tags": ["RF Systems", "Telecom", "Fiber Optics", "Project Mgmt"],
       "points": [
         "Realització d'anàlisis teòrics i modelatge de sistemes de RF per a la seva introducció al mercat, garantint estàndards de qualitat.",
         "Gestió d'aliances estratègiques amb proveïdors de fibra òptica i partners tecnològics per integrar solucions de connectivitat externes.",
@@ -52,6 +59,8 @@
     {
       "company": "Johnson Control Hitachi",
       "role": "QA Tester",
+      "desc": "Validació tècnica i diagnòstic de sistemes industrials mitjançant automatització amb Python i maquinari Arduino.",
+      "tags": ["QA Testing", "Python", "Automation", "HVAC", "Arduino"],
       "points": [
         "Avaluació de rendiment i validació de sistemes de climatització mitjançant l'ús de simuladors físics en condicions crítiques d'operació.",
         "Implementació d'un sistema de diagnòstic basat en Arduino per a la monitorització i anàlisi del protocol de comunicació sèrie indoor/outdoor.",
@@ -64,9 +73,16 @@
     {
       "company": "Federació Catalana de Futbol",
       "role": "Àrbitre de futbol",
+      "desc": "Presa de decisions crítica i gestió d'entorns d'alta pressió en competicions reglamentades.",
+      "tags": ["Leadership", "Decision Making", "Conflict Mgmt"],
       "points": [
         "Gestió de la pressió i presa de decisions crítica en entorns competitius d'alta exigència.",
         "Aplicació de reglamentació complexa i mediació en conflictes sota condicions d'estrès temporal."
+      ],
+      "date": "07/2016 - Actualitat"
+    }
+  ],
+en conflictes sota condicions d'estrès temporal."
       ],
       "date": "07/2016 - Actualitat"
     }

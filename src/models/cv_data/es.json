@@ -4,6 +4,8 @@
     {
       "company": "Universitat Autònoma de Barcelona",
       "role": "Profesor de universidad",
+      "desc": "Liderazgo de formación técnica en servicios de telecomunicaciones, arquitecturas web y ciberseguridad en redes.",
+      "tags": ["Docencia", "Full-Stack", "Redes", "Ciberseguridad", "PKI"],
       "points": [
         "Docente en la asignatura 'Serveis de Telecomunicacions', liderando la formación práctica en desarrollo web full-stack y seguridad en redes.",
         "Capacitación en el diseño de arquitecturas web completas, administración de bases de datos y configuración avanzada de servidores web.",
@@ -18,6 +20,8 @@
     {
       "company": "FlexiiC - Flexible Integrated Circuits",
       "role": "Diseñador de Circuitos Integrados",
+      "desc": "Diseño y validación de hardware avanzado (RTL) para soluciones de conectividad inalámbrica de bajo consumo.",
+      "tags": ["Embedded Systems", "PCB Design", "BLE", "Verilog", "RTL"],
       "points": [
         "Desarrollo e implementación de soluciones de conectividad inalámbrica mediante el SoC nRF52840 y protocolos Bluetooth Low Energy (BLE).",
         "Diseño integral de PCBs desde la fase de esquemáticos hasta la gestión de fabricación, garantizando la interoperabilidad con sistemas embebidos.",
@@ -30,6 +34,8 @@
     {
       "company": "Universitat Autònoma de Barcelona",
       "role": "Técnico Superior Especialista en Investigación",
+      "desc": "Arquitectura de backend, diseño de APIs REST y automatización de pipelines de datos para proyectos científicos.",
+      "tags": ["Backend", "API Design", "MongoDB", "Data Pipelines", "Flask"],
       "points": [
         "Diseño y desarrollo integral de la arquitectura backend para gestión de datos, migrando con éxito de Django a Flask para optimizar la API REST.",
         "Liderazgo en la transición de una arquitectura de base de datos relacional (SQL) a una no relacional (NoSQL/MongoDB) para esquemas dinámicos.",
@@ -41,6 +47,8 @@
     {
       "company": "Cellnex Telecom",
       "role": "Ingeniero de Ventas",
+      "desc": "Planificación y modelado teórico de sistemas de RF y gestión estratégica de infraestructuras de telecomunicación.",
+      "tags": ["RF Systems", "Telecom", "Fiber Optics", "Project Mgmt"],
       "points": [
         "Realización de análisis teóricos y modelado de sistemas de RF para su introducción en el mercado, garantizando estándares de calidad.",
         "Gestión de alianzas estratégicas con proveedores de fibra óptica y partners tecnológicos para integrar soluciones de conectividad externas.",
@@ -52,6 +60,8 @@
     {
       "company": "Johnson Control Hitachi",
       "role": "QA Tester",
+      "desc": "Validación técnica y diagnóstico de sistemas industriales mediante automatización con Python y hardware Arduino.",
+      "tags": ["QA Testing", "Python", "Automation", "HVAC", "Arduino"],
       "points": [
         "Evaluación de rendimiento y validación de sistemas de climatización mediante el uso de simuladores físicos en condiciones críticas de operación.",
         "Implementación de un sistema de diagnóstico basado en Arduino para la monitorización y análisis del protocolo de comunicación serie indoor/outdoor.",
@@ -64,6 +74,8 @@
     {
       "company": "Federació Catalana de Futbol",
       "role": "Árbitro de fútbol",
+      "desc": "Toma de decisiones crítica y gestión de entornos de alta presión en competiciones reglamentadas.",
+      "tags": ["Leadership", "Decision Making", "Conflict Mgmt"],
       "points": [
         "Gestión de la presión y toma de decisiones crítica en entornos competitivos de alta exigencia.",
         "Aplicación de reglamentación compleja y mediación en conflictos bajo condiciones de estrés temporal."

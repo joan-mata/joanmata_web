@@ -34,6 +34,12 @@ export const DATA = {
       ca: ca.experience[i].role,
       en: en.experience[i].role
     },
+    desc: {
+      es: es.experience[i].desc,
+      ca: ca.experience[i].desc,
+      en: en.experience[i].desc
+    },
+    tags: es.experience[i].tags,
     points: {
       es: es.experience[i].points,
       ca: ca.experience[i].points,

@@ -74,6 +74,8 @@ export default function App() {
       yaml += `  - empresa: ${q(exp.company)}\n`;
       yaml += `    puesto: ${q(exp.role[l])}\n`;
       yaml += `    fecha: ${q(exp.date)}\n`;
+      yaml += `    resumen: ${q(exp.desc[l])}\n`;
+      yaml += `    tags: [${(exp.tags || []).map(t => q(t)).join(', ')}]\n`;
       yaml += `    descripcion: ${fmtList(exp.points[l], 6)}\n`;
     });
 
@@ -102,14 +104,20 @@ export default function App() {
 
     yaml += `\nhabilidades:\n`;
     yaml += `  tecnicas:\n`;
-    yaml += `    - "Programación: ${d.skills.software.join(', ')}."\n`;
-    yaml += `    - "Datos e IA: ${d.skills.ai.join(', ')}."\n`;
-    yaml += `    - "Web & Scraping: ${d.skills.scraping.join(', ')}."\n`;
-    yaml += `    - "Infraestructura: ${d.skills.infrastructure.join(', ')}."\n`;
+    if (d.skills.software) yaml += `    - "Programación: ${d.skills.software.join(', ')}."\n`;
+    if (d.skills.ai) yaml += `    - "Datos e IA: ${d.skills.ai.join(', ')}."\n`;
+    if (d.skills.scraping) yaml += `    - "Web & Scraping: ${d.skills.scraping.join(', ')}."\n`;
+    if (d.skills.infrastructure) yaml += `    - "Infraestructura: ${d.skills.infrastructure.join(', ')}."\n`;
+    if (d.skills.hardware) yaml += `    - "Hardware: ${d.skills.hardware.join(', ')}."\n`;
+    
     yaml += `  competencias:\n`;
-    d.skills.leadership.forEach(c => { yaml += `    - ${q(c)}\n`; });
+    (d.skills.leadership || []).forEach(c => { yaml += `    - ${q(c)}\n`; });
+    
     yaml += `  idiomas:\n`;
-    ["Español (nativo)", "Catalán (nativo)", "Inglés (B2)", "Francés (A2)"].forEach(i => { yaml += `    - ${q(i)}\n`; });
+    const idiomas = l === 'es' ? ["Español (nativo)", "Catalán (nativo)", "Inglés (B2)", "Francés (A2)"] :
+                   l === 'ca' ? ["Espanyol (natiu)", "Català (natiu)", "Anglès (B2)", "Francès (A2)"] :
+                   ["Spanish (native)", "Catalan (native)", "English (B2)", "French (A2)"];
+    idiomas.forEach(i => { yaml += `    - ${q(i)}\n`; });
 
     yaml += `\ncertificados:\n`;
     d.certificates.forEach(c => {
