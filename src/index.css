@@ -1102,3 +1102,106 @@ nav ul {
   border-color: var(--accent-primary);
   background: rgba(255, 255, 255, 0.08);
 }
+
+/* --- RESPONIVE DESIGN (SMARTPHONES) --- */
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+    padding-top: 6.5rem;
+  }
+
+  .premium-nav {
+    width: 92%;
+    padding: 0 1.2rem;
+    height: 4.5rem;
+  }
+
+  .logo {
+    font-size: 1.1rem;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero .profile-text {
+    font-size: 1rem;
+  }
+
+  /* Grids */
+  .projects-grid, .experience-grid, .education-grid, .certificates-grid, .skills-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem !important;
+  }
+
+  /* Details Page */
+  .project-detail-page, .experience-detail-page {
+    padding: 1rem;
+    padding-top: 6.5rem;
+  }
+
+  .detail-main-title {
+    font-size: 2.2rem;
+  }
+
+  .detail-grid-layout {
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem;
+  }
+
+  .detail-glass-card {
+    padding: 1.5rem;
+  }
+
+  .detail-section-title {
+    font-size: 1.1rem;
+  }
+
+  .detail-meta {
+    flex-wrap: wrap;
+    gap: 0.8rem;
+  }
+
+  /* Admin Buttons on Mobile */
+  .admin-toolbar {
+    bottom: 1rem;
+    right: 1rem;
+    transform: scale(0.85);
+  }
+
+  .experience-card, .project-card-home {
+    padding: 1.25rem !important;
+  }
+
+  .skill-group-card {
+    padding: 1rem !important;
+  }
+
+  .detail-top-nav {
+    margin-bottom: 2rem;
+  }
+
+  .back-link-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* Extra small devices (iPhone SE, etc.) */
+@media (max-width: 380px) {
+  .detail-main-title {
+    font-size: 1.8rem;
+  }
+  
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .premium-nav {
+    padding: 0 0.8rem;
+  }
+  
+  .logo {
+    font-size: 0.95rem;
+  }
+}
