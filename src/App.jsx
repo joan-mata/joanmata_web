@@ -110,14 +110,14 @@ export default function App() {
 
     yaml += `\nskills:\n`;
     yaml += `  ${isEn ? 'technical' : 'tecnicas'}:\n`;
-    if (d.skills.software) yaml += `    - "${isEn ? 'Programming' : 'Programación'}: ${d.skills.software.join(', ')}."\n`;
-    if (d.skills.ai) yaml += `    - "${isEn ? 'Data & AI' : 'Datos e IA'}: ${d.skills.ai.join(', ')}."\n`;
+    if (d.skills.software) yaml += `    - "${isEn ? 'Programming' : (l === 'ca' ? 'Programació' : 'Programación')}: ${d.skills.software.join(', ')}."\n`;
+    if (d.skills.ai) yaml += `    - "${isEn ? 'Data & AI' : (l === 'ca' ? 'Dades i IA' : 'Datos e IA')}: ${d.skills.ai.join(', ')}."\n`;
     if (d.skills.scraping) yaml += `    - "Web & Scraping: ${d.skills.scraping.join(', ')}."\n`;
-    if (d.skills.infrastructure) yaml += `    - "${isEn ? 'Infrastructure' : 'Infraestructura'}: ${d.skills.infrastructure.join(', ')}."\n`;
-    if (d.skills.hardware) yaml += `    - "Hardware: ${d.skills.hardware.join(', ')}."\n`;
+    if (d.skills.infrastructure) yaml += `    - "${isEn ? 'Infrastructure' : (l === 'ca' ? 'Infraestructura' : 'Infraestructura')}: ${d.skills.infrastructure.join(', ')}."\n`;
+    if (d.skills.hardware) yaml += `    - "${isEn ? 'Hardware' : (l === 'ca' ? 'Maquinari' : 'Hardware')}: ${d.skills.hardware.join(', ')}."\n`;
 
     yaml += `  ${isEn ? 'soft_skills' : 'competencias'}:\n`;
-    (d.skills.leadership || []).forEach(c => {
+    (d.skills.leadership[l] || []).forEach(c => {
       yaml += `    - ${q(c)}\n`;
     });
 
@@ -193,7 +193,7 @@ export default function App() {
             <Route path="/projects/:id" element={<ProjectDetailsPage data={currentData.projects} lang={lang} translations={t} isAdmin={isAdmin} onEdit={(id) => setShowModal({ type: 'project', context: 'projects', itemIndex: currentData.projects.findIndex(p => p.id === id), data: currentData.projects.find(p => p.id === id) })} />} />
             <Route path="/education" element={<Education title={t.sections.education} data={currentData.education} lang={lang} translations={t} {...adminProps('education', 'education')} />} />
             <Route path="/education/:id" element={<EducationDetailsPage data={currentData.education} lang={lang} translations={t} isAdmin={isAdmin} onEdit={(id) => setShowModal({ type: 'education', context: 'education', itemIndex: currentData.education.findIndex(e => e.id === id), data: currentData.education.find(e => e.id === id) })} />} />
-            <Route path="/skills" element={<Skills title={t.sections.skills} data={currentData.skills} isAdmin={isAdmin} onEdit={() => setShowModal({ type: 'skills', context: 'skills', data: currentData.skills })} onAdd={() => setShowModal({ type: 'skills', context: 'skills' })} translations={t} />} />
+            <Route path="/skills" element={<Skills title={t.sections.skills} data={currentData.skills} lang={lang} isAdmin={isAdmin} onEdit={() => setShowModal({ type: 'skills', context: 'skills', data: currentData.skills })} onAdd={() => setShowModal({ type: 'skills', context: 'skills' })} translations={t} />} />
             <Route path="/certificates" element={<Certificates title={t.sections.certificates} data={currentData.certificates} lang={lang} translations={t} {...adminProps('certificates', 'certificate')} />} />
             <Route path="/certificates/:id" element={<CertificateDetailsPage data={currentData.certificates} lang={lang} translations={t} isAdmin={isAdmin} onEdit={(id) => setShowModal({ type: 'certificates', context: 'certificates', itemIndex: currentData.certificates.findIndex(c => c.id === id), data: currentData.certificates.find(c => c.id === id) })} />} />
             <Route path="/volunteering" element={<Volunteering title={t.sections.volunteering} data={currentData.volunteering} lang={lang} {...adminProps('volunteering', 'volunteering')} />} />

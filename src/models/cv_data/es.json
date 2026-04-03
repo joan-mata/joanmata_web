@@ -1,5 +1,15 @@
 {
   "profile": "Ingeniero con doble titulación en Ingeniería Informática y Sistemas de Telecomunicación, con un perfil híbrido que une hardware, software y ciencia de datos. Actualmente ejerzo como Profesor Universitario especializado en ciberseguridad y redes, actividad que compagino con el despliegue de infraestructuras cloud, soluciones de IA local (Privacy-First) y diseño de sistemas embebidos. Mi experiencia abarca desde la verificación digital de circuitos integrados hasta el desarrollo de arquitecturas backend escalables en entornos de investigación. Me define una curiosidad técnica inagotable y la capacidad de integrar soluciones complejas donde convergen el hardware y el software, siempre bajo una filosofía de seguridad por diseño y soberanía digital.",
+  "skills": {
+    "leadership": [
+      "Curiosidad técnica y vocación de aprendizaje continuo ante nuevos desafíos.",
+      "Liderazgo, tutoría y mentoría de equipos técnicos y estudiantes.",
+      "Toma de decisiones crítica y gestión de la presión.",
+      "Gestión de conflictos, comunicación asertiva y mediación.",
+      "Capacidad analítica para la resolución metódica de problemas complejos.",
+      "Adaptabilidad técnica en entornos multidisciplinares de alta exigencia."
+    ]
+  },
   "experience": [
     {
       "company": "Universitat Autònoma de Barcelona",

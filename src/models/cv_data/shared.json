@@ -10,8 +10,7 @@
     "ai": ["Machine Learning", "Local IA", "DeepSeek/Mistral", "Neural Networks"],
     "scraping": ["BeautifulSoup", "Scrapy", "Selenium", "Data Normalization", "Massive Ingestion", "User-Agent Rotation"],
     "infrastructure": ["AWS", "Docker", "Cloudflare", "Nginx", "Linux", "SSL/TLS", "PKI/SSH"],
-    "hardware": ["PCB Design", "nRF52 / Nordic", "Bluetooth (BLE)", "Verilog / RTL", "Embedded Systems", "Arduino"],
-    "leadership": ["Liderazgo de Equipos, Gestión de la Presión, Toma de Decisiones, Docencia Universitaria"]
+    "hardware": ["PCB Design", "nRF52 / Nordic", "Bluetooth (BLE)", "Verilog / RTL", "Embedded Systems", "Arduino"]
   },
   "certificates": [
     { "id": "ai-big", "title": "Desarrollo con IA", "issuer": "BIG School", "date": "2026", "file": "/docs/certs/ai-big.pdf" },

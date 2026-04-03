@@ -1,7 +1,7 @@
 import React from 'react';
 import Badge from '../common/Badge';
 
-const Skills = ({ title, data, isAdmin, onEdit, onAdd, translations }) => {
+const Skills = ({ title, data, lang, isAdmin, onEdit, onAdd, translations }) => {
   const categories = Object.keys(data);
 
   return (
@@ -23,7 +23,7 @@ const Skills = ({ title, data, isAdmin, onEdit, onAdd, translations }) => {
               {translations.skills[cat]}
             </h3>
             <div className="badge-container" style={{ justifyContent: 'flex-start' }}>
-              {data[cat].map((skill, idx) => (
+              {(Array.isArray(data[cat]) ? data[cat] : (data[cat][lang] || [])).map((skill, idx) => (
                 <Badge key={idx} text={skill} />
               ))}
             </div>

@@ -1,5 +1,15 @@
 {
-  "profile": "Double degree engineer in Computer Engineering and Telecommunication Systems, with a hybrid profile spanning hardware, software, and data science. Currently serving as a University Professor specialized in cybersecurity and networking, I complement this with the deployment of cloud infrastructures, local AI solutions (Privacy-First), and embedded systems design. My background ranges from integrated circuit digital verification to developing scalable backend architectures within research environments. I am defined by an inexhaustible technical curiosity and the ability to integrate complex solutions where hardware and software converge, always guided by a philosophy of security-by-design and digital sovereignty.",
+  "profile": "Engineer with a double degree in Computer Engineering and Telecommunication Systems, with a hybrid profile that connects hardware, software, and data science. Currently serving as a University Professor specialized in cybersecurity and networks, which I balance with the deployment of cloud infrastructure, local AI solutions (Privacy-First), and embedded systems design. My experience spans from digital verification of integrated circuits to the development of scalable backend architectures in research environments. I am defined by an inexhaustible technical curiosity and the ability to integrate complex solutions where hardware and software converge, always under a philosophy of security by design and digital sovereignty.",
+  "skills": {
+    "leadership": [
+      "Technical curiosity and dedication to continuous learning for new challenges.",
+      "Leadership, tutoring, and mentoring of technical teams and students.",
+      "Critical decision-making and pressure management.",
+      "Conflict management, assertive communication, and mediation.",
+      "Analytical capacity for methodical resolution of complex problems.",
+      "Technical adaptability in high-demand multidisciplinary environments."
+    ]
+  },
   "experience": [
     {
       "company": "Universitat Autònoma de Barcelona",

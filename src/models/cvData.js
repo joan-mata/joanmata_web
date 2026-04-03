@@ -8,6 +8,14 @@ const dataByLang = { es, ca, en };
 
 export const DATA = {
   ...shared,
+  skills: {
+    ...shared.skills,
+    leadership: {
+      es: es.skills.leadership,
+      ca: ca.skills.leadership,
+      en: en.skills.leadership
+    }
+  },
   certificates: es.certificates.map((_, i) => ({
     id: shared.certificates[i].id,
     title: shared.certificates[i].title,
