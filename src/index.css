@@ -1038,20 +1038,7 @@ nav ul {
 }
 
 /* Responsive */
-@media (max-width: 768px) {
-  .hero h1 { font-size: 2.75rem; }
-  .premium-nav { padding: 0 1.5rem; height: auto; flex-direction: column; padding: 1rem; border-radius: 20px; }
-  nav ul { gap: 0.4rem; flex-wrap: wrap; justify-content: center; margin-top: 1rem; }
-  .nav-btn { padding: 0.4rem 0.8rem; font-size: 0.7rem; }
-  
-  .detail-main-title { font-size: 2.5rem; }
-  .detail-grid-layout { grid-template-columns: 1fr; gap: 1.5rem; }
-  .detail-top-nav { flex-direction: column; align-items: stretch; }
-  .edit-details-btn { width: 100%; }
 
-  .contact-grid { grid-template-columns: 1fr; }
-  .cv-download-box { padding: 2rem 1.5rem; }
-}
 /* AI Export Selector Modal */
 .export-selector-modal {
   max-width: 420px !important;
@@ -1185,10 +1172,12 @@ nav ul {
   }
 
   /* Admin Buttons on Mobile */
-  .admin-toolbar {
-    bottom: 1rem;
+  .language-switcher {
+    top: auto;
+    bottom: 1.5rem;
     right: 1rem;
-    transform: scale(0.85);
+    flex-direction: row;
+    padding: 0.6rem;
   }
 }
 
@@ -1208,5 +1197,13 @@ nav ul {
   
   .logo {
     font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .admin-toolbar {
+    bottom: 5.5rem; /* Above the language switcher */
+    right: 1rem;
+    transform: scale(0.85);
   }
 }
