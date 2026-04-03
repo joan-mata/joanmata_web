@@ -2,127 +2,191 @@ nombre: "Joan Mata Pàrraga"
 email: "joanmata.parraga@gmail.com"
 telefono: "+34 647 267 153"
 ubicacion: "Barcelona, España"
+website: "joanmata.com"
 
 perfil:
-  texto: "Ingeniero con doble titulación en Ingeniería Informática y Sistemas de Telecomunicación, con un perfil híbrido que une hardware, software y ciencia de datos. Actualmente ejerzo como Profesor Universitario especializado en ciberseguridad y redes, actividad que compagino con el desarrollo de soluciones de IA local, arquitecturas cloud escalables y sistemas embebidos. Me define una profunda curiosidad técnica y una mentalidad de aprendizaje continuo, lo que me permite adaptarme rápidamente a nuevas tecnologías e integrarlas en proyectos complejos y seguros."
+  texto: "Ingeniero con doble titulación en Ingeniería Informática y Sistemas de Telecomunicación, con un perfil híbrido que une hardware, software y ciencia de datos. Actualmente ejerzo como Profesor Universitario especializado en desarrollo web y redes. Me define una profunda curiosidad técnica y una mentalidad de aprendizaje continuo, lo que me permite adaptarme rápidamente a nuevas tecnologías e integrarlas en proyectos complejos y seguros."
+
 experiencia:
   - empresa: "Universitat Autònoma de Barcelona"
     puesto: "Profesor de universidad"
     fecha: "09/2025 - Presente"
+    resumen: "Liderazgo de formación técnica en servicios de telecomunicaciones, arquitecturas web y ciberseguridad en redes."
+    tags: ["Docencia", "Full-Stack", "Redes", "Ciberseguridad", "PKI"]
     descripcion: |
       - Docente en la asignatura 'Serveis de Telecomunicacions', liderando la formación práctica en desarrollo web full-stack y seguridad en redes.
-          - Instrucción técnica en desarrollo Full-stack, capacitando en el diseño de arquitecturas web completas y la administración de bases de datos.
-          - Configuración avanzada de seguridad en servicios web: servidores y VirtualHosts, gestión de infraestructura de clave públicas mediante certificados y aseguramiento de tráfico con protocolos SSL/TLS.
-      - Docente en 'Fonaments de Xarxes', impartiendo fundamentos de comunicación cliente-servidor y arquitectura de red basada en el protocolo IP.
-          - Diseño y simulación de topologías de red complejas, supervisando la configuración de sistemas operativos de red, protocolos de encaminamiento estático y gestión de gateways.
-          - Especialista en planificación de direccionamiento de red avanzado (VLSM), segmentación de redes y despliegue de servicios críticos de infraestructura como DHCP y DNS.
-      - Tutor de Trabajos de Fin de Grado (TFG), supervisando la arquitectura técnica y el cumplimiento de hitos en proyectos de ingeniería informática y de datos:
-          - Ciberseguridad: Supervisión del desarrollo de una herramienta CLI para auditoría de hardening web.
-          - Data Engineering: Dirección de un sistema de Web Scraping para la extracción y normalización de datos masivos.
-          - Data Science: Mentoría en el diseño de modelos predictivos de Machine Learning.
+      - Capacitación en el diseño de arquitecturas web completas, administración de bases de datos y configuración avanzada de servidores web.
+      - Gestión de infraestructura de clave pública (PKI) mediante certificados y aseguramiento de tráfico con protocolos SSL/TLS.
+      - Docente en 'Fonaments de Xarxes', impartiendo fundamentos de comunicación cliente-servidor y arquitectura de red basada en IP.
+      - Diseño y simulación de topologías de red complejas, supervisando protocolos de encaminamiento estático y gestión de gateways.
+      - Especialista en planificación de direccionamiento de red avanzado (VLSM), segmentación de redes y despliegue de servicios críticos (DHCP, DNS).
+      - Tutor de Trabajos de Fin de Grado (TFG) en Ciberseguridad (hardening), Data Engineering (scraping masivo) y Data Science (Machine Learning).
   - empresa: "FlexiiC - Flexible Integrated Circuits"
     puesto: "Diseñador de Circuitos Integrados"
     fecha: "09/2024 - 11/2025"
+    resumen: "Diseño y validación de hardware avanzado (RTL) para soluciones de conectividad inalámbrica de bajo consumo."
+    tags: ["Embedded Systems", "PCB Design", "BLE", "Verilog", "RTL"]
     descripcion: |
-      - Desarrollo e implementación de soluciones de conectividad inalámbrica mediante el SoC nRF52840 y protocolos Bluetooth Low Energy (BLE), logrando la integración multiplataforma entre sensores, dongles y aplicaciones móviles.
-      - Diseño integral de PCBs desde la fase de esquemáticos hasta la gestión de fabricación, garantizando la interoperabilidad con sistemas embebidos y validando la conectividad física de los prototipos.
-      - Caracterización física y validación funcional de circuitos integrados mediante instrumentación avanzada de laboratorio, analizando señales y métricas de rendimiento para la elaboración de informes técnicos de certificación.
-      - Verificación digital de hardware (RTL) mediante el desarrollo de entornos de testeo (Testbenches) en Verilog y optimización de rutinas en ASM (Assembly) para una arquitectura de procesador propietaria de la compañía.
-      - Liderazgo en la fase de debugging lógica del chip, identificando errores críticos mediante documentación interna y facilitando el paso del proyecto a la fase final de producción.
+      - Desarrollo e implementación de soluciones de conectividad inalámbrica mediante el SoC nRF52840 y protocolos Bluetooth Low Energy (BLE).
+      - Diseño integral de PCBs desde la fase de esquemáticos hasta la gestión de fabricación, garantizando la interoperabilidad con sistemas embebidos.
+      - Caracterización física y validación funcional de circuitos integrados mediante instrumentación avanzada de laboratorio y análisis de métricas de rendimiento.
+      - Verificación digital de hardware (RTL) mediante el desarrollo de entornos de testeo en Verilog y optimización de rutinas en ASM (Assembly).
+      - Liderazgo en la fase de debugging lógica del chip, identificando errores críticos y facilitando el paso a la fase final de producción.
   - empresa: "Universitat Autònoma de Barcelona"
     puesto: "Técnico Superior Especialista en Investigación"
     fecha: "07/2022 - 07/2023"
+    resumen: "Arquitectura de backend, diseño de APIs REST y automatización de pipelines de datos para proyectos científicos."
+    tags: ["Backend", "API Design", "MongoDB", "Data Pipelines", "Flask"]
     descripcion: |
-      - Diseño y desarrollo integral de la arquitectura backend para una plataforma de gestión de datos de investigación, migrando con éxito de Django a Flask para optimizar la flexibilidad de la API REST.
-      - Liderazgo en la transición de una arquitectura de base de datos relacional (SQL) a una no relacional (NoSQL/MongoDB) para gestionar eficientemente esquemas de datos heterogéneos y dinámicos provenientes de múltiples fuentes.
-      - Automatización del ciclo de vida de los datos mediante el desarrollo de pipelines para la ingesta, limpieza y normalización de información heterogénea, eliminando procesos manuales y asegurando la integridad de los registros en tiempo real.
-      - Creación y mantenimiento de una API estructurada para el servicio de datos en formato JSON, colaborando estrechamente con el equipo de Frontend para la visualización e integración de resultados.
+      - Diseño y desarrollo integral de la arquitectura backend para gestión de datos, migrando con éxito de Django a Flask para optimizar la API REST.
+      - Liderazgo en la transición de una arquitectura de base de datos relacional (SQL) a una no relacional (NoSQL/MongoDB) para esquemas dinámicos.
+      - Automatización del ciclo de vida de los datos mediante el desarrollo de pipelines para la ingesta, limpieza y normalización en tiempo real.
+      - Creación y mantenimiento de una API estructurada para el servicio de datos en formato JSON, colaborando estrechamente con el equipo de Frontend.
   - empresa: "Cellnex Telecom"
     puesto: "Ingeniero de Ventas"
     fecha: "06/2022 - 07/2023"
-    descripcion: 
-      - Realización de análisis teóricos y modelado de sistemas de RF para su introducción en el mercado, garantizando la viabilidad técnica y el cumplimiento de estándares.
-      - Gestión de alianzas estratégicas con proveedores de fibra óptica y partners tecnológicos para integrar soluciones de conectividad externas, mejorando la competitividad económica y técnica del servicio final.
-      - Coordinación integral del ciclo de vida del proyecto (End-to-End), desde el diseño conceptual hasta la instalación final y puesta en marcha.
-      - Comunicación estratégica con clientes clave para la gestión de riesgos, desviaciones presupuestarias o ajustes en la viabilidad de los despliegues.
+    resumen: "Planificación y modelado teórico de sistemas de RF y gestión estratégica de infraestructuras de telecomunicación."
+    tags: ["RF Systems", "Telecom", "Fiber Optics", "Project Mgmt"]
+    descripcion: |
+      - Realización de análisis teóricos y modelado de sistemas de RF para su introducción en el mercado, garantizando estándares de calidad.
+      - Gestión de alianzas estratégicas con proveedores de fibra óptica y partners tecnológicos para integrar soluciones de conectividad externas.
+      - Coordinación integral del ciclo de vida del proyecto (End-to-End), desde el diseño conceptual hasta la instalación y puesta en marcha.
+      - Comunicación estratégica con clientes clave para la gestión de riesgos, desviaciones presupuestarias y viabilidad de despliegues.
   - empresa: "Johnson Control Hitachi"
     puesto: "QA Tester"
     fecha: "07/2021 - 02/2022"
+    resumen: "Validación técnica y diagnóstico de sistemas industriales mediante automatización con Python y hardware Arduino."
+    tags: ["QA Testing", "Python", "Automation", "HVAC", "Arduino"]
     descripcion: |
-      - Evaluación de rendimiento y validación de sistemas de climatización mediante el uso de simuladores físicos, garantizando los estándares de calidad en condiciones críticas de operación.
-      - Implementación de un sistema de diagnóstico basado en Arduino para la monitorización y análisis del protocolo de comunicación serie entre unidades interiores y exteriores (indoor/outdoor).
-      - Desarrollo de scripts en Python para la automatización de procesos de testeo, logrando una transición eficiente desde métodos manuales hacia un entorno de validación más rápido y preciso.
-      - Responsable de la configuración, mantenimiento y optimización de la infraestructura física de los bancos de prueba (cableado, conexionado y empalme de precisión).
-      - Elaboración de informes técnicos detallados y documentación de resultados para el soporte directo a los equipos de diseño y desarrollo de producto.
+      - Evaluación de rendimiento y validación de sistemas de climatización mediante el uso de simuladores físicos en condiciones críticas de operación.
+      - Implementación de un sistema de diagnóstico basado en Arduino para la monitorización y análisis del protocolo de comunicación serie indoor/outdoor.
+      - Desarrollo de scripts en Python para la automatización de procesos de testeo, optimizando la precisión de la validación técnica.
+      - Responsable del mantenimiento y optimización de la infraestructura física de los bancos de prueba (cableado y conexionado de precisión).
+      - Elaboración de informes técnicos detalle y documentación de resultados para el soporte directo a los equipos de I+D.
   - empresa: "Federació Catalana de Futbol"
     puesto: "Árbitro de fútbol"
     fecha: "07/2016 - Presente"
+    resumen: "Toma de decisiones crítica y gestión de entornos de alta presión en competiciones reglamentadas."
+    tags: ["Leadership", "Decision Making", "Conflict Mgmt"]
+    descripcion: |
+      - Gestión de la presión y toma de decisiones crítica en entornos competitivos de alta exigencia.
+      - Aplicación de reglamentación compleja y mediación en conflictos bajo condiciones de estrés temporal.
 
 proyectos_ingenieria:
-  - nombre: "Editor de Documentos Inteligente con IA Local (Privacy-First)"
+  - nombre: "CV Interactivo"
     fecha: "2026"
-    tecnologias: ["Local LLMs", "Real-time PDF Engines", "Private AI API", "Full-stack"]
+    tecnologias: ["React", "Vite", "Vanilla CSS", "JS MVC", "JSON Persistence"]
     descripcion: |
-      - Desarrollo de una plataforma web para la edición y conversión de texto a PDF en tiempo real, con un asistente de IA integrado para la optimización de contenido.
-      - Implementación de un ecosistema de IA totalmente privado mediante el uso de APIs locales, permitiendo la interacción, corrección y generación de texto sin salida de datos a la nube.
-      - Diseño de una interfaz reactiva que permite el co-authoring entre el usuario y el modelo de lenguaje, con previsualización dinámica del documento final.
-      - Configuración de servidores locales para el despliegue del modelo de IA, garantizando latencia mínima y total confidencialidad de la información.
-  - nombre: "Arquitectura de Ingesta y Análisis Estadístico (Web Scraping)"
+      - Desarrollo integral del portal desde cero empleando React y Vanilla CSS para un diseño fluido y ligero.
+      - Implementación de arquitectura MVC (Model-View-Controller) para la separación estricta de lógica de datos y UI.
+      - Diseño de un motor de persistencia sobre JSON y LocalStorage para la gestión dinámica del CV.
+      - Panel de Administración interactivo con guardado en tiempo real y carga de traducciones automáticas.
+      - Optimización de componentes para una carga de alto rendimiento y una experiencia de usuario premium (UX).
+  - nombre: "RefStats: Analítica & Scraping Engine"
+    fecha: "2026"
+    tecnologias: ["Python", "BeautifulSoup/Scrapy", "React", "Node.js", "Local Storage"]
+    descripcion: |
+      - Desarrollo de un motor de Web Scraping especializado para la recolección masiva de resultados y actas en tiempo real.
+      - Implementación de scripts de automatización alojados en servidor local para la extracción continua de datos deportivos.
+      - Diseño de un pipeline de procesamiento que transforma datos brutos en estadísticas detalladas por equipo, jornada y partido.
+      - Interfaz Frontend personalizada para la visualización fluida de clasificaciones y métricas de rendimiento.
+      - Persistencia de datos históricos en base de datos local para el análisis comparativo de temporadas.
+  - nombre: "F1 Personal Vault"
+    fecha: "2026"
+    tecnologias: ["React", "Node.js", "Express", "Docker", "Nginx"]
+    descripcion: |
+      - Sistema de visibilidad basada en roles (PBAC) para diferenciar contenido público de privado.
+      - Panel de administración personalizado para la carga y gestión masiva de activos de vídeo de alta definición.
+      - Optimización de persistencia y manejo de carga pesada durante el streaming y la subida de archivos.
+      - Estructura de metadatos dinámica para la clasificación y búsqueda rápida de sesiones históricas.
+      - Infraestructura dockenizada para el escalado del almacenamiento y servidores de streaming.
+  - nombre: "AI Interactive Resume Editor"
+    fecha: "2026"
+    tecnologias: ["React", "Vite", "Local AI (DeepSeek/Mistral)", "LaTeX Engine"]
+    descripcion: |
+      - Interfaz de edición interactiva con vista previa en tiempo real en paralelo (side-by-side).
+      - Integración de IA Local para la optimización de la estructura y corrección avanzada de sintaxis.
+      - Módulo de adaptación inteligente para ajustar el CV automáticamente a ofertas de empleo específicas.
+      - Motor de renderizado dinámico que permite cambiar la visualización y temas en un clic.
+      - Persistencia de datos sin servidor mediante almacenamiento local y exportación JSON estructurada.
+  - nombre: "Referee Performance Analytics"
     fecha: "2025"
-    tecnologias: ["AWS", "PostgreSQL", "Web Scraping", "Data Engineering"]
+    tecnologias: ["Python", "Flask", "PostgreSQL", "D3.js", "Geology/Mapping APIs"]
     descripcion: |
-      - Desarrollo de un ecosistema de extracción masiva de datos web con almacenamiento optimizado en PostgreSQL y lógica de reorganización estadística.
-      - Gestión de infraestructura Cloud en AWS, configurando servidores y bases de datos para asegurar la disponibilidad y scalabilidad del sistema.
-      - Implementación de herramientas de exportación de datos y dashboards de visualización de KPIs.
-  - nombre: "Plataforma de Procesamiento y Clasificación de Datos (Web)"
+      - Entornos 100% privados con clasificación avanzada basada en notas y evaluaciones cruzadas.
+      - Módulo de analítica masiva para el recuento y comparación entre evaluadores y participantes.
+      - Generación de perfiles de evaluadores (Persona Profiling) para detectar sesgos y tendencias de evaluación.
+      - Mapas de calor geográficos para analizar zonas con mayor propensión a evaluaciones frecuentes.
+      - Detección de patrones de viaje y asignación geográfica para optimizar los comités de evaluación.
+  - nombre: "Infraestructura Cloud Local"
+    fecha: "2025 - 2026"
+    tecnologias: ["Docker", "Linux (macOS)", "Cloudflare Tunnel", "Nginx", "Reverse Proxy"]
+    descripcion: |
+      - Orquestación de más de 10 contenedores independientes (Nginx, Portainer, etc.) mediante Docker Compose.
+      - Configuración multihosting sobre hardware local dedicado para alojar diversas aplicaciones web de producción.
+      - Gestión integral de dominios, subdominios y enrutamiento seguro mediante túneles Cloudflare (NAT Traversal).
+      - Monitorización centralizada y copias de seguridad automatizadas para garantizar la persistencia de datos.
+      - Hardening de seguridad perimetral Zero Trust para proteger el acceso a servicios críticos.
+  - nombre: "AWS Data Ingestion Pipeline"
     fecha: "2025"
-    tecnologias: ["Docker", "Architecture Design", "Matemática Aplicada", "Security"]
+    tecnologias: ["Python", "AWS Lambda", "Boto3", "Kinesis", "S3"]
     descripcion: |
-      - Diseño y despliegue de una plataforma web para el procesamiento matemático y visualización de datos, incluyendo algoritmos de clasificación automatizada.
-      - Implementación de una arquitectura escalable mediante contenedores Docker, garantizando la portabilidad y facilidad de despliegue.
-      - Gestión integral de la seguridad mediante sistemas de autenticación privada y administración de infraestructura de red (dominios y certificados).
-  - nombre: "Ecosistema de Aplicaciones Móviles y Educativas"
-    fecha: "2024"
-    tecnologias: ["iOS Development", "Data Persistence", "Full-stack"]
+      - Diseño de orquestación asíncrona mediante servicios serverless (AWS Lambda).
+      - Gestión de flujos de datos masivos con Kinesis Data Streams.
+      - Automatización de procesos ETL complejos utilizando Python y Boto3.
+      - Almacenamiento escalable en S3 con políticas de ciclo de vida inteligente.
+      - Monitorización proactiva y alertas de errores críticas mediante CloudWatch.
+  - nombre: "WebExams: Interactive Assessment Platform"
+    fecha: "2025"
+    tecnologias: ["React", "Vite", "Firebase/Node.js", "Google Adsense", "CSS Grid"]
     descripcion: |
-      - Desarrollo de aplicaciones nativas para iOS con persistencia de datos local y sincronización de estados.
-      - Creación de plataformas educativas para la gestión de exámenes y soluciones, cubriendo desde el diseño de la base de datos hasta el lanzamiento a producción y gestión de dominios.
+      - Generación dinámica de exámenes con niveles de dificultad personalizables para adaptarse al progreso del alumno.
+      - Implementación de temporizadores configurables para simular con precisión entornos de examen oficiales.
+      - Sistema de revisión interactiva que permite a los usuarios validar respuestas y reportar errores en tiempo real.
+      - Entorno colaborativo donde los alumnos pueden intercambiar feedback, mejorando la calidad de las preguntas.
+      - Integración estratégica con Google Ads para la monetización y sostenibilidad del portal.
+      - Cuadro de mando personal para el seguimiento de resultados y mejora continua del rendimiento académico.
+  - nombre: "DocuLife: Bóveda Digital Segura"
+    fecha: "2025"
+    tecnologias: ["React Native/Flutter", "AES-256 Encryption", "SQLite/Realm", "Biometric Auth"]
+    descripcion: |
+      - Desarrollo de un entorno digital blindado para el almacenamiento seguro de documentos sensibles (DNI, Pasaportes, Escrituras).
+      - Implementación de protocolos de cifrado de extremo a extremo para garantizar la privacidad total del usuario.
+      - Categorización inteligente de archivos para facilitar el acceso rápido a documentos médicos, financieros e inmobiliarios.
+      - Interfaz móvil optimizada (Cross-platform) centrada en la usabilidad y la recuperación inmediata en emergencias.
+      - Arquitectura enfocada en la soberanía de datos, permitiendo almacenamiento local y sincronización cifrada opcional.
+      - Gestión dinámica de fechas de caducidad para alertas automáticas de renovación de documentos oficiales.
 
 formacion:
-  - titulo: "Máster - Ciencia de Datos"
+  - titulo: "Ciencia de Datos"
     centro: "Universitat Oberta de Catalunya"
-    fecha: "09/2025 – Presente"
-  - titulo: "Grado en Ingeniería Informática"
+    fecha: "2025 – Present"
+  - titulo: "Ingeniería Informática"
     centro: "Universitat Autònoma de Barcelona"
-    fecha: "09/2018 – 06/2025"
-  - titulo: "Grado en Sistemas de Telecomunicación"
+    fecha: "2018 – 2025"
+  - titulo: "Ingeniería en Sistemas de Telecomunicación"
     centro: "Universitat Autònoma de Barcelona"
-    fecha: "09/2018 – 06/2025"
+    fecha: "2018 – 2025"
 
 voluntariado:
   - organizacion: "FASFI"
-    puesto: "Voluntariado en Bolivia"
-    fecha: "10/2025 - 11/2025"
+    puesto: "Bolivia"
+    fecha: "2025"
     descripcion: "Apoyo integral en programas educativos y de asistencia diaria para niños en situación de vulnerabilidad, colaborando en la impartición de clases y en la gestión operativa del centro en Cochabamba."
   - organizacion: "TECHO Haití"
-    puesto: "Voluntariado en Haití"
-    fecha: "07/2019 - 08/2019"
+    puesto: "Haití"
+    fecha: "2019"
     descripcion: "Participación activa en proyectos de infraestructura social y construcción de viviendas de emergencia en Puerto Príncipe, coordinando tareas logísticas y de apoyo organizativo sobre el terreno."
 
 habilidades:
-  tecnicas: 
-    - "Programación: Python, C++, Node.js, React, Java, Swift (iOS), ASM, Verilog."
-    - "Datos e IA: Machine Learning, IA Local (Ollama), Web Scraping (Selenium/BS4), Data Engineering."
-    - "Web y Backend: Django, Flask, FastAPI, REST APIs, SQL (PostgreSQL/MySQL), NoSQL (MongoDB)."
-    - "Infraestructura: AWS, Docker, Linux (Administración de Servidores), Zephyr RTOS, PKI/SSL, VLSM."
-    - "Hardware: Diseño de PCBs, Análisis de RF, nRF52 SDK, Arduino, Instrumentación de Laboratorio."
-  competencias: 
-    - "Curiosidad técnica y vocación de aprendizaje continuo ante nuevos desafíos."
-    - "Liderazgo, tutoría y mentoría de equipos técnicos y estudiantes."
-    - "Toma de decisiones crítica y gestión de la presión."
-    - "Gestión de conflictos, comunicación asertiva y mediación."
-    - "Capacidad analítica para la resolución metódica de problemas complejos."
-    - "Adaptabilidad técnica en entornos multidisciplinares de alta exigencia."
+  tecnicas:
+    - "Programación: Python, Node.js, React, C++, Swift, PHP, JavaScript, SQL, Flask, Vite."
+    - "Datos e IA: Machine Learning, Local IA, DeepSeek/Mistral, Neural Networks."
+    - "Web & Scraping: BeautifulSoup, Scrapy, Selenium, Data Normalization, Massive Ingestion, User-Agent Rotation."
+    - "Infraestructura: AWS, Docker, Cloudflare, Nginx, Linux, SSL/TLS, PKI/SSH."
+    - "Hardware: PCB Design, nRF52 / Nordic, Bluetooth (BLE), Verilog / RTL, Embedded Systems, Arduino."
+  competencias:
+    - "Liderazgo de Equipos, Gestión de la Presión, Toma de Decisiones, Docencia Universitaria"
   idiomas:
     - "Español (nativo)"
     - "Catalán (nativo)"
@@ -133,16 +197,16 @@ certificados:
   - nombre: "Desarrollo con IA"
     emisor: "BIG School"
     fecha: "2026"
-    descripcion: "Especialización en la integración de modelos generativos y herramientas de IA para la optimización de flujos de trabajo de ingeniería y desarrollo de software inteligente."
+    descripcion: "Certificación avanzada en el desarrollo de soluciones de Inteligencia Artificial aplicada, enfocada en arquitecturas modernas y modelos generativos."
   - nombre: "Bluetooth Low Energy Fundamentals"
     emisor: "Nordic Semiconductor"
     fecha: "2024"
-    descripcion: "Formación profunda en la arquitectura del protocolo BLE, gestión de perfiles GATT, optimización de consumo energético y seguridad en comunicaciones inalámbricas."
+    descripcion: "Formación técnica sobre los fundamentos del protocolo Bluetooth Low Energy (BLE), cubriendo arquitectura de perfiles, servicios y optimización de energía."
   - nombre: "nRF Connect SDK Fundamentals"
     emisor: "Nordic Semiconductor"
     fecha: "2024"
-    descripcion: "Dominio del entorno de desarrollo basado en Zephyr RTOS, configuración de periféricos y desarrollo de firmware robusto para la serie nRF52."
+    descripcion: "Especialización en el uso del nRF Connect SDK para el desarrollo de aplicaciones embebidas profesionales sobre hardware de Nordic Semiconductor."
   - nombre: "Certificate of Python"
     emisor: "University of Michigan"
     fecha: "2019"
-    descripcion: "Fundamentos de programación, estructuras de datos y procesamiento de información utilizando Python para la resolución de problemas lógicos."
+    descripcion: "Curso integral de programación en Python, abarcando desde estructuras de datos hasta programación orientada a objetos y manipulación de archivos."
