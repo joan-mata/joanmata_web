@@ -81,6 +81,12 @@ export const TRANSLATIONS = {
     },
     alerts: {
       pdfNotFound: 'Archivo PDF no encontrado en el servidor. Por favor, contacta directamente.'
+    },
+    exportAI: {
+      title: 'Exportar YAML para IA',
+      spanish: 'Español',
+      english: 'Inglés',
+      cancel: 'Cancelar'
     }
   },
   ca: {
@@ -165,6 +171,12 @@ export const TRANSLATIONS = {
     },
     alerts: {
       pdfNotFound: 'Arxiu PDF no trobat al servidor. Si us plau, contacta directament.'
+    },
+    exportAI: {
+      title: 'Exportar YAML per a IA',
+      spanish: 'Espanyol',
+      english: 'Anglès',
+      cancel: 'Cancel·lar'
     }
   },
   en: {
@@ -249,6 +261,12 @@ export const TRANSLATIONS = {
     },
     alerts: {
       pdfNotFound: 'PDF file not found on the server. Please contact me directly.'
+    },
+    exportAI: {
+      title: 'Export AI YAML',
+      spanish: 'Spanish',
+      english: 'English',
+      cancel: 'Cancel'
     }
   }
 }

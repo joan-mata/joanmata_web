@@ -1052,3 +1052,27 @@ nav ul {
   .contact-grid { grid-template-columns: 1fr; }
   .cv-download-box { padding: 2rem 1.5rem; }
 }
+/* AI Export Selector Modal */
+.export-selector-modal {
+  max-width: 420px !important;
+  text-align: center;
+  padding: 3rem !important;
+  background: rgba(10, 10, 15, 0.98) !important;
+  border: 1px solid var(--accent-primary) !important;
+  box-shadow: 0 0 50px rgba(99, 102, 241, 0.2);
+}
+
+.export-options {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-top: 2rem;
+}
+
+.export-selector-modal .modal-title {
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+  background: linear-gradient(135deg, #fff 0%, var(--accent-primary) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

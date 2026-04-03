@@ -25,6 +25,7 @@ export default function App() {
   const [currentData, setCurrentData] = useState(() => JSON.parse(localStorage.getItem('curcv_data')) || DATA);
   const [isAdmin, setIsAdmin] = useState(() => sessionStorage.getItem('isAdmin') === 'true');
   const [showModal, setShowModal] = useState(null);
+  const [showExportSelector, setShowExportSelector] = useState(false);
 
   useEffect(() => localStorage.setItem('curcv_data', JSON.stringify(currentData)), [currentData]);
 
@@ -178,10 +179,7 @@ export default function App() {
               <input type="file" onChange={importData} style={{display:'none'}}/>
             </label>
             <button onClick={exportData} className="admin-tool-btn" title="Export JSON">💾</button>
-            <button onClick={() => {
-              const choice = window.confirm("¿Descargar YAML en INGLÉS? (Aceptar = EN, Cancelar = ES)");
-              exportYaml(choice ? 'en' : 'es');
-            }} className="admin-tool-btn" title="Export to AI (YAML)">🤖</button>
+            <button onClick={() => setShowExportSelector(true)} className="admin-tool-btn" title="Export to AI (YAML)">🤖</button>
             <button onClick={() => {setIsAdmin(false); sessionStorage.removeItem('isAdmin');}} className="admin-tool-btn" title="Exit Admin">🚪</button>
           </div>
         )}
@@ -207,6 +205,33 @@ export default function App() {
         </main>
         <Footer name={currentData.name} email={currentData.email} />
         {showModal && <AdminModal type={showModal.type} initialData={showModal.data} onSave={handleSave} onCancel={() => setShowModal(null)} translations={t} />}
+        {showExportSelector && (
+          <div className="admin-modal-overlay" onClick={() => setShowExportSelector(false)}>
+            <div className="admin-modal-container export-selector-modal" onClick={e => e.stopPropagation()}>
+              <h2 className="detail-section-title" style={{textAlign: 'center', fontSize: '1.5rem', border: 'none'}}>{t.exportAI.title}</h2>
+              <div className="export-options">
+                <button 
+                  className="cta-btn full-width" 
+                  onClick={() => { exportYaml('es'); setShowExportSelector(false); }}
+                >
+                  {t.exportAI.spanish}
+                </button>
+                <button 
+                  className="cta-btn full-width" 
+                  onClick={() => { exportYaml('en'); setShowExportSelector(false); }}
+                >
+                  {t.exportAI.english}
+                </button>
+                <button 
+                  className="cta-btn secondary full-width" 
+                  onClick={() => setShowExportSelector(false)}
+                >
+                  {t.exportAI.cancel}
+                </button>
+              </div>
+            </div>
+          </div>
+        )}
       </div>
     </HashRouter>
   );
