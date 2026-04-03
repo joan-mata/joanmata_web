@@ -342,7 +342,11 @@
     },
     {
       "id": "python-michigan",
-      "description": "Comprehensive Python programming course, ranging from basic data structures to object-oriented programming and file manipulation."
+      "description": "Comprehensive Python programming course, covering data structures, object-oriented programming, and file handling."
+    },
+    {
+      "id": "aws-cloud",
+      "description": "Official training on AWS Cloud fundamentals, covering core services, security, architecture, pricing, and support."
     }
   ],
   "volunteering": [

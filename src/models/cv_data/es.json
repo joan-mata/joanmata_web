@@ -343,6 +343,10 @@
     {
       "id": "python-michigan",
       "description": "Curso integral de programación en Python, abarcando desde estructuras de datos hasta programación orientada a objetos y manipulación de archivos."
+    },
+    {
+      "id": "aws-cloud",
+      "description": "Formación oficial en los fundamentos de la nube de AWS, cubriendo servicios principales, seguridad, arquitectura, precios y soporte."
     }
   ],
   "volunteering": [
