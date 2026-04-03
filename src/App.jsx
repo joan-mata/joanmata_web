@@ -26,8 +26,46 @@ export default function App() {
   const [isAdmin, setIsAdmin] = useState(() => sessionStorage.getItem('isAdmin') === 'true');
   const [showModal, setShowModal] = useState(null);
   const [showExportSelector, setShowExportSelector] = useState(false);
+  const timeoutRef = React.useRef(null);
 
-  useEffect(() => localStorage.setItem('curcv_data', JSON.stringify(currentData)), [currentData]);
+  const logout = () => {
+    setIsAdmin(false);
+    sessionStorage.removeItem('isAdmin');
+    // Clear any existing timeout
+    if (timeoutRef.current) clearTimeout(timeoutRef.current);
+  };
+
+  useEffect(() => {
+    localStorage.setItem('curcv_data', JSON.stringify(currentData));
+  }, [currentData]);
+
+  // Idle timeout: 15 minutes (900,000 ms)
+  useEffect(() => {
+    if (!isAdmin) {
+      if (timeoutRef.current) clearTimeout(timeoutRef.current);
+      return;
+    }
+
+    const resetTimer = () => {
+      if (timeoutRef.current) clearTimeout(timeoutRef.current);
+      timeoutRef.current = setTimeout(() => {
+        console.log('Session expired due to inactivity');
+        logout();
+      }, 15 * 60 * 1000); 
+    };
+
+    // Initial timer
+    resetTimer();
+
+    // Event listeners for activity
+    const events = ['mousemove', 'keydown', 'click', 'scroll', 'touchstart'];
+    events.forEach(event => window.addEventListener(event, resetTimer));
+
+    return () => {
+      if (timeoutRef.current) clearTimeout(timeoutRef.current);
+      events.forEach(event => window.removeEventListener(event, resetTimer));
+    };
+  }, [isAdmin]);
 
   const handleSave = (item) => {
     const { context, itemIndex, type } = showModal;
@@ -148,16 +186,29 @@ export default function App() {
 
   const importData = (e) => {
     const file = e.target.files[0];
-    if (file) {
-      const reader = new FileReader();
-      reader.onload = (re) => {
-        try {
-          localStorage.setItem('curcv_data', re.target.result);
-          window.location.reload();
-        } catch (err) { alert("Error"); }
-      };
-      reader.readAsText(file);
-    }
+    if (!file) return;
+    const reader = new FileReader();
+    reader.onload = (re) => {
+      try {
+        // Validate JSON structure before storing
+        const parsed = JSON.parse(re.target.result);
+        const requiredKeys = ['name', 'experience', 'projects', 'education', 'skills', 'certificates', 'volunteering'];
+        const missingKeys = requiredKeys.filter(k => !(k in parsed));
+        if (missingKeys.length > 0) {
+          alert(`JSON inválido. Faltan campos: ${missingKeys.join(', ')}`);
+          return;
+        }
+        if (!Array.isArray(parsed.experience) || !Array.isArray(parsed.projects)) {
+          alert('JSON inválido. experience y projects deben ser arrays.');
+          return;
+        }
+        localStorage.setItem('curcv_data', JSON.stringify(parsed));
+        window.location.reload();
+      } catch (err) {
+        alert('Error: El archivo no es un JSON válido.');
+      }
+    };
+    reader.readAsText(file);
   };
 
   const t = TRANSLATIONS[lang];
@@ -180,7 +231,7 @@ export default function App() {
             </label>
             <button onClick={exportData} className="admin-tool-btn" title="Export JSON">💾</button>
             <button onClick={() => setShowExportSelector(true)} className="admin-tool-btn" title="Export to AI (YAML)">🤖</button>
-            <button onClick={() => {setIsAdmin(false); sessionStorage.removeItem('isAdmin');}} className="admin-tool-btn" title="Exit Admin">🚪</button>
+            <button onClick={logout} className="admin-tool-btn" title="Exit Admin">🚪</button>
           </div>
         )}
 

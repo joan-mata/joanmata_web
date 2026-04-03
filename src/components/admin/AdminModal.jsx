@@ -37,6 +37,9 @@ const AdminModal = ({ type, initialData, onSave, onCancel, translations: tUI }) 
   // Helper for automatic translation
   const translateText = async (text, targetLang) => {
     if (!text) return '';
+    // Whitelist: only allow known target languages
+    const allowedLangs = ['en', 'ca'];
+    if (!allowedLangs.includes(targetLang)) return text;
     try {
       const url = `https://translate.googleapis.com/translate_a/single?client=gtx&sl=es&tl=${targetLang}&dt=t&q=${encodeURIComponent(text)}`;
       const response = await fetch(url);
