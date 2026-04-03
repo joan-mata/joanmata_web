@@ -9,10 +9,7 @@ const Skills = ({ title, data, lang, isAdmin, onEdit, onAdd, translations }) => 
       <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '2rem' }}>
         <h2 className="section-title">{title}</h2>
         {isAdmin && (
-          <div style={{ display: 'flex', gap: '0.5rem' }}>
-            <button className="admin-icon static" onClick={onAdd}>+</button>
-            <button className="admin-icon static" onClick={onEdit}>✎</button>
-          </div>
+          <button className="admin-icon static" onClick={onEdit}>✎</button>
         )}
       </div>
 

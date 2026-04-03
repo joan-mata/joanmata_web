@@ -64,6 +64,8 @@ const AdminModal = ({ type, initialData, onSave, onCancel, translations: tUI }) 
       listsToTranslate.push('points');
     } else if (type === 'education') {
       fieldsToTranslate.push('title');
+    } else if (type === 'skills') {
+      listsToTranslate.push('leadership');
     } else if (type === 'volunteering') {
       fieldsToTranslate.push('desc');
     } else if (type === 'profile') {
@@ -113,7 +115,7 @@ const AdminModal = ({ type, initialData, onSave, onCancel, translations: tUI }) 
     try {
       const sourceText = isList 
         ? (formData[field]?.es || [])
-        : (field ? formData[field]?.es : formData.es);
+        : (field ? formData[field]?.es : (formData.es || formData.leadership?.es || ''));
 
       const caTranslation = isList
         ? await Promise.all(sourceText.map(t => translateText(t, 'ca')))
@@ -255,14 +257,48 @@ const AdminModal = ({ type, initialData, onSave, onCancel, translations: tUI }) 
   );
 
   const renderSkillsForm = () => (
-    <div className="form-group">
-      <label>Habilidades (Introduce las habilidades separadas por comas)</label>
-      <textarea 
-        className="admin-textarea" 
-        style={{height: '150px'}}
-        value={Array.isArray(formData) ? formData.join(', ') : (formData || '')} 
-        onChange={(e) => setFormData(e.target.value.split(',').map(s => s.trim()))}
-      />
+    <div className="skills-form-container">
+      <div className="form-group">
+        <label>Software & Web (Comas)</label>
+        <textarea 
+          className="admin-textarea-small" 
+          value={Array.isArray(formData.software) ? formData.software.join(', ') : ''} 
+          onChange={(e) => handleChange('software', e.target.value.split(',').map(s => s.trim()))}
+        />
+      </div>
+      <div className="form-group">
+        <label>IA & Data Science (Comas)</label>
+        <textarea 
+          className="admin-textarea-small" 
+          value={Array.isArray(formData.ai) ? formData.ai.join(', ') : ''} 
+          onChange={(e) => handleChange('ai', e.target.value.split(',').map(s => s.trim()))}
+        />
+      </div>
+      <div className="form-group">
+        <label>Web Scraping & Ingestión (Comas)</label>
+        <textarea 
+          className="admin-textarea-small" 
+          value={Array.isArray(formData.scraping) ? formData.scraping.join(', ') : ''} 
+          onChange={(e) => handleChange('scraping', e.target.value.split(',').map(s => s.trim()))}
+        />
+      </div>
+      <div className="form-group">
+        <label>Infraestructura & DevOps (Comas)</label>
+        <textarea 
+          className="admin-textarea-small" 
+          value={Array.isArray(formData.infrastructure) ? formData.infrastructure.join(', ') : ''} 
+          onChange={(e) => handleChange('infrastructure', e.target.value.split(',').map(s => s.trim()))}
+        />
+      </div>
+      <div className="form-group">
+        <label>Hardware & Embedded (Comas)</label>
+        <textarea 
+          className="admin-textarea-small" 
+          value={Array.isArray(formData.hardware) ? formData.hardware.join(', ') : ''} 
+          onChange={(e) => handleChange('hardware', e.target.value.split(',').map(s => s.trim()))}
+        />
+      </div>
+      {renderMultilingualList('Soft Skills / Liderazgo (Traducción)', 'leadership')}
     </div>
   );
 
