@@ -341,12 +341,12 @@
       "description": "Specialization in using the nRF Connect SDK for professional embedded application development on Nordic Semiconductor hardware."
     },
     {
-      "id": "python-michigan",
-      "description": "Comprehensive Python programming course, covering data structures, object-oriented programming, and file handling."
-    },
-    {
       "id": "aws-cloud",
       "description": "Official training on AWS Cloud fundamentals, covering core services, security, architecture, pricing, and support."
+    },
+    {
+      "id": "python-michigan",
+      "description": "Comprehensive Python programming course, covering data structures, object-oriented programming, and file handling."
     }
   ],
   "volunteering": [

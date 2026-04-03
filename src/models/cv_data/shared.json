@@ -16,7 +16,7 @@
     { "id": "ai-big", "title": "Desarrollo con IA", "issuer": "BIG School", "date": "2026", "file": "/docs/certs/ai-big.pdf" },
     { "id": "ble-nordic", "title": "Bluetooth Low Energy Fundamentals", "issuer": "Nordic Semiconductor", "date": "2024", "file": "/docs/certs/ble-nordic.pdf" },
     { "id": "sdk-nordic", "title": "nRF Connect SDK Fundamentals", "issuer": "Nordic Semiconductor", "date": "2024", "file": "/docs/certs/sdk-nordic.pdf" },
-    { "id": "python-michigan", "title": "Certificate of Python", "issuer": "University of Michigan", "date": "2019", "file": "/docs/certs/python-michigan.pdf" },
-    { "id": "aws-cloud", "title": "AWS Cloud Practitioner Essentials", "issuer": "Amazon Web Services (AWS)", "date": "2024", "file": "/docs/certs/aws-cloud.pdf" }
+    { "id": "aws-cloud", "title": "AWS Cloud Practitioner Essentials", "issuer": "Amazon Web Services (AWS)", "date": "2024", "file": "/docs/certs/aws-cloud.pdf" },
+    { "id": "python-michigan", "title": "Certificate of Python", "issuer": "University of Michigan", "date": "2019", "file": "/docs/certs/python-michigan.pdf" }
   ]
 }

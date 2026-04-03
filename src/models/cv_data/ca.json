@@ -341,12 +341,12 @@
       "description": "Especialització en l'ús del nRF Connect SDK per al desenvolupament d'aplicacions encastades professionals sobre maquinari de Nordic Semiconductor."
     },
     {
-      "id": "python-michigan",
-      "description": "Curs integral de programació en Python, abastant des d'estructures de dades fins a programació orientada a objectes i manipulació de fitxers."
-    },
-    {
       "id": "aws-cloud",
       "description": "Formació oficial en els fonaments del núvol d'AWS, cobrint serveis principals, seguretat, arquitectura, preus i suport."
+    },
+    {
+      "id": "python-michigan",
+      "description": "Curs integral de programació en Python, abastant des d'estructures de dades fins a programació orientada a objectes i manipulació de fitxers."
     }
   ],
   "volunteering": [
