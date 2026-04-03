@@ -1129,9 +1129,31 @@ nav ul {
   }
 
   /* Grids */
-  .projects-grid, .experience-grid, .education-grid, .certificates-grid, .skills-grid {
+  .projects-grid, .experience-grid, .education-grid, .certificates-grid, .skills-grid, .card-grid {
     grid-template-columns: 1fr !important;
     gap: 1.5rem !important;
+  }
+
+  .profile-text {
+    padding: 1.25rem !important;
+    font-size: 1rem !important;
+  }
+
+  .card, .experience-card, .project-card-home {
+    padding: 1.25rem !important;
+  }
+
+  .skill-group-card {
+    padding: 1rem !important;
+  }
+
+  .detail-top-nav {
+    margin-bottom: 2rem;
+  }
+
+  .back-link-btn {
+    width: 100%;
+    justify-content: center;
   }
 
   /* Details Page */
@@ -1167,23 +1189,6 @@ nav ul {
     bottom: 1rem;
     right: 1rem;
     transform: scale(0.85);
-  }
-
-  .experience-card, .project-card-home {
-    padding: 1.25rem !important;
-  }
-
-  .skill-group-card {
-    padding: 1rem !important;
-  }
-
-  .detail-top-nav {
-    margin-bottom: 2rem;
-  }
-
-  .back-link-btn {
-    width: 100%;
-    justify-content: center;
   }
 }
 
