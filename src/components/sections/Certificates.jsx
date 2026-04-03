@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import Card from '../common/Card';
 
 const Certificates = ({ title, data, lang, isAdmin, onEdit, onAdd, translations }) => (
-  <section className="container">
+  <section>
     <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
       <h2 className="section-title">{title}</h2>
         {isAdmin && <button className="admin-icon static" onClick={onAdd} title={`Add ${title}`}>+</button>}
