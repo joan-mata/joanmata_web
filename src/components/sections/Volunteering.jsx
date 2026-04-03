@@ -2,7 +2,7 @@ import React from 'react';
 import Card from '../common/Card';
 
 const Volunteering = ({ title, data, lang, isAdmin, onAdd, onEdit }) => (
-  <section className="container">
+  <section>
     <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
       <h2 className="section-title">{title}</h2>
         {isAdmin && <button className="admin-icon static" onClick={onAdd} title={`Add ${title}`}>+</button>}

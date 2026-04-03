@@ -13,9 +13,9 @@ const Skills = ({ title, data, lang, isAdmin, onEdit, onAdd, translations }) => 
         )}
       </div>
 
-      <div className="skills-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2.5rem' }}>
+      <div className="card-grid skills-grid">
         {categories.map((cat) => (
-          <div key={cat} className="skill-group-card" style={{ background: 'rgba(255,255,255,0.03)', padding: '1.5rem', borderRadius: '16px', border: '1px solid rgba(255,255,255,0.05)' }}>
+          <div key={cat} className="skill-group-card">
             <h3 style={{ color: 'var(--accent)', marginBottom: '1.5rem', fontSize: '1.2rem', textTransform: 'uppercase', letterSpacing: '1px' }}>
               {translations.skills[cat]}
             </h3>
