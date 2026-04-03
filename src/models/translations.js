@@ -6,7 +6,7 @@ export const TRANSLATIONS = {
       education: 'Formación',
       skills: 'Habilidades',
       certificates: 'Certificados',
-      volunteering: 'Voluntariado',
+      volunteering: 'Voluntariados',
       contact: 'Contacto'
     },
     hero: {
@@ -22,7 +22,7 @@ export const TRANSLATIONS = {
       skills: 'Habilidades',
       languages: 'Idiomas',
       certificates: 'Certificados',
-      volunteering: 'Voluntariado',
+      volunteering: 'Voluntariados',
       contact: 'Contacto'
     },
     experience: {
@@ -87,6 +87,9 @@ export const TRANSLATIONS = {
       spanish: 'Español',
       english: 'Inglés',
       cancel: 'Cancelar'
+    },
+    volunteering: {
+      descTitle: 'Proyecto de Voluntariado'
     }
   },
   ca: {
@@ -96,7 +99,7 @@ export const TRANSLATIONS = {
       education: 'Formació',
       skills: 'Habilitats',
       certificates: 'Certificats',
-      volunteering: 'Voluntariat',
+      volunteering: 'Voluntariats',
       contact: 'Contacte'
     },
     hero: {
@@ -112,7 +115,7 @@ export const TRANSLATIONS = {
       skills: 'Habilitats',
       languages: 'Idiomes',
       certificates: 'Certificats',
-      volunteering: 'Voluntariat',
+      volunteering: 'Voluntariats',
       contact: 'Contacte'
     },
     experience: {
@@ -177,6 +180,9 @@ export const TRANSLATIONS = {
       spanish: 'Espanyol',
       english: 'Anglès',
       cancel: 'Cancel·lar'
+    },
+    volunteering: {
+      descTitle: 'Projecte de Voluntariat'
     }
   },
   en: {
@@ -267,6 +273,9 @@ export const TRANSLATIONS = {
       spanish: 'Spanish',
       english: 'English',
       cancel: 'Cancel'
+    },
+    volunteering: {
+      descTitle: 'Volunteering Project'
     }
   }
 }

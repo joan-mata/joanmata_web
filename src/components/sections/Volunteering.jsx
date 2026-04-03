@@ -14,7 +14,7 @@ const Volunteering = ({ title, data, lang, isAdmin, onAdd, onEdit, translations 
           title={vol.org} 
           subtitle={vol.location} 
           date={vol.date}
-          footer={<span style={{ color: 'var(--text-dim)', fontSize: '0.8rem', fontStyle: 'italic' }}>{translations.volunteering.descTitle || 'Voluntariado'}</span>}
+          footer={<span style={{ color: 'var(--text-dim)', fontSize: '0.8rem', fontStyle: 'italic' }}>{translations?.volunteering?.descTitle || 'Voluntariado'}</span>}
         >
           {isAdmin && <button className="admin-icon entry-edit-btn" onClick={() => onEdit(idx)}>✎</button>}
           {vol.desc && <p className="card-content">{vol.desc[lang]}</p>}
