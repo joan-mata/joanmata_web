@@ -1,5 +1,6 @@
 import React from 'react';
 import Badge from '../common/Badge';
+import Card from '../common/Card';
 
 const Skills = ({ title, data, lang, isAdmin, onEdit, onAdd, translations }) => {
   const categories = Object.keys(data);
@@ -13,18 +14,15 @@ const Skills = ({ title, data, lang, isAdmin, onEdit, onAdd, translations }) => 
         )}
       </div>
 
-      <div className="card-grid skills-grid">
+      <div className="card-grid">
         {categories.map((cat) => (
-          <div key={cat} className="skill-group-card">
-            <h3 style={{ color: 'var(--accent)', marginBottom: '1.5rem', fontSize: '1.2rem', textTransform: 'uppercase', letterSpacing: '1px' }}>
-              {translations.skills[cat]}
-            </h3>
+          <Card key={cat} title={translations.skills[cat]}>
             <div className="badge-container" style={{ justifyContent: 'flex-start' }}>
               {(Array.isArray(data[cat]) ? data[cat] : (data[cat][lang] || [])).map((skill, idx) => (
                 <Badge key={idx} text={skill} />
               ))}
             </div>
-          </div>
+          </Card>
         ))}
       </div>
     </section>

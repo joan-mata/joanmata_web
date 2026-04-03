@@ -25,7 +25,7 @@ const Projects = ({ title, data, lang, translations, isAdmin, onEdit, onAdd }) =
             date={proj.date}
             links={proj.links}
             translations={translations}
-            className="project-card"
+            className=""
           >
             {isAdmin && (
               <button 

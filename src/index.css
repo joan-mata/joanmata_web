@@ -274,8 +274,8 @@ nav ul {
 /* Cards */
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2.5rem;
 }
 
 .card {
@@ -1207,3 +1207,4 @@ nav ul {
     transform: scale(0.85);
   }
 }
+
