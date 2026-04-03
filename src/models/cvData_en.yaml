@@ -1,0 +1,150 @@
+name: "Joan Mata Pàrraga"
+email: "joanmata.parraga@gmail.com"
+phone: "+34 647 267 153"
+location: "Barcelona, Spain"
+website: "joanmata.com"
+
+profile:
+  text: "Engineer with a double degree in Computer Engineering and Telecommunication Systems, featuring a hybrid profile that bridges hardware, software, and data science. Currently serving as a University Professor specializing in cybersecurity and networks, which I balance with the development of local IA solutions, scalable cloud architectures, and embedded systems. Defined by a deep technical curiosity and a lifelong learning mindset, I quickly adapt to new technologies and integrate them into complex and secure projects."
+
+experience:
+  - company: "Universitat Autònoma de Barcelona"
+    position: "University Professor"
+    date: "09/2025 - Present"
+    description: |
+      - Instructor for 'Telecommunication Services', leading practical training in full-stack web development and network security.
+          - Technical instruction in Full-stack development, enabling the design of complete web architectures and database administration.
+          - Advanced security configuration in web services: servers and VirtualHosts, public key infrastructure (PKI) management through certificates, and securing traffic with SSL/TLS protocols.
+      - Instructor for 'Network Fundamentals', teaching client-server communication and network architecture based on the IP protocol.
+          - Design and simulation of complex network topologies, overseeing the configuration of network operating systems, static routing protocols, and gateway management.
+          - Specialist in advanced network addressing planning (VLSM), network segmentation, and deployment of critical infrastructure services such as DHCP and DNS.
+      - Final Degree Project (TFG) Tutor, supervising technical architecture and milestone achievement in computer and data engineering projects:
+          - Cybersecurity: Supervising the development of a CLI tool for web hardening auditing.
+          - Data Engineering: Directing a Web Scraping system for mass data extraction and normalization.
+          - Data Science: Mentoring the design of predictive Machine Learning models.
+  - company: "FlexiiC - Flexible Integrated Circuits"
+    position: "Integrated Circuit Designer"
+    date: "09/2024 - 11/2025"
+    description: |
+      - Development and implementation of wireless connectivity solutions using nRF52840 SoC and Bluetooth Low Energy (BLE) protocols, achieving cross-platform integration between sensors, dongles, and mobile applications.
+      - Full-cycle PCB design from schematics to manufacturing management, ensuring interoperability with embedded systems and validating physical connectivity of prototypes.
+      - Physical characterization and functional validation of integrated circuits using advanced laboratory instrumentation, analyzing signals and performance metrics for technical certification reports.
+      - Digital hardware verification (RTL) through the development of test environments (Testbenches) in Verilog and optimization of ASM (Assembly) routines for the company's proprietary processor architecture.
+      - Leadership in the chip's logical debugging phase, identifying critical errors through internal documentation and facilitating the project's transition to final production.
+  - company: "Universitat Autònoma de Barcelona"
+    position: "Senior Research Specialist Technician"
+    date: "07/2022 - 07/2023"
+    description: |
+      - Full design and development of the backend architecture for a research data management platform, successfully migrating from Django to Flask to optimize API REST flexibility.
+      - Leadership in the transition from a relational database architecture (SQL) to a non-relational one (NoSQL/MongoDB) to efficiently manage heterogeneous and dynamic data schemas from multiple sources.
+      - Automation of the data lifecycle by developing pipelines for ingesting, cleaning, and normalizing heterogeneous information, eliminating manual processes and ensuring record integrity in real-time.
+      - Creation and maintenance of a structured API for data service in JSON format, collaborating closely with the Frontend team for results visualization and integration.
+  - company: "Cellnex Telecom"
+    position: "Sales Engineer"
+    date: "06/2022 - 07/2023"
+    description: 
+      - Conducted theoretical analysis and modeling of RF systems for market introduction, ensuring technical feasibility and standards compliance.
+      - Managed strategic alliances with fiber optic providers and technology partners to integrate external connectivity solutions, improving the economic and technical competitiveness of the final service.
+      - Comprehensive project life cycle coordination (End-to-End), from conceptual design to final installation and commissioning.
+      - Strategic communication with key clients for risk management, budget deviations, or feasibility adjustments of deployments.
+  - company: "Johnson Control Hitachi"
+    position: "QA Tester"
+    date: "07/2021 - 02/2022"
+    description: |
+      - Performance evaluation and validation of climate control systems using physical simulators, ensuring quality standards under critical operating conditions.
+      - Implementation of a diagnostic system based on Arduino for monitoring and analyzing serial communication protocols between indoor and outdoor units.
+      - Python script development for testing process automation, achieving an efficient transition from manual methods to a faster and more precise validation environment.
+      - Responsible for configuration, maintenance, and optimization of physical test bench infrastructure (precision cabling and connections).
+      - Prepared detailed technical reports and results documentation for direct support to product design and development teams.
+  - company: "Federació Catalana de Futbol"
+    position: "Football Referee"
+    date: "07/2016 - Present"
+
+projects:
+  - name: "Intelligent Document Editor with Local AI (Privacy-First)"
+    date: "2026"
+    technologies: ["Local LLMs", "Real-time PDF Engines", "Private AI API", "Full-stack"]
+    description: |
+      - Developed a web platform for real-time text-to-PDF editing and conversion, with an integrated AI assistant for content optimization.
+      - Implemented a fully private AI ecosystem using local APIs, allowing interaction, correction, and text generation without data leaving for the cloud.
+      - Designed a reactive interface for co-authoring between the user and the language model, with dynamic preview of the final document.
+      - Configured local servers for AI model deployment, ensuring minimal latency and total information confidentiality.
+  - name: "Ingestion Architecture and Statistical Analysis (Web Scraping)"
+    date: "2025"
+    technologies: ["AWS", "PostgreSQL", "Web Scraping", "Data Engineering"]
+    description: |
+      - Developed a massive web data extraction ecosystem with optimized storage in PostgreSQL and statistical reorganization logic.
+      - Managed AWS Cloud infrastructure, configuring servers and databases to ensure system availability and scalability.
+      - Implemented data export tools and KPI visualization dashboards.
+  - name: "Data Processing and Classification Platform (Web)"
+    date: "2025"
+    technologies: ["Docker", "Architecture Design", "Applied Mathematics", "Security"]
+    description: |
+      - Designed and deployed a web platform for mathematical processing and data visualization, including automated classification algorithms.
+      - Implemented a scalable architecture using Docker containers, ensuring portability and ease of deployment.
+      - Comprehensive security management through private authentication systems and network infrastructure administration (domains and certificates).
+  - name: "Mobile and Educational Applications Ecosystem"
+    date: "2024"
+    technologies: ["iOS Development", "Data Persistence", "Full-stack"]
+    description: |
+      - Developed native iOS applications with local data persistence and state synchronization.
+      - Created educational platforms for exam and solution management, covering everything from database design to production launch and domain management.
+
+education:
+  - title: "Master's Degree - Data Science"
+    institution: "Universitat Oberta de Catalunya"
+    date: "09/2025 – Present"
+  - title: "Bachelor's Degree in Computer Engineering"
+    institution: "Universitat Autònoma de Barcelona"
+    date: "09/2018 – 06/2025"
+  - title: "Bachelor's Degree in Telecommunication Systems"
+    institution: "Universitat Autònoma de Barcelona"
+    date: "09/2018 – 06/2025"
+
+volunteering:
+  - organization: "FASFI"
+    role: "Bolivia Volunteer"
+    date: "10/2025 - 11/2025"
+    description: "Integral support in educational and daily assistance programs for vulnerable children, collaborating in teaching classes and operational center management in Cochabamba."
+  - organization: "TECHO Haiti"
+    role: "Haiti Volunteer"
+    date: "07/2019 - 08/2019"
+    description: "Active participation in social infrastructure projects and emergency housing construction in Port-au-Prince, coordinating logistics and on-the-ground organizational support."
+
+skills:
+  technical: 
+    - "Programming: Python, C++, Node.js, React, Java, Swift (iOS), ASM, Verilog."
+    - "Data & AI: Machine Learning, Local AI (Ollama), Web Scraping (Selenium/BS4), Data Engineering."
+    - "Web & Backend: Django, Flask, FastAPI, REST APIs, SQL (PostgreSQL/MySQL), NoSQL (MongoDB)."
+    - "Infrastructure: AWS, Docker, Linux (Server Admin), Zephyr RTOS, PKI/SSL, VLSM."
+    - "Hardware: PCB Design, RF Analysis, nRF52 SDK, Arduino, Lab Instrumentation."
+  soft_skills: 
+    - "Technical curiosity and dedication to continuous learning for new challenges."
+    - "Leadership, tutoring, and mentoring of technical teams and students."
+    - "Critical decision-making and pressure management."
+    - "Conflict management, assertive communication, and mediation."
+    - "Analytical capacity for methodical resolution of complex problems."
+    - "Technical adaptability in high-demand multidisciplinary environments."
+  languages:
+    - "Spanish (native)"
+    - "Catalan (native)"
+    - "English (B2)"
+    - "French (A2)"
+
+certificates:
+  - name: "AI Development"
+    issuer: "BIG School"
+    date: "2026"
+    description: "Specialization in integrating generative models and AI tools for optimizing engineering workflows and smart software development."
+  - name: "Bluetooth Low Energy Fundamentals"
+    issuer: "Nordic Semiconductor"
+    date: "2024"
+    description: "Deep training in BLE protocol architecture, GATT profile management, power consumption optimization, and wireless communication security."
+  - name: "nRF Connect SDK Fundamentals"
+    issuer: "Nordic Semiconductor"
+    date: "2024"
+    description: "Mastery of the Zephyr RTOS-based development environment, peripheral configuration, and robust firmware development for the nRF52 series."
+  - name: "Certificate of Python"
+    issuer: "University of Michigan"
+    date: "2019"
+    description: "Programming fundamentals, data structures, and information processing using Python for logical problem-solving."
