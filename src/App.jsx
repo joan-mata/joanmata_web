@@ -65,7 +65,8 @@ export default function App() {
     let yaml = `nombre: ${q(d.name)}\n`;
     yaml += `email: ${q(d.email)}\n`;
     yaml += `telefono: ${q(d.phone)}\n`;
-    yaml += `ubicacion: ${q(d.location)}\n\n`;
+    yaml += `ubicacion: ${q(d.location)}\n`;
+    yaml += `website: "joanmata.com"\n\n`;
 
     yaml += `perfil:\n  texto: ${q(d.profile[l])}\n\n`;
 
@@ -85,6 +86,9 @@ export default function App() {
       yaml += `    fecha: ${q(p.date)}\n`;
       yaml += `    tecnologias: [${p.techStack.map(t => q(t)).join(', ')}]\n`;
       yaml += `    descripcion: ${fmtList(p.points[l], 6)}\n`;
+      if (p.security && p.security[l]) {
+        yaml += `    seguridad: ${fmtList(p.security[l], 6)}\n`;
+      }
     });
 
     yaml += `\nformacion:\n`;

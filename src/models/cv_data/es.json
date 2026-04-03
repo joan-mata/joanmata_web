@@ -98,7 +98,7 @@
       "techStack": ["React", "Vite", "Vanilla CSS", "JS MVC", "JSON Persistence"],
       "security": [
         "Arquitectura de rutas protegidas mediante aislamiento de componentes y guardias de navegación de React Router, impidiendo accesos no autorizados a las vistas administrativas mediante validación de estado en tiempo real.",
-        "Cifrado de para proteger la integridad del JSON del CV, asegurando que los datos sensibles permanezcan privados en el navegador del usuario ante posibles manipulaciones externas.",
+        "Cifrado de persistencia local para proteger la integridad del JSON del CV, asegurando que los datos sensibles permanezcan privados en el navegador del usuario ante posibles manipulaciones externas.",
         "Optimización de despliegue mediante pipelines de CI/CD automatizados, integrando cabeceras de seguridad HTTP (HSTS, CSP) y gestión automatizada de certificados SSL/TLS para garantizar conexiones cifradas punto a punto."
       ],
       "date": "2026",
