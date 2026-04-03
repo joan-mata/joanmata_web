@@ -274,7 +274,7 @@ nav ul {
 /* Cards */
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(520px, 1fr));
   gap: 2.5rem;
 }
 
@@ -394,9 +394,10 @@ nav ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 1rem;
+  gap: 1.25rem;
   padding-top: 1.5rem;
   border-top: 1px solid var(--glass-border);
+  flex-wrap: wrap;
 }
 
 .card-desc-home {
@@ -1208,3 +1209,15 @@ nav ul {
   }
 }
 
+
+@media (max-width: 600px) {
+  .card-footer-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .card-footer-actions > * {
+    width: 100%;
+    justify-content: center;
+  }
+}
