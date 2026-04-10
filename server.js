@@ -14,6 +14,13 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 const DATA_FILE = path.join(__dirname, 'src/models/cvData.json');
 
+// Asegurar que el archivo existe
+if (!fs.existsSync(DATA_FILE)) {
+  console.log('⚠️ Archivo de datos no encontrado. Creando uno nuevo...');
+  fs.ensureFileSync(DATA_FILE);
+  fs.writeJsonSync(DATA_FILE, {}); 
+}
+
 app.use(cors());
 app.use(express.json({ limit: '10mb' }));
 
@@ -30,19 +37,20 @@ app.get('/api/cv', async (req, res) => {
   }
 });
 
-// API: Guardar cambios (Protegido por Hash)
+// API: Guardar cambios (Protegido por Hash de Admin)
 app.post('/api/cv', async (req, res) => {
   const { authHash, newData } = req.body;
   const masterHash = process.env.VITE_ADMIN_AUTH_HASH;
 
+  // Validación de seguridad (Llave de Admin)
   if (!authHash || authHash !== masterHash) {
-    console.warn(`[Seguridad] Intento de guardado fallido desde IP: ${req.ip}`);
-    return res.status(401).json({ error: 'No autorizado' });
+    console.warn(`[Seguridad] Intento de guardado no autorizado desde: ${req.ip}`);
+    return res.status(401).json({ error: 'Llave de administración inválida' });
   }
 
   try {
     await fs.writeJson(DATA_FILE, newData, { spaces: 2 });
-    console.log('[Sistema] CV actualizado correctamente por el administrador');
+    console.log('[Sistema] CV actualizado y guardado en disco correctamente');
     res.json({ success: true });
   } catch (err) {
     console.error('[Error] Fallo al escribir en el disco:', err);

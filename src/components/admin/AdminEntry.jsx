@@ -3,6 +3,7 @@ import React, { useState, useRef } from 'react';
 const AdminEntry = ({ onLogin, translations }) => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
+  const [writeKey, setWriteKey] = useState(''); // Nueva llave
   const [error, setError] = useState(false);
   const [locked, setLocked] = useState(false);
   const attemptsRef = useRef([]);

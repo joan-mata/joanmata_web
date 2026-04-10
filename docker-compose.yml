@@ -14,5 +14,5 @@ services:
 
 networks:
   portfolio-network:
-    name: joanmata_network
+    name: joanmata-web
     external: true
