@@ -19,6 +19,13 @@ To rebuild the entire site from scratch using an AI Agent (like Jarvis), use the
     - `App.jsx`: Main logic controller.
     - `index.css`: Custom premium styles.
 
+## 🛡️ Security Status
+This project follows strict security standards:
+- **Hashed Admin Auth**: No passwords stored in the bundle (SHA-256).
+- **Hardened Nginx**: CSP, HSTS substitute (via headers), and frame protection.
+- **Bot Protection**: `robots.txt` implemented for document protection.
+- For more details and maintenance instructions, see [security_management.md](file:///Users/server_user/Documents/joanmata_web/specs/security_management.md).
+
 ## How to Run Locally
 1. Ensure you have **Node 25+** and **npm** installed.
 2. Install dependencies:

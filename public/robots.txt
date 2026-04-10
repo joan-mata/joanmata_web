@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /docs/
+Disallow: /private-portal
+Disallow: /curcv_data
+
+Sitemap: https://joanmata.com/sitemap.xml

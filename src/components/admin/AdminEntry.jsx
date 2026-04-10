@@ -1,6 +1,7 @@
 import React, { useState, useRef } from 'react';
 
 const AdminEntry = ({ onLogin, translations }) => {
+  const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState(false);
   const [locked, setLocked] = useState(false);
@@ -30,24 +31,20 @@ const AdminEntry = ({ onLogin, translations }) => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    if (locked || !password.trim()) return;
+    if (locked || !username.trim() || !password.trim()) return;
     if (isRateLimited()) return;
 
     try {
-      const hashEnv = import.meta.env.VITE_ADMIN_PASSWORD_HASH;
-      const plainEnv = import.meta.env.VITE_ADMIN_PASSWORD;
+      const hashEnv = import.meta.env.VITE_ADMIN_AUTH_HASH;
       let authenticated = false;
-
       if (hashEnv) {
-        // Secure mode: compare SHA-256 hashes (password never in bundle)
-        const inputHash = await sha256(password);
+        // Combined mode: compare SHA-256(user:pass)
+        const inputHash = await sha256(`${username}:${password}`);
         authenticated = inputHash === hashEnv;
-      } else if (plainEnv) {
-        // Legacy fallback: plaintext comparison (to be migrated)
-        authenticated = password === plainEnv;
       }
 
       if (authenticated) {
+        sessionStorage.setItem('adminAuthHash', hashEnv);
         onLogin();
       } else {
         setError(true);
@@ -66,16 +63,26 @@ const AdminEntry = ({ onLogin, translations }) => {
         <h2 className="modal-title">{translations.admin.title}</h2>
         <form onSubmit={handleSubmit}>
           <input 
+            type="text" 
+            className={`admin-input ${error ? 'error' : ''}`}
+            placeholder={translations.admin.userPlaceholder}
+            value={username}
+            onChange={(e) => setUsername(e.target.value)}
+            autoComplete="username"
+            disabled={locked}
+            style={{ marginBottom: '0.5rem' }}
+          />
+          <input 
             type="password" 
             className={`admin-input ${error ? 'error' : ''}`}
             placeholder={translations.admin.passwordPlaceholder}
             value={password}
             onChange={(e) => setPassword(e.target.value)}
-            autoComplete="off"
+            autoComplete="current-password"
             disabled={locked}
           />
           {error && <p className="error-text">{translations.admin.error}</p>}
-          {locked && <p className="error-text" style={{ fontSize: '0.8rem' }}>⏳ Demasiados intentos. Espera 60s.</p>}
+          {locked && <p className="error-text" style={{ fontSize: '0.8rem' }}>⏳ {translations.admin.rateLimitError || 'Demasiados intentos. Espera 60s.'}</p>}
           <button 
             type="submit" 
             className="cta-button" 
@@ -91,4 +98,3 @@ const AdminEntry = ({ onLogin, translations }) => {
 };
 
 export default AdminEntry;
-

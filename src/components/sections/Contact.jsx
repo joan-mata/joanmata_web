@@ -27,8 +27,8 @@ const Contact = ({ title, infoLabel, socialLabel, data, translations }) => {
 
       <div className="card-grid">
         <Card title={infoLabel || 'CONTACTO DIRECTO'}>
-          <div className="card-icon" style={{ fontSize: '2.5rem', marginBottom: '1rem', textAlign: 'center' }}>✉️</div>
-          <div className="card-actions-box" style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+          <div className="card-icon" style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>✉️</div>
+          <div className="card-actions-box">
             <a href={`mailto:${data.email}`} className="cta-btn secondary full-width">
               {data.email}
             </a>
@@ -39,8 +39,8 @@ const Contact = ({ title, infoLabel, socialLabel, data, translations }) => {
         </Card>
 
         <Card title={socialLabel || 'REDES PROFESIONALES'}>
-          <div className="card-icon" style={{ fontSize: '2.5rem', marginBottom: '1rem', textAlign: 'center' }}>🌐</div>
-          <div className="card-actions-box" style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+          <div className="card-icon" style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>🌐</div>
+          <div className="card-actions-box">
             <a href={`https://${data.linkedin}`} target="_blank" rel="noreferrer" className="cta-btn full-width">
               LINKEDIN
             </a>

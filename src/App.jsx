@@ -22,7 +22,17 @@ import AdminModal from './components/admin/AdminModal';
 
 export default function App() {
   const [lang, setLang] = useState('es');
-  const [currentData, setCurrentData] = useState(() => JSON.parse(localStorage.getItem('curcv_data')) || DATA);
+  const [currentData, setCurrentData] = useState(() => {
+    try {
+      const saved = localStorage.getItem('curcv_data');
+      if (saved && saved !== "undefined") {
+        return JSON.parse(saved);
+      }
+    } catch (e) {
+      console.error("Failed to parse saved CV data", e);
+    }
+    return DATA;
+  });
   const [isAdmin, setIsAdmin] = useState(() => sessionStorage.getItem('isAdmin') === 'true');
   const [showModal, setShowModal] = useState(null);
   const [showExportSelector, setShowExportSelector] = useState(false);
@@ -67,15 +77,56 @@ export default function App() {
     };
   }, [isAdmin]);
 
-  const handleSave = (item) => {
+  // Carga inicial persistente (Cerebro Full-Stack)
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const res = await fetch('/api/cv');
+        if (res.ok) {
+          const serverData = await res.json();
+          setCurrentData(serverData);
+          localStorage.setItem('curcv_data', JSON.stringify(serverData));
+        }
+      } catch (err) {
+        console.warn('Backend no detectado. Usando almacenamiento local.');
+      }
+    };
+    fetchData();
+  }, []);
+
+  const handleSave = async (item) => {
     const { context, itemIndex, type } = showModal;
     const next = { ...currentData };
     if (type === 'skills') next.skills = item;
     else if (type === 'profile') next.profile = item;
     else if (itemIndex !== undefined) next[context][itemIndex] = item;
     else next[context].push({ ...item, id: Date.now().toString() });
+    
+    // 1. Efecto inmediato en el navegador
     setCurrentData(next);
+    localStorage.setItem('curcv_data', JSON.stringify(next));
     setShowModal(null);
+
+    // 2. Persistencia REAL en el Servidor
+    if (isAdmin) {
+      try {
+        const authHash = sessionStorage.getItem('adminAuthHash');
+        const response = await fetch('/api/cv', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ authHash, newData: next })
+        });
+        
+        if (!response.ok) {
+          console.error('Error al persistir en el servidor');
+          alert('⚠️ Aviso: Los cambios se guardaron en tu navegador pero el servidor no respondió. Asegúrate de estar conectado.');
+        } else {
+          console.log('💎 Cambios sincronizados con el servidor');
+        }
+      } catch (err) {
+        console.error('Fallo crítico de conexión con la API:', err);
+      }
+    }
   };
 
   const exportData = () => {
@@ -250,7 +301,7 @@ export default function App() {
             <Route path="/volunteering" element={<Volunteering title={t.sections.volunteering} data={currentData.volunteering} lang={lang} translations={t} {...adminProps('volunteering', 'volunteering')} />} />
             <Route path="/experience/:id" element={<ExperienceDetailsPage data={currentData.experience} lang={lang} translations={t} isAdmin={isAdmin} onEdit={(id) => setShowModal({ type: 'experience', context: 'experience', itemIndex: currentData.experience.findIndex(e => e.id === id), data: currentData.experience.find(e => e.id === id) })} />} />
             <Route path="/contact" element={<Contact title={t.sections.contact} data={currentData} translations={t} />} />
-            <Route path="/admin" element={isAdmin ? <Navigate to="/" /> : <AdminEntry onLogin={() => {setIsAdmin(true); sessionStorage.setItem('isAdmin', 'true');}} translations={t} />} />
+            <Route path="/private-portal" element={isAdmin ? <Navigate to="/" /> : <AdminEntry onLogin={() => {setIsAdmin(true); sessionStorage.setItem('isAdmin', 'true');}} translations={t} />} />
             <Route path="*" element={<Navigate to="/" />} />
           </Routes>
         </main>

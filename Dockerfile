@@ -2,14 +2,23 @@
 FROM node:23.6-alpine AS builder
 WORKDIR /app
 COPY package*.json ./
-RUN npm install
+RUN npm install --legacy-peer-deps
 COPY . .
 RUN npm run build
 
-# Stage 2: Serve
-FROM nginx:alpine
-COPY --from=builder /app/dist /usr/share/nginx/html
-# Custom Nginx config to handle React Router
-COPY nginx.conf /etc/nginx/conf.d/default.conf
-EXPOSE 80
-CMD ["nginx", "-g", "daemon off;"]
+# Stage 2: Serve (Full-Stack Engine)
+FROM node:23.6-alpine
+WORKDIR /app
+
+# Copiamos solo lo necesario para el servidor
+COPY package*.json ./
+RUN npm install --only=production --legacy-peer-deps
+COPY --from=builder /app/dist ./dist
+COPY --from=builder /app/server.js ./
+COPY --from=builder /app/src/models/cvData.json ./src/models/cvData.json
+
+# Exponemos el puerto del servidor Node
+EXPOSE 3000
+
+# Arrancamos el servidor
+CMD ["node", "server.js"]
