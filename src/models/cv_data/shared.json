@@ -5,18 +5,64 @@
   "location": "Barcelona, España",
   "linkedin": "linkedin.com/in/joan-mata",
   "github": "github.com/joan-mata",
-  "skills": {
-    "software": ["Python", "Node.js", "React", "C++", "Swift", "PHP", "JavaScript", "SQL", "Flask", "Vite"],
-    "ai": ["Machine Learning", "Local IA", "DeepSeek/Mistral", "Neural Networks"],
-    "scraping": ["BeautifulSoup", "Scrapy", "Selenium", "Data Normalization", "Massive Ingestion", "User-Agent Rotation"],
-    "infrastructure": ["AWS", "Docker", "Cloudflare", "Nginx", "Linux", "SSL/TLS", "PKI/SSH"],
-    "hardware": ["PCB Design", "nRF52 / Nordic", "Bluetooth (BLE)", "Verilog / RTL", "Embedded Systems", "Arduino"]
-  },
+  "skills": [
+    "Python",
+    "C++",
+    "React",
+    "Node.js",
+    "n8n / Workflows",
+    "Machine Learning",
+    "Local IA (Claude/DeepSeek)",
+    "AWS",
+    "Docker",
+    "Authelia (SSO/2FA)",
+    "Identity Management",
+    "Telegram Bot API",
+    "PKI/SSL",
+    "PCB Design"
+  ],
   "certificates": [
-    { "id": "ai-big", "title": "Desarrollo con IA", "issuer": "BIG School", "date": "2026", "file": "/docs/certs/ai-big.pdf" },
-    { "id": "ble-nordic", "title": "Bluetooth Low Energy Fundamentals", "issuer": "Nordic Semiconductor", "date": "2024", "file": "/docs/certs/ble-nordic.pdf" },
-    { "id": "sdk-nordic", "title": "nRF Connect SDK Fundamentals", "issuer": "Nordic Semiconductor", "date": "2024", "file": "/docs/certs/sdk-nordic.pdf" },
-    { "id": "aws-cloud", "title": "AWS Cloud Practitioner Essentials", "issuer": "Amazon Web Services (AWS)", "date": "2024", "file": "/docs/certs/aws-cloud.pdf" },
-    { "id": "python-michigan", "title": "Certificate of Python", "issuer": "University of Michigan", "date": "2019", "file": "/docs/certs/python-michigan.pdf" }
+    {
+      "id": "hacking-big",
+      "title": "Ciberseguridad y Hacking Ético",
+      "issuer": "BIG School",
+      "date": "2026",
+      "file": null
+    },
+    {
+      "id": "ai-big",
+      "title": "Desarrollo con IA",
+      "issuer": "BIG School",
+      "date": "2026",
+      "file": "/docs/certs/ai-big.pdf"
+    },
+    {
+      "id": "ble-nordic",
+      "title": "Bluetooth Low Energy Fundamentals",
+      "issuer": "Nordic Semiconductor",
+      "date": "2024",
+      "file": "/docs/certs/ble-nordic.pdf"
+    },
+    {
+      "id": "sdk-nordic",
+      "title": "nRF Connect SDK Fundamentals",
+      "issuer": "Nordic Semiconductor",
+      "date": "2024",
+      "file": "/docs/certs/sdk-nordic.pdf"
+    },
+    {
+      "id": "aws-cloud",
+      "title": "AWS Cloud Practitioner Essentials",
+      "issuer": "Amazon Web Services (AWS)",
+      "date": "2024",
+      "file": "/docs/certs/aws-cloud.pdf"
+    },
+    {
+      "id": "python-michigan",
+      "title": "Certificate of Python",
+      "issuer": "University of Michigan",
+      "date": "2019",
+      "file": "/docs/certs/python-michigan.pdf"
+    }
   ]
 }

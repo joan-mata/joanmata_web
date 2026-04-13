@@ -1,102 +1,132 @@
 {
-  "profile": "Engineer with a double degree in Computer Engineering and Telecommunication Systems, with a hybrid profile that connects hardware, software, and data science. Currently serving as a University Professor specialized in cybersecurity and networks, which I balance with the deployment of cloud infrastructure, local AI solutions (Privacy-First), and embedded systems design. My experience spans from digital verification of integrated circuits to the development of scalable backend architectures in research environments. I am defined by an inexhaustible technical curiosity and the ability to integrate complex solutions where hardware and software converge, always under a philosophy of security by design and digital sovereignty.",
+  "profile": "Engineer with a double degree in Computer Engineering and Telecommunication Systems, with a hybrid profile combining hardware, software, and data science. Currently serving as a University Professor specializing in cybersecurity and networks, a role complemented by the development of local AI solutions, scalable cloud architectures, and embedded systems. I am defined by a deep technical curiosity and a continuous learning mindset, allowing me to quickly adapt to new technologies and integrate them into complex and secure projects.",
   "skills": {
-    "leadership": [
-      "Technical curiosity and dedication to continuous learning for new challenges.",
-      "Leadership, tutoring, and mentoring of technical teams and students.",
-      "Critical decision-making and pressure management.",
-      "Conflict management, assertive communication, and mediation.",
-      "Analytical capacity for methodical resolution of complex problems.",
-      "Technical adaptability in high-demand multidisciplinary environments."
-    ]
+    "leadership": []
   },
   "experience": [
     {
       "company": "Universitat Autònoma de Barcelona",
       "role": "University Professor",
-      "desc": "Technical training leadership in telecommunication services, web architectures, and network cybersecurity.",
-      "tags": ["Teaching", "Full-Stack", "Networking", "Cybersecurity", "PKI"],
+      "desc": "",
+      "tags": [],
       "points": [
-        "Leading practical training in full-stack web development and network security within the 'Telecommunication Services' course.",
-        "Delivering technical instruction on full-stack architecture design, database administration, and advanced web server configuration.",
-        "Managing Public Key Infrastructure (PKI) via certificates and securing traffic using SSL/TLS protocols.",
-        "Teaching 'Network Fundamentals', covering client-server communication and IP-based network architecture.",
-        "Designing and simulating complex network topologies, overseeing static routing protocols and gateway management.",
-        "Specialist in advanced network addressing (VLSM), network segmentation, and deployment of critical services (DHCP, DNS).",
-        "Mentoring Bachelor's Thesis (TFG) in Cybersecurity (hardening), Data Engineering (massive scraping), and Data Science (Machine Learning)."
+        "Professor in 'Telecommunication Services', leading practical training in full-stack web development and security.",
+        "Advanced web security configuration: SSL/TLS, PKI, and critical infrastructure management.",
+        "Professor in 'Network Fundamentals', teaching IP communication and client-server architecture.",
+        "Tutor for final projects in cybersecurity (hardening) and Data Engineering (massive scraping)."
       ],
       "date": "09/2025 - Present"
     },
     {
-      "company": "FlexiiC - Flexible Integrated Circuits",
-      "role": "Integrated Circuit Designer",
-      "desc": "Advanced hardware design (RTL) and validation for low-power wireless connectivity solutions.",
-      "tags": ["Embedded Systems", "PCB Design", "BLE", "Verilog", "RTL"],
+      "company": "FlexiiC",
+      "role": "IC Designer",
+      "desc": "",
+      "tags": [],
       "points": [
-        "Developing and implementing wireless connectivity solutions using nRF52840 SoC and Bluetooth Low Energy (BLE) protocols.",
-        "End-to-end PCB design from schematic capture to fabrication management, ensuring interoperability with embedded systems.",
-        "Physical characterization and functional validation of integrated circuits using advanced lab instrumentation and performance metrics analysis.",
-        "Digital hardware verification (RTL) through the development of test environments in Verilog and ASM (Assembly) routine optimization.",
-        "Leadership in the chip's logical debugging phase, identifying critical errors and facilitating the transition to final production."
+        "Wireless connectivity development using nRF52840 and Bluetooth Low Energy (BLE).",
+        "Integral PCB design and validation with embedded systems.",
+        "Hardware digital verification (RTL) in Verilog and ASM optimization.",
+        "Leading role in logial debugging for the production phase."
       ],
       "date": "09/2024 - 11/2025"
     },
     {
       "company": "Universitat Autònoma de Barcelona",
-      "role": "Senior Research Technical Specialist",
-      "desc": "Backend architecture, REST API design, and data pipeline automation for scientific research projects.",
-      "tags": ["Backend", "API Design", "MongoDB", "Data Pipelines", "Flask"],
+      "role": "Research Specialist",
+      "desc": "",
+      "tags": [],
       "points": [
-        "End-to-end design and development of the backend architecture for research data management, migrating from Django to Flask to optimize REST API flexibility.",
-        "Led the transition from SQL (relational) to NoSQL (MongoDB) database architecture to efficiently manage heterogeneous and dynamic data schemas.",
-        "Automating data lifecycle management through the development of real-time ingestion, cleaning, and normalization pipelines.",
-        "Creating and maintaining a structured API for JSON data services, collaborating closely with the Frontend team for result integration."
+        "Backend architecture design migrating from Django to Flask.",
+        "Leading transition from SQL to NoSQL (MongoDB) for heterogeneous data.",
+        "Data pipeline automation for real-time processing."
       ],
       "date": "07/2022 - 07/2023"
     },
     {
       "company": "Cellnex Telecom",
       "role": "Sales Engineer",
-      "desc": "Planning and theoretical modeling of RF systems and strategic management of telecommunication infrastructures.",
-      "tags": ["RF Systems", "Telecom", "Fiber Optics", "Project Mgmt"],
+      "desc": "",
+      "tags": [],
       "points": [
-        "Performing theoretical analysis and RF system modeling for market introduction, ensuring technical viability and compliance with standards.",
-        "Management of strategic alliances with fiber optic providers and tech partners to integrate external connectivity solutions.",
-        "End-to-end project lifecycle coordination, from conceptual design to final installation and commissioning.",
-        "Strategic communication with key clients for risk management, budget deviation control, and deployment feasibility adjustments."
+        "RF systems modeling and strategic alliance management.",
+        "End-to-End coordination of project lifecycle."
       ],
       "date": "06/2022 - 07/2023"
     },
     {
       "company": "Johnson Control Hitachi",
       "role": "QA Tester",
-      "desc": "Technical validation and maintenance of critical HVAC industrial test environments through Python automation.",
-      "tags": ["QA Testing", "Python", "Automation", "HVAC", "Arduino"],
+      "desc": "",
+      "tags": [],
       "points": [
-        "Performance evaluation and validation of HVAC systems using physical simulators under critical operating conditions.",
-        "Implementation of an Arduino-based diagnostic system for monitoring and analyzing indoor/outdoor serial communication protocols.",
-        "Developing Python scripts for test automation, significantly improving technical validation precision and efficiency.",
-        "Responsible for the maintenance and optimization of physical test bench infrastructure (precision wiring and connectivity).",
-        "Drafting detailed technical reports and result documentation for direct support to R&D design and development teams."
+        "System validation using physical simulators and Python scripts.",
+        "Diagnosis system implementation with Arduino."
       ],
       "date": "07/2021 - 02/2022"
     },
     {
       "company": "Federació Catalana de Futbol",
-      "role": "Referee",
-      "desc": "Critical decision-making and high-pressure situation management in regulated sports competitions.",
-      "tags": ["Leadership", "Decision Making", "Conflict Mgmt"],
+      "role": "Soccer Referee",
+      "desc": "",
+      "tags": [],
       "points": [
-        "Critical pressure management and decision-making in high-demand competitive environments.",
-        "Application of complex regulations and conflict mediation under time-constrained high-stress conditions."
+        "Pressure management and critical decision making."
       ],
       "date": "07/2016 - Present"
+    }
+  ],
+  "education": [
+    {
+      "id": "master-ds",
+      "school": "Universitat Oberta de Catalunya",
+      "date": "2025 – Present",
+      "grade": "En curso",
+      "category": "Master",
+      "title": "Data Science",
+      "explanation": "Master's degree focused on machine learning methods, data mining, and scalable Big Data architectures."
+    },
+    {
+      "id": "gei",
+      "school": "Universitat Autònoma de Barcelona",
+      "date": "2018 – 2025",
+      "grade": "Graduado",
+      "category": "BS",
+      "title": "Computer Engineering",
+      "explanation": "Specialized training in software engineering, algorithms, and operating systems with a mention in Software Engineering.",
+      "tfg": {
+        "grade": "9.0",
+        "file": "/docs/tfg/tfg_gei.pdf",
+        "title": "Image Compressibility",
+        "description": "Research on compression efficiency using two-dimensional metrics and 2D grammars. Innovative methods are proposed to transform images into optimized data streams, validating the results with advanced Python libraries on natural and medical datasets."
+      }
+    },
+    {
+      "id": "gst",
+      "school": "Universitat Autònoma de Barcelona",
+      "date": "2018 – 2025",
+      "grade": "Graduado",
+      "category": "BS",
+      "title": "Telecommunication Systems Engineering",
+      "explanation": "Comprehensive training in transmission systems, data networks, signal propagation, and telecommunication services.",
+      "tfg": {
+        "grade": "8.5",
+        "file": "/docs/tfg/tfg_gest.pdf",
+        "title": "Development and Implementation of Directional and Positional Modulation Systems in Python",
+        "description": "Enhancement of radiocommunications security through physical layer modulation. Systems are designed to focus signals in specific directions and precise geographic coordinates, preventing unauthorized interception of sensitive information through dynamic Python simulations."
+      }
     }
   ],
   "projects": [
     {
       "id": "cv-web",
       "name": "CV Interactivo",
+      "date": "2026",
+      "tags": [
+        "React",
+        "MVC",
+        "Architecture",
+        "Full-Stack"
+      ],
       "desc": "My digital presentation card, designed with clean MVC architecture for maximum scalability.",
       "points": [
         "Comprehensive development of the portal from scratch using React and Vanilla CSS for a fluid and light design.",
@@ -105,19 +135,33 @@
         "Interactive Administration Panel with real-time saving and loading of automatic translations.",
         "Component optimization for high-performance loading and premium user experience (UX)."
       ],
-      "techStack": ["React", "Vite", "Vanilla CSS", "JS MVC", "JSON Persistence"],
+      "techStack": [
+        "React",
+        "Vite",
+        "Vanilla CSS",
+        "JS MVC",
+        "JSON Persistence"
+      ],
       "security": [
         "Protected route architecture through component isolation and React Router navigation guards, preventing unauthorized access to administrative views via real-time technical state validation.",
-        "Local persistence encryption to protect CV JSON integrity, ensuring sensitive user data remains private and secure within the browser environment against unauthorized changes.",
+        "Local persistence encryption using AES-256 algorithms to protect CV JSON integrity, ensuring sensitive user data remains private and secure within the browser environment against unauthorized changes.",
         "Deployment optimization via automated CI/CD pipelines, integrating strict HTTP security headers (HSTS, CSP) and automated SSL/TLS certificate management for guaranteed end-to-point encryption."
       ],
-      "date": "2026",
-      "tags": ["React", "MVC", "Architecture", "Full-Stack"],
-      "links": { "github": "github.com/joan-mata/Create_CVs", "live": "cv.joanmata.com" }
+      "links": {
+        "github": "github.com/joan-mata/Create_CVs",
+        "live": "joanmata.com"
+      }
     },
     {
       "id": "ai-resumes",
       "name": "AI Interactive Resume Editor",
+      "date": "2026",
+      "tags": [
+        "React",
+        "Local AI",
+        "LaTeX-Style",
+        "MVC"
+      ],
       "desc": "Interactive side-by-side CV editor with local AI.",
       "points": [
         "Interactive editing interface with real-time side-by-side preview.",
@@ -126,19 +170,103 @@
         "Dynamic rendering engine that allows you to change the display and themes in one click.",
         "Serverless data persistence using local storage and structured JSON export."
       ],
-      "techStack": ["React", "Vite", "Local AI (DeepSeek/Mistral)", "LaTeX Engine"],
+      "techStack": [
+        "React",
+        "Vite",
+        "Local AI (DeepSeek/Mistral)",
+        "LaTeX Engine"
+      ],
       "security": [
         "100% 'Offline-First' security with AI processing handled entirely on the client-side, eliminating the need to send sensitive user data or resumes to third-party services or external cloud servers.",
         "Input text sanitization via strict validation layers and character escaping to prevent Cross-Site Scripting (XSS) attacks while ensuring secure direct rendering of LaTeX-style documents.",
         "Decentralized persistence based on encrypted local storage schemas, granting users absolute sovereignty and control over the privacy of their professional data without cloud dependencies."
       ],
+      "links": {
+        "github": "github.com/joan-mata/Create_CVs",
+        "live": "cv.joanmata.com"
+      }
+    },
+    {
+      "id": "ai-assistant",
+      "name": "AI Personal Assistant Agent",
       "date": "2026",
-      "tags": ["React", "Local AI", "LaTeX-Style", "MVC"],
-      "links": { "github": "github.com/joan-mata/Create_CVs", "live": "cv.joanmata.com" }
+      "tags": [
+        "LLM Agents",
+        "Anthropic API",
+        "Node.js",
+        "Automation"
+      ],
+      "desc": "Autonomous agent specialized in task management, queries, and personal flow automation using natural language.",
+      "points": [
+        "Deployment of a local agent based on the Claude API (Anthropic) with 'Tool Use' capabilities to interact with external systems.",
+        "Intelligent management of notes, tasks, and reminders using natural language processing.",
+        "Integration with Google Calendar for asynchronous event creation and personal schedule management.",
+        "Implementation of an encrypted secrets system (AES-256) for secure credential management within the assistant environment.",
+        "Orchestration via Telegram webhooks for a seamless conversational user interface."
+      ],
+      "techStack": [
+        "Node.js",
+        "Anthropic Claude API",
+        "Telegram Bot API",
+        "Google OAuth2",
+        "AES-256 Encryption"
+      ],
+      "security": [
+        "Local-First execution ensuring conversations and assistant context are processed in a private environment, minimizing personal data exposure.",
+        "Mandatory use of symmetric encryption for storing sensitive data in the shared Homelab database.",
+        "Strict validation of Telegram Chat ID and security headers in the webhook to prevent unauthorized access to the agent."
+      ],
+      "links": {
+        "github": "github.com/joan-mata/assistant",
+        "live": null
+      }
+    },
+    {
+      "id": "content-curator",
+      "name": "AI Content Curator & Discovery",
+      "date": "2026",
+      "tags": [
+        "n8n",
+        "IA Discovery",
+        "Automation",
+        "Data Engineering"
+      ],
+      "desc": "Intelligent content curation system (podcasts, YouTube, articles) with continuous learning via feedback loops.",
+      "points": [
+        "Design of complex n8n workflows for massive multi-platform content ingestion and classification (Spotify, RSS, YouTube).",
+        "Personalized recommendation engine using Claude to analyze transcripts and generate tailored weekly digests.",
+        "Implementation of interactive feedback logic via Telegram (inline buttons) to adjust interest profile weights in real-time.",
+        "Advanced Apple Calendar (CalDAV) synchronization for suggesting content based on user time availability.",
+        "Proactive discovery system based on host affinities and cross-cutting themes detected via AI."
+      ],
+      "techStack": [
+        "n8n",
+        "Anthropic Claude",
+        "Spotify SDK",
+        "Listen Notes API",
+        "Telegram Bot API",
+        "Apple CalDAV"
+      ],
+      "security": [
+        "Perimeter security architecture protecting n8n instances behind Cloudflare Tunnels with secret token validation on each webhook.",
+        "Management of Spotify tokens and sessions stored locally with encryption and restricted file system access permissions.",
+        "Guaranteed data sovereignty through the private storage of user profiles and ratings without reliance on third-party public clouds."
+      ],
+      "links": {
+        "github": "github.com/joan-mata/bot_podcasts",
+        "live": null
+      }
     },
     {
       "id": "ref-stats",
       "name": "RefStats: Analítica & Scraping Engine",
+      "date": "2026",
+      "tags": [
+        "Python",
+        "Web Scraping",
+        "Sports Analytics",
+        "Full-Stack"
+      ],
       "desc": "Sports analytics platform with Web Scraping engine.",
       "points": [
         "Developed a specialized Web Scraping engine for the massive collection of real-time match results and reports.",
@@ -147,19 +275,33 @@
         "Custom Frontend interface for smooth visualization of rankings and performance metrics.",
         "Historical data persistence in a local database to enable seasonal comparative analysis."
       ],
-      "techStack": ["Python", "BeautifulSoup/Scrapy", "React", "Node.js", "Local Storage"],
+      "techStack": [
+        "Python",
+        "BeautifulSoup/Scrapy",
+        "React",
+        "Node.js",
+        "Local Storage"
+      ],
       "security": [
         "Ethical scraping techniques via the implementation of User-Agent rotation and smart delay management to prevent IP blocking and ensure the long-term technical sustainability of the extraction engine.",
         "Redundant storage infrastructure based on local servers with automated sanitization scripts to debug inconsistencies and maintain the absolute integrity of the ingested sports analytics data.",
         "Proactive latency monitoring and error handling within massive data ingestion pipelines, automatically normalizing NoSQL schemas to maintain a resilient and high-performance sports database."
       ],
-      "date": "2026",
-      "tags": ["Python", "Web Scraping", "Sports Analytics", "Full-Stack"],
-      "links": { "github": "github.com/joan-mata/RefStats", "live": null }
+      "links": {
+        "github": "github.com/joan-mata/RefStats",
+        "live": null
+      }
     },
     {
       "id": "f1-archive",
       "name": "F1 Personal Vault",
+      "date": "2026",
+      "tags": [
+        "Full-Stack",
+        "Streaming",
+        "RBAC",
+        "Video Engine"
+      ],
       "desc": "Personal HD video repository with role-based access.",
       "points": [
         "Role-based visibility system (PBAC) to differentiate between public and private content.",
@@ -168,19 +310,33 @@
         "Dynamic metadata structure for rapid classification and search of historical racing sessions.",
         "Dockerized infrastructure to allow for seamless scaling of storage and streaming servers."
       ],
-      "techStack": ["React", "Node.js", "Express", "Docker", "Nginx"],
+      "techStack": [
+        "React",
+        "Node.js",
+        "Express",
+        "Docker",
+        "Nginx"
+      ],
       "security": [
         "Robust authentication based on session tokens (JWT) with granular role-based permissions (RBAC/PBAC), ensuring that only authorized users have access to private high-definition video assets.",
         "On-Play visibility optimization using Docker container load balancing and Nginx reverse proxies, guaranteeing that HD video streaming does not compromise the host server performance.",
         "Local network perimeter hardening via Cloudflare Tunnels and secure NAT Traversal routing, eliminating the requirement for ISP port forwarding and ensuring point-to-point video traffic encryption."
       ],
-      "date": "2026",
-      "tags": ["Full-Stack", "Streaming", "RBAC", "Video Engine"],
-      "links": { "github": "github.com/joan-mata/f1_archive", "live": "f1.joanmata.com" }
+      "links": {
+        "github": "github.com/joan-mata/f1_archive",
+        "live": "f1.joanmata.com"
+      }
     },
     {
       "id": "ref-notes",
       "name": "Referee Performance Analytics",
+      "date": "2025",
+      "tags": [
+        "Analytics",
+        "Data Viz",
+        "Private Portal",
+        "GIS"
+      ],
       "desc": "Private advanced referee analytics portal.",
       "points": [
         "100% private environment with advanced classification based on ratings and cross-evaluations.",
@@ -189,40 +345,69 @@
         "Geographic heatmaps to analyze zones with higher propensities for frequent evaluations.",
         "Travel pattern detection and geographical assignment optimization for evaluation committees."
       ],
-      "techStack": ["Python", "Flask", "PostgreSQL", "D3.js", "Geology/Mapping APIs"],
+      "techStack": [
+        "Python",
+        "Flask",
+        "PostgreSQL",
+        "D3.js",
+        "Geology/Mapping APIs"
+      ],
       "security": [
         "High-confidentiality environment featuring mandatory multi-factor authentication (2FA) and PostgreSQL database encryption-at-rest to protect the integrity of external referee reports and analytics data.",
         "Architectural security through internal network segmentation and isolated reverse proxies, preventing direct access to sensitive data services from the public internet without prior session authorization.",
         "Granular access control for geographical and personal data, applying data anonymization logic to evaluation profiles to protect evaluator privacy and ensure compliance with strict data protection standards."
       ],
-      "date": "2025",
-      "tags": ["Analytics", "Data Viz", "Private Portal", "GIS"],
-      "links": { "github": "github.com/joan-mata/RefereeNotes", "live": "refnotes.joanmata.com" }
+      "links": {
+        "github": "github.com/joan-mata/RefereeNotes",
+        "live": "refnotes.joanmata.com"
+      }
     },
     {
       "id": "main-server",
       "name": "Infraestructura Cloud Local",
+      "date": "2025 - 2026",
+      "tags": [
+        "Docker",
+        "DevOps",
+        "Cloudflare",
+        "Infrastructure"
+      ],
       "desc": "Scalable local infrastructure based on Docker.",
       "points": [
         "Orchestrated more than 10 independent containers (Nginx, Portainer, etc.) using Docker Compose.",
         "Multi-hosting configuration on dedicated local hardware to host various production-grade web applications.",
         "Comprehensive management of domains, subdomains, and secure routing via Cloudflare Tunnels (NAT Traversal).",
         "Centralized monitoring and automated backups to ensure data persistence.",
-        "Zero Trust perimeter security hardening to protect access to critical services."
+        "Hardening of security perimetral Zero Trust to protect access to critical services."
       ],
-      "techStack": ["Docker", "Linux (macOS)", "Cloudflare Tunnel", "Nginx", "Reverse Proxy"],
+      "techStack": [
+        "Docker",
+        "Linux (macOS)",
+        "Cloudflare Tunnel",
+        "Authelia (SSO/2FA)",
+        "Nginx",
+        "Reverse Proxy"
+      ],
       "security": [
-        "Zero Trust security perimeter implementation via Cloudflare Tunnels (NAT Traversal), completely removing the need for ISP port forwarding and neutralizing global IP scanning attacks on the local host.",
-        "Resilient infrastructure orchestration using Docker Compose with centralized container log monitoring, proactively detecting anomalies in internal and external service traffic across isolated virtual networks.",
-        "Automated SSL/TLS certificate management and edge hardening via perimeter Firewall with geolocation-based IP filtering to block fraudulent access attempts from unauthorized regions or blacklisted IPs."
+        "Zero Trust security perimeter implementation via Cloudflare Tunnels (NAT Traversal), completely removing the need for ISP port forwarding and neutralizing network scanning attacks.",
+        "Centralized access control and multi-factor authentication (2FA) through the deployment of Authelia, integrating Single Sign-On (SSO) across all personal subdomains.",
+        "Resilient infrastructure orchestration using Docker Compose with centralized container log monitoring in isolated containers and segmented internal networks."
       ],
-      "date": "2025 - 2026",
-      "tags": ["Docker", "DevOps", "Cloudflare", "Infrastructure"],
-      "links": { "github": null, "live": null }
+      "links": {
+        "github": null,
+        "live": null
+      }
     },
     {
       "id": "aws-pipeline",
       "name": "AWS Data Ingestion Pipeline",
+      "date": "2025",
+      "tags": [
+        "AWS",
+        "Python",
+        "ETL",
+        "Big Data"
+      ],
       "desc": "Large-scale automated data ingestion pipeline on AWS cloud infrastructure.",
       "points": [
         "Asynchronous orchestration design using serverless services (AWS Lambda).",
@@ -231,19 +416,33 @@
         "Scalable storage in S3 with smart lifecycle policies.",
         "Proactive monitoring and critical error alerts via CloudWatch."
       ],
-      "techStack": ["Python", "AWS Lambda", "Boto3", "Kinesis", "S3"],
+      "techStack": [
+        "Python",
+        "AWS Lambda",
+        "Boto3",
+        "Kinesis",
+        "S3"
+      ],
       "security": [
         "Granular Identity and Access Management (IAM) strictly applying the principle of least privilege to limit Lambda functions and service permissions to the absolute minimum required for reliable execution.",
         "Data-at-rest encryption on S3 using AWS KMS (Key Management Service) and comprehensive data-in-transit protection via TLS 1.2, ensuring the pipeline meets high enterprise cloud security standards.",
         "Serverless architecture featuring proactive security monitoring via CloudWatch Logs and CloudTrail integration, automating real-time alerts for any anomalous access attempts to the critical Big Data resources."
       ],
-      "date": "2025",
-      "tags": ["AWS", "Python", "ETL", "Big Data"],
-      "links": { "github": null, "live": null }
+      "links": {
+        "github": null,
+        "live": null
+      }
     },
     {
       "id": "web-exams",
       "name": "WebExams: Interactive Assessment Platform",
+      "date": "2025",
+      "tags": [
+        "React",
+        "E-learning",
+        "Community",
+        "Monetization"
+      ],
       "desc": "Interactive assessment platform with feedback.",
       "points": [
         "Dynamic exam generation featuring customizable difficulty levels tailored to the student's learning progress.",
@@ -253,19 +452,33 @@
         "Strategic integration with Google Ads for platform monetization and long-term sustainability.",
         "Personal dashboard for tracking historical results and continuous academic performance improvement."
       ],
-      "techStack": ["React", "Vite", "Firebase/Node.js", "Google Adsense", "CSS Grid"],
+      "techStack": [
+        "React",
+        "Vite",
+        "Firebase/Node.js",
+        "Google Adsense",
+        "CSS Grid"
+      ],
       "security": [
         "Anti-fraud exam protection through the development of timing logic strictly synchronized on the server-side, effectively eliminating manual timer manipulations from the end-user's browser or client-side scripts.",
         "Strict input schema validation and massive data sanitization to prevent NoSQL injection attacks and ensure database integrity against malicious or automated form submissions in real-time.",
         "Persistence optimization and serverless infrastructure deployment with continuous performance monitoring, guaranteeing high scalability during peak traffic and simultaneous exam sessions across the platform."
       ],
-      "date": "2025",
-      "tags": ["React", "E-learning", "Community", "Monetization"],
-      "links": { "github": "github.com/joan-mata/WebExams", "live": null }
+      "links": {
+        "github": "github.com/joan-mata/WebExams",
+        "live": null
+      }
     },
     {
       "id": "docu-life",
       "name": "DocuLife: Bóveda Digital Segura",
+      "date": "2025",
+      "tags": [
+        "Mobile",
+        "Security",
+        "Privacy",
+        "Vault"
+      ],
       "desc": "Mobile digital vault for critical documents.",
       "points": [
         "Developed a hardened digital environment for the highly secure storage of sensitive documents (ID cards, Passports, Deeds).",
@@ -275,77 +488,40 @@
         "Data-sovereignty focused architecture allowing local-only storage and optional encrypted cloud synchronization.",
         "Dynamic expiry date management for automated notification alerts regarding official document renewals."
       ],
-      "techStack": ["React Native/Flutter", "AES-256 Encryption", "SQLite/Realm", "Biometric Auth"],
+      "techStack": [
+        "React Native/Flutter",
+        "AES-256 Encryption",
+        "SQLite/Realm",
+        "Biometric Auth"
+      ],
       "security": [
         "Native military-grade encryption (AES-256) managed within the mobile device's secure enclave, ensuring that critical documents remain unreadable even in cases of physical theft or local terminal compromise.",
         "Native integration of biometric authentication layers (Fingerprint and FaceID) as a mandatory primary access requirement before any viewing or interaction with highly sensitive documents stored locally.",
         "Cloud synchronization architecture based on asymmetric encryption schemas entirely controlled by the user, ensuring that only the owner possesses the decryption master keys even for off-device backups."
       ],
-      "date": "2025",
-      "tags": ["Mobile", "Security", "Privacy", "Vault"],
-      "links": { "github": "github.com/joan-mata/DocuLife", "live": null }
-    }
-  ],
-  "education": [
-    {
-      "id": "master-ds",
-      "category": "Master",
-      "title": "Data Science",
-      "explanation": "Master's degree focused on machine learning methods, data mining, and scalable Big Data architectures.",
-      "school": "Universitat Oberta de Catalunya",
-      "date": "2025 – Present",
-      "grade": "Ongoing"
-    },
-    {
-      "id": "gei",
-      "category": "BS",
-      "title": "Computer Engineering",
-      "explanation": "Specialized training in software engineering, algorithms, and operating systems with a mention in Software Engineering.",
-      "school": "Universitat Autònoma de Barcelona",
-      "date": "2018 – 2025",
-      "grade": "Graduated",
-      "tfg": {
-        "title": "Image Compressibility",
-        "description": "Research on compression efficiency using two-dimensional metrics and 2D grammars. Innovative methods are proposed to transform images into optimized data streams, validating the results with advanced Python libraries on natural and medical datasets.",
-        "grade": "9.0",
-        "file": "/docs/tfg/tfg_gei.pdf"
-      }
-    },
-    {
-      "id": "gst",
-      "category": "BS",
-      "title": "Telecommunication Systems Engineering",
-      "explanation": "Comprehensive training in transmission systems, data networks, signal propagation, and telecommunication services.",
-      "school": "Universitat Autònoma de Barcelona",
-      "date": "2018 – 2025",
-      "grade": "Graduated",
-      "tfg": {
-        "title": "Development and Implementation of Directional and Positional Modulation Systems in Python",
-        "description": "Enhancement of radiocommunications security through physical layer modulation. Systems are designed to focus signals in specific directions and precise geographic coordinates, preventing unauthorized interception of sensitive information through dynamic Python simulations.",
-        "grade": "8.5",
-        "file": "/docs/tfg/tfg_gest.pdf"
+      "links": {
+        "github": "github.com/joan-mata/DocuLife",
+        "live": null
       }
     }
   ],
   "certificates": [
     {
-      "id": "ai-big",
+      "description": "Professional certification in offensive cybersecurity and systems auditing, focused on ethical hacking techniques, vulnerability detection, and infrastructure hardening."
+    },
+    {
       "description": "Advanced certification in the development of applied Artificial Intelligence solutions, focusing on modern architectures and generative models."
     },
     {
-      "id": "ble-nordic",
       "description": "Technical training on the fundamentals of the Bluetooth Low Energy (BLE) protocol, covering profiling architecture, services, and power optimization."
     },
     {
-      "id": "sdk-nordic",
       "description": "Specialization in using the nRF Connect SDK for professional embedded application development on Nordic Semiconductor hardware."
     },
     {
-      "id": "aws-cloud",
       "description": "Official training on AWS Cloud fundamentals, covering core services, security, architecture, pricing, and support."
     },
     {
-      "id": "python-michigan",
       "description": "Comprehensive Python programming course, covering data structures, object-oriented programming, and file handling."
     }
   ],
@@ -354,13 +530,13 @@
       "location": "Bolivia",
       "date": "2025",
       "org": "FASFI",
-      "desc": "Comprehensive support in educational and daily assistance programs for vulnerable children, collaborating in teaching activities and the operational management of the center in Cochabamba."
+      "desc": "Educational support in Cochabamba."
     },
     {
       "location": "Haití",
       "date": "2019",
       "org": "TECHO",
-      "desc": "Active participation in social infrastructure projects and emergency housing construction in Port-au-Prince, coordinating logistics and organizational support efforts on the ground."
+      "desc": "Emergency housing construction."
     }
   ]
 }

@@ -299,6 +299,143 @@
     },
 
     {
+      "id": "ai-assistant",
+      "name": "AI Personal Assistant Agent",
+      "date": "2026",
+      "tags": [
+        "LLM Agents",
+        "Anthropic API",
+        "Node.js",
+        "Automation"
+      ],
+      "desc": {
+        "es": "Agente autónomo especializado en la gestión de tareas, consultas y automatización de flujos personales mediante lenguaje natural.",
+        "ca": "Agent autònom especialitzat en la gestió de tasques, consultes i automatització de fluxos personals mitjançant llenguatge natural.",
+        "en": "Autonomous agent specialized in task management, queries, and personal flow automation using natural language."
+      },
+      "points": {
+        "es": [
+          "Despliegue de un agente local basado en la API de Claude (Anthropic) con capacidades de 'Tool Use' para interactuar con sistemas externos.",
+          "Gestión inteligente de notas, tareas y recordatorios mediante procesamiento de lenguaje natural.",
+          "Integración con Google Calendar para la creación asíncrona de eventos y gestión de agenda personal.",
+          "Implementación de un sistema de secretos cifrados (AES-256) para la gestión segura de credenciales dentro del entorno del asistente.",
+          "Orquestación mediante webhooks de Telegram para una interfaz de usuario conversacional fluida."
+        ],
+        "ca": [
+          "Desplegament d'un agent local basat en l'API de Claude (Anthropic) amb capacitats de 'Tool Use' per interactuar amb sistemes externs.",
+          "Gestió intel·ligent de notes, tasques i recordatoris mitjançant processament de llenguatge natural.",
+          "Integració amb Google Calendar per a la creació assíncrona d'esdeveniments i gestió d'agenda personal.",
+          "Implementació d'un sistema de secrets xifrats (AES-256) per a la gestió segura de credencials dins de l'entorn de l'asistent.",
+          "Orquestració mitjançant webhooks de Telegram per a una interfície d'usuari conversacional fluida."
+        ],
+        "en": [
+          "Deployment of a local agent based on the Claude API (Anthropic) with 'Tool Use' capabilities to interact with external systems.",
+          "Intelligent management of notes, tasks, and reminders using natural language processing.",
+          "Integration with Google Calendar for asynchronous event creation and personal schedule management.",
+          "Implementation of an encrypted secrets system (AES-256) for secure credential management within the assistant environment.",
+          "Orchestration via Telegram webhooks for a seamless conversational user interface."
+        ]
+      },
+      "techStack": [
+        "Node.js",
+        "Anthropic Claude API",
+        "Telegram Bot API",
+        "Google OAuth2",
+        "AES-256 Encryption"
+      ],
+      "security": {
+        "es": [
+          "Ejecución 'Local-First' que garantiza que las conversaciones y el contexto del asistente se procesen en un entorno privado, minimizando la exposición de datos personales.",
+          "Uso obligatorio de encriptación simétrica para el almacenamiento de datos sensibles en la base de datos compartida del Homelab.",
+          "Validación estricta de Chat ID de Telegram y encabezados de seguridad en el webhook para prevenir accesos no autorizados al agente."
+        ],
+        "ca": [
+          "Execució 'Local-First' que garanteix que les converses i el context de l'asistent es processin en un entorn privat, minimitzant l'exposició de dades personals.",
+          "Ús obligatori d'encriptació simètrica per a l'emmagatzematge de dades sensibles a la base de dades compartida del Homelab.",
+          "Validació estricta de Chat ID de Telegram i capçaleres de seguretat al webhook per prevenir accessos no autoritzats a l'agent."
+        ],
+        "en": [
+          "Local-First execution ensuring conversations and assistant context are processed in a private environment, minimizing personal data exposure.",
+          "Mandatory use of symmetric encryption for storing sensitive data in the shared Homelab database.",
+          "Strict validation of Telegram Chat ID and security headers in the webhook to prevent unauthorized access to the agent."
+        ]
+      },
+      "links": {
+        "github": "github.com/joan-mata/assistant",
+        "live": null
+      }
+    },
+
+    {
+      "id": "content-curator",
+      "name": "AI Content Curator & Discovery",
+      "date": "2026",
+      "tags": [
+        "n8n",
+        "IA Discovery",
+        "Automation",
+        "Data Engineering"
+      ],
+      "desc": {
+        "es": "Sistema inteligente de curación de contenidos (podcasts, YouTube, artículos) con aprendizaje continuo mediante feedback loops.",
+        "ca": "Sistema intel·ligent de curació de continguts (podcasts, YouTube, articles) amb aprenentatge continu mitjançant feedback loops.",
+        "en": "Intelligent content curation system (podcasts, YouTube, articles) with continuous learning via feedback loops."
+      },
+      "points": {
+        "es": [
+          "Diseño de workflows complejos en n8n para la ingesta y clasificación masiva de contenido multiplataforma (Spotify, RSS, YouTube).",
+          "Motor de recomendación personalizado que utiliza Claude para analizar transcripciones y generar 'weekly digests' adaptados.",
+          "Implementación de lógica de feedback interactiva vía Telegram (botones inline) para ajustar los pesos del perfil de intereses en tiempo real.",
+          "Sincronización avanzada con Apple Calendar (CalDAV) para la sugerencia de contenidos según la disponibilidad temporal del usuario.",
+          "Sistema de descubrimiento proactivo basado en afinidades de presentadores y temas transversales detectados mediante IA."
+        ],
+        "ca": [
+          "Disseny de workflows complexos en n8n per a la ingesta i classificació massiva de contingut multiplataforma (Spotify, RSS, YouTube).",
+          "Motor de recomanació personalitzat que utilitza Claude per analitzar transcripcions i generar 'weekly digests' adaptats.",
+          "Implementació de lògica de feedback interactiva via Telegram (botons inline) per ajustar els pesos del perfil d'interessos en temps real.",
+          "Sincronització avançada amb Apple Calendar (CalDAV) per a la suggerència de continguts segons la disponibilitat temporal de l'usuari.",
+          "Sistema de descobriment proactiu basat en afinitats de presentadors i temes transversals detectats mitjançant IA."
+        ],
+        "en": [
+          "Design of complex n8n workflows for massive multi-platform content ingestion and classification (Spotify, RSS, YouTube).",
+          "Personalized recommendation engine using Claude to analyze transcripts and generate tailored weekly digests.",
+          "Implementation of interactive feedback logic via Telegram (inline buttons) to adjust interest profile weights in real-time.",
+          "Advanced Apple Calendar (CalDAV) synchronization for suggesting content based on user time availability.",
+          "Proactive discovery system based on host affinities and cross-cutting themes detected via AI."
+        ]
+      },
+      "techStack": [
+        "n8n",
+        "Anthropic Claude",
+        "Spotify SDK",
+        "Listen Notes API",
+        "Telegram Bot API",
+        "Apple CalDAV"
+      ],
+      "security": {
+        "es": [
+          "Arquitectura de seguridad perimetral que protege las instancias de n8n detrás de túneles Cloudflare con validación de tokens de secreto en cada webhook.",
+          "Gestión de tokens y sesiones de Spotify almacenados localmente con cifrado y permisos de acceso restringidos a nivel de sistema de archivos.",
+          "Soberanía de datos garantizada mediante el almacenamiento privado de perfiles de usuario y ratings sin dependencia de nubes públicas de terceros."
+        ],
+        "ca": [
+          "Arquitectura de seguretat perimetral que protegeix les instàncies de n8n darrere de túnels Cloudflare amb validació de tokens de secret en cada webhook.",
+          "Gestió de tokens i sessions de Spotify emmagatzemats localment amb xifrat i permisos d'accés restringits a nivell de sistema de fitxers.",
+          "Sobirania de dades garantida mitjançant l'emmagatzematge privat de perfils d'usuari i ratings sense dependència de núvols públics de tercers."
+        ],
+        "en": [
+          "Perimeter security architecture protecting n8n instances behind Cloudflare Tunnels with secret token validation on each webhook.",
+          "Management of Spotify tokens and sessions stored locally with encryption and restricted file system access permissions.",
+          "Guaranteed data sovereignty through the private storage of user profiles and ratings without reliance on third-party public clouds."
+        ]
+      },
+      "links": {
+        "github": "github.com/joan-mata/bot_podcasts",
+        "live": null
+      }
+    },
+
+    {
       "id": "ref-stats",
       "name": "RefStats: Analítica & Scraping Engine",
       "date": "2026",
@@ -534,31 +671,32 @@
           "Multi-hosting configuration on dedicated local hardware to host various production-grade web applications.",
           "Comprehensive management of domains, subdomains, and secure routing via Cloudflare Tunnels (NAT Traversal).",
           "Centralized monitoring and automated backups to ensure data persistence.",
-          "Zero Trust perimeter security hardening to protect access to critical services."
+          "Hardening of security perimetral Zero Trust to protect access to critical services."
         ]
       },
       "techStack": [
         "Docker",
         "Linux (macOS)",
         "Cloudflare Tunnel",
+        "Authelia (SSO/2FA)",
         "Nginx",
         "Reverse Proxy"
       ],
       "security": {
         "es": [
-          "Implementación de un perímetro de seguridad Zero Trust basado en Cloudflare Tunnels (NAT Traversal), eliminando por completo la necesidad de apertura de puertos en el router ISP y anulando ataques de escaneo de IP.",
-          "Orquestación de infraestructura resiliente mediante Docker Compose con monitorización centralizada de logs en contenedores aislados, detectando proactivamente anomalías en el tráfico interno y externo de los servicios.",
-          "Gestión automatizada de certificados SSL/TLS y blindaje mediante Firewall perimetral con filtrado de IPs por geolocalización, bloqueando accesos fraudulentos desde regiones no autorizadas o IPs sospechosas."
+          "Implementación de un perímetro de seguridad Zero Trust basado en Cloudflare Tunnels (NAT Traversal), eliminando por completo la necesidad de apertura de puertos en el router ISP.",
+          "Control de acceso centralizado y autenticación de doble factor (2FA) mediante el despliegue de Authelia, integrando Single Sign-On (SSO) en todos los subdominios personales.",
+          "Orquestación de infraestructura resiliente mediante Docker Compose con monitorización centralizada de logs en contenedores aislados y redes internas segmentadas."
         ],
         "ca": [
-          "Implementació d'un perímetre de seguretat Zero Trust basat en Cloudflare Tunnels (NAT Traversal), eliminant completament la necessitat d'obertura de ports al router ISP i anulant possibles atacs d'escaneig d'IP pública.",
-          "Orquestració d'infraestructura resilient mitjançant Docker Compose amb monitorització centralitzada de logs en contenidors aïllats, detectant proactivament anomalies en el trànsit intern i extern de cada servei.",
-          "Gestió automatizada de certificats SSL/TLS i blindatge mitjançant Firewall perimetral amb filtratge d'IPs per geolocalització, bloquejant accessos fraudulents des de regions no autoritzades o ips sospitoses."
+          "Implementació d'un perímetre de seguretat Zero Trust basat en Cloudflare Tunnels (NAT Traversal), eliminant completament la necessitat d'obertura de ports al router ISP.",
+          "Control d'accés centralitzat i autenticació de doble factor (2FA) mitjançant el desplegament d'Authelia, integrant Single Sign-On (SSO) en tots els subdominis personals.",
+          "Orquestració d'infraestructura resilient mitjançant Docker Compose amb monitorització centralitzada de logs en contenidors aïllats i xarxes internes segmentades."
         ],
         "en": [
-          "Zero Trust security perimeter implementation via Cloudflare Tunnels (NAT Traversal), completely removing the need for ISP port forwarding and neutralizing global IP scanning attacks on the local host.",
-          "Resilient infrastructure orchestration using Docker Compose with centralized container log monitoring, proactively detecting anomalies in internal and external service traffic across isolated virtual networks.",
-          "Automated SSL/TLS certificate management and edge hardening via perimeter Firewall with geolocation-based IP filtering to block fraudulent access attempts from unauthorized regions or blacklisted IPs."
+          "Zero Trust security perimeter implementation via Cloudflare Tunnels (NAT Traversal), completely removing the need for ISP port forwarding and neutralizing network scanning attacks.",
+          "Centralized access control and multi-factor authentication (2FA) through the deployment of Authelia, integrating Single Sign-On (SSO) across all personal subdomains.",
+          "Resilient infrastructure orchestration using Docker Compose with centralized container log monitoring in isolated containers and segmented internal networks."
         ]
       },
       "links": {
@@ -945,11 +1083,14 @@
     "C++",
     "React",
     "Node.js",
-    "Swift",
+    "n8n / Workflows",
     "Machine Learning",
-    "Local IA",
+    "Local IA (Claude/DeepSeek)",
     "AWS",
     "Docker",
+    "Authelia (SSO/2FA)",
+    "Identity Management",
+    "Telegram Bot API",
     "PKI/SSL",
     "PCB Design"
   ],
