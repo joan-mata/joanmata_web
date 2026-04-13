@@ -4,6 +4,8 @@ import fs from 'fs-extra';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import dotenv from 'dotenv';
+import { exec } from 'child_process';
+import { syncData } from './src/models/sync_data.js';
 
 dotenv.config();
 
@@ -51,6 +53,19 @@ app.post('/api/cv', async (req, res) => {
   try {
     await fs.writeJson(DATA_FILE, newData, { spaces: 2 });
     console.log('[Sistema] CV actualizado y guardado en disco correctamente');
+    
+    // Sincronización automática de archivos divididos
+    await syncData();
+    
+    // Reconstrucción automática del frontend (para Nginx/Static)
+    exec('npm run build', (error, stdout, stderr) => {
+      if (error) {
+        console.error(`[Error] Fallo en el auto-build: ${error.message}`);
+        return;
+      }
+      console.log('[Sistema] Auto-build completado con éxito');
+    });
+    
     res.json({ success: true });
   } catch (err) {
     console.error('[Error] Fallo al escribir en el disco:', err);
@@ -59,7 +74,7 @@ app.post('/api/cv', async (req, res) => {
 });
 
 // Redireccionar todo lo demás al index.html (para React Router)
-app.get('*', (req, res) => {
+app.use((req, res) => {
   res.sendFile(path.join(__dirname, 'dist', 'index.html'));
 });
 

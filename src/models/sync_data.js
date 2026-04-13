@@ -5,10 +5,10 @@ import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const cvDataPath = path.join(__dirname, 'cvData.json');
-const splitDir = path.join(__dirname, 'cv_data');
+export async function syncData() {
+  const cvDataPath = path.join(__dirname, 'cvData.json');
+  const splitDir = path.join(__dirname, 'cv_data');
 
-async function split() {
   const data = await fs.readJson(cvDataPath);
   
   const languages = ['es', 'ca', 'en'];
@@ -19,7 +19,7 @@ async function split() {
     location: data.location,
     linkedin: data.linkedin,
     github: data.github,
-    skills: data.skills, // Skills are shared but we might need to be careful
+    skills: data.skills,
     certificates: data.certificates.map(c => ({
       id: c.id,
       title: c.title,
@@ -108,7 +108,6 @@ async function split() {
     });
   });
 
-  // Write files
   await fs.writeJson(path.join(splitDir, 'shared.json'), shared, { spaces: 2 });
   for (const l of languages) {
     await fs.writeJson(path.join(splitDir, `${l}.json`), langData[l], { spaces: 2 });
@@ -117,4 +116,8 @@ async function split() {
   console.log('✅ Data synchronized successfully to cv_data/*.json');
 }
 
-split().catch(console.error);
+// Run if direct execution
+if (process.argv[1] === fileURLToPath(import.meta.url)) {
+  syncData().catch(console.error);
+}
+
