@@ -69,6 +69,8 @@ const AdminModal = ({ type, initialData, onSave, onCancel, translations: tUI }) 
       fieldsToTranslate.push('title');
     } else if (type === 'skills') {
       listsToTranslate.push('leadership');
+    } else if (type === 'certificate') {
+      fieldsToTranslate.push('description');
     } else if (type === 'volunteering') {
       fieldsToTranslate.push('desc');
     } else if (type === 'profile') {
@@ -333,6 +335,11 @@ const AdminModal = ({ type, initialData, onSave, onCancel, translations: tUI }) 
         <label>Fecha</label>
         <input className="admin-input" value={formData.date || ''} onChange={(e) => handleChange('date', e.target.value)} />
       </div>
+      <div className="form-group">
+        <label>Ruta al PDF (ej: /docs/certs/archivo.pdf)</label>
+        <input className="admin-input" value={formData.file || ''} onChange={(e) => handleChange('file', e.target.value)} />
+      </div>
+      {renderLanguageInputs('Descripción del Certificado', 'description', true)}
     </>
   );
 

@@ -227,9 +227,10 @@
       },
       "links": {
         "github": "github.com/joan-mata/Create_CVs",
-        "live": "cv.joanmata.com"
+        "live": "joanmata.com"
       }
     },
+
     {
       "id": "ai-resumes",
       "name": "AI Interactive Resume Editor",
@@ -257,7 +258,7 @@
           "Interfície d'edició interactiva amb vista prèvia en temps real en paral·lel (side-by-side).",
           "Integració d'IA Local per a l'optimització de l'estructura i la correcció avançada de sintaxi.",
           "Mòdul d'adaptació intel·ligent per ajustar el CV automàticament a ofertes d'ocupació específiques.",
-          "Motor de renderitzat dinàmic que permet canviar la visualización i temes a un clic.",
+          "Motor de renderitzat dinàmic que permet canviar la visualització i temes a un clic.",
           "Persistència de dades sense servidor mitjançant emmagatzematge local i exportació JSON estructurada."
         ],
         "en": [
@@ -281,7 +282,7 @@
           "Persistencia descentralizada basada en esquemas de almacenamiento local cifrado, otorgando al usuario el control absoluto sobre la soberanía y privacidad de su información profesional sin dependencias cloud."
         ],
         "ca": [
-          "Seguretat 100% 'Offline-First' amb processament d'IA íntegrament en el client, eliminant la necessitat d'enviar dades sensibles a serveis de tercers o servidors externs per al seu processament lingüístic.",
+          "Seguretat 100% 'Offline-First' amb processament d'IA íntegramente en el client, eliminant la necessitat d'enviar dades sensibles a serveis de tercers o servidors externs per al seu processament lingüístic.",
           "Sanitització d'entrades de text mitjançant capes de validació per prevenir atacs de Cross-Site Scripting (XSS) i garantir un renderitzat segur de documents LaTeX/PDF directament al navegador.",
           "Persistència descentralitzada basada en esquemes d'emmagatzematge local xifrat, donant a l'usuari el control absolut sobre la sobirania i privadesa de la seva informació profesional sense dependències de núvol."
         ],
@@ -296,6 +297,7 @@
         "live": "cv.joanmata.com"
       }
     },
+
     {
       "id": "ref-stats",
       "name": "RefStats: Analítica & Scraping Engine",
@@ -866,24 +868,76 @@
   ],
   "certificates": [
     {
+      "id": "hacking-big",
+      "title": "Ciberseguridad y Hacking Ético",
+      "issuer": "BIG School",
+      "date": "2026",
+      "file": null,
+      "description": {
+        "es": "Certificación profesional en ciberseguridad ofensiva y auditoría de sistemas, centrada en técnicas de hacking ético, detección de vulnerabilidades y hardening de infraestructuras.",
+        "ca": "Certificació professional en ciberseguretat ofensiva i auditoria de sistemes, centrada en tècniques de hacking ètic, detecció de vulnerabilitats i hardening d'infraestructures.",
+        "en": "Professional certification in offensive cybersecurity and systems auditing, focused on ethical hacking techniques, vulnerability detection, and infrastructure hardening."
+      }
+    },
+    {
+      "id": "ai-big",
       "title": "Desarrollo con IA",
       "issuer": "BIG School",
-      "date": "2026"
+      "date": "2026",
+      "file": "/docs/certs/ai-big.pdf",
+      "description": {
+        "es": "Certificación avanzada en el desarrollo de soluciones de Inteligencia Artificial aplicada, enfocada en arquitecturas modernas y modelos generativos.",
+        "ca": "Certificació avançada en el desenvolupament de solucions d'Intel·ligència Artificial aplicada, enfocada en arquitectures modernes i models generatius.",
+        "en": "Advanced certification in the development of applied Artificial Intelligence solutions, focusing on modern architectures and generative models."
+      }
     },
     {
+      "id": "ble-nordic",
       "title": "Bluetooth Low Energy Fundamentals",
       "issuer": "Nordic Semiconductor",
-      "date": "2024"
+      "date": "2024",
+      "file": "/docs/certs/ble-nordic.pdf",
+      "description": {
+        "es": "Formación técnica sobre los fundamentos del protocolo Bluetooth Low Energy (BLE), cubriendo arquitectura de perfiles, servicios y optimización de energía.",
+        "ca": "Formació tècnica sobre els fonaments del protocol Bluetooth Low Energy (BLE), cobrint arquitectura de perfils, serveis i optimització d'energia.",
+        "en": "Technical training on the fundamentals of the Bluetooth Low Energy (BLE) protocol, covering profiling architecture, services, and power optimization."
+      }
     },
     {
+      "id": "sdk-nordic",
       "title": "nRF Connect SDK Fundamentals",
       "issuer": "Nordic Semiconductor",
-      "date": "2024"
+      "date": "2024",
+      "file": "/docs/certs/sdk-nordic.pdf",
+      "description": {
+        "es": "Especialización en el uso del nRF Connect SDK para el desarrollo de aplicaciones embebidas profesionales sobre hardware de Nordic Semiconductor.",
+        "ca": "Especialització en l'ús del nRF Connect SDK per al desenvolupament d'aplicacions encastades professionals sobre maquinari de Nordic Semiconductor.",
+        "en": "Specialization in using the nRF Connect SDK for professional embedded application development on Nordic Semiconductor hardware."
+      }
     },
     {
+      "id": "aws-cloud",
+      "title": "AWS Cloud Practitioner Essentials",
+      "issuer": "Amazon Web Services (AWS)",
+      "date": "2024",
+      "file": "/docs/certs/aws-cloud.pdf",
+      "description": {
+        "es": "Formación oficial en los fundamentos de la nube de AWS, cubriendo servicios principales, seguridad, arquitectura, precios y soporte.",
+        "ca": "Formació oficial en els fonaments del núvol d'AWS, cobrint serveis principals, seguretat, arquitectura, preus i suport.",
+        "en": "Official training on AWS Cloud fundamentals, covering core services, security, architecture, pricing, and support."
+      }
+    },
+    {
+      "id": "python-michigan",
       "title": "Certificate of Python",
       "issuer": "University of Michigan",
-      "date": "2019"
+      "date": "2019",
+      "file": "/docs/certs/python-michigan.pdf",
+      "description": {
+        "es": "Curso integral de programación en Python, abarcando desde estructuras de datos hasta programación orientada a objetos y manipulación de archivos.",
+        "ca": "Curs integral de programació en Python, abastant des d'estructures de dades fins a programació orientada a objectes i manipulació de fitxers.",
+        "en": "Comprehensive Python programming course, covering data structures, object-oriented programming, and file handling."
+      }
     }
   ],
   "skills": [
