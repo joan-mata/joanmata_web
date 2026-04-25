@@ -25,6 +25,22 @@ const Experience = ({ title, data, lang, isAdmin, onEdit, onAdd, translations })
           >
             {isAdmin && <button className="admin-icon entry-edit-btn" onClick={() => onEdit(idx)}>✎</button>}
             <p className="card-desc-home">{exp.desc[lang]}</p>
+            {exp.subItems && exp.subItems.length > 0 && (
+              <div className="card-subitems-home">
+                {exp.subItems.slice(0, 4).map((si, i) => (
+                  <Link 
+                    key={i} 
+                    to={`/experience/${exp.id}?item=${si.id}`} 
+                    className="subitem-badge-link"
+                  >
+                    {si.title[lang]}
+                  </Link>
+                ))}
+                {exp.subItems.length > 4 && (
+                  <span className="subitem-badge-more">+{exp.subItems.length - 4}</span>
+                )}
+              </div>
+            )}
             <div className="card-tags-home">
               {exp.tags && exp.tags.slice(0, 4).map((tag, i) => (
                 <Badge key={i} text={tag} />

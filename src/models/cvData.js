@@ -52,7 +52,25 @@ export const DATA = {
       es: es.experience[i].points,
       ca: ca.experience[i].points,
       en: en.experience[i].points
-    }
+    },
+    subItems: es.experience[i].subItems ? es.experience[i].subItems.map((_, siIdx) => ({
+      id: es.experience[i].subItems[siIdx].id,
+      title: {
+        es: es.experience[i].subItems?.[siIdx]?.title || '',
+        ca: ca.experience[i].subItems?.[siIdx]?.title || '',
+        en: en.experience[i].subItems?.[siIdx]?.title || ''
+      },
+      desc: {
+        es: es.experience[i].subItems?.[siIdx]?.desc || '',
+        ca: ca.experience[i].subItems?.[siIdx]?.desc || '',
+        en: en.experience[i].subItems?.[siIdx]?.desc || ''
+      },
+      points: {
+        es: es.experience[i].subItems?.[siIdx]?.points || [],
+        ca: ca.experience[i].subItems?.[siIdx]?.points || [],
+        en: en.experience[i].subItems?.[siIdx]?.points || []
+      }
+    })) : undefined
   })),
   education: es.education.map((_, i) => ({
     id: es.education[i].id,

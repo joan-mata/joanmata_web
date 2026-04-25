@@ -34,6 +34,54 @@ const AdminModal = ({ type, initialData, onSave, onCancel, translations: tUI }) 
     handleChange(field, newList, lang);
   };
 
+  const addSubItem = () => {
+    const newId = `item-${Date.now()}`;
+    const newItems = [...(formData.subItems || []), {
+      id: newId,
+      title: { es: '', ca: '', en: '' },
+      desc: { es: '', ca: '', en: '' },
+      points: { es: [], ca: [], en: [] }
+    }];
+    handleChange('subItems', newItems);
+  };
+
+  const removeSubItem = (idx) => {
+    const newItems = formData.subItems.filter((_, i) => i !== idx);
+    handleChange('subItems', newItems);
+  };
+
+  const handleSubItemChange = (idx, field, value, lang = null) => {
+    const newItems = [...formData.subItems];
+    if (lang) {
+      newItems[idx][field] = { ...newItems[idx][field], [lang]: value };
+    } else {
+      newItems[idx][field] = value;
+    }
+    handleChange('subItems', newItems);
+  };
+
+  const handleSubItemListChange = (idx, field, listIdx, value, lang) => {
+    const newItems = [...formData.subItems];
+    const newList = [...(newItems[idx][field][lang] || [])];
+    newList[listIdx] = value;
+    newItems[idx][field][lang] = newList;
+    handleChange('subItems', newItems);
+  };
+
+  const addSubItemListItem = (idx, field, lang) => {
+    const newItems = [...formData.subItems];
+    const newList = [...(newItems[idx][field][lang] || []), ""];
+    newItems[idx][field][lang] = newList;
+    handleChange('subItems', newItems);
+  };
+
+  const removeSubItemListItem = (idx, field, listIdx, lang) => {
+    const newItems = [...formData.subItems];
+    const newList = newItems[idx][field][lang].filter((_, i) => i !== listIdx);
+    newItems[idx][field][lang] = newList;
+    handleChange('subItems', newItems);
+  };
+
   // Helper for automatic translation
   const translateText = async (text, targetLang) => {
     if (!text) return '';
@@ -96,6 +144,34 @@ const AdminModal = ({ type, initialData, onSave, onCancel, translations: tUI }) 
       if (esList.length > 0) {
         updatedData[field].ca = await Promise.all(esList.map(t => translateText(t, 'ca')));
         updatedData[field].en = await Promise.all(esList.map(t => translateText(t, 'en')));
+      }
+    }
+
+    // Process sub-items
+    if (updatedData.subItems) {
+      for (const item of updatedData.subItems) {
+        if (!item.title) item.title = { es: '', ca: '', en: '' };
+        if (!item.desc) item.desc = { es: '', ca: '', en: '' };
+        if (!item.points) item.points = { es: [], ca: [], en: [] };
+        
+        // Title
+        const esTitle = item.title?.es || '';
+        if (esTitle) {
+          item.title.ca = await translateText(esTitle, 'ca');
+          item.title.en = await translateText(esTitle, 'en');
+        }
+        // Desc
+        const esDesc = item.desc?.es || '';
+        if (esDesc) {
+          item.desc.ca = await translateText(esDesc, 'ca');
+          item.desc.en = await translateText(esDesc, 'en');
+        }
+        // Points
+        const esPts = item.points?.es || [];
+        if (esPts.length > 0) {
+          item.points.ca = await Promise.all(esPts.map(p => translateText(p, 'ca')));
+          item.points.en = await Promise.all(esPts.map(p => translateText(p, 'en')));
+        }
       }
     }
 
@@ -232,6 +308,84 @@ const AdminModal = ({ type, initialData, onSave, onCancel, translations: tUI }) 
         />
       </div>
       {renderMultilingualList('Responsabilidades y Logros', 'points')}
+      
+      <div className="admin-subitems-section">
+        <h3 className="admin-sub-section-title">Gestión de Cuadros (Sub-ítems)</h3>
+        <p className="admin-help-text">Cada cuadro aparecerá como una ventana de detalles independiente en la web.</p>
+        
+        <div className="admin-subitem-grid-editor">
+          {(formData.subItems || []).map((si, idx) => (
+            <div key={idx} className="admin-subitem-card glass">
+              <div className="subitem-header">
+                <span className="subitem-number">#{idx + 1}</span>
+                <button className="remove-btn-small" onClick={() => removeSubItem(idx)} title="Eliminar este cuadro">🗑️</button>
+              </div>
+              
+              <div className="form-group-compact">
+                <label>ID / Icono sugerido</label>
+                <input 
+                  className="admin-input-small" 
+                  value={si.id || ''} 
+                  onChange={(e) => handleSubItemChange(idx, 'id', e.target.value)}
+                  placeholder="ej: tfg-ciber"
+                />
+              </div>
+
+              {/* Sub-item Title */}
+              <div className="form-group-compact">
+                <label>Título del Cuadro</label>
+                {['es', 'ca', 'en'].map(lang => (
+                  <div key={lang} className="lang-row-compact">
+                    <span className="lang-mini-tag">{lang}</span>
+                    <input 
+                      className="admin-input-small" 
+                      value={si.title[lang] || ''} 
+                      onChange={(e) => handleSubItemChange(idx, 'title', e.target.value, lang)}
+                    />
+                  </div>
+                ))}
+              </div>
+
+              {/* Sub-item Desc */}
+              <div className="form-group-compact">
+                <label>Descripción / Extracto</label>
+                {['es', 'ca', 'en'].map(lang => (
+                  <div key={lang} className="lang-row-compact">
+                    <span className="lang-mini-tag">{lang}</span>
+                    <textarea 
+                      className="admin-textarea-mini" 
+                      value={si.desc[lang] || ''} 
+                      onChange={(e) => handleSubItemChange(idx, 'desc', e.target.value, lang)}
+                    />
+                  </div>
+                ))}
+              </div>
+
+              {/* Sub-item Points */}
+              <div className="form-group-compact">
+                <label>Puntos Clave</label>
+                {['es', 'ca', 'en'].map(lang => (
+                  <div key={lang} className="lang-points-mini">
+                    <span className="lang-mini-tag">{lang.toUpperCase()}</span>
+                    {(si.points[lang] || []).map((p, pIdx) => (
+                      <div key={pIdx} className="list-item-row-compact">
+                        <input 
+                          className="admin-input-mini" 
+                          value={p} 
+                          onChange={(e) => handleSubItemListChange(idx, 'points', pIdx, e.target.value, lang)} 
+                        />
+                        <button className="remove-btn-mini" onClick={() => removeSubItemListItem(idx, 'points', pIdx, lang)}>×</button>
+                      </div>
+                    ))}
+                    <button className="add-btn-mini" onClick={() => addSubItemListItem(idx, 'points', lang)}>+ Añadir Punto</button>
+                  </div>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+        <button className="add-btn full-width highlight" onClick={addSubItem}>+ Añadir Nueva Ventana / Cuadrado</button>
+      </div>
     </>
   );
 
@@ -361,9 +515,27 @@ const AdminModal = ({ type, initialData, onSave, onCancel, translations: tUI }) 
     </>
   );
 
+  const renderSubItemForm = () => (
+    <div className="admin-subitem-granular-editor">
+      <h3 className="admin-sub-section-title">Editar Detalle Específico</h3>
+      <div className="form-group">
+        <label>ID / Identificador</label>
+        <input 
+          className="admin-input" 
+          value={formData.id || ''} 
+          onChange={(e) => handleChange('id', e.target.value)}
+        />
+      </div>
+      {renderLanguageInputs('Título del Cuadro', 'title')}
+      {renderLanguageInputs('Descripción / Extracto', 'desc', true)}
+      {renderMultilingualList('Puntos Clave', 'points')}
+    </div>
+  );
+
   const renderForm = () => {
     switch (type) {
       case 'experience': return renderExperienceForm();
+      case 'subitem': return renderSubItemForm();
       case 'project': return renderProjectForm();
       case 'skills': return renderSkillsForm();
       case 'education': return renderEducationForm();

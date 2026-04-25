@@ -222,6 +222,79 @@
       }
     },
     {
+      "id": "gastia",
+      "name": "Gastia: Gestión Financiera Inteligente",
+      "date": "2026",
+      "tags": [
+        "Next.js",
+        "Prisma",
+        "Telegram Bot",
+        "AI Parser"
+      ],
+      "desc": "Ecosistema integral para la gestión de finanzas personales con asistente de IA vía Telegram e importación inteligente.",
+      "points": [
+        "Dashboard personalizable con widgets dinámicos para el control total de gastos, ingresos y presupuestos.",
+        "Módulo de Importación Inteligente: Procesamiento de archivos Excel/CSV y texto plano mediante IA para detección automática de movimientos.",
+        "Gestión avanzada de Grupos y Viajes para el seguimiento de gastos compartidos y liquidación de deudas.",
+        "Sistema de control de Gastos Fijos con prorrateo automático y Fondo de Reserva para emergencias.",
+        "Bot de Telegram integrado que procesa lenguaje natural mediante Claude (Anthropic) para registrar gastos al vuelo.",
+        "Arquitectura auto-hospedada compartimentada con Docker y expuesta de forma segura vía Cloudflare Tunnel."
+      ],
+      "techStack": [
+        "Next.js (App Router)",
+        "Prisma ORM",
+        "PostgreSQL",
+        "Anthropic API",
+        "Telegram API",
+        "Cloudflare Tunnel"
+      ],
+      "security": [
+        "Implementación de auditoría financiera con trazabilidad total de transacciones mediante Prisma y PostgreSQL, asegurando la integridad referencial de los datos.",
+        "Acceso seguro multi-capa mediante cookies HttpOnly, SameSite=Strict y Autenticación JWT, evitando ataques de robo de sesión.",
+        "Perímetro de red invisible sin apertura de puertos ISP, utilizando túneles cifrados de extremo a extremo para la comunicación entre el bot y el servidor privado."
+      ],
+      "links": {
+        "github": "github.com/joan-mata/gastia",
+        "live": "gastia.joanmata.com"
+      }
+    },
+    {
+      "id": "biblioteca",
+      "name": "Biblioteca: Gestión de Colección Personal",
+      "date": "2026",
+      "tags": [
+        "Next.js",
+        "Prisma",
+        "Glassmorphism",
+        "NextAuth",
+        "Secure Media"
+      ],
+      "desc": "Plataforma premium para la gestión de colecciones personales de libros con enfoque en seguridad y diseño elegante.",
+      "points": [
+        "Interfaz premium con Glassmorphism y micro-animaciones para una experiencia de usuario fluida.",
+        "Sistema de estados de adquisición (Comprado, Deseado, No comprar) para una gestión detallada.",
+        "Bóveda de media segura: las portadas de los libros solo son accesibles para usuarios autenticados.",
+        "Arquitectura desacoplada y optimizada para despliegues auto-hospedados (Homelab).",
+        "Integración completa con PostgreSQL y Prisma para una persistencia de datos robusta."
+      ],
+      "techStack": [
+        "Next.js (App Router)",
+        "Prisma ORM",
+        "PostgreSQL",
+        "NextAuth",
+        "Tailwind CSS"
+      ],
+      "security": [
+        "Acceso protegido a archivos multimedia mediante validación de sesión en el lado del servidor, evitando la exposición pública de activos personales.",
+        "Autenticación robusta implementada con NextAuth y cifrado de credenciales mediante Bcrypt.",
+        "Aislamiento de infraestructura mediante contenedores Docker, facilitando el despliegue seguro en redes locales."
+      ],
+      "links": {
+        "github": "github.com/joan-mata/biblioteca",
+        "live": "biblioteca.joanmata.com"
+      }
+    },
+    {
       "id": "content-curator",
       "name": "AI Content Curator & Discovery",
       "date": "2026",

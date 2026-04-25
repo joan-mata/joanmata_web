@@ -367,6 +367,145 @@
     },
 
     {
+      "id": "gastia",
+      "name": "Gastia: Gestión Financiera Inteligente",
+      "date": "2026",
+      "tags": [
+        "Next.js",
+        "Prisma",
+        "Telegram Bot",
+        "AI Parser"
+      ],
+      "desc": {
+        "es": "Ecosistema integral para la gestión de finanzas personales con asistente de IA vía Telegram e importación inteligente.",
+        "ca": "Ecosistema integral per a la gestió de finances personals amb assistent d'IA via Telegram i importació intel·ligent.",
+        "en": "Comprehensive ecosystem for personal finance management with an AI assistant via Telegram and smart import."
+      },
+      "points": {
+        "es": [
+          "Dashboard personalizable con widgets dinámicos para el control total de gastos, ingresos y presupuestos.",
+          "Módulo de Importación Inteligente: Procesamiento de archivos Excel/CSV y texto plano mediante IA para detección automática de movimientos.",
+          "Gestión avanzada de Grupos y Viajes para el seguimiento de gastos compartidos y liquidación de deudas.",
+          "Sistema de control de Gastos Fijos con prorrateo automático y Fondo de Reserva para emergencias.",
+          "Bot de Telegram integrado que procesa lenguaje natural mediante Claude (Anthropic) para registrar gastos al vuelo.",
+          "Arquitectura auto-hospedada compartimentada con Docker y expuesta de forma segura vía Cloudflare Tunnel."
+        ],
+        "ca": [
+          "Dashboard personalitzable amb widgets dinàmics per al control total de despeses, ingressos i pressupostos.",
+          "Mòdul d'Importació Intel·ligent: Processament de fitxers Excel/CSV i text pla mitjançant IA per a la detecció automàtica de moviments.",
+          "Gestió avançada de Grups i Viatges per al seguiment de despeses compartides i liquidació de deutes.",
+          "Sistema de control de Despeses Fixes amb prorrateig automàtic i Fons de Reserva per a emergències.",
+          "Bot de Telegram integrat que processa llenguatge natural mitjançant Claude (Anthropic) per registrar despeses al vol.",
+          "Arquitectura auto-hostejada compartimentada amb Docker i exposada de forma segura via Cloudflare Tunnel."
+        ],
+        "en": [
+          "Customizable dashboard with dynamic widgets for full control of expenses, income, and budgets.",
+          "Smart Import Module: Processing of Excel/CSV and plain text files via AI for automatic movement detection.",
+          "Advanced Group and Trip management for tracking shared expenses and debt settlement.",
+          "Fixed Expenses control system with automatic pro-rating and Reserve Fund for emergencies.",
+          "Integrated Telegram bot that processes natural language via Claude (Anthropic) to record expenses on the fly.",
+          "Compartmentalized self-hosted architecture with Docker and securely exposed via Cloudflare Tunnel."
+        ]
+      },
+      "techStack": [
+        "Next.js (App Router)",
+        "Prisma ORM",
+        "PostgreSQL",
+        "Anthropic API",
+        "Telegram API",
+        "Cloudflare Tunnel"
+      ],
+      "security": {
+        "es": [
+          "Implementación de auditoría financiera con trazabilidad total de transacciones mediante Prisma y PostgreSQL, asegurando la integridad referencial de los datos.",
+          "Acceso seguro multi-capa mediante cookies HttpOnly, SameSite=Strict y Autenticación JWT, evitando ataques de robo de sesión.",
+          "Perímetro de red invisible sin apertura de puertos ISP, utilizando túneles cifrados de extremo a extremo para la comunicación entre el bot y el servidor privado."
+        ],
+        "ca": [
+          "Implementació d'auditoria financera amb traçabilitat total de transaccions mitjançant Prisma i PostgreSQL, assegurant la integritat referencial de les dades.",
+          "Accés segur multi-capa mitjançant cookies HttpOnly, SameSite=Strict i Autenticació JWT, evitant atacs de robatori de sessió.",
+          "Perímetre de xarxa invisible sense obertura de ports ISP, utilitzant túnels xifrats d'extrem a extrem per a la comunicació entre el bot i el servidor privat."
+        ],
+        "en": [
+          "Financial auditing implementation with full transaction traceability via Prisma and PostgreSQL, ensuring referential integrity of data.",
+          "Multi-layer secure access via HttpOnly cookies, SameSite=Strict, and JWT Authentication, preventing session hijacking attacks.",
+          "Invisible network perimeter without ISP port opening, using end-to-end encrypted tunnels for communication between the bot and the private server."
+        ]
+      },
+      "links": {
+        "github": "github.com/joan-mata/gastia",
+        "live": "gastia.joanmata.com"
+      }
+    },
+    {
+      "id": "biblioteca",
+      "name": "Biblioteca: Gestión de Colección Personal",
+      "date": "2026",
+      "tags": [
+        "Next.js",
+        "Prisma",
+        "Glassmorphism",
+        "NextAuth",
+        "Secure Media"
+      ],
+      "desc": {
+        "es": "Plataforma premium para la gestión de colecciones personales de libros con enfoque en seguridad y diseño elegante.",
+        "ca": "Plataforma premium per a la gestió de col·leccions personals de llibres amb focus en seguretat i disseny elegant.",
+        "en": "Premium platform for managing personal book collections with a focus on security and elegant design."
+      },
+      "points": {
+        "es": [
+          "Interfaz premium con Glassmorphism y micro-animaciones para una experiencia de usuario fluida.",
+          "Sistema de estados de adquisición (Comprado, Deseado, No comprar) para una gestión detallada.",
+          "Bóveda de media segura: las portadas de los libros solo son accesibles para usuarios autenticados.",
+          "Arquitectura desacoplada y optimizada para despliegues auto-hospedados (Homelab).",
+          "Integración completa con PostgreSQL y Prisma para una persistencia de datos robusta."
+        ],
+        "ca": [
+          "Interfície premium amb Glassmorphism i micro-animacions per a una experiència d'usuari fluida.",
+          "Sistema d'estats d'adquisició (Comprat, Desitjat, No comprar) per a una gestió detallada.",
+          "Bòveda de mèdia segura: les portades dels llibres només són accessibles per a usuaris autenticats.",
+          "Arquitectura desacoplada i optimitzada per a despliegues auto-hostejats (Homelab).",
+          "Integració completa amb PostgreSQL i Prisma per a una persistència de dades robusta."
+        ],
+        "en": [
+          "Premium interface with Glassmorphism and micro-animations for a fluid user experience.",
+          "Acquisition status system (Purchased, Wanted, Do not buy) for detailed management.",
+          "Secure media vault: book covers are only accessible to authenticated users.",
+          "Decoupled architecture optimized for self-hosted deployments (Homelab).",
+          "Full integration with PostgreSQL and Prisma for robust data persistence."
+        ]
+      },
+      "techStack": [
+        "Next.js (App Router)",
+        "Prisma ORM",
+        "PostgreSQL",
+        "NextAuth",
+        "Tailwind CSS"
+      ],
+      "security": {
+        "es": [
+          "Acceso protegido a archivos multimedia mediante validación de sesión en el lado del servidor, evitando la exposición pública de activos personales.",
+          "Autenticación robusta implementada con NextAuth y cifrado de credenciales mediante Bcrypt.",
+          "Aislamiento de infraestructura mediante contenedores Docker, facilitando el despliegue seguro en redes locales."
+        ],
+        "ca": [
+          "Accés protegit a fitxers multimèdia mitjançant validació de sessió al costat del servidor, evitant l'exposició pública d'actius personals.",
+          "Autenticació robusta implementada amb NextAuth i xifrat de credencials mitjançant Bcrypt.",
+          "Aïllament d'infraestructura mitjançant contenidors Docker, facilitant el despliegue segur en xarxes locals."
+        ],
+        "en": [
+          "Protected access to media files through server-side session validation, preventing public exposure of personal assets.",
+          "Robust authentication implemented with NextAuth and credential encryption via Bcrypt.",
+          "Infrastructure isolation using Docker containers, facilitating secure deployment in local networks."
+        ]
+      },
+      "links": {
+        "github": "github.com/joan-mata/biblioteca",
+        "live": "biblioteca.joanmata.com"
+      }
+    },
+    {
       "id": "content-curator",
       "name": "AI Content Curator & Discovery",
       "date": "2026",
@@ -419,7 +558,7 @@
           "Soberanía de datos garantizada mediante el almacenamiento privado de perfiles de usuario y ratings sin dependencia de nubes públicas de terceros."
         ],
         "ca": [
-          "Arquitectura de seguretat perimetral que protegeix les instàncies de n8n darrere de túnels Cloudflare amb validació de tokens de secret en cada webhook.",
+          "Arquitectura de seguretat perimetral que protegeix les instàncies de n8n darrere de túnels Cloudflare con validació de tokens de secret en cada webhook.",
           "Gestió de tokens i sessions de Spotify emmagatzemats localment amb xifrat i permisos d'accés restringits a nivell de sistema de fitxers.",
           "Sobirania de dades garantida mitjançant l'emmagatzematge privat de perfils d'usuari i ratings sense dependència de núvols públics de tercers."
         ],

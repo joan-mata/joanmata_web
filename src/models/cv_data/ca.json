@@ -222,6 +222,79 @@
       }
     },
     {
+      "id": "gastia",
+      "name": "Gastia: Gestión Financiera Inteligente",
+      "date": "2026",
+      "tags": [
+        "Next.js",
+        "Prisma",
+        "Telegram Bot",
+        "AI Parser"
+      ],
+      "desc": "Ecosistema integral per a la gestió de finances personals amb assistent d'IA via Telegram i importació intel·ligent.",
+      "points": [
+        "Dashboard personalitzable amb widgets dinàmics per al control total de despeses, ingressos i pressupostos.",
+        "Mòdul d'Importació Intel·ligent: Processament de fitxers Excel/CSV i text pla mitjançant IA per a la detecció automàtica de moviments.",
+        "Gestió avançada de Grups i Viatges per al seguiment de despeses compartides i liquidació de deutes.",
+        "Sistema de control de Despeses Fixes amb prorrateig automàtic i Fons de Reserva per a emergències.",
+        "Bot de Telegram integrat que processa llenguatge natural mitjançant Claude (Anthropic) per registrar despeses al vol.",
+        "Arquitectura auto-hostejada compartimentada amb Docker i exposada de forma segura via Cloudflare Tunnel."
+      ],
+      "techStack": [
+        "Next.js (App Router)",
+        "Prisma ORM",
+        "PostgreSQL",
+        "Anthropic API",
+        "Telegram API",
+        "Cloudflare Tunnel"
+      ],
+      "security": [
+        "Implementació d'auditoria financera amb traçabilitat total de transaccions mitjançant Prisma i PostgreSQL, assegurant la integritat referencial de les dades.",
+        "Accés segur multi-capa mitjançant cookies HttpOnly, SameSite=Strict i Autenticació JWT, evitant atacs de robatori de sessió.",
+        "Perímetre de xarxa invisible sense obertura de ports ISP, utilitzant túnels xifrats d'extrem a extrem per a la comunicació entre el bot i el servidor privat."
+      ],
+      "links": {
+        "github": "github.com/joan-mata/gastia",
+        "live": "gastia.joanmata.com"
+      }
+    },
+    {
+      "id": "biblioteca",
+      "name": "Biblioteca: Gestión de Colección Personal",
+      "date": "2026",
+      "tags": [
+        "Next.js",
+        "Prisma",
+        "Glassmorphism",
+        "NextAuth",
+        "Secure Media"
+      ],
+      "desc": "Plataforma premium per a la gestió de col·leccions personals de llibres amb focus en seguretat i disseny elegant.",
+      "points": [
+        "Interfície premium amb Glassmorphism i micro-animacions per a una experiència d'usuari fluida.",
+        "Sistema d'estats d'adquisició (Comprat, Desitjat, No comprar) per a una gestió detallada.",
+        "Bòveda de mèdia segura: les portades dels llibres només són accessibles per a usuaris autenticats.",
+        "Arquitectura desacoplada i optimitzada per a despliegues auto-hostejats (Homelab).",
+        "Integració completa amb PostgreSQL i Prisma per a una persistència de dades robusta."
+      ],
+      "techStack": [
+        "Next.js (App Router)",
+        "Prisma ORM",
+        "PostgreSQL",
+        "NextAuth",
+        "Tailwind CSS"
+      ],
+      "security": [
+        "Accés protegit a fitxers multimèdia mitjançant validació de sessió al costat del servidor, evitant l'exposició pública d'actius personals.",
+        "Autenticació robusta implementada amb NextAuth i xifrat de credencials mitjançant Bcrypt.",
+        "Aïllament d'infraestructura mitjançant contenidors Docker, facilitant el despliegue segur en xarxes locals."
+      ],
+      "links": {
+        "github": "github.com/joan-mata/biblioteca",
+        "live": "biblioteca.joanmata.com"
+      }
+    },
+    {
       "id": "content-curator",
       "name": "AI Content Curator & Discovery",
       "date": "2026",
@@ -248,7 +321,7 @@
         "Apple CalDAV"
       ],
       "security": [
-        "Arquitectura de seguretat perimetral que protegeix les instàncies de n8n darrere de túnels Cloudflare amb validació de tokens de secret en cada webhook.",
+        "Arquitectura de seguretat perimetral que protegeix les instàncies de n8n darrere de túnels Cloudflare con validació de tokens de secret en cada webhook.",
         "Gestió de tokens i sessions de Spotify emmagatzemats localment amb xifrat i permisos d'accés restringits a nivell de sistema de fitxers.",
         "Sobirania de dades garantida mitjançant l'emmagatzematge privat de perfils d'usuari i ratings sense dependència de núvols públics de tercers."
       ],

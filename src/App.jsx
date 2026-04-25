@@ -99,6 +99,10 @@ export default function App() {
     const next = { ...currentData };
     if (type === 'skills') next.skills = item;
     else if (type === 'profile') next.profile = item;
+    else if (type === 'subitem') {
+      const { parentIndex, subItemIndex } = showModal;
+      next[context][parentIndex].subItems[subItemIndex] = item;
+    }
     else if (itemIndex !== undefined) next[context][itemIndex] = item;
     else next[context].push({ ...item, id: Date.now().toString() });
     
@@ -299,7 +303,31 @@ export default function App() {
             <Route path="/certificates" element={<Certificates title={t.sections.certificates} data={currentData.certificates} lang={lang} translations={t} {...adminProps('certificates', 'certificate')} />} />
             <Route path="/certificates/:id" element={<CertificateDetailsPage data={currentData.certificates} lang={lang} translations={t} isAdmin={isAdmin} onEdit={(id) => setShowModal({ type: 'certificates', context: 'certificates', itemIndex: currentData.certificates.findIndex(c => c.id === id), data: currentData.certificates.find(c => c.id === id) })} />} />
             <Route path="/volunteering" element={<Volunteering title={t.sections.volunteering} data={currentData.volunteering} lang={lang} translations={t} {...adminProps('volunteering', 'volunteering')} />} />
-            <Route path="/experience/:id" element={<ExperienceDetailsPage data={currentData.experience} lang={lang} translations={t} isAdmin={isAdmin} onEdit={(id) => setShowModal({ type: 'experience', context: 'experience', itemIndex: currentData.experience.findIndex(e => e.id === id), data: currentData.experience.find(e => e.id === id) })} />} />
+            <Route path="/experience/:id" element={
+              <ExperienceDetailsPage 
+                data={currentData.experience} 
+                lang={lang} 
+                translations={t} 
+                isAdmin={isAdmin} 
+                onEdit={(id) => setShowModal({ 
+                  type: 'experience', 
+                  context: 'experience', 
+                  itemIndex: currentData.experience.findIndex(e => e.id === id), 
+                  data: currentData.experience.find(e => e.id === id) 
+                })} 
+                onEditSubItem={(jobId, subItemId) => {
+                  const jobIdx = currentData.experience.findIndex(e => e.id === jobId);
+                  const subIdx = currentData.experience[jobIdx].subItems.findIndex(si => si.id === subItemId);
+                  setShowModal({
+                    type: 'subitem',
+                    context: 'experience',
+                    parentIndex: jobIdx,
+                    subItemIndex: subIdx,
+                    data: currentData.experience[jobIdx].subItems[subIdx]
+                  });
+                }}
+              />
+            } />
             <Route path="/contact" element={<Contact title={t.sections.contact} data={currentData} translations={t} />} />
             <Route path="/private-portal" element={isAdmin ? <Navigate to="/" /> : <AdminEntry onLogin={() => {setIsAdmin(true); sessionStorage.setItem('isAdmin', 'true');}} translations={t} />} />
             <Route path="*" element={<Navigate to="/" />} />
